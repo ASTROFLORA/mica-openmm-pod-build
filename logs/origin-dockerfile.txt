@@ -1,0 +1,193 @@
+# MICA OpenMM Pod — STANDALONE validation b
+uild for GH Actions smoke test.
+#
+# Multi-sta
+ge build:
+#   builder: clones MICA-ultimate a
+t pinned commit, prepares /opt/mica-source
+# 
+  runtime: installs all deps, copies from bui
+lder, runs container smoke
+
+FROM condaforge/m
+iniforge3:latest AS builder
+
+RUN apt-get upda
+te && apt-get install -y --no-install-recomme
+nds \
+    curl ca-certificates build-essentia
+l libxrender1 libxext6 git \
+    && rm -rf /v
+ar/lib/apt/lists/*
+
+ARG MICA_COMMIT=8be6355c4
+83528c775bf756247f839a184210b62
+WORKDIR /opt
+
+RUN git clone --depth 1 https://github.com/ju
+aness38/MICA-ultimate.git mica-source && \
+  
+  cd mica-source && \
+    git fetch --depth 1
+ origin ${MICA_COMMIT} && \
+    git checkout 
+${MICA_COMMIT} && \
+    rm -rf .git && \
+    
+echo "Builder stage ready: /opt/mica-source a
+t ${MICA_COMMIT}" && \
+    ls -la /opt/mica-s
+ource/src/mica/md_preview/__init__.py && \
+  
+  ls -la /opt/mica-source/src/mica/scientific
+/topology_kernel/martini/openmm_relaxation_sm
+oke.py
+
+# ===================================
+=========================================
+# R
+untime stage
+# ==============================
+=============================================
+=
+FROM condaforge/miniforge3:latest
+
+LABEL or
+g.opencontainers.image.source="https://github
+.com/juaness38/MICA-ultimate"
+LABEL org.openc
+ontainers.image.description="MICA Salad GCS-n
+ative OpenMM worker — standalone ASTROFLORA
+ mirror for GH Actions smoke test"
+LABEL mica
+.slice="TOPOLOGY-KERNEL-DOCKERIMAGE-FIX-001-v
+alidation"
+
+RUN apt-get update && apt-get ins
+tall -y --no-install-recommends \
+    curl ca
+-certificates build-essential libxrender1 lib
+xext6 \
+    && rm -rf /var/lib/apt/lists/*
+
+#
+ Layer 1: OpenMM stack
+RUN mamba install -c c
+onda-forge -y \
+    python=3.11 \
+    nodejs=
+22 \
+    openmm \
+    pdbfixer \
+    numpy \
+
+    scipy \
+    && mamba clean -afy
+
+# Layer 
+2: Cheminformatics
+RUN mamba install -c conda
+-forge -y \
+    mdtraj \
+    mdanalysis \
+   
+ "rdkit>=2024" \
+    openbabel \
+    plip \
+ 
+   pandas \
+    biopython \
+    && mamba clea
+n -afy
+
+# Layer 3: pip-only deps
+RUN pip inst
+all --no-cache-dir \
+    "google-cloud-storag
+e>=2.16.0" \
+    "python-dotenv>=1.0.0"
+
+# La
+yer 4: molstar for BCIF
+RUN npm install -g mo
+lstar@5.6.1 \
+    && cif2bcif --help >/tmp/ci
+f2bcif.help
+
+# Layer 5: Copy MICA source from
+ builder stage
+WORKDIR /app
+COPY --from=build
+er /opt/mica-source/src/mica /app/src/mica
+CO
+PY --from=builder /opt/mica-source/workers/dy
+namo /app/workers/dynamo
+COPY --from=builder 
+/opt/mica-source/workers/salad/gcs_openmm_src
+g/main_gcs.py /app/main_gcs.py
+
+# Layer 6: Co
+ntainer smoke verification (this is the recei
+pt gate)
+RUN python -c "import sys; sys.path.
+insert(0, '/app/src'); \
+    from mica.md_pre
+view import encode_preview_frame; \
+    from 
+mica.scientific.topology_kernel.martini.openm
+m_relaxation_smoke import run_openmm_relaxati
+on_smoke; \
+    from mica.scientific.topology
+_kernel import CGCaseStudyCompilation, CGRunt
+imeFoundation, MartiniAssetRegistry, MartiniL
+ipidAssetRegistry; \
+    from mica.sim.physio
+logical_topology_kernel import PreparationPro
+tocolDefaults; \
+    from mica.sim.openmm_com
+piler import contracts; \
+    from mica.sim.s
+cientific_task_graph import TopologyAssembly;
+ \
+    from google.cloud import storage; \
+  
+  print('CONTAINER_SMOKE_V1 OK: 9 modules imp
+ortable from /app/src'); \
+    print('  - mic
+a.md_preview.encode_preview_frame:', encode_p
+review_frame.__module__); \
+    print('  - mi
+ca.scientific.topology_kernel.martini.openmm_
+relaxation_smoke.run_openmm_relaxation_smoke:
+', run_openmm_relaxation_smoke.__module__); \
+
+    print('  - mica.scientific.topology_kern
+el.CGCaseStudyCompilation:', CGCaseStudyCompi
+lation.__module__); \
+    print('  - mica.sci
+entific.topology_kernel.CGRuntimeFoundation:'
+, CGRuntimeFoundation.__module__); \
+    prin
+t('  - mica.scientific.topology_kernel.Martin
+iAssetRegistry:', MartiniAssetRegistry.__modu
+le__); \
+    print('  - mica.scientific.topol
+ogy_kernel.MartiniLipidAssetRegistry:', Marti
+niLipidAssetRegistry.__module__); \
+    print
+('  - mica.sim.physiological_topology_kernel.
+PreparationProtocolDefaults:', PreparationPro
+tocolDefaults.__module__); \
+    print('  - m
+ica.sim.openmm_compiler.contracts:', contract
+s.__module__); \
+    print('  - mica.sim.scie
+ntific_task_graph.TopologyAssembly:', Topolog
+yAssembly.__module__); \
+    print('  - googl
+e.cloud.storage:', storage.__module__)"
+
+CMD 
+["python", "/app/main_gcs.py"]
+
+
