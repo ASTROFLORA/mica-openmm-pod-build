@@ -49,8 +49,14 @@ RUN mamba install -c conda-forge -y \
     biopython \
     && mamba clean -afy
 
-# Layer 3: pip-only deps
+# Layer 3: pip-only deps (matched to mica.md_preview import chain)
 RUN pip install --no-cache-dir \
+    "fastapi>=0.110.0" \
+    "uvicorn[standard]>=0.27.0" \
+    "websockets>=11.0.0" \
+    "pydantic>=2.5.0" \
+    "starlette>=0.36.0" \
+    "httpx>=0.26.0" \
     "google-cloud-storage>=2.16.0" \
     "python-dotenv>=1.0.0"
 
