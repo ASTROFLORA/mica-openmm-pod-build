@@ -1,0 +1,83 @@
+name: build-mica-openmm-pod-image
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+env:
+  IMAGE_REPOSITORY: ghcr.io/astroflora/mica-openmm-pod
+  MICA_COMMIT: 8be6355c483528c775bf756247f839a184210b62
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Free runner disk
+        run: |
+          echo "Disk before cleanup"
+          df -h
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android /opt/hostedtoolcache/CodeQL || true
+          docker system prune -af || true
+          echo "Disk after cleanup"
+          df -h
+
+      - name: Build image (with embedded container smoke)
+        run: |
+          docker build \
+            --build-arg MICA_COMMIT=${{ env.MICA_COMMIT }} \
+            -t mica-openmm-pod:smoke-v1 \
+            -f Dockerfile \
+            .
+
+      - name: Verify image build succeeded
+        run: |
+          docker images | grep mica-openmm-pod
+          echo "Build OK"
+
+      - name: Log in to GHCR
+        if: github.event_name == 'push'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Tag and push image
+        if: github.event_name == 'push'
+        run: |
+          IMAGE_TAG="sha-${{ github.sha }}"
+          docker tag mica-openmm-pod:smoke-v1 ${IMAGE_REPOSITORY}:${IMAGE_TAG}
+          docker push ${IMAGE_REPOSITORY}:${IMAGE_TAG}
+          echo "Pushed: ${IMAGE_REPOSITORY}:${IMAGE_TAG}"
+
+      - name: Emit container_smoke_v1 receipt
+        if: always()
+        run: |
+          mkdir -p /tmp/receipts
+          cat > /tmp/receipts/container_smoke_v1.json <<EOF
+          {
+            "schema_version": "image_dependency_proof_v1",
+            "slice_id": "TOPOLOGY-KERNEL-DOCKERIMAGE-FIX-001",
+            "validation_mode": "container_smoke_v1",
+            "image_repository": "${IMAGE_REPOSITORY}",
+            "image_tag": "smoke-v1",
+            "mica_commit": "${MICA_COMMIT}",
+            "build_status": "${{ job.status }}",
+            "build_attempt": "${{ github.run_attempt }}",
+            "github_run_id": "${{ github.run_id }}",
+            "produced_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          }
+          EOF
+          cat /tmp/receipts/container_smoke_v1.json
