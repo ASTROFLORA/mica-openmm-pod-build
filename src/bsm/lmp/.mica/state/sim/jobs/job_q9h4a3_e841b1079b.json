@@ -1,0 +1,20 @@
+{
+  "job_id": "job_q9h4a3_e841b1079b",
+  "entity": "Q9H4A3",
+  "status": "submitted",
+  "submitted_at": "2026-05-03T01:45:27.489820+00:00",
+  "provider": "vast.ai",
+  "bridge": "unified_compute_client",
+  "unified_job_id": "job_q9h4a3_e841b1079b",
+  "unified_provider": "vast",
+  "pdb_path": "C:\\Users\\busta\\Downloads\\MICA\\src\\bsm\\lmp\\.mica\\cache\\afdb\\Q9H4A3_model_v6.pdb",
+  "docker_image": "ghcr.io/mica-project/mica-openmm-pod:cuda12.4-openmm8.2",
+  "artifacts": [
+    ".mica/artifacts/job_q9h4a3_e841b1079b/trajectory.xtc",
+    ".mica/artifacts/job_q9h4a3_e841b1079b/topology.pdb",
+    ".mica/artifacts/job_q9h4a3_e841b1079b/summary.json"
+  ],
+  "unified_state": "queued",
+  "unified_phase": "init",
+  "status_checked_at": "2026-05-03T01:45:27.711366+00:00"
+}

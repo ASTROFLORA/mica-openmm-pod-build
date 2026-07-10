@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="md-ifp">
+  <lmp:Identity>
+    <lmp:BudoID>budo:INS_HUMAN_v1</lmp:BudoID>
+    <lmp:PrimaryAccession>P01308</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>INS_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606">Homo sapiens</lmp:Organism>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>Q5EEX2</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Geometry>
+    <lmp:Sequence length="110">MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</lmp:Sequence>
+    <lmp:Chain id="B" sequence="MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN" state="Inactive"/>
+    <lmp:TrajectoryIFP pdb_id="4INS" ligand="CHAIN:A" total_frames="1" stride="1">
+      <!--mica:smic_context {"engine":"smic_core.ifp_engine:IFPEngine","pdb_id":"4INS","topology":"lmp_cache\\pdb_files\\4INS.pdb","trajectory":"src\\bsm\\lmp\\validation_outputs\\round1_uniprot_sem_struct\\_pdb_cache\\4INS.pdb","ligand":"CHAIN:A","ligand_sel":"protein and chainid A","receptor_sel":"protein and chainid B","receptor_chain":"B","stride":1,"end_frame":1,"detect_metals":false}-->
+      <lmp:Frame number="0" time_ns="0.000">
+        <lmp:Interaction type="Hydrophobic" residue="LEU11" distance="3.945" occupancy="1.000000"/>
+        <lmp:Interaction type="Salt-Bridge" residue="ARG22" distance="3.511" occupancy="1.000000"/>
+        <lmp:Fingerprint>01001000</lmp:Fingerprint>
+      </lmp:Frame>
+      <lmp:Summary total_interactions="2" average_interactions_per_frame="2.000">
+        <lmp:KeyInteraction residue="LEU11" type="Hydrophobic" occupancy="1.000000"/>
+      </lmp:Summary>
+    </lmp:TrajectoryIFP>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>1</lmp:SequenceVersion>
+      <lmp:EntryVersion>282</lmp:EntryVersion>
+      <lmp:FirstPublicDate>1986-07-21</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>1986-07-21</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>md-ifp</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:37:46.348798+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "P01308", "xref_total": 979, "xref_db_counts": {"PDB": 367, "PDBsum": 367, "GO": 70, "EMDB": 44, "Reactome": 14, "EMBL": 11, "DrugBank": 10, "MIM": 5, "InterPro": 5, "RefSeq": 4, "Ensembl": 3, "Orphanet": 2, "PANTHER": 2, "PRINTS": 2, "CCDS": 1, "PIR": 1, "AlphaFoldDB": 1, "BMRB": 1, "PCDDB": 1, "SASBDB": 1, "SMR": 1, "BioGRID": 1, "ComplexPortal": 1, "DIP": 1, "FunCoup": 1}, "xref_examples": {"EMBL": ["V00565", "M10039", "J00265", "X70508", "L15440", "AY899304", "AY138590", "BT006808"], "CCDS": ["CCDS7729.1"], "PIR": ["A93222"], "RefSeq": ["NP_000198.1", "NP_001172026.1", "NP_001172027.1", "NP_001278826.1"], "PDB": ["1A7F", "1AI0", "1AIY", "1B9E", "1BEN", "1EFE", "1EV3", "1EV6"], "PDBsum": ["1A7F", "1AI0", "1AIY", "1B9E", "1BEN", "1EFE", "1EV3", "1EV6"], "AlphaFoldDB": ["P01308"], "BMRB": ["P01308"], "EMDB": ["EMD-0247", "EMD-10273", "EMD-13385", "EMD-13386", "EMD-13387", "EMD-13388", "EMD-23766", "EMD-23767"], "PCDDB": ["P01308"], "SASBDB": ["P01308"], "SMR": ["P01308"], "BioGRID": ["109842"], "ComplexPortal": ["CPX-943"], "DIP": ["DIP-6024N"], "FunCoup": ["P01308"], "IntAct": ["P01308"], "MINT": ["P01308"], "STRING": ["9606.ENSP00000380432"], "ChEMBL": ["CHEMBL5881"], "DrugBank": ["DB01289", "DB09564", "DB00638", "DB06315", "DB01776", "DB08231", "DB01593", "DB14487"], "Allergome": ["2121"], "CarbonylDB": ["P01308"], "iPTMnet": ["P01308"], "PhosphoSitePlus": ["P01308"], "BioMuta": ["INS"], "DMDM": ["124617"], "jPOST": ["P01308"], "MassIVE": ["P01308"], "PaxDb": ["9606-ENSP00000380432"], "PeptideAtlas": ["P01308"], "ProteomicsDB": ["51374"], "ABCD": ["P01308"], "Antibodypedia": ["56056"], "DNASU": ["3630"], "Ensembl": ["ENST00000250971.7", "ENST00000381330.5", "ENST00000397262.5"], "GeneID": ["3630"], "KEGG": ["hsa:3630"], "MANE-Select": ["ENST00000381330.5"], "UCSC": ["uc001lvn.3"], "AGR": ["HGNC:6081"], "ClinPGx": ["PA201"], "CTD": ["3630"], "DisGeNET": ["3630"], "GeneCards": ["INS"], "GeneReviews": ["INS"], "HGNC": ["HGNC:6081"], "HPA": ["ENSG00000254647"], "MalaCards": ["INS"], "MIM": ["125852", "176730", "613370", "616214", "618858"], "OpenTargets": ["ENSG00000254647"], "Orphanet": ["99885", "552"], "VEuPathDB": ["HostDB:ENSG00000254647"], "eggNOG": ["ENOG502S5P5"], "GeneTree": ["ENSGT00390000015440"], "InParanoid": ["P01308"], "OMA": ["LANQHLC"], "OrthoDB": ["10019596at2759"], "PAN-GO": ["P01308"], "PhylomeDB": ["P01308"], "BioCyc": ["MetaCyc:MONOMER-16190"], "PathwayCommons": ["P01308"], "Reactome": ["R-HSA-210745", "R-HSA-264876", "R-HSA-422085", "R-HSA-422356", "R-HSA-6807878", "R-HSA-6811558", "R-HSA-74713", "R-HSA-74749"], "SignaLink": ["P01308"], "SIGNOR": ["P01308"], "Agora": ["ENSG00000254647"], "BioGRID-ORCS": ["3630"], "EvolutionaryTrace": ["P01308"], "GeneWiki": ["Insulin"], "GenomeRNAi": ["3630"], "Pharos": ["P01308"], "PRO": ["PR:P01308"], "Proteomes": ["UP000005640"], "RNAct": ["P01308"], "Bgee": ["ENSG00000254647"], "ExpressionAtlas": ["P01308"], "GO": ["GO:0005788", "GO:0033116", "GO:0031904", "GO:0005576", "GO:0005615", "GO:0005796", "GO:0000139", "GO:0034774"], "CDD": ["cd04367"], "FunFam": ["1.10.100.10:FF:000003"], "Gene3D": ["1.10.100.10"], "InterPro": ["IPR022352", "IPR004825", "IPR016179", "IPR036438", "IPR022353"], "PANTHER": ["PTHR11454:SF9", "PTHR11454"], "Pfam": ["PF00049"], "PRINTS": ["PR00277", "PR00276"], "SMART": ["SM00078"], "SUPFAM": ["SSF56994"], "PROSITE": ["PS00262"]}, "generated_at": "2026-02-25T00:37:46.349335"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

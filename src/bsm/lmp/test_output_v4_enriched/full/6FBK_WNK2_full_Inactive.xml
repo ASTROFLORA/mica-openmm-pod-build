@@ -1,0 +1,571 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="full">
+  <lmp:Identity>
+    <lmp:BudoID>budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1</lmp:BudoID>
+    <lmp:PrimaryAccession>6FBK</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>6FBK</lmp:UniProtKBId>
+    <lmp:Organism>Homo sapiens</lmp:Organism>
+  </lmp:Identity>
+  <lmp:Semantics>
+    <lmp:Genes>
+      <lmp:Value>WNK2</lmp:Value>
+      <lmp:Value>Serine/threonine-protein kinase WNK2</lmp:Value>
+    </lmp:Genes>
+    <lmp:NeSyGrammar version="2.0" length="98">SMAEDTGVRVELAEEDHGRKSTIALRLWVEDPKKLKGKPKDNGAIEFTFDLEKETPDEVAQEMIESGFFHESDVKIVAKSIRDRVALIQWRRERIWPA</lmp:NeSyGrammar>
+  </lmp:Semantics>
+  <lmp:Geometry>
+    <lmp:Sequence length="98">SMAEDTGVRVELAEEDHGRKSTIALRLWVEDPKKLKGKPKDNGAIEFTFDLEKETPDEVAQEMIESGFFHESDVKIVAKSIRDRVALIQWRRERIWPA</lmp:Sequence>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=6FBK chain=A res_start=56 res_end=64 len=9"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=6FBK chain=A res_start=74 res_end=90 len=17"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=6FBK chain=A res_start=8 res_end=12 len=5 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=6FBK chain=A res_start=22 res_end=29 len=8 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=6FBK chain=A res_start=44 res_end=50 len=7 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=6FBK chain=P res_start=2 res_end=5 len=4 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=6FBK chain=P res_start=11 res_end=15 len=5 strand_id=1"/>
+    <lmp:Feature type="pdb:cell" description="pdb=6FBK a=78.047 b=78.047 c=37.736 alpha=90.0 beta=90.0 gamma=90.0"/>
+    <lmp:Feature type="pdb:resolution" description="pdb=6FBK resolution=1.743"/>
+    <lmp:Feature type="pdb:citation" description="pdb=6FBK title=Crystal structure of the human WNK2 CCT-like 1 domain in complex with a WNK1 RFXV peptide"/>
+    <lmp:Feature type="geometry:com" description="pdb=6FBK chain=A x=38.873 y=21.19 z=9.24"/>
+    <lmp:Feature type="geometry:rg" description="pdb=6FBK chain=A rg=12.375"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=6FBK chain=A min=[24.943, 1.788, -7.638] max=[53.766, 36.628, 27.533]"/>
+    <lmp:Feature type="geometry:com" description="pdb=6FBK chain=P x=37.712 y=33.713 z=4.671"/>
+    <lmp:Feature type="geometry:rg" description="pdb=6FBK chain=P rg=8.578"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=6FBK chain=P min=[24.092, 24.958, -5.047] max=[50.127, 40.381, 14.148]"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=6FBK chain_a=A chain_b=P com_distance=13.381"/>
+    <lmp:Feature type="pdb:experimental_method" description="pdb=6FBK method=X-ray"/>
+    <lmp:Feature type="pdb:assembly" description="pdb=6FBK assembly_count=1"/>
+    <lmp:Feature type="pdb:entity_count" description="pdb=6FBK polymer=2 nonpolymer=0"/>
+    <lmp:Feature type="pdb:validation" description="pdb=6FBK clashscore=13.57 rama_outliers=0.0"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0006974 go_name=DNA damage response go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0005524 go_name=ATP binding go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0050801 go_name=monoatomic ion homeostasis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0006468 go_name=protein phosphorylation go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0004674 go_name=protein serine/threonine kinase activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0008285 go_name=negative regulation of cell population proliferation go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0005829 go_name=cytosol go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0005886 go_name=plasma membrane go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0090263 go_name=positive regulation of canonical Wnt signaling pathway go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0035556 go_name=intracellular signal transduction go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0070373 go_name=negative regulation of ERK1 and ERK2 cascade go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0005737 go_name=cytoplasm go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:2000651 go_name=positive regulation of sodium ion transmembrane transporter activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0106310 go_name=protein serine kinase activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0046777 go_name=protein autophosphorylation go_type=GO"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=1 ec=2"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=1 ec=2.7"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=1 ec=2.7.11"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=1 ec=2.7.11.1"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0006974 go_name=DNA damage response go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0007507 go_name=heart development go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0016020 go_name=membrane go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0045050 go_name=protein insertion into ER membrane by stop-transfer membrane-anchor sequence go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1990869 go_name=cellular response to chemokine go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1903038 go_name=negative regulation of leukocyte cell-cell adhesion go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0031397 go_name=negative regulation of protein ubiquitination go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0006811 go_name=monoatomic ion transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0005829 go_name=cytosol go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0010766 go_name=negative regulation of sodium ion transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0005737 go_name=cytoplasm go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0034115 go_name=negative regulation of heterotypic cell-cell adhesion go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0071474 go_name=cellular hyperosmotic response go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0005524 go_name=ATP binding go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0055080 go_name=monoatomic cation homeostasis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0055075 go_name=potassium ion homeostasis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0006468 go_name=protein phosphorylation go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0004672 go_name=protein kinase activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0097022 go_name=lymphocyte migration into lymph node go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0033633 go_name=negative regulation of cell-cell adhesion mediated by integrin go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0010507 go_name=negative regulation of autophagy go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1903490 go_name=positive regulation of mitotic cytokinesis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0090188 go_name=negative regulation of pancreatic juice secretion go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0019902 go_name=phosphatase binding go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0003084 go_name=positive regulation of systemic arterial blood pressure go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1904595 go_name=positive regulation of termination of RNA polymerase II transcription go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0030644 go_name=intracellular chloride ion homeostasis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0050852 go_name=T cell receptor signaling pathway go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1903077 go_name=negative regulation of protein localization to plasma membrane go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0010793 go_name=regulation of mRNA export from nucleus go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0038116 go_name=chemokine (C-C motif) ligand 21 signaling pathway go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0051058 go_name=negative regulation of small GTPase mediated signal transduction go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0140693 go_name=molecular condensate scaffold activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0030295 go_name=protein kinase activator activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0006884 go_name=cell volume homeostasis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1904062 go_name=regulation of monoatomic cation transmembrane transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0072686 go_name=mitotic spindle go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0007165 go_name=signal transduction go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0032991 go_name=protein-containing complex go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0106310 go_name=protein serine kinase activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0035725 go_name=sodium ion transmembrane transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1902305 go_name=regulation of sodium ion transmembrane transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0043232 go_name=intracellular membraneless organelle go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0019901 go_name=protein kinase binding go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0004674 go_name=protein serine/threonine kinase activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0045766 go_name=positive regulation of angiogenesis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0010820 go_name=positive regulation of T cell chemotaxis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0090263 go_name=positive regulation of canonical Wnt signaling pathway go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0035556 go_name=intracellular signal transduction go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0140694 go_name=membraneless organelle assembly go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0002028 go_name=regulation of sodium ion transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0048666 go_name=neuron development go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0005634 go_name=nucleus go_type=GO"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=2 ec=2"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=2 ec=2.7"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=2 ec=2.7.11"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=2 ec=2.7.11.1"/>
+    <lmp:Chain id="A" sequence="SMAEDTGVRVELAEEDHGRKSTIALRLWVEDPKKLKGKPKDNGAIEFTFDLEKETPDEVAQEMIESGFFHESDVKIVAKSIRDRVALIQWRRERIWPA" state="Inactive">
+      <lmp:Domain name="With No Lysine (K) Ser/Thr Protein Kinase" type="interpro" start="3" end="96" interpro_id="IPR050588"/>
+      <lmp:Domain name="Serine/threonine-protein kinase OSR1/WNK, CCT domain" type="interpro" start="23" end="86" interpro_id="IPR024678"/>
+      <lmp:Domain name="Oxidative-stress-responsive kinase 1 C-terminal domain" type="pfam" start="23" end="86" pfam_id="PF12202"/>
+      <lmp:Domain name="Ubiquitin-like (UB roll)" type="cath" start="4" end="93" interpro_id="CATH:3.10.20.90"/>
+    </lmp:Chain>
+    <lmp:Chain id="P" sequence="LTQVVHSAGRRFIVSPVPESRLR" state="Inactive"/>
+  </lmp:Geometry>
+  <lmp:KnowledgeGraph>
+    <lmp:CrossReference db="InterPro" id="IPR050588">
+      <lmp:Property name="category">domain</lmp:Property>
+      <lmp:Property name="chain">A</lmp:Property>
+      <lmp:Property name="name">With No Lysine (K) Ser/Thr Protein Kinase</lmp:Property>
+      <lmp:Property name="source">pdbe_sifts</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR024678">
+      <lmp:Property name="category">domain</lmp:Property>
+      <lmp:Property name="chain">A</lmp:Property>
+      <lmp:Property name="name">Serine/threonine-protein kinase OSR1/WNK, CCT domain</lmp:Property>
+      <lmp:Property name="source">pdbe_sifts</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pfam" id="PF12202">
+      <lmp:Property name="category">domain</lmp:Property>
+      <lmp:Property name="chain">A</lmp:Property>
+      <lmp:Property name="name">Oxidative-stress-responsive kinase 1 C-terminal domain</lmp:Property>
+      <lmp:Property name="source">pdbe_sifts</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CATH" id="3.10.20.90">
+      <lmp:Property name="category">domain</lmp:Property>
+      <lmp:Property name="chain">A</lmp:Property>
+      <lmp:Property name="name">Ubiquitin-like (UB roll)</lmp:Property>
+      <lmp:Property name="source">pdbe_sifts</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006974">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">DNA damage response</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005524">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">ATP binding</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0050801">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">monoatomic ion homeostasis</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006468">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein phosphorylation</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0004674">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein serine/threonine kinase activity</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0008285">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">negative regulation of cell population proliferation</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005829">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">cytosol</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005886">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">plasma membrane</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0090263">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">positive regulation of canonical Wnt signaling pathway</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0035556">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">intracellular signal transduction</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0070373">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">negative regulation of ERK1 and ERK2 cascade</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005737">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">cytoplasm</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:2000651">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">positive regulation of sodium ion transmembrane transporter activity</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0106310">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein serine kinase activity</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0046777">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein autophosphorylation</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006974">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">DNA damage response</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0007507">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">heart development</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0016020">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">membrane</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0045050">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein insertion into ER membrane by stop-transfer membrane-anchor sequence</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1990869">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">cellular response to chemokine</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1903038">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">negative regulation of leukocyte cell-cell adhesion</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0031397">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">negative regulation of protein ubiquitination</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006811">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">monoatomic ion transport</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005829">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">cytosol</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0010766">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">negative regulation of sodium ion transport</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005737">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">cytoplasm</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0034115">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">negative regulation of heterotypic cell-cell adhesion</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0071474">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">cellular hyperosmotic response</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005524">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">ATP binding</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0055080">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">monoatomic cation homeostasis</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0055075">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">potassium ion homeostasis</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006468">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein phosphorylation</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0004672">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein kinase activity</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0097022">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">lymphocyte migration into lymph node</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0033633">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">negative regulation of cell-cell adhesion mediated by integrin</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0010507">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">negative regulation of autophagy</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1903490">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">positive regulation of mitotic cytokinesis</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0090188">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">negative regulation of pancreatic juice secretion</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0019902">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">phosphatase binding</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0003084">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">positive regulation of systemic arterial blood pressure</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1904595">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">positive regulation of termination of RNA polymerase II transcription</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0030644">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">intracellular chloride ion homeostasis</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0050852">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">T cell receptor signaling pathway</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1903077">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">negative regulation of protein localization to plasma membrane</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0010793">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">regulation of mRNA export from nucleus</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0038116">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">chemokine (C-C motif) ligand 21 signaling pathway</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0051058">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">negative regulation of small GTPase mediated signal transduction</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0140693">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">molecular condensate scaffold activity</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0030295">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein kinase activator activity</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006884">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">cell volume homeostasis</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1904062">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">regulation of monoatomic cation transmembrane transport</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0072686">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">mitotic spindle</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0007165">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">signal transduction</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0032991">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein-containing complex</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0106310">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein serine kinase activity</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0035725">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">sodium ion transmembrane transport</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1902305">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">regulation of sodium ion transmembrane transport</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0043232">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">intracellular membraneless organelle</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0019901">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein kinase binding</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0004674">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">protein serine/threonine kinase activity</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0045766">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">positive regulation of angiogenesis</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0010820">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">positive regulation of T cell chemotaxis</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0090263">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">positive regulation of canonical Wnt signaling pathway</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0035556">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">intracellular signal transduction</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0140694">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">membraneless organelle assembly</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0002028">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">regulation of sodium ion transport</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0048666">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">neuron development</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005634">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="name">nucleus</lmp:Property>
+      <lmp:Property name="source">rcsb_entity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:Edge type="HAS_DOMAIN" db="InterPro" id="IPR050588" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="InterPro:IPR050588"/>
+    <lmp:Edge type="HAS_DOMAIN" db="InterPro" id="IPR024678" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="InterPro:IPR024678"/>
+    <lmp:Edge type="HAS_DOMAIN" db="Pfam" id="PF12202" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="Pfam:PF12202"/>
+    <lmp:Edge type="HAS_DOMAIN" db="CATH" id="3.10.20.90" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="CATH:3.10.20.90"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006974" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0006974"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005524" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0005524"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0050801" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0050801"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006468" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0006468"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0004674" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0004674"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0008285" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0008285"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005829" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0005829"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005886" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0005886"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0090263" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0090263"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0035556" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0035556"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0070373" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0070373"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005737" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0005737"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:2000651" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:2000651"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0106310" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0106310"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0046777" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0046777"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006974" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0006974"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0007507" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0007507"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0016020" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0016020"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0045050" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0045050"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1990869" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:1990869"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1903038" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:1903038"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0031397" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0031397"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006811" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0006811"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005829" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0005829"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0010766" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0010766"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005737" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0005737"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0034115" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0034115"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0071474" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0071474"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005524" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0005524"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0055080" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0055080"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0055075" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0055075"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006468" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0006468"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0004672" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0004672"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0097022" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0097022"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0033633" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0033633"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0010507" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0010507"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1903490" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:1903490"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0090188" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0090188"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0019902" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0019902"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0003084" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0003084"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1904595" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:1904595"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0030644" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0030644"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0050852" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0050852"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1903077" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:1903077"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0010793" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0010793"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0038116" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0038116"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0051058" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0051058"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0140693" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0140693"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0030295" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0030295"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006884" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0006884"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1904062" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:1904062"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0072686" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0072686"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0007165" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0007165"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0032991" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0032991"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0106310" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0106310"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0035725" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0035725"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1902305" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:1902305"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0043232" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0043232"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0019901" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0019901"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0004674" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0004674"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0045766" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0045766"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0010820" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0010820"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0090263" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0090263"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0035556" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0035556"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0140694" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0140694"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0002028" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0002028"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0048666" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0048666"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005634" source="budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1" target="GO:GO:0005634"/>
+  </lmp:KnowledgeGraph>
+  <lmp:Provenance>
+    <lmp:GroundTruthEntry contentType="application/json" encoding="base64">eyJ1bmlwcm90X2lkIjogIjZGQksiLCAiZ2VuZV9uYW1lIjogIlNlcmluZS90aHJlb25pbmUtcHJvdGVpbiBraW5hc2UgV05LMiIsICJvcmdhbmlzbSI6ICJIb21vIHNhcGllbnMiLCAidGF4b25vbXlfaWQiOiAwLCAic2VxdWVuY2UiOiAiU01BRURUR1ZSVkVMQUVFREhHUktTVElBTFJMV1ZFRFBLS0xLR0tQS0ROR0FJRUZURkRMRUtFVFBERVZBUUVNSUVTR0ZGSEVTRFZLSVZBS1NJUkRSVkFMSVFXUlJFUklXUEEiLCAiZmVhdHVyZXMiOiBbXSwgImNvbW1lbnRzIjogW10sICJkYlJlZmVyZW5jZXMiOiBbXX0=</lmp:GroundTruthEntry>
+    <lmp:GroundTruthMeta contentType="application/json" encoding="base64">eyJwZGJfaWRzIjogWyI2RkJLIl0sICJwZGJfaWRfZm9yX2lmcCI6IG51bGwsICJzdGF0ZSI6ICJJbmFjdGl2ZSJ9</lmp:GroundTruthMeta>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>full</lmp:Preset>
+      <lmp:Timestamp>2026-02-27T23:10:19.552661+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+  </lmp:Provenance>
+</lmp:LMP>

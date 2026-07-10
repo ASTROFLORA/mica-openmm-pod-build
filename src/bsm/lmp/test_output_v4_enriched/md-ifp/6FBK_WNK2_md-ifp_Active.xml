@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="md-ifp">
+  <lmp:Identity>
+    <lmp:BudoID>budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1</lmp:BudoID>
+    <lmp:PrimaryAccession>6FBK</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>6FBK</lmp:UniProtKBId>
+    <lmp:Organism>Homo sapiens</lmp:Organism>
+  </lmp:Identity>
+  <lmp:Geometry>
+    <lmp:Sequence length="98">SMAEDTGVRVELAEEDHGRKSTIALRLWVEDPKKLKGKPKDNGAIEFTFDLEKETPDEVAQEMIESGFFHESDVKIVAKSIRDRVALIQWRRERIWPA</lmp:Sequence>
+    <lmp:Feature type="pdb:experimental_method" description="pdb=6FBK method=X-ray"/>
+    <lmp:Feature type="pdb:assembly" description="pdb=6FBK assembly_count=1"/>
+    <lmp:Feature type="pdb:entity_count" description="pdb=6FBK polymer=2 nonpolymer=0"/>
+    <lmp:Feature type="pdb:validation" description="pdb=6FBK clashscore=13.57 rama_outliers=0.0"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0006974 go_name=DNA damage response go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0005524 go_name=ATP binding go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0050801 go_name=monoatomic ion homeostasis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0006468 go_name=protein phosphorylation go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0004674 go_name=protein serine/threonine kinase activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0008285 go_name=negative regulation of cell population proliferation go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0005829 go_name=cytosol go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0005886 go_name=plasma membrane go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0090263 go_name=positive regulation of canonical Wnt signaling pathway go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0035556 go_name=intracellular signal transduction go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0070373 go_name=negative regulation of ERK1 and ERK2 cascade go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0005737 go_name=cytoplasm go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:2000651 go_name=positive regulation of sodium ion transmembrane transporter activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0106310 go_name=protein serine kinase activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=1 go_id=GO:0046777 go_name=protein autophosphorylation go_type=GO"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=1 ec=2"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=1 ec=2.7"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=1 ec=2.7.11"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=1 ec=2.7.11.1"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0006974 go_name=DNA damage response go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0007507 go_name=heart development go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0016020 go_name=membrane go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0045050 go_name=protein insertion into ER membrane by stop-transfer membrane-anchor sequence go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1990869 go_name=cellular response to chemokine go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1903038 go_name=negative regulation of leukocyte cell-cell adhesion go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0031397 go_name=negative regulation of protein ubiquitination go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0006811 go_name=monoatomic ion transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0005829 go_name=cytosol go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0010766 go_name=negative regulation of sodium ion transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0005737 go_name=cytoplasm go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0034115 go_name=negative regulation of heterotypic cell-cell adhesion go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0071474 go_name=cellular hyperosmotic response go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0005524 go_name=ATP binding go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0055080 go_name=monoatomic cation homeostasis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0055075 go_name=potassium ion homeostasis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0006468 go_name=protein phosphorylation go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0004672 go_name=protein kinase activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0097022 go_name=lymphocyte migration into lymph node go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0033633 go_name=negative regulation of cell-cell adhesion mediated by integrin go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0010507 go_name=negative regulation of autophagy go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1903490 go_name=positive regulation of mitotic cytokinesis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0090188 go_name=negative regulation of pancreatic juice secretion go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0019902 go_name=phosphatase binding go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0003084 go_name=positive regulation of systemic arterial blood pressure go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1904595 go_name=positive regulation of termination of RNA polymerase II transcription go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0030644 go_name=intracellular chloride ion homeostasis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0050852 go_name=T cell receptor signaling pathway go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1903077 go_name=negative regulation of protein localization to plasma membrane go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0010793 go_name=regulation of mRNA export from nucleus go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0038116 go_name=chemokine (C-C motif) ligand 21 signaling pathway go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0051058 go_name=negative regulation of small GTPase mediated signal transduction go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0140693 go_name=molecular condensate scaffold activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0030295 go_name=protein kinase activator activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0006884 go_name=cell volume homeostasis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1904062 go_name=regulation of monoatomic cation transmembrane transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0072686 go_name=mitotic spindle go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0007165 go_name=signal transduction go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0032991 go_name=protein-containing complex go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0106310 go_name=protein serine kinase activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0035725 go_name=sodium ion transmembrane transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:1902305 go_name=regulation of sodium ion transmembrane transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0043232 go_name=intracellular membraneless organelle go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0019901 go_name=protein kinase binding go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0004674 go_name=protein serine/threonine kinase activity go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0045766 go_name=positive regulation of angiogenesis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0010820 go_name=positive regulation of T cell chemotaxis go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0090263 go_name=positive regulation of canonical Wnt signaling pathway go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0035556 go_name=intracellular signal transduction go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0140694 go_name=membraneless organelle assembly go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0002028 go_name=regulation of sodium ion transport go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0048666 go_name=neuron development go_type=GO"/>
+    <lmp:Feature type="annotation:go" description="pdb=6FBK entity=2 go_id=GO:0005634 go_name=nucleus go_type=GO"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=2 ec=2"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=2 ec=2.7"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=2 ec=2.7.11"/>
+    <lmp:Feature type="annotation:ec" description="pdb=6FBK entity=2 ec=2.7.11.1"/>
+    <lmp:Chain id="A" sequence="SMAEDTGVRVELAEEDHGRKSTIALRLWVEDPKKLKGKPKDNGAIEFTFDLEKETPDEVAQEMIESGFFHESDVKIVAKSIRDRVALIQWRRERIWPA" state="Active">
+      <lmp:Domain name="With No Lysine (K) Ser/Thr Protein Kinase" type="interpro" start="3" end="96" interpro_id="IPR050588"/>
+      <lmp:Domain name="Serine/threonine-protein kinase OSR1/WNK, CCT domain" type="interpro" start="23" end="86" interpro_id="IPR024678"/>
+      <lmp:Domain name="Oxidative-stress-responsive kinase 1 C-terminal domain" type="pfam" start="23" end="86" pfam_id="PF12202"/>
+      <lmp:Domain name="Ubiquitin-like (UB roll)" type="cath" start="4" end="93" interpro_id="CATH:3.10.20.90"/>
+    </lmp:Chain>
+    <lmp:Chain id="P" sequence="LTQVVHSAGRRFIVSPVPESRLR" state="Active"/>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>md-ifp</lmp:Preset>
+      <lmp:Timestamp>2026-02-27T23:09:50.803207+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+  </lmp:Provenance>
+</lmp:LMP>

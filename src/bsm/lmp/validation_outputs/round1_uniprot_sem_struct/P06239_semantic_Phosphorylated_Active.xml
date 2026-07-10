@@ -1,0 +1,2690 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="semantic">
+  <lmp:Identity>
+    <lmp:BudoID>budo:LCK_HUMAN_v6</lmp:BudoID>
+    <lmp:PrimaryAccession>P06239</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>LCK_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606">Homo sapiens</lmp:Organism>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>D3DPP8</lmp:Value>
+      <lmp:Value>P07100</lmp:Value>
+      <lmp:Value>Q12850</lmp:Value>
+      <lmp:Value>Q13152</lmp:Value>
+      <lmp:Value>Q5TDH8</lmp:Value>
+      <lmp:Value>Q5TDH9</lmp:Value>
+      <lmp:Value>Q7RTZ3</lmp:Value>
+      <lmp:Value>Q96DW4</lmp:Value>
+      <lmp:Value>Q9NYT8</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Semantics>
+    <lmp:ProteinName>Tyrosine-protein kinase Lck</lmp:ProteinName>
+    <lmp:Genes>
+      <lmp:Value>LCK</lmp:Value>
+    </lmp:Genes>
+    <lmp:Comment type="FUNCTION">Non-receptor tyrosine-protein kinase that plays an essential role in the selection and maturation of developing T-cells in the thymus and in the function of mature T-cells (PubMed:2470098). Plays a key role in T-cell antigen receptor (TCR)-linked signal transduction pathways (PubMed:2470098). Constitutively associated with the cytoplasmic portions of the CD4 and CD8 surface receptors (PubMed:2470098). Association of the TCR with a peptide antigen-bound MHC complex facilitates the interaction of CD4 and CD8 with MHC class II and class I molecules, respectively, thereby recruiting the associated LCK protein to the vicinity of the TCR-CD3 complex (PubMed:2470098). LCK then phosphorylates tyrosine residues within the immunoreceptor tyrosine-based activation motifs (ITAM) of the cytoplasmic tails of the TCR-gamma chains and CD3 subunits, initiating the TCR-CD3 signaling pathway (PubMed:2470098, PubMed:40592325). Once stimulated, the TCR recruits the tyrosine kinase ZAP70, that becomes phosphorylated and activated by LCK. Following this, a large number of signaling molecules are recruited, ultimately leading to lymphokine production. LCK also contributes to signaling by other receptor molecules. Associates directly with the cytoplasmic tail of CD2, which leads to hyperphosphorylation and activation of LCK. Also plays a role in the IL2 receptor-linked signaling pathway that controls the T-cell proliferative response. Binding of IL2 to its receptor results in increased activity of LCK. Is expressed at all stages of thymocyte development and is required for the regulation of maturation events that are governed by both pre-TCR and mature alpha beta TCR. Phosphorylates other substrates including RUNX3, PTK2B/PYK2, the microtubule-associated protein MAPT, RHOH or TYROBP. Interacts with FYB2 (PubMed:27335501)</lmp:Comment>
+    <lmp:Comment type="ACTIVITY REGULATION">The relative activities of the inhibitory tyrosine-protein kinase CSK and the activating tyrosine-protein phosphatase PTPRC/CD45 determine the level of LCK activity. These interactions allow rapid and efficient activation of LCK in response to TCR stimulation</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">Binds to the cytoplasmic domain of cell surface receptors, such as AXL, CD2, CD4, CD5, CD8, CD44, CD45 and CD122. Also binds to effector molecules, such as PI4K, VAV1, RASA1, FYB1 and to other protein kinases including CDK1, RAF1, ZAP70 and SYK. Binds to phosphatidylinositol 3'-kinase (PI3K) from T-lymphocytes through its SH3 domain and to the tyrosine phosphorylated form of KHDRBS1/p70 through its SH2 domain. This interaction inhibits its tyrosine-kinase activity. Interacts with SQSTM1. Interacts with phosphorylated LIME1. Interacts with CBLB and PTPRH. Interacts with RUNX3. Forms a signaling complex with EPHA1, PTK2B and PI3-KINASE; upon activation by EFNA1 which may regulate T-lymphocyte migration. Associates with ZAP70 and RHOH; these interactions allow LCK-mediated RHOH and CD3 subunit phosphorylation in the presence of functional ZAP70. Interacts with UNC119; this interaction plays a crucial role in activation of LCK. Interacts with CEACAM1 (via cytoplasmic domain); mediates CEACAM1 phosphorylation resulting in PTPN6 recruitment that dephosphorylates TCR stimulation-induced CD247 and ZAP70 (PubMed:18424730). Interacts with CD160. Interacts with CD48 (PubMed:12007789)</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with herpes simplex virus 1 UL46; this interaction activates LCK</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with HIV-1 Nef through its SH3 domain</lmp:Comment>
+    <lmp:Comment type="TISSUE SPECIFICITY">Expressed specifically in lymphoid cells</lmp:Comment>
+    <lmp:Comment type="DOMAIN">The SH2 domain mediates interaction with SQSTM1. Interaction is regulated by Ser-59 phosphorylation</lmp:Comment>
+    <lmp:Comment type="PTM">Autophosphorylated on Tyr-394, increasing enzymatic activity, this site is dephosphorylated by PTN22. Phosphorylated on Tyr-505 by CSK, decreasing activity (PubMed:40592325). Dephosphorylated by PTPRC/CD45. Dephosphorylation at Tyr-394 by PTPN2 negatively regulates T-cell receptor signaling. Dephosphorylation at Tyr-394 by DUSP22 negatively regulates T-cell receptor signaling (PubMed:24714587, PubMed:38225265)</lmp:Comment>
+    <lmp:Comment type="PTM">Myristoylation is required prior to palmitoylation</lmp:Comment>
+    <lmp:Comment type="PTM">Palmitoylation regulates association with the plasma membrane and could be mediated by ZDHHC2</lmp:Comment>
+    <lmp:Comment type="PTM">'Lys-63'-linked ubiquitinated at Lys-99 and Lys-276 by UBR2; this modification is required for autophosphorylation at Tyr-394</lmp:Comment>
+    <lmp:Comment type="SIMILARITY">Belongs to the protein kinase superfamily. Tyr protein kinase family. SRC subfamily</lmp:Comment>
+  </lmp:Semantics>
+  <lmp:KnowledgeGraph>
+    <lmp:CrossReference db="EMBL" id="X05027">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">CAA28691.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="X13529">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">CAA31884.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="M36881">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAA59502.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="X14055">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">CAA32211.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="X14053">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">CAA32211.1</lmp:Property>
+      <lmp:Property name="Status">JOINED</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="X14054">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">CAA32211.1</lmp:Property>
+      <lmp:Property name="Status">JOINED</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="U07236">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAA18225.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="U23852">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAC50287.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="BN000073">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">CAD55807.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="AL121991">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">-</lmp:Property>
+      <lmp:Property name="Status">NOT_ANNOTATED_CDS</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="CH471059">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">EAX07543.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="CH471059">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">EAX07546.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="BC013200">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAH13200.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="M21510">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAA59501.1</lmp:Property>
+      <lmp:Property name="Status">ALT_TERM</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="M26692">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAA59503.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="AF228313">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAF34794.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="X06369">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">CAA29667.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="X04476">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">CAA28165.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CCDS" id="CCDS359.1" isoformId="P06239-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PIR" id="JQ0152">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">OKHULK</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RefSeq" id="NP_001036236.1" isoformId="P06239-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NucleotideSequenceId">NM_001042771.3</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RefSeq" id="NP_005347.3" isoformId="P06239-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NucleotideSequenceId">NM_005356.4</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1BHF">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.80 A</lmp:Property>
+      <lmp:Property name="Chains">A=119-226</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1BHH">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.90 A</lmp:Property>
+      <lmp:Property name="Chains">A=119-226, B=124-226</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1CWD">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.25 A</lmp:Property>
+      <lmp:Property name="Chains">L=127-222</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1CWE">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.30 A</lmp:Property>
+      <lmp:Property name="Chains">A/C=127-222</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1FBZ">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.40 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=123-226</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1H92">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">NMR</lmp:Property>
+      <lmp:Property name="Resolution">-</lmp:Property>
+      <lmp:Property name="Chains">A=59-120</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1IJR">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.20 A</lmp:Property>
+      <lmp:Property name="Chains">A=124-226</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1KIK">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">NMR</lmp:Property>
+      <lmp:Property name="Resolution">-</lmp:Property>
+      <lmp:Property name="Chains">A=64-120</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1LCJ">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.80 A</lmp:Property>
+      <lmp:Property name="Chains">A=119-226</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1LCK">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.50 A</lmp:Property>
+      <lmp:Property name="Chains">A=53-226, B=502-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1LKK">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.00 A</lmp:Property>
+      <lmp:Property name="Chains">A=122-226</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1LKL">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.80 A</lmp:Property>
+      <lmp:Property name="Chains">A=123-226</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1Q68">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">NMR</lmp:Property>
+      <lmp:Property name="Resolution">-</lmp:Property>
+      <lmp:Property name="Chains">B=7-35</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1Q69">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">NMR</lmp:Property>
+      <lmp:Property name="Resolution">-</lmp:Property>
+      <lmp:Property name="Chains">B=7-35</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1QPC">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.60 A</lmp:Property>
+      <lmp:Property name="Chains">A=231-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1QPD">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.00 A</lmp:Property>
+      <lmp:Property name="Chains">A=231-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1QPE">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.00 A</lmp:Property>
+      <lmp:Property name="Chains">A=231-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1QPJ">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.20 A</lmp:Property>
+      <lmp:Property name="Chains">A=231-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="1X27">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.70 A</lmp:Property>
+      <lmp:Property name="Chains">A/B/C/D/E/F=64-226</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2IIM">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.00 A</lmp:Property>
+      <lmp:Property name="Chains">A=59-119</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2OF2">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.00 A</lmp:Property>
+      <lmp:Property name="Chains">A=231-501</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2OF4">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.70 A</lmp:Property>
+      <lmp:Property name="Chains">A=231-501</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2OFU">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.00 A</lmp:Property>
+      <lmp:Property name="Chains">A=229-501</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2OFV">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.00 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=232-498</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2OG8">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.30 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=237-499</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2PL0">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.80 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2ZM1">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.10 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2ZM4">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.70 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2ZYB">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.55 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3AC1">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.99 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3AC2">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.10 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3AC3">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.55 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3AC4">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.70 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3AC5">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.50 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3AC8">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.30 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3ACJ">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.20 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3ACK">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.60 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3AD4">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.20 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3AD5">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.00 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3AD6">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.15 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3B2W">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.30 A</lmp:Property>
+      <lmp:Property name="Chains">A=226-502</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3BRH">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.20 A</lmp:Property>
+      <lmp:Property name="Chains">C/D=391-397</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3BYM">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.00 A</lmp:Property>
+      <lmp:Property name="Chains">A=230-501</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3BYO">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.00 A</lmp:Property>
+      <lmp:Property name="Chains">A=231-501</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3BYS">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.20 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-501</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3BYU">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.30 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-501</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3KMM">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.80 A</lmp:Property>
+      <lmp:Property name="Chains">A=229-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3KXZ">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.37 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3LCK">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.70 A</lmp:Property>
+      <lmp:Property name="Chains">A=231-501</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3MPM">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.95 A</lmp:Property>
+      <lmp:Property name="Chains">A=237-501</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="4C3F">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.72 A</lmp:Property>
+      <lmp:Property name="Chains">A=237-501</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="4D8K">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.36 A</lmp:Property>
+      <lmp:Property name="Chains">A=53-226</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="5MTM">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.40 A</lmp:Property>
+      <lmp:Property name="Chains">A=118-231</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="5MTN">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.85 A</lmp:Property>
+      <lmp:Property name="Chains">A=118-231</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="6H6A">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.00 A</lmp:Property>
+      <lmp:Property name="Chains">E/H/K=2-11</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="6PDJ">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.81 A</lmp:Property>
+      <lmp:Property name="Chains">A=225-509</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="8X2P">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.40 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=119-226</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1BHF">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1BHH">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1CWD">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1CWE">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1FBZ">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1H92">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1IJR">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1KIK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1LCJ">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1LCK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1LKK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1LKL">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1Q68">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1Q69">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1QPC">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1QPD">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1QPE">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1QPJ">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="1X27">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2IIM">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2OF2">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2OF4">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2OFU">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2OFV">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2OG8">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2PL0">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2ZM1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2ZM4">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2ZYB">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3AC1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3AC2">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3AC3">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3AC4">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3AC5">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3AC8">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3ACJ">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3ACK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3AD4">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3AD5">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3AD6">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3B2W">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3BRH">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3BYM">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3BYO">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3BYS">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3BYU">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3KMM">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3KXZ">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3LCK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3MPM">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="4C3F">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="4D8K">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="5MTM">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="5MTN">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="6H6A">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="6PDJ">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="8X2P">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="AlphaFoldDB" id="P06239">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BMRB" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SMR" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BioGRID" id="110124">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Interactions">421</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CORUM" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DIP" id="DIP-553N">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ELM" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunCoup" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Number of interactors">405</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="IntAct" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Interactions">181</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MINT" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="STRING" id="9606.ENSP00000477713">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BindingDB" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ChEMBL" id="CHEMBL258">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB08039">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">(3Z)-N,N-DIMETHYL-2-OXO-3-(4,5,6,7-TETRAHYDRO-1H-INDOL-2-YLMETHYLIDENE)-2,3-DIHYDRO-1H-INDOLE-5-SULFONAMIDE</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB03023">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">1-Tert-Butyl-3-(4-Chloro-Phenyl)-1h-Pyrazolo[3,4-D]Pyrimidin-4-Ylamine</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB07146">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">2,3-DIPHENYL-N-(2-PIPERAZIN-1-YLETHYL)FURO[2,3-B]PYRIDIN-4-AMINE</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB06925">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">3-(2-AMINOQUINAZOLIN-6-YL)-4-METHYL-N-[3-(TRIFLUOROMETHYL)PHENYL]BENZAMIDE</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB07297">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">5,6-DIPHENYL-N-(2-PIPERAZIN-1-YLETHYL)FURO[2,3-D]PYRIMIDIN-4-AMINE</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB01830">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">AP-22408</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB03777">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Bisindolylmaleimide I</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB12429">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">CI-1040</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB01254">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Dasatinib</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB12010">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Fostamatinib</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB17140">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">JNJ-28312141</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB16768">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Lavendustin A</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB08056">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">N-(2,6-dimethylphenyl)-5-phenylimidazo[1,5-a]pyrazin-8-amine</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB08057">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">N-(2-chloro-6-methylphenyl)-8-[(3S)-3-methylpiperazin-1-yl]imidazo[1,5-a]quinoxalin-4-amine</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB08055">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">N-(2-chlorophenyl)-5-phenylimidazo[1,5-a]pyrazin-8-amine</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB09079">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Nintedanib</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB08339">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">PD-166326</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB17041">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">PD-173952</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB02567">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">PD173955</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB04395">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Phosphoaminophosphonic Acid-Adenylate Ester</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB08901">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Ponatinib</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB02010">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Staurosporine</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB04462">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Tetrabromo-2-Benzotriazole</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB15035">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Zanubrutinib</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB16656">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Zotiraciclib</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB04003">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">{4-[(2S)-2-Acetamido-3-({(1S)-1-[3-carbamoyl-4-(cyclohexylmethoxy)phenyl]ethyl}amino)-3-oxopropyl]-2-phosphonophenoxy}acetic acid</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugCentral" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GuidetoPHARMACOLOGY" id="2053">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GlyGen" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="glycosylation">1 site, 1 O-linked glycan (1 site)</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="iPTMnet" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PhosphoSitePlus" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SwissPalm" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BioMuta" id="LCK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DMDM" id="125474">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CPTAC" id="CPTAC-1775">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CPTAC" id="CPTAC-929">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="jPOST" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MassIVE" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PaxDb" id="9606-ENSP00000337825">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PeptideAtlas" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ProteomicsDB" id="51874" isoformId="P06239-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ProteomicsDB" id="51875" isoformId="P06239-2">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ProteomicsDB" id="51876" isoformId="P06239-3">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ABCD" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="antibodies">8 sequenced antibodies</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Antibodypedia" id="735">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="antibodies">1718 antibodies from 47 providers</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DNASU" id="3932">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Ensembl" id="ENST00000333070.4" isoformId="P06239-3">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000328213.4</lmp:Property>
+      <lmp:Property name="GeneId">ENSG00000182866.19</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Ensembl" id="ENST00000336890.10" isoformId="P06239-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000337825.5</lmp:Property>
+      <lmp:Property name="GeneId">ENSG00000182866.19</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneID" id="3932">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="KEGG" id="hsa:3932">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MANE-Select" id="ENST00000336890.10">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000337825.5</lmp:Property>
+      <lmp:Property name="RefSeqNucleotideId">NM_005356.5</lmp:Property>
+      <lmp:Property name="RefSeqProteinId">NP_005347.3</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="UCSC" id="uc001bux.3" isoformId="P06239-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="OrganismName">human</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="AGR" id="HGNC:6524">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ClinPGx" id="PA30307">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CTD" id="3932">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DisGeNET" id="3932">
+      <lmp:Property name="category">disease</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneCards" id="LCK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="HGNC" id="HGNC:6524">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GeneName">LCK</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="HPA" id="ENSG00000182866">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ExpressionPatterns">Tissue enriched (lymphoid)</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MalaCards" id="LCK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MIM" id="153390">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Type">gene</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MIM" id="615758">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Type">phenotype</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="OpenTargets" id="ENSG00000182866">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Orphanet" id="280142">
+      <lmp:Property name="category">disease</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Disease">Severe combined immunodeficiency due to LCK deficiency</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="VEuPathDB" id="HostDB:ENSG00000182866">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="eggNOG" id="KOG0197">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ToxonomicScope">Eukaryota</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneTree" id="ENSGT00940000161163">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="HOGENOM" id="CLU_000288_7_2_1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InParanoid" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="OMA" id="CSPMQDK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Fingerprint">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="OrthoDB" id="4062651at2759">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PAN-GO" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Number of GO annotations">7 GO annotations based on evolutionary models</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PhylomeDB" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BRENDA" id="2.7.10.2">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="OrganismId">2681</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PathwayCommons" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-114604">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">GPVI-mediated activation cascade</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-1257604">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">PIP3 activates AKT signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-1433557">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Signaling by SCF-KIT</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-1433559">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Regulation of KIT signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-164944">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Nef and signal transduction</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-167590">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Nef Mediated CD4 Down-regulation</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-202424">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Downstream TCR signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-202427">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Phosphorylation of CD3 and TCR zeta chains</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-202430">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Translocation of ZAP-70 to Immunological synapse</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-202433">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Generation of second messenger molecules</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-210990">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">PECAM1 interactions</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-2219530">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Constitutive Signaling by Aberrant PI3K in Cancer</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-2424491">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">DAP12 signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-389356">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Co-stimulation by CD28</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-389357">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">CD28 dependent PI3K/Akt signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-389359">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">CD28 dependent Vav1 pathway</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-389513">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Co-inhibition by CTLA4</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-389948">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Co-inhibition by PD-1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-6811558">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-9013407">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">RHOH GTPase cycle</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-9020558">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Interleukin-2 signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-9670439">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Signaling by phosphorylated juxtamembrane, extracellular and kinase domain KIT mutants</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-9706374">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">FLT3 signaling through SRC family kinases</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SignaLink" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SIGNOR" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Agora" id="ENSG00000182866">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NominatedTarget">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BioGRID-ORCS" id="3932">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="hits">24 hits in 1189 CRISPR screens</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CD-CODE" id="8C2F96ED">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Centrosome</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ChiTaRS" id="LCK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="OrganismName">human</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EvolutionaryTrace" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneWiki" id="Lck">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GenomeRNAi" id="3932">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pharos" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="DevelopmentLevel">Tclin</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PRO" id="PR:P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Proteomes" id="UP000005640">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Component">Chromosome 1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RNAct" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="moleculeType">protein</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Bgee" id="ENSG00000182866">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ExpressionPatterns">Expressed in thymus and 143 other cell types or tissues</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ExpressionAtlas" id="P06239">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ExpressionPatterns">baseline and differential</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005911">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:cell-cell junction</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005737">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:cytoplasm</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProt</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005829">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:cytosol</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:Reactome</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0070062">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:extracellular exosome</lmp:Property>
+      <lmp:Property name="GoEvidenceType">HDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0001772">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:immunological synapse</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:MGI</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0045121">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:membrane raft</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0000242">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:pericentriolar material</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005886">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:plasma membrane</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:BHF-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005524">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:ATP binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:UniProtKB-KW</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0051117">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:ATPase binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0042609">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:CD4 receptor binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0042610">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:CD8 receptor binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0042802">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:identical protein binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:IntAct</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0004715">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:non-membrane spanning protein tyrosine kinase activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:ARUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0043548">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:phosphatidylinositol 3-kinase binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0016004">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:phospholipase activator activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:ARUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0043274">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:phospholipase binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:ARUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0001784">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:phosphotyrosine residue binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:CAFA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1990405">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:protein antigen binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0019901">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:protein kinase binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0019903">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:protein phosphatase binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0004722">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:protein serine/threonine phosphatase activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0004713">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:protein tyrosine kinase activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0042169">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:SH2 domain binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005102">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:signaling receptor binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IBA:GO_Central</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0042608">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:T cell receptor binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:CAFA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0050853">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:B cell receptor signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IBA:GO_Central</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0160162">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:CD27 signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProt</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0007169">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:cell surface receptor protein tyrosine kinase signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IBA:GO_Central</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0038094">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:Fc-gamma receptor signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0042492">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:gamma-delta T cell differentiation</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0030097">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:hemopoiesis</lmp:Property>
+      <lmp:Property name="GoEvidenceType">NAS:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0035556">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:intracellular signal transduction</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:ARUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0050900">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:leukocyte migration</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:Reactome</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0030168">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:platelet activation</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:Reactome</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0045588">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of gamma-delta T cell differentiation</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0010628">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of gene expression</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0034116">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of heterotypic cell-cell adhesion</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:BHF-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:2001244">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of intrinsic apoptotic signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1903039">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of leukocyte cell-cell adhesion</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:BHF-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0050870">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of T cell activation</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0050862">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of T cell receptor signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">NAS:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0051249">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:regulation of lymphocyte activation</lmp:Property>
+      <lmp:Property name="GoEvidenceType">NAS:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0045589">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:regulation of regulatory T cell differentiation</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0051209">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:release of sequestered calcium ion into cytosol</lmp:Property>
+      <lmp:Property name="GoEvidenceType">ISS:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0009410">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:response to xenobiotic stimulus</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0042110">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:T cell activation</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProt</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0031295">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:T cell costimulation</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:Reactome</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0030217">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:T cell differentiation</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0050852">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:T cell receptor signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CDD" id="cd05067">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">PTKc_Lck_Blk</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CDD" id="cd10362">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH2_Src_Lck</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CDD" id="cd12005">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH3_Lck</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DisProt" id="DP01580">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunFam" id="1.10.510.10:FF:000553">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Tyrosine-protein kinase</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunFam" id="2.30.30.40:FF:000152">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Tyrosine-protein kinase</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunFam" id="3.30.200.20:FF:000036">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Tyrosine-protein kinase</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunFam" id="3.30.505.10:FF:000077">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Tyrosine-protein kinase Lck</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Gene3D" id="3.30.200.20">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Phosphorylase Kinase, domain 1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Gene3D" id="3.30.505.10">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH2 domain</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Gene3D" id="2.30.30.40">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH3 Domains</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Gene3D" id="1.10.510.10">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Transferase(Phosphotransferase) domain 1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR011009">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Kinase-like_dom_sf</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR035850">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Lck_SH2</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR035749">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Lck_SH3</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR050198">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Non-receptor_tyrosine_kinases</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR000719">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Prot_kinase_dom</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR017441">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Protein_kinase_ATP_BS</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR001245">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Ser-Thr/Tyr_kinase_cat_dom</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR000980">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH2</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR036860">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH2_dom_sf</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR036028">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH3-like_dom_sf</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR001452">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH3_domain</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR008266">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Tyr_kinase_AS</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR020635">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Tyr_kinase_cat_dom</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PANTHER" id="PTHR24418">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">TYROSINE-PROTEIN KINASE</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pfam" id="PF07714">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">PK_Tyr_Ser-Thr</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pfam" id="PF00017">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH2</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pfam" id="PF00018">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH3_1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PRINTS" id="PR00401">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH2DOMAIN</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PRINTS" id="PR00452">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH3DOMAIN</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PRINTS" id="PR00109">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">TYRKINASE</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SMART" id="SM00252">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH2</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SMART" id="SM00326">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH3</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SMART" id="SM00219">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">TyrKc</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SUPFAM" id="SSF56112">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Protein kinase-like (PK-like)</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SUPFAM" id="SSF55550">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH2 domain</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SUPFAM" id="SSF50044">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH3-domain</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PROSITE" id="PS00107">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">PROTEIN_KINASE_ATP</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PROSITE" id="PS50011">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">PROTEIN_KINASE_DOM</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PROSITE" id="PS00109">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">PROTEIN_KINASE_TYR</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PROSITE" id="PS50001">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH2</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PROSITE" id="PS50002">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SH3</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:Reference number="1">
+      <lmp:Citation>A human T cell-specific cDNA clone (YT16) encodes a protein with extensive homology to a family of protein-tyrosine kinases.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">3493153</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1002/eji.1830161229</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="2">
+      <lmp:Citation>Structure and expression of lck transcripts in human lymphoid cells.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">3265417</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1002/jcb.240380206</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="3">
+      <lmp:Citation>Structure of the human lck gene: differences in genomic organisation within src-related genes affect only N-terminal exons.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">2558056</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/0378-1119(89)90144-3</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="4">
+      <lmp:Citation>Oncogenic activation of the Lck protein accompanies translocation of the LCK gene in the human HSB2 T-cell leukemia.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">8139546</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/mcb.14.4.2429-2437.1994</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="5">
+      <lmp:Citation>An aberrant lck mRNA in two human T-cell lines.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">7495859</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/0167-4781(95)00162-a</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="6">
+      <lmp:Citation>No association between lck gene polymorphisms and protein level in type 1 diabetes.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">12401726</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.2337/diabetes.51.11.3326</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="7">
+      <lmp:Citation>The DNA sequence and biological annotation of human chromosome 1.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16710414</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/nature04727</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="8"/>
+    <lmp:Reference number="9">
+      <lmp:Citation>The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).</lmp:Citation>
+      <lmp:CitationXref name="PubMed">15489334</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1101/gr.2596504</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="10">
+      <lmp:Citation>Structure of the murine lck gene and its rearrangement in a murine lymphoma cell line.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">2850479</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/mcb.8.8.3058-3064.1988</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="11">
+      <lmp:Citation>Structure of the two promoters of the human lck gene: differential accumulation of two classes of lck transcripts in T cells.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">2787474</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/mcb.9.5.2173-2180.1989</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="12">
+      <lmp:Citation>Defective recruitment and activation of ZAP-70 in common variable immunodeficiency patients with T cell defects.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11009097</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1002/1521-4141(200009)30:9&lt;2632::aid-immu2632&gt;3.0.co;2-c</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="13">
+      <lmp:Citation>Expression of the lck tyrosine kinase gene in human colon carcinoma and other non-lymphoid human tumor cell lines.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">2835736</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="14">
+      <lmp:Citation>Human T lymphocytes express a protein-tyrosine kinase homologous to p56LSTRA.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">3489486</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/0167-4889(86)90228-4</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="15">
+      <lmp:Citation>The CD4 and CD8 antigens are coupled to a protein-tyrosine kinase (p56lck) that phosphorylates the CD3 complex.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">2470098</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1073/pnas.86.9.3277</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="16">
+      <lmp:Citation>The human p50csk tyrosine kinase phosphorylates p56lck at Tyr-505 and down regulates its catalytic activity.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">1639064</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1002/j.1460-2075.1992.tb05361.x</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="17">
+      <lmp:Citation>The SH3 domain of p56lck is involved in binding to phosphatidylinositol 3'-kinase from T lymphocytes.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">7504174</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/mcb.13.12.7408-7417.1993</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="18">
+      <lmp:Citation>p70 phosphorylation and binding to p56lck is an early event in interleukin-2-induced onset of cell cycle progression in T-lymphocytes.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">7852312</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.270.6.2506</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="19">
+      <lmp:Citation>Phosphotyrosine-independent binding of a 62-kDa protein to the src homology 2 (SH2) domain of p56lck and its regulation by phosphorylation of Ser-59 in the lck unique N-terminal region.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">8618896</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1073/pnas.92.26.12338</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="20">
+      <lmp:Citation>Detection of a physical and functional interaction between Csk and Lck which involves the SH2 domain of Csk and is mediated by autophosphorylation of Lck on tyrosine 394.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">8631775</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.271.13.7465</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="21">
+      <lmp:Citation>Human immunodeficiency virus type 1 Nef binds directly to LCK and mitogen-activated protein kinase, inhibiting kinase activity.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">8794306</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/jvi.70.10.6701-6708.1996</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="22">
+      <lmp:Citation>Intracellular signaling of the Ufo/Axl receptor tyrosine kinase is mediated mainly by a multi-substrate docking-site.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">9178760</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/sj.onc.1201123</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="23">
+      <lmp:Citation>Lck protein tyrosine kinase is a key regulator of T-cell activation and a target for signal intervention by Herpesvirus saimiri and other viral gene products.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">10848956</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1046/j.1432-1327.2000.01412.x</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="24">
+      <lmp:Citation>The oxygen-substituted palmitic acid analogue, 13-oxypalmitic acid, inhibits Lck localization to lipid rafts and T cell signaling.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">12007789</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/s0167-4889(02)00165-9</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="25">
+      <lmp:Citation>BY55/CD160 acts as a co-receptor in TCR signal transduction of a human circulating cytotoxic effector T lymphocyte subset lacking CD28 expression.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11978774</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1093/intimm/14.5.445</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="26">
+      <lmp:Citation>Fyn is essential for tyrosine phosphorylation of Csk-binding protein/phosphoprotein associated with glycolipid-enriched microdomains in lipid rafts in resting T cells.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">12218089</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.4049/jimmunol.169.6.2813</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="27">
+      <lmp:Citation>Cluster analysis of an extensive human breast cancer cell line protein expression map database.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11840567</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1002/1615-9861(200202)2:2&lt;212::aid-prot212&gt;3.0.co;2-h</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="28">
+      <lmp:Citation>LIME: a new membrane raft-associated adaptor protein involved in CD4 and CD8 coreceptor signaling.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">14610046</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1084/jem.20031484</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="29">
+      <lmp:Citation>LIME, a novel transmembrane adaptor protein, associates with p56lck and mediates T cell activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">14610044</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1084/jem.20030232</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="30">
+      <lmp:Citation>Interaction of SAP-1, a transmembrane-type protein-tyrosine phosphatase, with the tyrosine kinase Lck. Roles in regulation of T cell function.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">12837766</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m300648200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="31">
+      <lmp:Citation>Unc119, a novel activator of Lck/Fyn, is essential for T cell activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">14757743</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1084/jem.20030589</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="32">
+      <lmp:Citation>T cell activation-induced CrkII binding to the Zap70 protein tyrosine kinase is mediated by Lck-dependent phosphorylation of Zap70 tyrosine 315.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16339550</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.4049/jimmunol.175.12.8123</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="33">
+      <lmp:Citation>Immunoaffinity profiling of tyrosine phosphorylation in cancer cells.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">15592455</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/nbt1046</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="34">
+      <lmp:Citation>Identification of substrates of human protein-tyrosine phosphatase PTPN22.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16461343</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m600498200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="35">
+      <lmp:Citation>Regulation of Ly49D/DAP12 signal transduction by Src-family kinases and CD45.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16709819</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.4049/jimmunol.176.11.6615</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="36">
+      <lmp:Citation>Ephrin-A1 stimulates migration of CD8+CCR7+ T lymphocytes.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">17634955</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1002/eji.200737111</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="37">
+      <lmp:Citation>Carcinoembryonic antigen-related cell adhesion molecule 1 inhibits proximal TCR signaling by targeting ZAP-70.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18424730</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.4049/jimmunol.180.9.6085</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="38">
+      <lmp:Citation>Kinase-selective enrichment enables quantitative phosphoproteomics of the kinome across the cell cycle.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18691976</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.molcel.2008.07.007</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="39">
+      <lmp:Citation>Large-scale proteomics analysis of the human kinome.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">19369195</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/mcp.m800588-mcp200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="40">
+      <lmp:Citation>Quantitative phosphoproteomic analysis of T cell receptor signaling reveals system-wide modulation of protein-protein interactions.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">19690332</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1126/scisignal.2000007</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="41">
+      <lmp:Citation>Src kinase phosphorylates RUNX3 at tyrosine residues and localizes the protein in the cytoplasm.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">20100835</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m109.071381</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="42">
+      <lmp:Citation>The T cell receptor-mediated phosphorylation of Pyk2 tyrosines 402 and 580 occurs via a distinct mechanism than other receptor systems.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">20028775</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1189/jlb.0409227</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="43">
+      <lmp:Citation>RhoH modulates pre-TCR and TCR signalling by regulating LCK.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">20851766</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.cellsig.2010.09.009</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="44">
+      <lmp:Citation>T cell protein tyrosine phosphatase attenuates T cell signaling to maintain tolerance in mice.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">22080863</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1172/jci59492</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="45">
+      <lmp:Citation>DHHC2 is a protein S-acyltransferase for Lck.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">22034844</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.3109/09687688.2011.630682</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="46">
+      <lmp:Citation>Tyrosine phosphorylation of tau by the SRC family kinases lck and fyn.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21269457</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1186/1750-1326-6-12</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="47">
+      <lmp:Citation>Feedback circuits monitor and adjust Basal lck-dependent events in T cell receptor signaling.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21917715</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1126/scisignal.2001893</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="48">
+      <lmp:Citation>System-wide temporal characterization of the proteome and phosphoproteome of human embryonic stem cell differentiation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21406692</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1126/scisignal.2001570</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="49">
+      <lmp:Citation>Role of herpes simplex virus VP11/12 tyrosine-based motifs in binding and activation of the Src family kinase Lck and recruitment of p85, Grb2, and Shc.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">23946459</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/jvi.01702-13</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="50">
+      <lmp:Citation>The phosphatase JKAP/DUSP22 inhibits T-cell receptor signalling and autoimmunity by inactivating Lck.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">24714587</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/ncomms4618</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="51">
+      <lmp:Citation>ARAP, a novel adaptor protein, is required for TCR signaling and integrin-mediated adhesion.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">27335501</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.4049/jimmunol.1501913</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="52">
+      <lmp:Citation>The phosphatase DUSP22 inhibits UBR2-mediated K63-ubiquitination and activation of Lck downstream of TCR signalling.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">38225265</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/s41467-024-44843-w</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="53">
+      <lmp:Citation>ITPRIPL1 binds CD3epsilon to impede T cell activation and enable tumor immune evasion.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">38614099</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.cell.2024.03.019</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="54">
+      <lmp:Citation>Proximity between LAG-3 and the T cell receptor guides suppression of T cell activation and autoimmunity.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">40592325</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.cell.2025.06.004</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="55">
+      <lmp:Citation>Structure of the regulatory domains of the Src-family tyrosine kinase Lck.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">7512222</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/368764a0</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="56">
+      <lmp:Citation>The crystal structures of the SH2 domain of p56lck complexed with two phosphonopeptides suggest a gated peptide binding site.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">7532720</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1006/jmbi.1994.0089</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="57">
+      <lmp:Citation>Crystal structures of the human p56lck SH2 domain in complex with two short phosphotyrosyl peptides at 1.0-A and 1.8-A resolution.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">8604142</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1006/jmbi.1996.0112</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="58">
+      <lmp:Citation>Structural basis for activation of human lymphocyte kinase Lck upon tyrosine phosphorylation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">8945479</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/384484a0</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="59">
+      <lmp:Citation>Carboxymethyl-phenylalanine as a replacement for phosphotyrosine in SH2 domain binding.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">9685372</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.273.32.20238</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="60">
+      <lmp:Citation>Primary T-cell immunodeficiency with immunodysregulation caused by autosomal recessive LCK deficiency.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">22985903</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.jaci.2012.07.029</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1BHF" source="budo:LCK_HUMAN_v6" target="PDB:1BHF"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1BHH" source="budo:LCK_HUMAN_v6" target="PDB:1BHH"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1CWD" source="budo:LCK_HUMAN_v6" target="PDB:1CWD"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1CWE" source="budo:LCK_HUMAN_v6" target="PDB:1CWE"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1FBZ" source="budo:LCK_HUMAN_v6" target="PDB:1FBZ"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1H92" source="budo:LCK_HUMAN_v6" target="PDB:1H92"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1IJR" source="budo:LCK_HUMAN_v6" target="PDB:1IJR"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1KIK" source="budo:LCK_HUMAN_v6" target="PDB:1KIK"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1LCJ" source="budo:LCK_HUMAN_v6" target="PDB:1LCJ"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1LCK" source="budo:LCK_HUMAN_v6" target="PDB:1LCK"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1LKK" source="budo:LCK_HUMAN_v6" target="PDB:1LKK"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1LKL" source="budo:LCK_HUMAN_v6" target="PDB:1LKL"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1Q68" source="budo:LCK_HUMAN_v6" target="PDB:1Q68"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1Q69" source="budo:LCK_HUMAN_v6" target="PDB:1Q69"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1QPC" source="budo:LCK_HUMAN_v6" target="PDB:1QPC"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1QPD" source="budo:LCK_HUMAN_v6" target="PDB:1QPD"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1QPE" source="budo:LCK_HUMAN_v6" target="PDB:1QPE"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1QPJ" source="budo:LCK_HUMAN_v6" target="PDB:1QPJ"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="1X27" source="budo:LCK_HUMAN_v6" target="PDB:1X27"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2IIM" source="budo:LCK_HUMAN_v6" target="PDB:2IIM"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2OF2" source="budo:LCK_HUMAN_v6" target="PDB:2OF2"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2OF4" source="budo:LCK_HUMAN_v6" target="PDB:2OF4"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2OFU" source="budo:LCK_HUMAN_v6" target="PDB:2OFU"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2OFV" source="budo:LCK_HUMAN_v6" target="PDB:2OFV"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2OG8" source="budo:LCK_HUMAN_v6" target="PDB:2OG8"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2PL0" source="budo:LCK_HUMAN_v6" target="PDB:2PL0"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2ZM1" source="budo:LCK_HUMAN_v6" target="PDB:2ZM1"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2ZM4" source="budo:LCK_HUMAN_v6" target="PDB:2ZM4"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2ZYB" source="budo:LCK_HUMAN_v6" target="PDB:2ZYB"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3AC1" source="budo:LCK_HUMAN_v6" target="PDB:3AC1"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3AC2" source="budo:LCK_HUMAN_v6" target="PDB:3AC2"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3AC3" source="budo:LCK_HUMAN_v6" target="PDB:3AC3"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3AC4" source="budo:LCK_HUMAN_v6" target="PDB:3AC4"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3AC5" source="budo:LCK_HUMAN_v6" target="PDB:3AC5"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3AC8" source="budo:LCK_HUMAN_v6" target="PDB:3AC8"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3ACJ" source="budo:LCK_HUMAN_v6" target="PDB:3ACJ"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3ACK" source="budo:LCK_HUMAN_v6" target="PDB:3ACK"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3AD4" source="budo:LCK_HUMAN_v6" target="PDB:3AD4"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3AD5" source="budo:LCK_HUMAN_v6" target="PDB:3AD5"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3AD6" source="budo:LCK_HUMAN_v6" target="PDB:3AD6"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3B2W" source="budo:LCK_HUMAN_v6" target="PDB:3B2W"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3BRH" source="budo:LCK_HUMAN_v6" target="PDB:3BRH"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3BYM" source="budo:LCK_HUMAN_v6" target="PDB:3BYM"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3BYO" source="budo:LCK_HUMAN_v6" target="PDB:3BYO"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3BYS" source="budo:LCK_HUMAN_v6" target="PDB:3BYS"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3BYU" source="budo:LCK_HUMAN_v6" target="PDB:3BYU"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3KMM" source="budo:LCK_HUMAN_v6" target="PDB:3KMM"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3KXZ" source="budo:LCK_HUMAN_v6" target="PDB:3KXZ"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3LCK" source="budo:LCK_HUMAN_v6" target="PDB:3LCK"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3MPM" source="budo:LCK_HUMAN_v6" target="PDB:3MPM"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="4C3F" source="budo:LCK_HUMAN_v6" target="PDB:4C3F"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="4D8K" source="budo:LCK_HUMAN_v6" target="PDB:4D8K"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="5MTM" source="budo:LCK_HUMAN_v6" target="PDB:5MTM"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="5MTN" source="budo:LCK_HUMAN_v6" target="PDB:5MTN"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="6H6A" source="budo:LCK_HUMAN_v6" target="PDB:6H6A"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="6PDJ" source="budo:LCK_HUMAN_v6" target="PDB:6PDJ"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="8X2P" source="budo:LCK_HUMAN_v6" target="PDB:8X2P"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="ChEMBL" id="CHEMBL258" source="budo:LCK_HUMAN_v6" target="ChEMBL:CHEMBL258"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB08039" source="budo:LCK_HUMAN_v6" target="DrugBank:DB08039"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB03023" source="budo:LCK_HUMAN_v6" target="DrugBank:DB03023"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB07146" source="budo:LCK_HUMAN_v6" target="DrugBank:DB07146"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB06925" source="budo:LCK_HUMAN_v6" target="DrugBank:DB06925"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB07297" source="budo:LCK_HUMAN_v6" target="DrugBank:DB07297"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB01830" source="budo:LCK_HUMAN_v6" target="DrugBank:DB01830"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB03777" source="budo:LCK_HUMAN_v6" target="DrugBank:DB03777"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB12429" source="budo:LCK_HUMAN_v6" target="DrugBank:DB12429"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB01254" source="budo:LCK_HUMAN_v6" target="DrugBank:DB01254"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB12010" source="budo:LCK_HUMAN_v6" target="DrugBank:DB12010"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB17140" source="budo:LCK_HUMAN_v6" target="DrugBank:DB17140"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB16768" source="budo:LCK_HUMAN_v6" target="DrugBank:DB16768"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB08056" source="budo:LCK_HUMAN_v6" target="DrugBank:DB08056"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB08057" source="budo:LCK_HUMAN_v6" target="DrugBank:DB08057"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB08055" source="budo:LCK_HUMAN_v6" target="DrugBank:DB08055"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB09079" source="budo:LCK_HUMAN_v6" target="DrugBank:DB09079"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB08339" source="budo:LCK_HUMAN_v6" target="DrugBank:DB08339"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB17041" source="budo:LCK_HUMAN_v6" target="DrugBank:DB17041"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB02567" source="budo:LCK_HUMAN_v6" target="DrugBank:DB02567"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB04395" source="budo:LCK_HUMAN_v6" target="DrugBank:DB04395"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB08901" source="budo:LCK_HUMAN_v6" target="DrugBank:DB08901"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB02010" source="budo:LCK_HUMAN_v6" target="DrugBank:DB02010"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB04462" source="budo:LCK_HUMAN_v6" target="DrugBank:DB04462"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB15035" source="budo:LCK_HUMAN_v6" target="DrugBank:DB15035"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB16656" source="budo:LCK_HUMAN_v6" target="DrugBank:DB16656"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB04003" source="budo:LCK_HUMAN_v6" target="DrugBank:DB04003"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="KEGG" id="hsa:3932" source="budo:LCK_HUMAN_v6" target="KEGG:hsa:3932"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-114604" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-114604"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-1257604" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-1257604"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-1433557" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-1433557"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-1433559" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-1433559"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-164944" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-164944"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-167590" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-167590"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-202424" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-202424"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-202427" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-202427"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-202430" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-202430"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-202433" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-202433"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-210990" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-210990"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-2219530" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-2219530"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-2424491" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-2424491"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-389356" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-389356"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-389357" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-389357"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-389359" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-389359"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-389513" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-389513"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-389948" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-389948"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-6811558" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-6811558"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-9013407" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-9013407"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-9020558" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-9020558"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-9670439" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-9670439"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-9706374" source="budo:LCK_HUMAN_v6" target="Reactome:R-HSA-9706374"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005911" source="budo:LCK_HUMAN_v6" target="GO:GO:0005911"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005737" source="budo:LCK_HUMAN_v6" target="GO:GO:0005737"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005829" source="budo:LCK_HUMAN_v6" target="GO:GO:0005829"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0070062" source="budo:LCK_HUMAN_v6" target="GO:GO:0070062"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0001772" source="budo:LCK_HUMAN_v6" target="GO:GO:0001772"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0045121" source="budo:LCK_HUMAN_v6" target="GO:GO:0045121"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0000242" source="budo:LCK_HUMAN_v6" target="GO:GO:0000242"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005886" source="budo:LCK_HUMAN_v6" target="GO:GO:0005886"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005524" source="budo:LCK_HUMAN_v6" target="GO:GO:0005524"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0051117" source="budo:LCK_HUMAN_v6" target="GO:GO:0051117"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0042609" source="budo:LCK_HUMAN_v6" target="GO:GO:0042609"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0042610" source="budo:LCK_HUMAN_v6" target="GO:GO:0042610"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0042802" source="budo:LCK_HUMAN_v6" target="GO:GO:0042802"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0004715" source="budo:LCK_HUMAN_v6" target="GO:GO:0004715"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0043548" source="budo:LCK_HUMAN_v6" target="GO:GO:0043548"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0016004" source="budo:LCK_HUMAN_v6" target="GO:GO:0016004"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0043274" source="budo:LCK_HUMAN_v6" target="GO:GO:0043274"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0001784" source="budo:LCK_HUMAN_v6" target="GO:GO:0001784"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1990405" source="budo:LCK_HUMAN_v6" target="GO:GO:1990405"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0019901" source="budo:LCK_HUMAN_v6" target="GO:GO:0019901"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0019903" source="budo:LCK_HUMAN_v6" target="GO:GO:0019903"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0004722" source="budo:LCK_HUMAN_v6" target="GO:GO:0004722"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0004713" source="budo:LCK_HUMAN_v6" target="GO:GO:0004713"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0042169" source="budo:LCK_HUMAN_v6" target="GO:GO:0042169"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005102" source="budo:LCK_HUMAN_v6" target="GO:GO:0005102"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0042608" source="budo:LCK_HUMAN_v6" target="GO:GO:0042608"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0050853" source="budo:LCK_HUMAN_v6" target="GO:GO:0050853"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0160162" source="budo:LCK_HUMAN_v6" target="GO:GO:0160162"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0007169" source="budo:LCK_HUMAN_v6" target="GO:GO:0007169"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0038094" source="budo:LCK_HUMAN_v6" target="GO:GO:0038094"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0042492" source="budo:LCK_HUMAN_v6" target="GO:GO:0042492"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0030097" source="budo:LCK_HUMAN_v6" target="GO:GO:0030097"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0035556" source="budo:LCK_HUMAN_v6" target="GO:GO:0035556"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0050900" source="budo:LCK_HUMAN_v6" target="GO:GO:0050900"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0030168" source="budo:LCK_HUMAN_v6" target="GO:GO:0030168"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0045588" source="budo:LCK_HUMAN_v6" target="GO:GO:0045588"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0010628" source="budo:LCK_HUMAN_v6" target="GO:GO:0010628"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0034116" source="budo:LCK_HUMAN_v6" target="GO:GO:0034116"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:2001244" source="budo:LCK_HUMAN_v6" target="GO:GO:2001244"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1903039" source="budo:LCK_HUMAN_v6" target="GO:GO:1903039"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0050870" source="budo:LCK_HUMAN_v6" target="GO:GO:0050870"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0050862" source="budo:LCK_HUMAN_v6" target="GO:GO:0050862"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0051249" source="budo:LCK_HUMAN_v6" target="GO:GO:0051249"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0045589" source="budo:LCK_HUMAN_v6" target="GO:GO:0045589"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0051209" source="budo:LCK_HUMAN_v6" target="GO:GO:0051209"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0009410" source="budo:LCK_HUMAN_v6" target="GO:GO:0009410"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0042110" source="budo:LCK_HUMAN_v6" target="GO:GO:0042110"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0031295" source="budo:LCK_HUMAN_v6" target="GO:GO:0031295"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0030217" source="budo:LCK_HUMAN_v6" target="GO:GO:0030217"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0050852" source="budo:LCK_HUMAN_v6" target="GO:GO:0050852"/>
+  </lmp:KnowledgeGraph>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>6</lmp:SequenceVersion>
+      <lmp:EntryVersion>286</lmp:EntryVersion>
+      <lmp:FirstPublicDate>1988-01-01</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>2007-01-23</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>semantic</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:38:29.103094+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "P06239", "xref_total": 355, "xref_db_counts": {"PDB": 57, "PDBsum": 57, "GO": 50, "DrugBank": 26, "Reactome": 23, "EMBL": 18, "InterPro": 13, "PROSITE": 5, "FunFam": 4, "Gene3D": 4, "ProteomicsDB": 3, "CDD": 3, "Pfam": 3, "PRINTS": 3, "SMART": 3, "SUPFAM": 3, "RefSeq": 2, "CPTAC": 2, "Ensembl": 2, "MIM": 2, "CCDS": 1, "PIR": 1, "AlphaFoldDB": 1, "BMRB": 1, "SMR": 1}, "xref_examples": {"EMBL": ["X05027", "X13529", "M36881", "X14055", "X14053", "X14054", "U07236", "U23852"], "CCDS": ["CCDS359.1"], "PIR": ["JQ0152"], "RefSeq": ["NP_001036236.1", "NP_005347.3"], "PDB": ["1BHF", "1BHH", "1CWD", "1CWE", "1FBZ", "1H92", "1IJR", "1KIK"], "PDBsum": ["1BHF", "1BHH", "1CWD", "1CWE", "1FBZ", "1H92", "1IJR", "1KIK"], "AlphaFoldDB": ["P06239"], "BMRB": ["P06239"], "SMR": ["P06239"], "BioGRID": ["110124"], "CORUM": ["P06239"], "DIP": ["DIP-553N"], "ELM": ["P06239"], "FunCoup": ["P06239"], "IntAct": ["P06239"], "MINT": ["P06239"], "STRING": ["9606.ENSP00000477713"], "BindingDB": ["P06239"], "ChEMBL": ["CHEMBL258"], "DrugBank": ["DB08039", "DB03023", "DB07146", "DB06925", "DB07297", "DB01830", "DB03777", "DB12429"], "DrugCentral": ["P06239"], "GuidetoPHARMACOLOGY": ["2053"], "GlyGen": ["P06239"], "iPTMnet": ["P06239"], "PhosphoSitePlus": ["P06239"], "SwissPalm": ["P06239"], "BioMuta": ["LCK"], "DMDM": ["125474"], "CPTAC": ["CPTAC-1775", "CPTAC-929"], "jPOST": ["P06239"], "MassIVE": ["P06239"], "PaxDb": ["9606-ENSP00000337825"], "PeptideAtlas": ["P06239"], "ProteomicsDB": ["51874", "51875", "51876"], "ABCD": ["P06239"], "Antibodypedia": ["735"], "DNASU": ["3932"], "Ensembl": ["ENST00000333070.4", "ENST00000336890.10"], "GeneID": ["3932"], "KEGG": ["hsa:3932"], "MANE-Select": ["ENST00000336890.10"], "UCSC": ["uc001bux.3"], "AGR": ["HGNC:6524"], "ClinPGx": ["PA30307"], "CTD": ["3932"], "DisGeNET": ["3932"], "GeneCards": ["LCK"], "HGNC": ["HGNC:6524"], "HPA": ["ENSG00000182866"], "MalaCards": ["LCK"], "MIM": ["153390", "615758"], "OpenTargets": ["ENSG00000182866"], "Orphanet": ["280142"], "VEuPathDB": ["HostDB:ENSG00000182866"], "eggNOG": ["KOG0197"], "GeneTree": ["ENSGT00940000161163"], "HOGENOM": ["CLU_000288_7_2_1"], "InParanoid": ["P06239"], "OMA": ["CSPMQDK"], "OrthoDB": ["4062651at2759"], "PAN-GO": ["P06239"], "PhylomeDB": ["P06239"], "BRENDA": ["2.7.10.2"], "PathwayCommons": ["P06239"], "Reactome": ["R-HSA-114604", "R-HSA-1257604", "R-HSA-1433557", "R-HSA-1433559", "R-HSA-164944", "R-HSA-167590", "R-HSA-202424", "R-HSA-202427"], "SignaLink": ["P06239"], "SIGNOR": ["P06239"], "Agora": ["ENSG00000182866"], "BioGRID-ORCS": ["3932"], "CD-CODE": ["8C2F96ED"], "ChiTaRS": ["LCK"], "EvolutionaryTrace": ["P06239"], "GeneWiki": ["Lck"], "GenomeRNAi": ["3932"], "Pharos": ["P06239"], "PRO": ["PR:P06239"], "Proteomes": ["UP000005640"], "RNAct": ["P06239"], "Bgee": ["ENSG00000182866"], "ExpressionAtlas": ["P06239"], "GO": ["GO:0005911", "GO:0005737", "GO:0005829", "GO:0070062", "GO:0001772", "GO:0045121", "GO:0000242", "GO:0005886"], "CDD": ["cd05067", "cd10362", "cd12005"], "DisProt": ["DP01580"], "FunFam": ["1.10.510.10:FF:000553", "2.30.30.40:FF:000152", "3.30.200.20:FF:000036", "3.30.505.10:FF:000077"], "Gene3D": ["3.30.200.20", "3.30.505.10", "2.30.30.40", "1.10.510.10"], "InterPro": ["IPR011009", "IPR035850", "IPR035749", "IPR050198", "IPR000719", "IPR017441", "IPR001245", "IPR000980"], "PANTHER": ["PTHR24418"], "Pfam": ["PF07714", "PF00017", "PF00018"], "PRINTS": ["PR00401", "PR00452", "PR00109"], "SMART": ["SM00252", "SM00326", "SM00219"], "SUPFAM": ["SSF56112", "SSF55550", "SSF50044"], "PROSITE": ["PS00107", "PS50011", "PS00109", "PS50001", "PS50002"]}, "generated_at": "2026-02-25T00:38:29.103364"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

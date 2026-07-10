@@ -1,0 +1,13 @@
+{
+  "job_id": "job_o75157_fadad39c3b",
+  "entity": "O75157",
+  "status": "done",
+  "submitted_at": "2026-05-03T00:42:10.133340+00:00",
+  "completed_at": "2026-05-03T00:42:10.133340+00:00",
+  "provider": "simulated.compute.route",
+  "artifacts": [
+    ".mica/artifacts/job_o75157_fadad39c3b/trajectory.xtc",
+    ".mica/artifacts/job_o75157_fadad39c3b/topology.pdb",
+    ".mica/artifacts/job_o75157_fadad39c3b/summary.json"
+  ]
+}

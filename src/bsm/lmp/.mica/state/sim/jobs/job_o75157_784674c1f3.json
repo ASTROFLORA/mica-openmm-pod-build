@@ -1,0 +1,19 @@
+{
+  "job_id": "job_o75157_784674c1f3",
+  "entity": "O75157",
+  "status": "cancelled",
+  "submitted_at": "2026-05-03T01:44:32.112620+00:00",
+  "provider": "vast.ai",
+  "bridge": "unified_compute_client",
+  "unified_job_id": "job_o75157_784674c1f3",
+  "unified_provider": "vast",
+  "pdb_path": "C:\\Users\\busta\\Downloads\\MICA\\src\\bsm\\lmp\\.mica\\cache\\afdb\\O75157_model_v6.pdb",
+  "docker_image": "ghcr.io/mica-project/mica-openmm-pod:cuda12.4-openmm8.2",
+  "artifacts": [
+    ".mica/artifacts/job_o75157_784674c1f3/trajectory.xtc",
+    ".mica/artifacts/job_o75157_784674c1f3/topology.pdb",
+    ".mica/artifacts/job_o75157_784674c1f3/summary.json"
+  ],
+  "cancelled": true,
+  "cancelled_at": "2026-05-03T01:44:32.497274+00:00"
+}

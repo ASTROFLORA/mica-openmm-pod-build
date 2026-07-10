@@ -1,0 +1,20 @@
+{
+  "job_id": "job_q9h4a3_bfaf42aa65",
+  "entity": "Q9H4A3",
+  "status": "cancelled",
+  "submitted_at": "2026-05-03T01:05:21.703868+00:00",
+  "provider": "vast.ai",
+  "instance_id": "36040864",
+  "offer_id": "26118542",
+  "gpu_type": "GPUType.RTX_4090",
+  "price_per_hour": 0.2401851851851852,
+  "docker_image": "ghcr.io/mica-project/mica-openmm-pod:cuda12.4-openmm8.2",
+  "artifacts": [
+    ".mica/artifacts/job_q9h4a3_bfaf42aa65/trajectory.xtc",
+    ".mica/artifacts/job_q9h4a3_bfaf42aa65/topology.pdb",
+    ".mica/artifacts/job_q9h4a3_bfaf42aa65/summary.json"
+  ],
+  "status_checked_at": "2026-05-03T01:43:25.940589+00:00",
+  "teardown_destroyed": true,
+  "teardown_destroyed_at": "2026-05-03T01:45:04.021548+00:00"
+}

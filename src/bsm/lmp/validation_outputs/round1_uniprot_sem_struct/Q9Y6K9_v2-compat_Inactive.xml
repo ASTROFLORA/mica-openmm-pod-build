@@ -1,0 +1,145 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="v2-compat">
+  <lmp:Identity>
+    <lmp:BudoID>budo:NEMO_HUMAN_v2</lmp:BudoID>
+    <lmp:PrimaryAccession>Q9Y6K9</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>NEMO_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606">Homo sapiens</lmp:Organism>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>Q7LBY6</lmp:Value>
+      <lmp:Value>Q7Z7F1</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Semantics>
+    <lmp:ProteinName>NF-kappa-B essential modulator</lmp:ProteinName>
+    <lmp:Genes>
+      <lmp:Value>NEMO</lmp:Value>
+      <lmp:Value>IKBKG</lmp:Value>
+    </lmp:Genes>
+    <lmp:NeSyGrammar version="2.0" length="624">[DOM:Required for interaction with and ubiquitination by MARCHF2]MNRHLWKSQLCEMVQPSGGPAADQDVLGEESPLGKPAMLHLPS[/DOM][DOM:NF-kappa-B essential modulator NEMO, N-terminal (InterPro)]EQGAPETLQRCLEENQELRDAIRQSNQILRERCEELLHFQASQREEKEFLMCKFQEARKLVERLGLEK[/DOM]LDLKRQKEQALREVEH[DOM:Optineurin/NF-kappa-B Essential Modulator (InterPro)]LKRCQQQMAEDKASVKAQVTSLLGELQESQSRLEAATKECQALEGRARAASEQARQLESEREALQQQHSVQVDQLRMQGQSVEAALRMERQAASEEKRKLAQLQVAYHQLFQEYDNHIKSSVVGSERKRGMQLEDLKQQLQQAEEALVAKQEVIDKLKEEAEQHKIVMETVPVLKAQADIYKADFQAERQAREKLAEKKELLQEQLEQLQREYSKLKASCQESARIEDMRKRHVEVSQAPLPPAPAYLSSPLALPSQRRSPPEEPPDFCCPKCQYQAPDMDTLQIHVMECIE[/DOM]</lmp:NeSyGrammar>
+    <lmp:Comment type="FUNCTION">Regulatory subunit of the IKK core complex which phosphorylates inhibitors of NF-kappa-B thus leading to the dissociation of the inhibitor/NF-kappa-B complex and ultimately the degradation of the inhibitor (PubMed:14695475, PubMed:20724660, PubMed:21518757, PubMed:9751060). Its binding to scaffolding polyubiquitin plays a key role in IKK activation by multiple signaling receptor pathways (PubMed:16547522, PubMed:18287044, PubMed:19033441, PubMed:19185524, PubMed:21606507, PubMed:27777308, PubMed:33567255). Can recognize and bind both 'Lys-63'-linked and linear polyubiquitin upon cell stimulation, with a much higher affinity for linear polyubiquitin (PubMed:16547522, PubMed:18287044, PubMed:19033441, PubMed:19185524, PubMed:21606507, PubMed:27777308). Could be implicated in NF-kappa-B-mediated protection from cytokine toxicity. Essential for viral activation of IRF3 (PubMed:19854139). Involved in TLR3- and IFIH1-mediated antiviral innate response; this function requires 'Lys-27'-linked polyubiquitination (PubMed:20724660)</lmp:Comment>
+    <lmp:Comment type="FUNCTION">(Microbial infection) Also considered to be a mediator for HTLV-1 Tax oncoprotein activation of NF-kappa-B</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">Homodimer; disulfide-linked (PubMed:18164680). Component of the I-kappa-B-kinase (IKK) core complex consisting of CHUK, IKBKB and IKBKG; probably four alpha/CHUK-beta/IKBKB dimers are associated with four gamma/IKBKG subunits (PubMed:11080499, PubMed:17977820, PubMed:18462684, PubMed:32935379, PubMed:9751060, PubMed:9891086). The IKK core complex seems to associate with regulatory or adapter proteins to form a IKK-signalosome holo-complex (PubMed:11080499, PubMed:9751060, PubMed:9891086). The IKK complex associates with TERF2IP/RAP1, leading to promote IKK-mediated phosphorylation of RELA/p65 (By similarity). Part of a complex composed of NCOA2, NCOA3, CHUK/IKKA, IKBKB, IKBKG and CREBBP (PubMed:11971985). Interacts with COPS3, CYLD, NALP2, TRPC4AP and PIDD1 (PubMed:11418127, PubMed:12917691, PubMed:15456791, PubMed:16360037). Interacts with ATM; the complex is exported from the nucleus (PubMed:16497931). Interacts with TRAF6 (PubMed:17728323). Interacts with IKBKE (PubMed:23453969). Interacts with TANK; the interaction is enhanced by IKBKE and TBK1 (PubMed:12133833). Part of a ternary complex consisting of TANK, IKBKB and IKBKG (PubMed:12133833). Interacts with ZFAND5 (PubMed:14754897). Interacts with RIPK2 (PubMed:18079694). Interacts with TNIP1 and TNFAIP3; TNIP1 facilitates the TNFAIP3-mediated de-ubiquitination of IKBKG (PubMed:11389905, PubMed:22099304). Interacts with TNFAIP3; the interaction is induced by TNF stimulation and by polyubiquitin (PubMed:11389905, PubMed:22099304). Binds (via UBAN region) polyubiquitin; binds both 'Lys-63'-linked and linear polyubiquitin, with higher affinity for linear ubiquitin (PubMed:16547522, PubMed:19033441, PubMed:19185524, PubMed:21606507). Interacts with NLRP10 (PubMed:22672233). Interacts with TANK; this interaction increases in response to DNA damage (PubMed:25861989). Interacts with USP10; this interaction increases in response to DNA damage (PubMed:25861989). Interacts with ZC3H12A; this interaction increases in response to DNA damage (PubMed:25861989). Interacts with IFIT5; the interaction synergizes the recruitment of IKK to MAP3K7 and enhances IKK phosphorylation (PubMed:26334375). Interacts with TRIM29; this interaction induces IKBKG/NEMO ubiquitination and proteolytic degradation (PubMed:27695001). Interacts with TRIM13; this interaction leads to IKBKG/NEMO ubiquitination (PubMed:25152375). Interacts with ARFIP2 (PubMed:26296658). Interacts with RIPK1 (By similarity). Interacts with (ubiquitinated) BCL10; interaction with polyubiquitinated BCL10 via both 'Lys-63'-linked and linear ubiquitin is required for TCR-induced NF-kappa-B activation (PubMed:18287044, PubMed:27777308). Interacts with MARCHF2; during the late stages of macrophage viral and bacterial infection; the interaction leads to ubiquitination and degradation of IKBKG/NEMO (PubMed:32935379)</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with Molluscum contagiosum virus protein MC005; this interaction inhibits NF-kappa-B activation</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with HTLV-1 Tax oncoprotein; the interaction activates IKBKG</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with Shigella flexneri ipah9.8; the interaction promotes TNIP1-dependent 'Lys-27'-linked polyubiquitination of IKBKG which perturbs NF-kappa-B activation during bacterial infection</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with SARS coronavirus-2/SARS-CoV-2 virus protein ORF9B (via N-terminus); the interaction inhibits polyubiquitination through 'Lys-63' and NF-kappa-B activation</lmp:Comment>
+    <lmp:Comment type="TISSUE SPECIFICITY">Heart, brain, placenta, lung, liver, skeletal muscle, kidney and pancreas</lmp:Comment>
+    <lmp:Comment type="DOMAIN">The leucine-zipper domain and the CCHC NOA-type zinc-fingers constitute the UBAN region and are essential for polyubiquitin binding and for the activation of IRF3</lmp:Comment>
+    <lmp:Comment type="PTM">Phosphorylation at Ser-68 attenuates aminoterminal homodimerization</lmp:Comment>
+    <lmp:Comment type="PTM">Polyubiquitinated on Lys-285 via 'Lys-63'-linked ubiquitin; the ubiquitination is mediated downstream of NOD2 and RIPK2 and probably plays a role in signaling by facilitating interactions with ubiquitin domain-containing proteins and activates the NF-kappa-B pathway (PubMed:15620648, PubMed:17562858, PubMed:19136968). Polyubiquitinated on Lys-285 and Lys-399 through 'Lys-63'-linked ubiquitin; the ubiquitination is mediated by BCL10, MALT1 and TRAF6 and probably plays a role in signaling by facilitating interactions with ubiquitin domain-containing proteins and activates the NF-kappa-B pathway (PubMed:14695475, PubMed:17562858, PubMed:19136968). Monoubiquitinated on Lys-277 and Lys-309; promotes nuclear export (PubMed:14651848). Polyubiquitinated through 'Lys-27' by TRIM23; involved in antiviral innate and inflammatory responses (PubMed:20724660). Linear polyubiquitinated on Lys-111, Lys-143, Lys-226, Lys-246, Lys-264, Lys-277, Lys-285, Lys-292, Lys-302, Lys-309 and Lys-326; the head-to-tail polyubiquitination is mediated by the LUBAC complex and plays a key role in NF-kappa-B activation (PubMed:21455181). Deubiquitinated by USP10 in a TANK-dependent and -independent manner, leading to the negative regulation of NF-kappa-B signaling upon DNA damage (PubMed:25861989). Ubiquitinated at Lys-326 by MARCHF2 following bacterial and viral infection which leads to its degradation (PubMed:32935379). Polyubiquitinated via 'Lys-29'-linked ubiquitin; leading to lysosomal degradation (PubMed:21518757)</lmp:Comment>
+    <lmp:Comment type="PTM">Sumoylated on Lys-277 and Lys-309 with SUMO1; the modification results in phosphorylation of Ser-85 by ATM leading to a replacement of the sumoylation by mono-ubiquitination on these residues</lmp:Comment>
+    <lmp:Comment type="PTM">Neddylated by TRIM40, resulting in stabilization of NFKBIA and down-regulation of NF-kappa-B activity</lmp:Comment>
+    <lmp:Comment type="PTM">(Microbial infection) Cleaved by hepatitis A virus (HAV) protease 3C allowing the virus to disrupt the host innate immune signaling</lmp:Comment>
+    <lmp:Comment type="PTM">(Microbial infection) Deubiquitinated by Epstein-Barr virus BPLF1 on both 'Lys-48' and 'Lys-63'-linked ubiquitin chains; leading to NF-kappa-B signaling inhibition</lmp:Comment>
+    <lmp:Comment type="PTM">(Microbial infection) Polyubiquitinated on Lys-309 and Lys-321 via 'Lys-27'-linked ubiquitin by Shigella flexneri E3 ubiquitin-protein ligase ipah9.8, leading to its degradation by the proteasome</lmp:Comment>
+    <lmp:Comment type="PTM">(Microbial infection) Polyubiquitination through 'Lys-63' is interrupted by interaction with SARS coronavirus-2/SARS-CoV-2 virus protein ORF9B which inhibits the NF-kappa-B pathway</lmp:Comment>
+  </lmp:Semantics>
+  <lmp:Geometry>
+    <lmp:Sequence length="419">MNRHLWKSQLCEMVQPSGGPAADQDVLGEESPLGKPAMLHLPSEQGAPETLQRCLEENQELRDAIRQSNQILRERCEELLHFQASQREEKEFLMCKFQEARKLVERLGLEKLDLKRQKEQALREVEHLKRCQQQMAEDKASVKAQVTSLLGELQESQSRLEAATKECQALEGRARAASEQARQLESEREALQQQHSVQVDQLRMQGQSVEAALRMERQAASEEKRKLAQLQVAYHQLFQEYDNHIKSSVVGSERKRGMQLEDLKQQLQQAEEALVAKQEVIDKLKEEAEQHKIVMETVPVLKAQADIYKADFQAERQAREKLAEKKELLQEQLEQLQREYSKLKASCQESARIEDMRKRHVEVSQAPLPPAPAYLSSPLALPSQRRSPPEEPPDFCCPKCQYQAPDMDTLQIHVMECIE</lmp:Sequence>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3BRV chain=A res_start=9 res_end=32 len=24"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3BRV chain=C res_start=8 res_end=34 len=27"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3BRV chain=B res_start=9 res_end=67 len=59"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3BRV chain=D res_start=9 res_end=67 len=59"/>
+    <lmp:Feature type="pdb:cell" description="pdb=3BRV a=44.82 b=50.67 c=102.79 alpha=90.0 beta=90.0 gamma=90.0"/>
+    <lmp:Feature type="pdb:resolution" description="pdb=3BRV resolution=2.2"/>
+    <lmp:Feature type="pdb:citation" description="pdb=3BRV doi=10.1016/j.str.2008.02.012 pmid=18462684 title=Structure of a NEMO/IKK-Associating Domain Reveals Architecture of the Interaction Site."/>
+    <lmp:Feature type="geometry:com" description="pdb=3BRV chain=A x=-6.98 y=0.257 z=9.894"/>
+    <lmp:Feature type="geometry:rg" description="pdb=3BRV chain=A rg=19.508"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=3BRV chain=A min=[-29.947, -15.768, -12.831] max=[20.294, 13.997, 33.606]"/>
+    <lmp:Feature type="geometry:com" description="pdb=3BRV chain=B x=-8.852 y=-7.768 z=5.874"/>
+    <lmp:Feature type="geometry:rg" description="pdb=3BRV chain=B rg=25.843"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=3BRV chain=B min=[-48.356, -23.913, -16.398] max=[32.176, 8.646, 32.262]"/>
+    <lmp:Feature type="geometry:com" description="pdb=3BRV chain=C x=-3.65 y=-13.377 z=8.856"/>
+    <lmp:Feature type="geometry:rg" description="pdb=3BRV chain=C rg=20.406"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=3BRV chain=C min=[-35.869, -29.184, -1.52] max=[29.107, 4.039, 18.023]"/>
+    <lmp:Feature type="geometry:com" description="pdb=3BRV chain=D x=-4.885 y=-7.157 z=14.431"/>
+    <lmp:Feature type="geometry:rg" description="pdb=3BRV chain=D rg=26.772"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=3BRV chain=D min=[-43.231, -33.005, -11.121] max=[31.832, 18.51, 29.905]"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=3BRV chain_a=A chain_b=B com_distance=9.169"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=3BRV chain_a=A chain_b=C com_distance=14.073"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=3BRV chain_a=A chain_b=D com_distance=8.941"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=3BRV chain_a=B chain_b=C com_distance=8.211"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=3BRV chain_a=B chain_b=D com_distance=9.452"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=3BRV chain_a=C chain_b=D com_distance=8.444"/>
+    <lmp:Chain id="A" sequence="[DOM:Required for interaction with and ubiquitination by MARCHF2]MNRHLWKSQLCEMVQPSGGPAADQDVLGEESPLGKPAMLHLPS[/DOM][DOM:NF-kappa-B essential modulator NEMO, N-terminal (InterPro)]EQGAPETLQRCLEENQELRDAIRQSNQILRERCEELLHFQASQREEKEFLMCKFQEARKLVERLGLEK[/DOM]LDLKRQKEQALREVEH[DOM:Optineurin/NF-kappa-B Essential Modulator (InterPro)]LKRCQQQMAEDKASVKAQVTSLLGELQESQSRLEAATKECQALEGRARAASEQARQLESEREALQQQHSVQVDQLRMQGQSVEAALRMERQAASEEKRKLAQLQVAYHQLFQEYDNHIKSSVVGSERKRGMQLEDLKQQLQQAEEALVAKQEVIDKLKEEAEQHKIVMETVPVLKAQADIYKADFQAERQAREKLAEKKELLQEQLEQLQREYSKLKASCQESARIEDMRKRHVEVSQAPLPPAPAYLSSPLALPSQRRSPPEEPPDFCCPKCQYQAPDMDTLQIHVMECIE[/DOM]" state="Inactive">
+      <lmp:Domain name="CCHC NOA-type" type="zinc finger" start="389" end="419"/>
+      <lmp:Domain name="Required for interaction with and ubiquitination by MARCHF2" type="region" start="1" end="197"/>
+      <lmp:Domain name="Interaction with CHUK/IKBKB" type="region" start="44" end="111"/>
+      <lmp:Domain name="Interaction with TANK" type="region" start="150" end="257"/>
+      <lmp:Domain name="Ubiquitin-binding (UBAN)" type="region" start="242" end="350"/>
+      <lmp:Domain name="Self-association" type="region" start="246" end="365"/>
+      <lmp:Domain name="Required for interaction with TNFAIP3" type="region" start="251" end="419"/>
+      <lmp:Domain name="Leucine-zipper" type="region" start="322" end="343"/>
+      <lmp:Domain name="Disordered" type="region" start="358" end="395"/>
+      <lmp:Domain name="Interaction with CYLD" type="region" start="382" end="419"/>
+      <lmp:Domain name="Domain" type="coiled coil" start="49" end="356"/>
+      <lmp:Domain name="Low complexity" type="compositional bias" start="373" end="386"/>
+      <lmp:Domain name="NF-kappa-B essential modulator NEMO, N-terminal (InterPro)" type="domain" start="44" end="111" interpro_id="IPR021063"/>
+      <lmp:Domain name="NF-kappa-B essential modulator NEMO, CC2-LZ domain (InterPro)" type="domain" start="257" end="344" interpro_id="IPR032419"/>
+      <lmp:Domain name="NEMO, Zinc finger (InterPro)" type="domain" start="389" end="419" interpro_id="IPR034735"/>
+      <lmp:Domain name="Optineurin/NF-kappa-B Essential Modulator (InterPro)" type="family" start="128" end="419" interpro_id="IPR051301"/>
+      <lmp:Domain name="GlobalFeatures" type="global" start="1" end="419">
+        <lmp:PTM id="ptm_31" type="phosphorylation" residue="S" position="31" status="absent"/>
+        <lmp:PTM id="ptm_43" type="phosphorylation" residue="S" position="43" status="absent"/>
+        <lmp:PTM id="ptm_68" type="phosphorylation" residue="S" position="68" status="absent"/>
+        <lmp:PTM id="ptm_85" type="phosphorylation" residue="S" position="85" status="absent"/>
+        <lmp:PTM id="ptm_376" type="phosphorylation" residue="S" position="376" status="absent"/>
+        <lmp:PTM id="ptm_387" type="phosphorylation" residue="S" position="387" status="absent"/>
+        <lmp:PTM id="ptm_111" type="ubiquitination" residue="K" position="111" status="absent"/>
+        <lmp:PTM id="ptm_139" type="ubiquitination" residue="K" position="139" status="absent"/>
+        <lmp:PTM id="ptm_143" type="ubiquitination" residue="K" position="143" status="absent"/>
+        <lmp:PTM id="ptm_226" type="ubiquitination" residue="K" position="226" status="absent"/>
+        <lmp:PTM id="ptm_246" type="ubiquitination" residue="K" position="246" status="absent"/>
+        <lmp:PTM id="ptm_264" type="ubiquitination" residue="K" position="264" status="absent"/>
+        <lmp:PTM id="ptm_277" type="sumoylation" residue="K" position="277" status="absent"/>
+        <lmp:PTM id="ptm_283" type="ubiquitination" residue="K" position="283" status="absent"/>
+        <lmp:PTM id="ptm_285" type="ubiquitination" residue="K" position="285" status="absent"/>
+        <lmp:PTM id="ptm_292" type="ubiquitination" residue="K" position="292" status="absent"/>
+        <lmp:PTM id="ptm_302" type="ubiquitination" residue="K" position="302" status="absent"/>
+        <lmp:PTM id="ptm_309" type="sumoylation" residue="K" position="309" status="absent"/>
+        <lmp:PTM id="ptm_321" type="ubiquitination" residue="K" position="321" status="absent"/>
+        <lmp:PTM id="ptm_325" type="ubiquitination" residue="K" position="325" status="absent"/>
+        <lmp:PTM id="ptm_326" type="ubiquitination" residue="K" position="326" status="absent"/>
+        <lmp:PTM id="ptm_399" type="ubiquitination" residue="K" position="399" status="absent"/>
+        <lmp:BindingSite type="ZN(2+)-binding" residues="397,400,413,417">
+          <lmp:Ligand name="ZN(2+)" type="substrate" effect="catalysis" id="lig_ZN_2"/>
+        </lmp:BindingSite>
+      </lmp:Domain>
+    </lmp:Chain>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>2</lmp:SequenceVersion>
+      <lmp:EntryVersion>250</lmp:EntryVersion>
+      <lmp:FirstPublicDate>2000-05-30</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>2000-05-30</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>v2-compat</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:39:03.004175+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "Q9Y6K9", "xref_total": 235, "xref_db_counts": {"GO": 42, "Reactome": 32, "PDB": 17, "PDBsum": 17, "EMBL": 13, "RefSeq": 7, "Ensembl": 7, "MIM": 5, "Orphanet": 4, "InterPro": 4, "CCDS": 3, "ProteomicsDB": 3, "FunFam": 3, "Pfam": 3, "DrugBank": 2, "CPTAC": 2, "Gene3D": 2, "PANTHER": 2, "AlphaFoldDB": 1, "BMRB": 1, "SMR": 1, "BioGRID": 1, "ComplexPortal": 1, "CORUM": 1, "DIP": 1}, "xref_examples": {"EMBL": ["AF062089", "AF091453", "AF074382", "AJ271718", "AF261086", "AY114157", "AK000593", "BT019621"], "CCDS": ["CCDS14757.1", "CCDS48196.1", "CCDS48197.1"], "RefSeq": ["NP_001093326.2", "NP_001093327.1", "NP_001138727.1", "NP_001308325.1", "NP_001308326.1", "NP_001364241.1", "NP_003630.1"], "PDB": ["2JVX", "2JVY", "3BRT", "3BRV", "3CL3", "3FX0", "4BWN", "5AAY"], "PDBsum": ["2JVX", "2JVY", "3BRT", "3BRV", "3CL3", "3FX0", "4BWN", "5AAY"], "AlphaFoldDB": ["Q9Y6K9"], "BMRB": ["Q9Y6K9"], "SMR": ["Q9Y6K9"], "BioGRID": ["114089"], "ComplexPortal": ["CPX-3269"], "CORUM": ["Q9Y6K9"], "DIP": ["DIP-27528N"], "FunCoup": ["Q9Y6K9"], "MINT": ["Q9Y6K9"], "STRING": ["9606.ENSP00000483825"], "BindingDB": ["Q9Y6K9"], "ChEMBL": ["CHEMBL4967"], "DrugBank": ["DB04998", "DB05289"], "MoonDB": ["Q9Y6K9"], "GlyGen": ["Q9Y6K9"], "iPTMnet": ["Q9Y6K9"], "PhosphoSitePlus": ["Q9Y6K9"], "BioMuta": ["IKBKG"], "DMDM": ["6685695"], "CPTAC": ["CPTAC-1044", "CPTAC-806"], "jPOST": ["Q9Y6K9"], "MassIVE": ["Q9Y6K9"], "PaxDb": ["9606-ENSP00000483825"], "PeptideAtlas": ["Q9Y6K9"], "ProteomicsDB": ["86716", "86717", "86718"], "Pumba": ["Q9Y6K9"], "Antibodypedia": ["73338"], "DNASU": ["8517"], "Ensembl": ["ENST00000422680.6", "ENST00000440286.6", "ENST00000445622.6", "ENST00000594239.6", "ENST00000611071.4", "ENST00000611176.4", "ENST00000618670.4"], "GeneID": ["8517"], "KEGG": ["hsa:8517"], "MANE-Select": ["ENST00000594239.6"], "UCSC": ["uc033fbu.1"], "AGR": ["HGNC:5961"], "ClinPGx": ["PA29777"], "CTD": ["8517"], "DisGeNET": ["8517"], "GeneCards": ["IKBKG"], "GeneReviews": ["IKBKG"], "HGNC": ["HGNC:5961"], "HPA": ["ENSG00000269335"], "MalaCards": ["IKBKG"], "MIM": ["300248", "300291", "300636", "301081", "308300"], "OpenTargets": ["ENSG00000269335"], "Orphanet": ["98813", "69088", "464", "699605"], "VEuPathDB": ["HostDB:ENSG00000269335"], "eggNOG": ["ENOG502R4ZD"], "GeneTree": ["ENSGT00530000063808"], "InParanoid": ["Q9Y6K9"], "OMA": ["VAMRKNF"], "OrthoDB": ["6343844at2759"], "PAN-GO": ["Q9Y6K9"], "PhylomeDB": ["Q9Y6K9"], "PathwayCommons": ["Q9Y6K9"], "Reactome": ["R-HSA-1169091", "R-HSA-1236974", "R-HSA-168638", "R-HSA-168927", "R-HSA-1810476", "R-HSA-202424", "R-HSA-2871837", "R-HSA-445989"], "SABIO-RK": ["Q9Y6K9"], "SignaLink": ["Q9Y6K9"], "SIGNOR": ["Q9Y6K9"], "Agora": ["ENSG00000269335"], "BioGRID-ORCS": ["8517"], "CD-CODE": ["8C2F96ED"], "ChiTaRS": ["IKBKG"], "EvolutionaryTrace": ["Q9Y6K9"], "GeneWiki": ["IKBKG"], "GenomeRNAi": ["8517"], "Pharos": ["Q9Y6K9"], "PRO": ["PR:Q9Y6K9"], "Proteomes": ["UP000005640"], "RNAct": ["Q9Y6K9"], "Bgee": ["ENSG00000269335"], "ExpressionAtlas": ["Q9Y6K9"], "GO": ["GO:0005737", "GO:0005829", "GO:0008385", "GO:0072686", "GO:0005654", "GO:0005634", "GO:0032991", "GO:0000922"], "DisProt": ["DP02269"], "FunFam": ["1.20.5.390:FF:000002", "1.20.5.390:FF:000003", "1.20.5.990:FF:000003"], "Gene3D": ["1.20.5.390", "1.20.5.990"], "IDEAL": ["IID00745"], "InterPro": ["IPR032419", "IPR021063", "IPR034735", "IPR051301"], "PANTHER": ["PTHR31553", "PTHR31553:SF3"], "Pfam": ["PF16516", "PF11577", "PF18414"], "PROSITE": ["PS51801"]}, "generated_at": "2026-02-25T00:39:03.004455"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

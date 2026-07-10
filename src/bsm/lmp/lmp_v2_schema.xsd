@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://ai-university.edu/lmp/v2.0"
+           xmlns:lmp="http://ai-university.edu/lmp/v2.0"
+           elementFormDefault="qualified">
+
+  <!-- ================================================================ -->
+  <!-- ROOT ELEMENT: PML_Protein                                        -->
+  <!-- ================================================================ -->
+  
+  <xs:element name="PML_Protein">
+    <xs:annotation>
+      <xs:documentation>
+        Root element representing a protein in a specific functional state.
+        Multiple PML_Protein documents can exist for the same protein,
+        each representing a different conformational/functional state.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Metadata" type="lmp:MetadataType" minOccurs="0"/>
+        <xs:element name="Chain" type="lmp:ChainType" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="uniprot_id" type="xs:string" use="required"/>
+      <xs:attribute name="gene_name" type="xs:string" use="required"/>
+      <xs:attribute name="organism" type="xs:string" default="Unknown"/>
+      <xs:attribute name="state" type="xs:string" use="optional">
+        <xs:annotation>
+          <xs:documentation>
+            Functional state represented by this document (e.g., "Active", "Inactive", "Apo").
+          </xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="version" type="xs:string" default="2.0"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ================================================================ -->
+  <!-- COMPLEX TYPES                                                    -->
+  <!-- ================================================================ -->
+
+  <xs:complexType name="MetadataType">
+    <xs:sequence>
+      <xs:element name="Source" type="lmp:SourceType" maxOccurs="unbounded"/>
+      <xs:element name="Annotation" type="lmp:AnnotationType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SourceType">
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="UniProt"/>
+          <xs:enumeration value="PDB"/>
+          <xs:enumeration value="PhosphoSitePlus"/>
+          <xs:enumeration value="M-CSA"/>
+          <xs:enumeration value="manual_curation"/>
+          <xs:enumeration value="computational_prediction"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="ref" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          Reference ID (e.g., UniProt accession, PDB ID, DOI, etc.)
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="date" type="xs:date" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="AnnotationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="type" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="ChainType">
+    <xs:sequence>
+      <xs:element name="Domain" type="lmp:DomainType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Interface" type="lmp:InterfaceType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+    <xs:attribute name="sequence" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          Amino acid sequence in one-letter code (e.g., "MAEGEITTFTALTEKFNLPPGNYKKPKLLYCSNGGHFLRILPDGTVDGTRDRSDQHIQLQLSAESVGEVYIKSTETGQYLAMDTSGLLYGSQTPSEECLFLERLEENHYNTYISKKHAEKNWFVGLKKNGSCKRGPRTHYGQKAILFLPLPVSSDFLTRVS")
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="DomainType">
+    <xs:sequence>
+      <xs:element name="Motif" type="lmp:MotifType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="PTM" type="lmp:PTMType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="BindingSite" type="lmp:BindingSiteType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Conformation" type="lmp:ConformationType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="type" type="xs:string" use="optional"/>
+    <xs:attribute name="start" type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="end" type="xs:positiveInteger" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="MotifType">
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="start" type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="end" type="xs:positiveInteger" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="PTMType">
+    <xs:attribute name="id" type="xs:ID" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          Unique identifier for this PTM (e.g., "pY416", "acK295").
+          Used as reference target for causal triggers.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="phosphorylation"/>
+          <xs:enumeration value="acetylation"/>
+          <xs:enumeration value="ubiquitination"/>
+          <xs:enumeration value="methylation"/>
+          <xs:enumeration value="sumoylation"/>
+          <xs:enumeration value="glycosylation"/>
+          <xs:enumeration value="hydroxylation"/>
+          <xs:enumeration value="nitrosylation"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="residue" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[ACDEFGHIKLMNPQRSTVWY]"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="position" type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="status" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="present"/>
+          <xs:enumeration value="absent"/>
+          <xs:enumeration value="transient"/>
+          <xs:enumeration value="unknown"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="evidence" type="xs:string" use="optional"/>
+    <xs:attribute name="causal_trigger" type="xs:IDREF" use="optional">
+      <xs:annotation>
+        <xs:documentation>
+          Reference to another PTM or Ligand that triggers this PTM.
+          Enables causal chain modeling (PTM1 → PTM2 → PTM3).
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="BindingSiteType">
+    <xs:sequence>
+      <xs:element name="Ligand" type="lmp:LigandType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="type" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          Type of binding site (e.g., "ATP-binding", "substrate-binding", "catalytic", "allosteric")
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="residues" type="lmp:ResidueListType" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          Comma-separated list of residue positions (e.g., "57,102,195")
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="LigandType">
+    <xs:attribute name="id" type="xs:ID" use="optional"/>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="agonist"/>
+          <xs:enumeration value="antagonist"/>
+          <xs:enumeration value="substrate"/>
+          <xs:enumeration value="inhibitor"/>
+          <xs:enumeration value="cofactor"/>
+          <xs:enumeration value="allosteric_modulator"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="effect" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="activation"/>
+          <xs:enumeration value="inhibition"/>
+          <xs:enumeration value="catalysis"/>
+          <xs:enumeration value="allosteric_modulation"/>
+          <xs:enumeration value="stabilization"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="ConformationType">
+    <xs:sequence>
+      <xs:element name="FeatureState" type="lmp:FeatureStateType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="state_name" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          Name of conformational state (e.g., "Active", "Inactive", "Autoinhibited", "Open", "Closed")
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="trigger" type="xs:IDREF" use="optional">
+      <xs:annotation>
+        <xs:documentation>
+          Reference to PTM or Ligand ID that triggers this conformation.
+          Enables causal modeling (PTM → Conformation → Function).
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="ese_signature" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>
+          Link to ESE (Embedding Situacional de Estadísticas) signature from MD simulations.
+          Format: "ese_{protein_id}_{state_name}_{trajectory_id}"
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="confidence" use="optional" default="medium">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="high"/>
+          <xs:enumeration value="medium"/>
+          <xs:enumeration value="low"/>
+          <xs:enumeration value="predicted"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="FeatureStateType">
+    <xs:attribute name="feature_name" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          Name of structural feature (e.g., "ActivationLoop", "ATP_BindingSite", "TransmembraneHelix6")
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="state" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          State of the feature (e.g., "Substrate-accessible", "Blocked", "Outward", "Inward")
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="InterfaceType">
+    <xs:attribute name="partner_protein" type="xs:string" use="required">
+      <xs:annotation>
+        <xs:documentation>
+          UniProt ID of partner protein (for protein-protein interfaces)
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="partner_chain" type="xs:string" use="optional"/>
+    <xs:attribute name="interface_residues" type="lmp:ResidueListType" use="required"/>
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="heterodimer"/>
+          <xs:enumeration value="homodimer"/>
+          <xs:enumeration value="intramolecular"/>
+          <xs:enumeration value="protein-protein"/>
+          <xs:enumeration value="protein-ligand"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <!-- ================================================================ -->
+  <!-- SIMPLE TYPES                                                     -->
+  <!-- ================================================================ -->
+
+  <xs:simpleType name="ResidueListType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d+(,\d+)*"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

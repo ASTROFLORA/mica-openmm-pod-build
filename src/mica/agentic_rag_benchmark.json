@@ -1,0 +1,60 @@
+{
+  "benchmark_id": "BIOLOGICAL_RAG_93f4199f",
+  "timestamp": "2025-09-21T18:48:18.303750",
+  "queries_tested": 5,
+  "results": [
+    {
+      "query_index": 1,
+      "query": "Explica la interacci\u00f3n de p53 con sus partners moleculares",
+      "processing_time_seconds": 0.503355,
+      "workers_assigned": [
+        "dynamo"
+      ],
+      "status": "SUCCESS",
+      "rag_enabled": false
+    },
+    {
+      "query_index": 2,
+      "query": "\u00bfQu\u00e9 prote\u00ednas tienen secuencias similares a la hemoglobina P69905?",
+      "processing_time_seconds": 0.503981,
+      "workers_assigned": [
+        "dynamo"
+      ],
+      "status": "SUCCESS",
+      "rag_enabled": false
+    },
+    {
+      "query_index": 3,
+      "query": "Analiza la red de interacciones de la insulina P01308",
+      "processing_time_seconds": 0.504508,
+      "workers_assigned": [
+        "dynamo"
+      ],
+      "status": "SUCCESS",
+      "rag_enabled": false
+    },
+    {
+      "query_index": 4,
+      "query": "\u00bfC\u00f3mo funciona el network de prote\u00ednas relacionadas con actina P60709?",
+      "processing_time_seconds": 1.510199,
+      "workers_assigned": [
+        "networks_rag",
+        "networks_rag",
+        "biological_explainer"
+      ],
+      "status": "SUCCESS",
+      "rag_enabled": false
+    },
+    {
+      "query_index": 5,
+      "query": "Ejecuta benchmark de embedding analysis con protein networks",
+      "processing_time_seconds": 1.005005,
+      "workers_assigned": [
+        "embedding",
+        "spectra"
+      ],
+      "status": "SUCCESS",
+      "rag_enabled": false
+    }
+  ]
+}

@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LMP v4 Validation Report — 2026-02-24 18:46</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 2em; background: #0d1117; color: #c9d1d9; }
+h1, h2 { color: #58a6ff; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+th, td { border: 1px solid #30363d; padding: 6px 10px; text-align: left; font-size: 13px; }
+th { background: #161b22; color: #58a6ff; }
+tr:nth-child(even) { background: #161b22; }
+.pass { color: #3fb950; font-weight: bold; }
+.fail { color: #f85149; font-weight: bold; }
+.warn { color: #d29922; font-weight: bold; }
+.info { color: #8b949e; }
+.stats { display: flex; gap: 2em; margin: 1em 0; }
+.stat-box { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1em 2em; }
+.stat-val { font-size: 2em; font-weight: bold; color: #58a6ff; }
+.stat-label { color: #8b949e; }
+</style>
+</head>
+<body>
+<h1>LMP v4 Validation Report</h1>
+<p>Generated: 2026-02-24 18:46:09 | Entries: 5 | Presets: 5</p>
+
+<div class="stats">
+  <div class="stat-box"><div class="stat-val">50</div><div class="stat-label">Total Runs</div></div>
+  <div class="stat-box"><div class="stat-val pass">50</div><div class="stat-label">XSD Pass</div></div>
+  <div class="stat-box"><div class="stat-val fail">0</div><div class="stat-label">XSD Fail</div></div>
+  <div class="stat-box"><div class="stat-val warn">100</div><div class="stat-label">Total Gaps</div></div>
+</div>
+
+<h2>Coverage Matrix</h2>
+<table>
+<tr><th>Entry</th><th>Gene</th><th>Preset</th><th>State</th><th>XSD</th><th>Size KB</th>
+<th>ID</th><th>Sem</th><th>Geo</th><th>Feat</th><th>KG</th><th>IFP</th><th>NeSy</th>
+<th>Domains</th><th>PTMs</th><th>Gaps</th><th>Time</th></tr>
+<tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>nesy-core</td>
+            <td>Apo_Inactive</td>
+            <td class="pass">OK</td>
+            <td>15.4</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.026s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>nesy-core</td>
+            <td>Phosphorylated_Active</td>
+            <td class="pass">OK</td>
+            <td>15.5</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.026s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>v2-compat</td>
+            <td>Apo_Inactive</td>
+            <td class="pass">OK</td>
+            <td>31.82</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>32</td>
+            <td>34</td>
+            <td class="warn">2</td>
+            <td>3.415s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>v2-compat</td>
+            <td>Phosphorylated_Active</td>
+            <td class="pass">OK</td>
+            <td>32.06</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>32</td>
+            <td>34</td>
+            <td class="warn">2</td>
+            <td>3.415s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>plm-esm2</td>
+            <td>Apo_Inactive</td>
+            <td class="pass">OK</td>
+            <td>15.4</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.95s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>plm-esm2</td>
+            <td>Phosphorylated_Active</td>
+            <td class="pass">OK</td>
+            <td>15.5</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.95s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>plm-prott5</td>
+            <td>Apo_Inactive</td>
+            <td class="pass">OK</td>
+            <td>15.4</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.997s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>plm-prott5</td>
+            <td>Phosphorylated_Active</td>
+            <td class="pass">OK</td>
+            <td>15.5</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.997s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>llm-context</td>
+            <td>Apo_Inactive</td>
+            <td class="pass">OK</td>
+            <td>236.11</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.157s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>llm-context</td>
+            <td>Phosphorylated_Active</td>
+            <td class="pass">OK</td>
+            <td>236.11</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.157s</td>
+        </tr><tr>
+            <td>P68871</td>
+            <td>HBB</td>
+            <td>nesy-core</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>9.49</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.03s</td>
+        </tr><tr>
+            <td>P68871</td>
+            <td>HBB</td>
+            <td>nesy-core</td>
+            <td>Modified_Active</td>
+            <td class="pass">OK</td>
+            <td>9.55</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.03s</td>
+        </tr><tr>
+            <td>P68871</td>
+            <td>HBB</td>
+            <td>v2-compat</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>19.11</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>7</td>
+            <td>14</td>
+            <td class="warn">2</td>
+            <td>2.503s</td>
+        </tr><tr>
+            <td>P68871</td>
+            <td>HBB</td>
+            <td>v2-compat</td>
+            <td>Modified_Active</td>
+            <td class="pass">OK</td>
+            <td>19.24</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>7</td>
+            <td>14</td>
+            <td class="warn">2</td>
+            <td>2.503s</td>
+        </tr><tr>
+            <td>P68871</td>
+            <td>HBB</td>
+            <td>plm-esm2</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>9.49</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.97s</td>
+        </tr><tr>
+            <td>P68871</td>
+            <td>HBB</td>
+            <td>plm-esm2</td>
+            <td>Modified_Active</td>
+            <td class="pass">OK</td>
+            <td>9.55</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.97s</td>
+        </tr><tr>
+            <td>P68871</td>
+            <td>HBB</td>
+            <td>plm-prott5</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>9.49</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.995s</td>
+        </tr><tr>
+            <td>P68871</td>
+            <td>HBB</td>
+            <td>plm-prott5</td>
+            <td>Modified_Active</td>
+            <td class="pass">OK</td>
+            <td>9.55</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.995s</td>
+        </tr><tr>
+            <td>P68871</td>
+            <td>HBB</td>
+            <td>llm-context</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>288.61</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.204s</td>
+        </tr><tr>
+            <td>P68871</td>
+            <td>HBB</td>
+            <td>llm-context</td>
+            <td>Modified_Active</td>
+            <td class="pass">OK</td>
+            <td>288.61</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.204s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>nesy-core</td>
+            <td>Apo</td>
+            <td class="pass">OK</td>
+            <td>27.94</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.204s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>nesy-core</td>
+            <td>Substrate_bound</td>
+            <td class="pass">OK</td>
+            <td>27.94</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.204s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>v2-compat</td>
+            <td>Apo</td>
+            <td class="pass">OK</td>
+            <td>59.15</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>90</td>
+            <td>2</td>
+            <td class="warn">2</td>
+            <td>2.726s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>v2-compat</td>
+            <td>Substrate_bound</td>
+            <td class="pass">OK</td>
+            <td>59.17</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>90</td>
+            <td>2</td>
+            <td class="warn">2</td>
+            <td>2.726s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>plm-esm2</td>
+            <td>Apo</td>
+            <td class="pass">OK</td>
+            <td>27.93</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>1.814s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>plm-esm2</td>
+            <td>Substrate_bound</td>
+            <td class="pass">OK</td>
+            <td>27.93</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>1.814s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>plm-prott5</td>
+            <td>Apo</td>
+            <td class="pass">OK</td>
+            <td>27.94</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>1.814s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>plm-prott5</td>
+            <td>Substrate_bound</td>
+            <td class="pass">OK</td>
+            <td>27.94</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>1.814s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>llm-context</td>
+            <td>Apo</td>
+            <td class="pass">OK</td>
+            <td>488.87</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.409s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>llm-context</td>
+            <td>Substrate_bound</td>
+            <td class="pass">OK</td>
+            <td>488.87</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.409s</td>
+        </tr><tr>
+            <td>4HHB</td>
+            <td>HBA_HBB</td>
+            <td>nesy-core</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>1.01</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.014s</td>
+        </tr><tr>
+            <td>4HHB</td>
+            <td>HBA_HBB</td>
+            <td>nesy-core</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>1.01</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.014s</td>
+        </tr><tr>
+            <td>4HHB</td>
+            <td>HBA_HBB</td>
+            <td>v2-compat</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>8.22</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>3.666s</td>
+        </tr><tr>
+            <td>4HHB</td>
+            <td>HBA_HBB</td>
+            <td>v2-compat</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>8.22</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>3.666s</td>
+        </tr><tr>
+            <td>4HHB</td>
+            <td>HBA_HBB</td>
+            <td>plm-esm2</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>1.01</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.025s</td>
+        </tr><tr>
+            <td>4HHB</td>
+            <td>HBA_HBB</td>
+            <td>plm-esm2</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>1.01</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.025s</td>
+        </tr><tr>
+            <td>4HHB</td>
+            <td>HBA_HBB</td>
+            <td>plm-prott5</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>1.01</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.022s</td>
+        </tr><tr>
+            <td>4HHB</td>
+            <td>HBA_HBB</td>
+            <td>plm-prott5</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>1.01</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.022s</td>
+        </tr><tr>
+            <td>4HHB</td>
+            <td>HBA_HBB</td>
+            <td>llm-context</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>0.83</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.023s</td>
+        </tr><tr>
+            <td>4HHB</td>
+            <td>HBA_HBB</td>
+            <td>llm-context</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>0.83</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.023s</td>
+        </tr><tr>
+            <td>1BNA</td>
+            <td>DNA</td>
+            <td>nesy-core</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>0.87</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.021s</td>
+        </tr><tr>
+            <td>1BNA</td>
+            <td>DNA</td>
+            <td>nesy-core</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>0.87</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.021s</td>
+        </tr><tr>
+            <td>1BNA</td>
+            <td>DNA</td>
+            <td>v2-compat</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>1.44</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>3.755s</td>
+        </tr><tr>
+            <td>1BNA</td>
+            <td>DNA</td>
+            <td>v2-compat</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>1.44</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>3.755s</td>
+        </tr><tr>
+            <td>1BNA</td>
+            <td>DNA</td>
+            <td>plm-esm2</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>0.87</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.017s</td>
+        </tr><tr>
+            <td>1BNA</td>
+            <td>DNA</td>
+            <td>plm-esm2</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>0.87</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.017s</td>
+        </tr><tr>
+            <td>1BNA</td>
+            <td>DNA</td>
+            <td>plm-prott5</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>0.88</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.02s</td>
+        </tr><tr>
+            <td>1BNA</td>
+            <td>DNA</td>
+            <td>plm-prott5</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>0.88</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.02s</td>
+        </tr><tr>
+            <td>1BNA</td>
+            <td>DNA</td>
+            <td>llm-context</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>0.82</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.02s</td>
+        </tr><tr>
+            <td>1BNA</td>
+            <td>DNA</td>
+            <td>llm-context</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>0.82</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.02s</td>
+        </tr>
+</table>
+
+<h2>Gap Analysis (100 total)</h2>
+<table>
+<tr><th>Severity</th><th>Category</th><th>Entry</th><th>Preset</th><th>Message</th></tr>
+<tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>nesy-core</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>nesy-core</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>nesy-core</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>nesy-core</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>v2-compat</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>v2-compat</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>v2-compat</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>v2-compat</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>plm-esm2</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>plm-esm2</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>plm-esm2</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>plm-esm2</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>plm-prott5</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>plm-prott5</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>plm-prott5</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>plm-prott5</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>llm-context</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>llm-context</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>llm-context</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>llm-context</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>nesy-core</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>nesy-core</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>nesy-core</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>nesy-core</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>v2-compat</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>v2-compat</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>v2-compat</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>v2-compat</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>plm-esm2</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>plm-esm2</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>plm-esm2</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>plm-esm2</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>plm-prott5</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>plm-prott5</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>plm-prott5</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>plm-prott5</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>llm-context</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>llm-context</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>llm-context</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P68871</td>
+                <td>llm-context</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>nesy-core</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>nesy-core</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>nesy-core</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>nesy-core</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>v2-compat</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>v2-compat</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>v2-compat</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>v2-compat</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>plm-esm2</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>plm-esm2</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>plm-esm2</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>plm-esm2</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>plm-prott5</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>plm-prott5</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>plm-prott5</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>plm-prott5</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>llm-context</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>llm-context</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>llm-context</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>llm-context</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>nesy-core</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>nesy-core</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>nesy-core</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>nesy-core</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>v2-compat</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>v2-compat</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>v2-compat</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>v2-compat</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>plm-esm2</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>plm-esm2</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>plm-esm2</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>plm-esm2</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>plm-prott5</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>plm-prott5</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>plm-prott5</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>plm-prott5</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>llm-context</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>llm-context</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>llm-context</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>4HHB</td>
+                <td>llm-context</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>nesy-core</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>nesy-core</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>nesy-core</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>nesy-core</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>v2-compat</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>v2-compat</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>v2-compat</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>v2-compat</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>plm-esm2</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>plm-esm2</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>plm-esm2</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>plm-esm2</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>plm-prott5</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>plm-prott5</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>plm-prott5</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>plm-prott5</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>llm-context</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>llm-context</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>llm-context</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1BNA</td>
+                <td>llm-context</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr>
+</table>
+
+<h2>DSSP Secondary Structure</h2>
+<table>
+<tr><th>Entry</th><th>Chain</th><th>Helices</th><th>Helix Res</th><th>Strands</th><th>Strand Res</th><th>Coils</th></tr>
+</table>
+</body>
+</html>

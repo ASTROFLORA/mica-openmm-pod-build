@@ -1,0 +1,55 @@
+{
+  "name": "pdb-server",
+  "version": "1.0.0",
+  "description": "A comprehensive Model Context Protocol server for accessing Protein Data Bank (PDB) with 28 structural biology tools for protein structure analysis, validation, and comparison",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "start": "node build/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "pdb",
+    "protein-data-bank",
+    "structural-biology",
+    "protein-structure",
+    "crystallography",
+    "nmr",
+    "cryo-em",
+    "structure-validation",
+    "structure-comparison",
+    "molecular-biology",
+    "bioinformatics",
+    "macromolecular-structure",
+    "structure-analysis",
+    "pdb-format",
+    "mmcif",
+    "structure-factor",
+    "refinement",
+    "experimental-methods"
+  ],
+  "author": "Augmented Nature",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "bin": {
+    "pdb-server": "./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/augmented-nature/pdb-mcp-server"
+  },
+  "homepage": "https://github.com/augmented-nature/pdb-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/augmented-nature/pdb-mcp-server/issues"
+  }
+}

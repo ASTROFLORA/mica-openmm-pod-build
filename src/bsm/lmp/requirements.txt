@@ -1,0 +1,18 @@
+# LMP v2.0 Module Requirements
+# ==============================
+
+# Core XML processing
+lxml>=4.9.0  # XSD validation, faster XML processing
+
+# Configuration management
+pyyaml>=6.0  # YAML configuration files
+
+# Existing dependencies (from main project)
+# These should already be installed, but listed for completeness
+pydantic>=2.0.0  # Data validation for BudoV3 schemas
+requests>=2.28.0  # API calls (UniProt, PDB)
+pandas>=2.0.0  # Dataset management (M-CSA CSV)
+
+# Optional but recommended
+# coloredlogs>=15.0  # Colored logging output (makes debugging easier)
+# tqdm>=4.65.0  # Progress bars for batch processing

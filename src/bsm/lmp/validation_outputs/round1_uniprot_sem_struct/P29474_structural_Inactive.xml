@@ -1,0 +1,215 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="structural">
+  <lmp:Identity>
+    <lmp:BudoID>budo:NOS3_HUMAN_v4</lmp:BudoID>
+    <lmp:PrimaryAccession>P29474</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>NOS3_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606">Homo sapiens</lmp:Organism>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>A0S0A7</lmp:Value>
+      <lmp:Value>A0S0A8</lmp:Value>
+      <lmp:Value>A8KA63</lmp:Value>
+      <lmp:Value>B2RCQ1</lmp:Value>
+      <lmp:Value>E9PFR2</lmp:Value>
+      <lmp:Value>Q13662</lmp:Value>
+      <lmp:Value>Q14251</lmp:Value>
+      <lmp:Value>Q14434</lmp:Value>
+      <lmp:Value>Q548C1</lmp:Value>
+      <lmp:Value>Q6GSL5</lmp:Value>
+      <lmp:Value>Q9UDC6</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Geometry>
+    <lmp:Sequence length="1203">MGNLKSVAQEPGPPCGLGLGLGLGLCGKQGPATPAPEPSRAPASLLPPAPEHSPPSSPLTQPPEGPKFPRVKNWEVGSITYDTLSAQAQQDGPCTPRRCLGSLVFPRKLQGRPSPGPPAPEQLLSQARDFINQYYSSIKRSGSQAHEQRLQEVEAEVAATGTYQLRESELVFGAKQAWRNAPRCVGRIQWGKLQVFDARDCRSAQEMFTYICNHIKYATNRGNLRSAITVFPQRCPGRGDFRIWNSQLVRYAGYRQQDGSVRGDPANVEITELCIQHGWTPGNGRFDVLPLLLQAPDDPPELFLLPPELVLEVPLEHPTLEWFAALGLRWYALPAVSNMLLEIGGLEFPAAPFSGWYMSTEIGTRNLCDPHRYNILEDVAVCMDLDTRTTSSLWKDKAAVEINVAVLHSYQLAKVTIVDHHAATASFMKHLENEQKARGGCPADWAWIVPPISGSLTPVFHQEMVNYFLSPAFRYQPDPWKGSAAKGTGITRKKTFKEVANAVKISASLMGTVMAKRVKATILYGSETGRAQSYAQQLGRLFRKAFDPRVLCMDEYDVVSLEHETLVLVVTSTFGNGDPPENGESFAAALMEMSGPYNSSPRPEQHKSYKIRFNSISCSDPLVSSWRRKRKESSNTDSAGALGTLRFCVFGLGSRAYPHFCAFARAVDTRLEELGGERLLQLGQGDELCGQEEAFRGWAQAAFQAACETFCVGEDAKAAARDIFSPKRSWKRQRYRLSAQAEGLQLLPGLIHVHRRKMFQATIRSVENLQSSKSTRATILVRLDTGGQEGLQYQPGDHIGVCPPNRPGLVEALLSRVEDPPAPTEPVAVEQLEKGSPGGPPPGWVRDPRLPPCTLRQALTFFLDITSPPSPQLLRLLSTLAEEPREQQELEALSQDPRRYEEWKWFRCPTLLEVLEQFPSVALPAPLLLTQLPLLQPRYYSVSSAPSTHPGEIHLTVAVLAYRTQDGLGPLHYGVCSTWLSQLKPGDPVPCFIRGAPSFRLPPDPSLPCILVGPGTGIAPFRGFWQERLHDIESKGLQPTPMTLVFGCRCSQLDHLYRDEVQNAQQRGVFGRVLTAFSREPDNPKTYVQDILRTELAAEVHRVLCLERGHMFVCGDVTMATNVLQTVQRILATEGDMELDEAGDVIGVLRDQQRYHEDIFGLTLRTQEVTSRIRTQSFSLQERQLRGAVPWAFDPPGSDTNSP</lmp:Sequence>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=44 res_end=47 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=80 res_end=97 len=18"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=104 res_end=120 len=17"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=127 res_end=139 len=13"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=164 res_end=179 len=16"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=191 res_end=194 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=228 res_end=236 len=9"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=283 res_end=286 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=321 res_end=326 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=336 res_end=342 len=7"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=354 res_end=372 len=19"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=380 res_end=398 len=19"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=405 res_end=408 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=A res_start=418 res_end=421 len=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=30 res_end=32 len=3 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=39 res_end=41 len=3 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=154 res_end=157 len=4 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=187 res_end=190 len=4 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=202 res_end=203 len=2 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=213 res_end=215 len=3 strand_id=7"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=221 res_end=223 len=3 strand_id=7"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=251 res_end=254 len=4 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=261 res_end=263 len=3 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=272 res_end=274 len=3 strand_id=8"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=289 res_end=291 len=3 strand_id=8"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=295 res_end=296 len=2 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=300 res_end=303 len=4 strand_id=9"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=306 res_end=308 len=3 strand_id=9"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=313 res_end=314 len=2 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=317 res_end=318 len=2 strand_id=10"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=377 res_end=378 len=2 strand_id=10"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=A res_start=432 res_end=434 len=3 strand_id=9"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=44 res_end=47 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=80 res_end=97 len=18"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=104 res_end=120 len=17"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=127 res_end=139 len=13"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=164 res_end=179 len=16"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=191 res_end=194 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=228 res_end=236 len=9"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=281 res_end=286 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=321 res_end=326 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=336 res_end=342 len=7"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=354 res_end=372 len=19"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=380 res_end=398 len=19"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=405 res_end=408 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4D1O chain=B res_start=418 res_end=421 len=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=30 res_end=32 len=3 strand_id=13"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=39 res_end=41 len=3 strand_id=13"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=154 res_end=157 len=4 strand_id=16"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=187 res_end=190 len=4 strand_id=16"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=202 res_end=203 len=2 strand_id=17"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=213 res_end=215 len=3 strand_id=19"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=221 res_end=223 len=3 strand_id=19"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=251 res_end=254 len=4 strand_id=17"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=261 res_end=263 len=3 strand_id=17"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=272 res_end=274 len=3 strand_id=20"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=289 res_end=291 len=3 strand_id=20"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=295 res_end=296 len=2 strand_id=16"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=300 res_end=303 len=4 strand_id=21"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=306 res_end=308 len=3 strand_id=21"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=313 res_end=314 len=2 strand_id=16"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=317 res_end=318 len=2 strand_id=22"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=377 res_end=378 len=2 strand_id=22"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4D1O chain=B res_start=432 res_end=434 len=3 strand_id=21"/>
+    <lmp:Feature type="pdb:cell" description="pdb=4D1O a=62.395 b=110.091 c=153.322 alpha=90.0 beta=90.0 gamma=90.0"/>
+    <lmp:Feature type="pdb:resolution" description="pdb=4D1O resolution=1.819"/>
+    <lmp:Feature type="pdb:citation" description="pdb=4D1O doi=10.1107/S1399004714017064 pmid=25286850 title=Structures of Human Constitutive Nitric Oxide Synthases"/>
+    <lmp:Feature type="geometry:com" description="pdb=4D1O chain=A x=17.303 y=242.673 z=32.061"/>
+    <lmp:Feature type="geometry:rg" description="pdb=4D1O chain=A rg=22.642"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=4D1O chain=A min=[-10.181, 206.358, -10.409] max=[44.312, 268.98, 70.087]"/>
+    <lmp:Feature type="geometry:com" description="pdb=4D1O chain=B x=30.267 y=215.227 z=9.805"/>
+    <lmp:Feature type="geometry:rg" description="pdb=4D1O chain=B rg=22.661"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=4D1O chain=B min=[0.843, 180.667, -14.685] max=[62.511, 256.195, 43.245]"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=4D1O chain_a=A chain_b=B com_distance=37.639"/>
+    <lmp:Chain id="A" sequence="MGNLKSVAQEPGPPCGLGLGLGLGLCGKQGPATPAPEPSRAPASLLPPAPEHSPPSSPLTQPPEGPKFPRVKNWEVGSITYDTLSAQAQQDGPCTPRRCLGSLVFPRKLQGRPSPGPPAPEQLLSQARDFINQYYSSIKRSGSQAHEQRLQEVEAEVAATGTYQLRESELVFGAKQAWRNAPRCVGRIQWGKLQVFDARDCRSAQEMFTYICNHIKYATNRGNLRSAITVFPQRCPGRGDFRIWNSQLVRYAGYRQQDGSVRGDPANVEITELCIQHGWTPGNGRFDVLPLLLQAPDDPPELFLLPPELVLEVPLEHPTLEWFAALGLRWYALPAVSNMLLEIGGLEFPAAPFSGWYMSTEIGTRNLCDPHRYNILEDVAVCMDLDTRTTSSLWKDKAAVEINVAVLHSYQLAKVTIVDHHAATASFMKHLENEQKARGGCPADWAWIVPPISGSLTPVFHQEMVNYFLSPAFRYQPDPWKGSAAKGTGITRKKTFKEVANAVKISASLMGTVMAKRVKATILYGSETGRAQSYAQQLGRLFRKAFDPRVLCMDEYDVVSLEHETLVLVVTSTFGNGDPPENGESFAAALMEMSGPYNSSPRPEQHKSYKIRFNSISCSDPLVSSWRRKRKESSNTDSAGALGTLRFCVFGLGSRAYPHFCAFARAVDTRLEELGGERLLQLGQGDELCGQEEAFRGWAQAAFQAACETFCVGEDAKAAARDIFSPKRSWKRQRYRLSAQAEGLQLLPGLIHVHRRKMFQATIRSVENLQSSKSTRATILVRLDTGGQEGLQYQPGDHIGVCPPNRPGLVEALLSRVEDPPAPTEPVAVEQLEKGSPGGPPPGWVRDPRLPPCTLRQALTFFLDITSPPSPQLLRLLSTLAEEPREQQELEALSQDPRRYEEWKWFRCPTLLEVLEQFPSVALPAPLLLTQLPLLQPRYYSVSSAPSTHPGEIHLTVAVLAYRTQDGLGPLHYGVCSTWLSQLKPGDPVPCFIRGAPSFRLPPDPSLPCILVGPGTGIAPFRGFWQERLHDIESKGLQPTPMTLVFGCRCSQLDHLYRDEVQNAQQRGVFGRVLTAFSREPDNPKTYVQDILRTELAAEVHRVLCLERGHMFVCGDVTMATNVLQTVQRILATEGDMELDEAGDVIGVLRDQQRYHEDIFGLTLRTQEVTSRIRTQSFSLQERQLRGAVPWAFDPPGSDTNSP" state="Inactive">
+      <lmp:Domain name="Flavodoxin-like" type="domain" start="520" end="703"/>
+      <lmp:Domain name="FAD-binding FR-type" type="domain" start="756" end="1002"/>
+      <lmp:Domain name="Disordered" type="region" start="1" end="71"/>
+      <lmp:Domain name="Interaction with NOSIP" type="region" start="98" end="486"/>
+      <lmp:Domain name="Calmodulin-binding" type="region" start="491" end="510"/>
+      <lmp:Domain name="Gly residues" type="compositional bias" start="15" end="27"/>
+      <lmp:Domain name="Pro residues" type="compositional bias" start="33" end="66"/>
+      <lmp:Domain name="Flavodoxin-like (InterPro)" type="domain" start="521" end="534" interpro_id="IPR001094"/>
+      <lmp:Domain name="Flavodoxin-like (InterPro)" type="domain" start="568" end="579" interpro_id="IPR001094"/>
+      <lmp:Domain name="Flavodoxin-like (InterPro)" type="domain" start="644" end="654" interpro_id="IPR001094"/>
+      <lmp:Domain name="Flavodoxin-like (InterPro)" type="domain" start="668" end="687" interpro_id="IPR001094"/>
+      <lmp:Domain name="Oxidoreductase FAD/NAD(P)-binding (InterPro)" type="domain" start="1011" end="1123" interpro_id="IPR001433"/>
+      <lmp:Domain name="Flavoprotein pyridine nucleotide cytochrome reductase (InterPro)" type="domain" start="793" end="803" interpro_id="IPR001709"/>
+      <lmp:Domain name="Flavoprotein pyridine nucleotide cytochrome reductase (InterPro)" type="domain" start="938" end="945" interpro_id="IPR001709"/>
+      <lmp:Domain name="Flavoprotein pyridine nucleotide cytochrome reductase (InterPro)" type="domain" start="974" end="983" interpro_id="IPR001709"/>
+      <lmp:Domain name="Flavoprotein pyridine nucleotide cytochrome reductase (InterPro)" type="domain" start="1010" end="1029" interpro_id="IPR001709"/>
+      <lmp:Domain name="Flavoprotein pyridine nucleotide cytochrome reductase (InterPro)" type="domain" start="1040" end="1049" interpro_id="IPR001709"/>
+      <lmp:Domain name="Flavoprotein pyridine nucleotide cytochrome reductase (InterPro)" type="domain" start="1053" end="1064" interpro_id="IPR001709"/>
+      <lmp:Domain name="Flavoprotein pyridine nucleotide cytochrome reductase (InterPro)" type="domain" start="1085" end="1101" interpro_id="IPR001709"/>
+      <lmp:Domain name="Flavoprotein pyridine nucleotide cytochrome reductase (InterPro)" type="domain" start="1110" end="1118" interpro_id="IPR001709"/>
+      <lmp:Domain name="Sulfite reductase [NADPH] flavoprotein alpha-component-like, FAD-binding (InterPro)" type="domain" start="752" end="979" interpro_id="IPR003097"/>
+      <lmp:Domain name="Nitric oxide synthase, N-terminal (InterPro)" type="domain" start="121" end="481" interpro_id="IPR004030"/>
+      <lmp:Domain name="Flavodoxin/nitric oxide synthase (InterPro)" type="domain" start="520" end="703" interpro_id="IPR008254"/>
+      <lmp:Domain name="Nitric-oxide synthase, eukaryote (InterPro)" type="family" start="60" end="1183" interpro_id="IPR012144"/>
+      <lmp:Domain name="FAD-binding domain, ferredoxin reductase-type (InterPro)" type="domain" start="756" end="1002" interpro_id="IPR017927"/>
+      <lmp:Domain name="Riboflavin synthase-like beta-barrel (InterPro)" type="homologous_superfamily" start="730" end="996" interpro_id="IPR017938"/>
+      <lmp:Domain name="NADPH-cytochrome p450 reductase, FAD-binding, alpha-helical domain superfamily (InterPro)" type="homologous_superfamily" start="752" end="936" interpro_id="IPR023173"/>
+      <lmp:Domain name="Flavoprotein-like superfamily (InterPro)" type="homologous_superfamily" start="507" end="718" interpro_id="IPR029039"/>
+      <lmp:Domain name="Nitric oxide synthase, N-terminal domain superfamily (InterPro)" type="homologous_superfamily" start="66" end="480" interpro_id="IPR036119"/>
+      <lmp:Domain name="Ferredoxin-NADP reductase (FNR), nucleotide-binding domain (InterPro)" type="homologous_superfamily" start="998" end="1162" interpro_id="IPR039261"/>
+      <lmp:Domain name="Nitric oxide synthase, domain 2 superfamily (InterPro)" type="homologous_superfamily" start="200" end="311" interpro_id="IPR044940"/>
+      <lmp:Domain name="Nitric oxide synthase, domain 1 superfamily (InterPro)" type="homologous_superfamily" start="82" end="448" interpro_id="IPR044943"/>
+      <lmp:Domain name="Nitric oxide synthase, domain 3 superfamily (InterPro)" type="homologous_superfamily" start="312" end="422" interpro_id="IPR044944"/>
+      <lmp:Domain name="Nitric Oxide Synthase (NOS) (InterPro)" type="family" start="64" end="1186" interpro_id="IPR050607"/>
+      <lmp:Domain name="GlobalFeatures" type="global" start="1" end="1203">
+        <lmp:PTM id="ptm_33" type="phosphorylation" residue="T" position="33" status="absent"/>
+        <lmp:PTM id="ptm_114" type="phosphorylation" residue="S" position="114" status="absent"/>
+        <lmp:PTM id="ptm_495" type="phosphorylation" residue="T" position="495" status="absent"/>
+        <lmp:PTM id="ptm_615" type="phosphorylation" residue="S" position="615" status="absent"/>
+        <lmp:PTM id="ptm_633" type="phosphorylation" residue="S" position="633" status="absent"/>
+        <lmp:PTM id="ptm_638" type="phosphorylation" residue="S" position="638" status="absent"/>
+        <lmp:PTM id="ptm_836" type="phosphorylation" residue="S" position="836" status="absent"/>
+        <lmp:PTM id="ptm_1175" type="phosphorylation" residue="T" position="1175" status="absent"/>
+        <lmp:PTM id="ptm_1177" type="phosphorylation" residue="S" position="1177" status="absent"/>
+        <lmp:PTM id="ptm_1179" type="phosphorylation" residue="S" position="1179" status="absent"/>
+        <lmp:PTM id="ptm_2" type="n_terminal_myristoylation" residue="G" position="2" status="present"/>
+        <lmp:PTM id="ptm_15" type="palmitoylation" residue="C" position="15" status="present"/>
+        <lmp:PTM id="ptm_26" type="palmitoylation" residue="C" position="26" status="present"/>
+        <lmp:BindingSite type="ZN(2+)-binding" residues="94,99">
+          <lmp:Ligand name="ZN(2+)" type="substrate" effect="catalysis" id="lig_ZN_2"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="(6R)-L-ERYTHRO-5,6,7,8-TETRAHYDROBIOPTERIN-binding" residues="102,365,446,447,460">
+          <lmp:Ligand name="(6R)-L-ERYTHRO-5,6,7,8-TETRAHYDROBIOPTERIN" type="substrate" effect="catalysis" id="lig_6R_L_ERYTHRO_5_6_7_8_TETRAHYDROBIOPTERIN"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="HEME B-binding" residues="184,475">
+          <lmp:Ligand name="HEME B" type="substrate" effect="catalysis" id="lig_HEME_B"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="L-ARGININE-binding" residues="247,356,357,361,366">
+          <lmp:Ligand name="L-ARGININE" type="substrate" effect="catalysis" id="lig_L_ARGININE"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="FMN-binding" residues="526,527,528,530,572,573,654,661,687,691">
+          <lmp:Ligand name="FMN" type="substrate" effect="catalysis" id="lig_FMN"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="NADP(+)-binding" residues="776,1016,1049,1078,1079,1085,1087,1089">
+          <lmp:Ligand name="NADP(+)" type="substrate" effect="catalysis" id="lig_NADP"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="FAD-binding" residues="798,938,940,941,956,958,962,975,976,977">
+          <lmp:Ligand name="FAD" type="substrate" effect="catalysis" id="lig_FAD"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="PDB:4D1O:ligands" residues="1">
+          <lmp:Ligand name="ARG" type="substrate" effect="catalysis" id="lig_4D1O_ARG" smiles="C(CC(C(=O)O)N)CNC(=[NH2+])N"/>
+          <lmp:Ligand name="HEM" type="substrate" effect="catalysis" id="lig_4D1O_HEM" smiles="Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"/>
+          <lmp:Ligand name="ACT" type="substrate" effect="catalysis" id="lig_4D1O_ACT" smiles="CC(=O)[O-]"/>
+          <lmp:Ligand name="BTB" type="substrate" effect="catalysis" id="lig_4D1O_BTB" smiles="C(CO)N(CCO)C(CO)(CO)CO"/>
+          <lmp:Ligand name="GOL" type="substrate" effect="catalysis" id="lig_4D1O_GOL" smiles="C(C(CO)O)O"/>
+          <lmp:Ligand name="ZN" type="substrate" effect="catalysis" id="lig_4D1O_ZN" smiles="[Zn+2]"/>
+          <lmp:Ligand name="H4B" type="substrate" effect="catalysis" id="lig_4D1O_H4B" smiles="CC(C(C1CNC2=C(N1)C(=O)NC(=N2)N)O)O"/>
+          <lmp:Ligand name="GD" type="substrate" effect="catalysis" id="lig_4D1O_GD" smiles="[Gd]"/>
+        </lmp:BindingSite>
+      </lmp:Domain>
+    </lmp:Chain>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>4</lmp:SequenceVersion>
+      <lmp:EntryVersion>263</lmp:EntryVersion>
+      <lmp:FirstPublicDate>1993-04-01</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>2018-03-28</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>structural</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:39:37.637452+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "P29474", "xref_total": 463, "xref_db_counts": {"PDB": 80, "PDBsum": 80, "GO": 70, "EMBL": 49, "DrugBank": 49, "InterPro": 17, "Reactome": 9, "Gene3D": 7, "FunFam": 5, "RefSeq": 4, "Pfam": 4, "SUPFAM": 4, "CCDS": 3, "ProteomicsDB": 3, "Ensembl": 3, "PROSITE": 3, "PANTHER": 2, "PRINTS": 2, "PIR": 1, "AlphaFoldDB": 1, "BMRB": 1, "SMR": 1, "BioGRID": 1, "CORUM": 1, "DIP": 1}, "xref_examples": {"EMBL": ["M93718", "M95296", "L10709", "L10693", "L10694", "L10695", "L10696", "L10697"], "CCDS": ["CCDS55182.1", "CCDS55183.1", "CCDS5912.1"], "PIR": ["A47501"], "RefSeq": ["NP_000594.2", "NP_001153581.1", "NP_001153582.1", "NP_001153583.1"], "PDB": ["1M9J", "1M9K", "1M9M", "1M9Q", "1M9R", "1NIW", "2LL7", "2MG5"], "PDBsum": ["1M9J", "1M9K", "1M9M", "1M9Q", "1M9R", "1NIW", "2LL7", "2MG5"], "AlphaFoldDB": ["P29474"], "BMRB": ["P29474"], "SMR": ["P29474"], "BioGRID": ["110909"], "CORUM": ["P29474"], "DIP": ["DIP-38479N"], "FunCoup": ["P29474"], "IntAct": ["P29474"], "MINT": ["P29474"], "STRING": ["9606.ENSP00000297494"], "BindingDB": ["P29474"], "ChEMBL": ["CHEMBL4803"], "DrugBank": ["DB07001", "DB02048", "DB02911", "DB02335", "DB01997", "DB03332", "DB04534", "DB07244"], "DrugCentral": ["P29474"], "GuidetoPHARMACOLOGY": ["1249"], "GlyCosmos": ["P29474"], "GlyGen": ["P29474"], "iPTMnet": ["P29474"], "PhosphoSitePlus": ["P29474"], "SwissPalm": ["P29474"], "BioMuta": ["NOS3"], "DMDM": ["266648"], "jPOST": ["P29474"], "MassIVE": ["P29474"], "PaxDb": ["9606-ENSP00000297494"], "PeptideAtlas": ["P29474"], "ProteomicsDB": ["20158", "54576", "54577"], "Antibodypedia": ["3692"], "DNASU": ["4846"], "Ensembl": ["ENST00000297494.8", "ENST00000467517.1", "ENST00000484524.5"], "GeneID": ["4846"], "KEGG": ["hsa:4846"], "MANE-Select": ["ENST00000297494.8"], "UCSC": ["uc003wif.4"], "AGR": ["HGNC:7876"], "ClinPGx": ["PA254"], "CTD": ["4846"], "DisGeNET": ["4846"], "GeneCards": ["NOS3"], "HGNC": ["HGNC:7876"], "HPA": ["ENSG00000164867"], "MalaCards": ["NOS3"], "MIM": ["163729"], "OpenTargets": ["ENSG00000164867"], "VEuPathDB": ["HostDB:ENSG00000164867"], "eggNOG": ["KOG1158"], "GeneTree": ["ENSGT00940000161389"], "InParanoid": ["P29474"], "OMA": ["KGDFRIW"], "OrthoDB": ["1856718at2759"], "PAN-GO": ["P29474"], "PhylomeDB": ["P29474"], "BioCyc": ["MetaCyc:HS09149-MONOMER"], "BRENDA": ["1.14.13.39"], "PathwayCommons": ["P29474"], "Reactome": ["R-HSA-1222556", "R-HSA-1474151", "R-HSA-203615", "R-HSA-203641", "R-HSA-203754", "R-HSA-392154", "R-HSA-5218920", "R-HSA-9009391"], "SignaLink": ["P29474"], "SIGNOR": ["P29474"], "Agora": ["ENSG00000164867"], "BioGRID-ORCS": ["4846"], "ChiTaRS": ["NOS3"], "EvolutionaryTrace": ["P29474"], "GeneWiki": ["Endothelial_NOS"], "GenomeRNAi": ["4846"], "Pharos": ["P29474"], "PRO": ["PR:P29474"], "Proteomes": ["UP000005640"], "RNAct": ["P29474"], "Bgee": ["ENSG00000164867"], "ExpressionAtlas": ["P29474"], "GO": ["GO:0005901", "GO:0005737", "GO:0005856", "GO:0005829", "GO:0030666", "GO:0005794", "GO:0000139", "GO:0005634"], "CDD": ["cd00795"], "FunFam": ["3.90.440.10:FF:000001", "1.20.990.10:FF:000005", "3.40.50.360:FF:000003", "3.40.50.80:FF:000003", "3.90.1230.10:FF:000001"], "Gene3D": ["3.40.50.360", "1.20.990.10", "3.90.340.10", "3.90.1230.10", "3.90.440.10", "3.40.50.80", "2.40.30.10"], "InterPro": ["IPR003097", "IPR017927", "IPR001094", "IPR008254", "IPR001709", "IPR029039", "IPR039261", "IPR023173"], "PANTHER": ["PTHR43410:SF1", "PTHR43410"], "Pfam": ["PF00667", "PF00258", "PF00175", "PF02898"], "PIRSF": ["PIRSF000333"], "PRINTS": ["PR00369", "PR00371"], "SUPFAM": ["SSF52343", "SSF52218", "SSF56512", "SSF63380"], "PROSITE": ["PS51384", "PS50902", "PS60001"]}, "generated_at": "2026-02-25T00:39:37.637794"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

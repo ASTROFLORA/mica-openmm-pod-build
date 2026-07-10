@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="structural">
+  <lmp:Identity>
+    <lmp:BudoID>budo:OXSR1_HUMAN_v1</lmp:BudoID>
+    <lmp:PrimaryAccession>O95747</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>OXSR1_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606"/>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>Q3LR53</lmp:Value>
+      <lmp:Value>Q7Z501</lmp:Value>
+      <lmp:Value>Q9UPQ1</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Geometry>
+    <lmp:Sequence length="527">MSEDSSALPWSINRDDYELQEVIGSGATAVVQAAYCAPKKEKVAIKRINLEKCQTSMDELLKEIQAMSQCHHPNIVSYYTSFVVKDELWLVMKLLSGGSVLDIIKHIVAKGEHKSGVLDESTIATILREVLEGLEYLHKNGQIHRDVKAGNILLGEDGSVQIADFGVSAFLATGGDITRNKVRKTFVGTPCWMAPEVMEQVRGYDFKADIWSFGITAIELATGAAPYHKYPPMKVLMLTLQNDPPSLETGVQDKEMLKKYGKSFRKMISLCLQKDPEKRPTAAELLRHKFFQKAKNKEFLQEKTLQRAPTISERAKKVRRVPGSSGRLHKTEDGGWEWSDDEFDEESEEGKAAISQLRSPRVKESISNSELFPTTDPVGTLLQVPEQISAHLPQPAGQIATQPTQVSLPPTAEPAKTAQALSSGSGSQETKIPISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEEPQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS</lmp:Sequence>
+    <lmp:Chain id="A" sequence="MSEDSSALPWSINRDDYELQEVIGSGATAVVQAAYCAPKKEKVAIKRINLEKCQTSMDELLKEIQAMSQCHHPNIVSYYTSFVVKDELWLVMKLLSGGSVLDIIKHIVAKGEHKSGVLDESTIATILREVLEGLEYLHKNGQIHRDVKAGNILLGEDGSVQIADFGVSAFLATGGDITRNKVRKTFVGTPCWMAPEVMEQVRGYDFKADIWSFGITAIELATGAAPYHKYPPMKVLMLTLQNDPPSLETGVQDKEMLKKYGKSFRKMISLCLQKDPEKRPTAAELLRHKFFQKAKNKEFLQEKTLQRAPTISERAKKVRRVPGSSGRLHKTEDGGWEWSDDEFDEESEEGKAAISQLRSPRVKESISNSELFPTTDPVGTLLQVPEQISAHLPQPAGQIATQPTQVSLPPTAEPAKTAQALSSGSGSQETKIPISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEEPQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS" state="Phosphorylated_Active">
+      <lmp:Domain name="Protein kinase" type="domain" start="17" end="291"/>
+      <lmp:Domain name="Disordered" type="region" start="315" end="360"/>
+      <lmp:Domain name="Disordered" type="region" start="405" end="427"/>
+      <lmp:Domain name="Acidic residues" type="compositional bias" start="334" end="348"/>
+      <lmp:Domain name="Protein kinase domain (InterPro)" type="domain" start="17" end="291" interpro_id="IPR000719" pfam_id="PF00069"/>
+      <lmp:Domain name="Protein kinase-like domain superfamily (InterPro)" type="homologous_superfamily" start="8" end="310" interpro_id="IPR011009"/>
+      <lmp:Domain name="Protein kinase, ATP binding site (InterPro)" type="binding_site" start="23" end="46" interpro_id="IPR017441"/>
+      <lmp:Domain name="Serine/threonine-protein kinase OSR1/WNK, CCT domain (InterPro)" type="domain" start="434" end="491" interpro_id="IPR024678" pfam_id="PF12202"/>
+      <lmp:Domain name="STE20/SPS1-related Proline-Alanine-rich Kinase (InterPro)" type="family" start="10" end="504" interpro_id="IPR050629"/>
+      <lmp:Domain name="GlobalFeatures" type="global" start="1" end="527">
+        <lmp:PTM id="ptm_2" type="n_terminal_acetylation" residue="S" position="2" status="present"/>
+        <lmp:PTM id="ptm_185" type="phosphorylation" residue="T" position="185" status="present"/>
+        <lmp:PTM id="ptm_310" type="phosphorylation" residue="T" position="310" status="present"/>
+        <lmp:PTM id="ptm_324" type="phosphorylation" residue="S" position="324" status="present"/>
+        <lmp:PTM id="ptm_325" type="phosphorylation" residue="S" position="325" status="present"/>
+        <lmp:PTM id="ptm_339" type="phosphorylation" residue="S" position="339" status="present"/>
+        <lmp:PTM id="ptm_347" type="phosphorylation" residue="S" position="347" status="present"/>
+        <lmp:PTM id="ptm_359" type="phosphorylation" residue="S" position="359" status="present"/>
+        <lmp:PTM id="ptm_427" type="phosphorylation" residue="S" position="427" status="present"/>
+        <lmp:BindingSite type="catalytic" residues="146"/>
+        <lmp:BindingSite type="ATP-binding" residues="23,46">
+          <lmp:Ligand name="ATP" type="substrate" effect="catalysis" id="lig_ATP"/>
+        </lmp:BindingSite>
+      </lmp:Domain>
+    </lmp:Chain>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>1</lmp:SequenceVersion>
+      <lmp:EntryVersion>213</lmp:EntryVersion>
+      <lmp:FirstPublicDate>2005-08-16</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>1999-05-01</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>structural</lmp:Preset>
+      <lmp:Timestamp>2026-02-28T15:55:51.656523+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "O95747", "xref_total": 129, "xref_db_counts": {"GO": 28, "EMBL": 5, "InterPro": 5, "PDB": 4, "PDBsum": 4, "FunFam": 3, "Gene3D": 3, "PANTHER": 2, "Pfam": 2, "PROSITE": 2, "CCDS": 1, "RefSeq": 1, "AlphaFoldDB": 1, "SMR": 1, "BioGRID": 1, "CORUM": 1, "DIP": 1, "ELM": 1, "FunCoup": 1, "IntAct": 1, "MINT": 1, "STRING": 1, "BindingDB": 1, "ChEMBL": 1, "DrugBank": 1}, "xref_examples": {"EMBL": ["AB017642", "AB029024", "DQ201638", "BC008726", "AF087893"], "CCDS": ["CCDS2675.1"], "RefSeq": ["NP_005100.1"], "PDB": ["2V3S", "2VWI", "3DAK", "7OKW"], "PDBsum": ["2V3S", "2VWI", "3DAK", "7OKW"], "AlphaFoldDB": ["O95747"], "SMR": ["O95747"], "BioGRID": ["115269"], "CORUM": ["O95747"], "DIP": ["DIP-34977N"], "ELM": ["O95747"], "FunCoup": ["O95747"], "IntAct": ["O95747"], "MINT": ["O95747"], "STRING": ["9606.ENSP00000311713"], "BindingDB": ["O95747"], "ChEMBL": ["CHEMBL1163104"], "DrugBank": ["DB12010"], "DrugCentral": ["O95747"], "GlyGen": ["O95747"], "iPTMnet": ["O95747"], "PhosphoSitePlus": ["O95747"], "SwissPalm": ["O95747"], "BioMuta": ["OXSR1"], "jPOST": ["O95747"], "MassIVE": ["O95747"], "PaxDb": ["9606-ENSP00000311713"], "PeptideAtlas": ["O95747"], "ProteomicsDB": ["51019"], "Pumba": ["O95747"], "Antibodypedia": ["2101"], "DNASU": ["9943"], "Ensembl": ["ENST00000311806.8"], "GeneID": ["9943"], "KEGG": ["hsa:9943"], "MANE-Select": ["ENST00000311806.8"], "UCSC": ["uc003chy.4"], "AGR": ["HGNC:8508"], "ClinPGx": ["PA134973207"], "CTD": ["9943"], "DisGeNET": ["9943"], "GeneCards": ["OXSR1"], "HGNC": ["HGNC:8508"], "HPA": ["ENSG00000172939"], "MalaCards": ["OXSR1"], "MIM": ["604046"], "OpenTargets": ["ENSG00000172939"], "VEuPathDB": ["HostDB:ENSG00000172939"], "eggNOG": ["KOG0582"], "GeneTree": ["ENSGT00940000162134"], "HOGENOM": ["CLU_000288_111_1_1"], "InParanoid": ["O95747"], "OMA": ["KMRTANC"], "OrthoDB": ["8693905at2759"], "PAN-GO": ["O95747"], "PhylomeDB": ["O95747"], "PathwayCommons": ["O95747"], "SignaLink": ["O95747"], "SIGNOR": ["O95747"], "Agora": ["ENSG00000172939"], "BioGRID-ORCS": ["9943"], "ChiTaRS": ["OXSR1"], "EvolutionaryTrace": ["O95747"], "GeneWiki": ["OXSR1"], "GenomeRNAi": ["9943"], "Pharos": ["O95747"], "PRO": ["PR:O95747"], "Proteomes": ["UP000005640"], "RNAct": ["O95747"], "Bgee": ["ENSG00000172939"], "ExpressionAtlas": ["O95747"], "GO": ["GO:0005737", "GO:0005829", "GO:0070062", "GO:0005524", "GO:0042802", "GO:0099106", "GO:0000287", "GO:0019870"], "CDD": ["cd06610"], "FunFam": ["3.10.20.90:FF:000043", "3.30.200.20:FF:000114", "1.10.510.10:FF:000068"], "Gene3D": ["3.10.20.90", "3.30.200.20", "1.10.510.10"], "InterPro": ["IPR011009", "IPR024678", "IPR000719", "IPR017441", "IPR050629"], "PANTHER": ["PTHR48012:SF1", "PTHR48012"], "Pfam": ["PF12202", "PF00069"], "SMART": ["SM00220"], "SUPFAM": ["SSF56112"], "PROSITE": ["PS00107", "PS50011"]}, "generated_at": "2026-02-28T15:55:51.656782"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

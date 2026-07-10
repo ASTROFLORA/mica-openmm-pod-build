@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="v2-compat">
+  <lmp:Identity>
+    <lmp:BudoID>budo:SERINE_THREONINE-PROTEIN_KINASE_OSR1_HUMAN_v1</lmp:BudoID>
+    <lmp:PrimaryAccession>2V3S</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>2V3S</lmp:UniProtKBId>
+    <lmp:Organism>Homo sapiens</lmp:Organism>
+  </lmp:Identity>
+  <lmp:Semantics>
+    <lmp:Genes>
+      <lmp:Value>OSR1</lmp:Value>
+      <lmp:Value>SERINE/THREONINE-PROTEIN KINASE OSR1</lmp:Value>
+    </lmp:Genes>
+    <lmp:NeSyGrammar version="2.0" length="96">GPISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEEPQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS</lmp:NeSyGrammar>
+  </lmp:Semantics>
+  <lmp:Geometry>
+    <lmp:Sequence length="96">GPISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEEPQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS</lmp:Sequence>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=2V3S chain=A res_start=30 res_end=39 len=10"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=2V3S chain=A res_start=48 res_end=60 len=13"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=2V3S chain=A res_start=3 res_end=10 len=8 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=2V3S chain=A res_start=16 res_end=23 len=8 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=2V3S chain=A res_start=67 res_end=71 len=5 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=2V3S chain=A res_start=90 res_end=95 len=6 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=2V3S chain=B res_start=30 res_end=39 len=10"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=2V3S chain=B res_start=48 res_end=60 len=13"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=2V3S chain=B res_start=73 res_end=76 len=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=2V3S chain=B res_start=3 res_end=10 len=8 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=2V3S chain=B res_start=16 res_end=23 len=8 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=2V3S chain=B res_start=67 res_end=71 len=5 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=2V3S chain=B res_start=90 res_end=95 len=6 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=2V3S chain=C res_start=4 res_end=5 len=2 strand_id=3"/>
+    <lmp:Feature type="pdb:cell" description="pdb=2V3S a=31.469 b=52.754 c=59.271 alpha=90.0 beta=103.23 gamma=90.0"/>
+    <lmp:Feature type="pdb:resolution" description="pdb=2V3S resolution=1.7"/>
+    <lmp:Feature type="pdb:citation" description="pdb=2V3S doi=10.1038/SJ.EMBOR.7401048 pmid=17721439 title=Structural Insights Into the Recognition of Substrates and Activators by the Osr1 Kinase"/>
+    <lmp:Feature type="geometry:com" description="pdb=2V3S chain=A x=-1.349 y=-0.485 z=25.738"/>
+    <lmp:Feature type="geometry:rg" description="pdb=2V3S chain=A rg=12.895"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=2V3S chain=A min=[-17.282, -15.536, 5.845] max=[12.25, 14.167, 44.671]"/>
+    <lmp:Feature type="geometry:com" description="pdb=2V3S chain=B x=2.666 y=-23.094 z=8.376"/>
+    <lmp:Feature type="geometry:rg" description="pdb=2V3S chain=B rg=13.138"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=2V3S chain=B min=[-10.708, -35.67, -11.69] max=[20.555, -8.399, 29.732]"/>
+    <lmp:Feature type="geometry:com" description="pdb=2V3S chain=C x=0.647 y=-34.942 z=7.302"/>
+    <lmp:Feature type="geometry:rg" description="pdb=2V3S chain=C rg=5.981"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=2V3S chain=C min=[-4.374, -39.771, -2.136] max=[6.628, -30.283, 16.667]"/>
+    <lmp:Feature type="geometry:com" description="pdb=2V3S chain=D x=1.713 y=11.023 z=23.656"/>
+    <lmp:Feature type="geometry:rg" description="pdb=2V3S chain=D rg=5.372"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=2V3S chain=D min=[-2.893, 6.587, 15.378] max=[6.258, 15.492, 31.882]"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=2V3S chain_a=A chain_b=B com_distance=28.788"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=2V3S chain_a=A chain_b=C com_distance=39.13"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=2V3S chain_a=A chain_b=D com_distance=12.089"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=2V3S chain_a=B chain_b=C com_distance=12.067"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=2V3S chain_a=B chain_b=D com_distance=37.395"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=2V3S chain_a=C chain_b=D com_distance=48.799"/>
+    <lmp:Feature type="ligand:peptide" description="pdb=2V3S chain=C seq=GRFQVT"/>
+    <lmp:Feature type="ligand:RFxV" start="2" end="5" description="pdb=2V3S chain=C seq=GRFQVT"/>
+    <lmp:Feature type="ligand:peptide" description="pdb=2V3S chain=D seq=GRFQVT"/>
+    <lmp:Feature type="ligand:RFxV" start="2" end="5" description="pdb=2V3S chain=D seq=GRFQVT"/>
+    <lmp:Chain id="A" sequence="GPISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEEPQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS" state="Active"/>
+    <lmp:Chain id="B" sequence="GPISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEEPQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS" state="Active"/>
+    <lmp:Chain id="C" sequence="GRFQVT" state="Active"/>
+    <lmp:Chain id="D" sequence="GRFQVT" state="Active"/>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>v2-compat</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T23:37:59.854667+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+  </lmp:Provenance>
+</lmp:LMP>

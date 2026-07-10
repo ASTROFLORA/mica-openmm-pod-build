@@ -1,0 +1,355 @@
+# LMP v2.0 Configuration
+# =======================
+# External configuration for vocabularies, mappings, and parser settings
+
+version: "2.0.0"
+schema_version: "2.0"
+
+# ============================================================================
+# CONTROLLED VOCABULARIES
+# ============================================================================
+
+vocabularies:
+  ptm_types:
+    - phosphorylation
+    - acetylation
+    - ubiquitination
+    - methylation
+    - sumoylation
+    - glycosylation
+    - hydroxylation
+    - nitrosylation
+    - other
+  
+  ptm_status:
+    - present
+    - absent
+    - transient
+    - unknown
+  
+  ligand_types:
+    - agonist
+    - antagonist
+    - substrate
+    - inhibitor
+    - cofactor
+    - allosteric_modulator
+  
+  ligand_effects:
+    - activation
+    - inhibition
+    - catalysis
+    - allosteric_modulation
+    - stabilization
+  
+  interface_types:
+    - heterodimer
+    - homodimer
+    - intramolecular
+    - protein-protein
+    - protein-ligand
+  
+  confidence_levels:
+    - high
+    - medium
+    - low
+    - predicted
+  
+  source_types:
+    - UniProt
+    - PDB
+    - PhosphoSitePlus
+    - M-CSA
+    - manual_curation
+    - computational_prediction
+
+  # ============================================================================
+  # OPTIONAL: PLIP TUNING (PDB-CENTRIC INTER-CHAIN)
+  # ============================================================================
+  # The generator can run PLIP directly on downloaded PDBs to compute inter-chain
+  # interaction metadata. You can optionally override PLIP thresholds to match
+  # other detectors (e.g., RING4) that use different pi-stacking criteria.
+  #
+  # Example:
+  # plip:
+  #   preset: ring4_relaxed
+  #   # or explicit overrides (keys from plip.basic.config):
+  #   # config_overrides_interchain:
+  #   #   PISTACK_DIST_MAX: 6.5
+  #   #   PISTACK_OFFSET_MAX: 3.5
+  #   #   PISTACK_ANG_DEV: 45
+
+# ============================================================================
+# STATE NAME MAPPINGS
+# ============================================================================
+
+state_mappings:
+  # Map LMP state names to BudoV3 FunctionalState enum
+  # Format: lmp_state_keyword -> functional_state_enum
+  
+  # Kinase states
+  active: ACTIVE
+  inactive: INACTIVE
+  autoinhibited: INACTIVE
+  inhibitor-bound: INACTIVE
+  substrate-bound: ACTIVE
+  transition_state: TRANSITION
+  phosphorylated: ACTIVE
+  
+  # GPCR states
+  agonist-bound: ACTIVE
+  antagonist-bound: INACTIVE
+  open: ACTIVE
+  closed: INACTIVE
+  
+  # Generic states
+  allosteric: ALLOSTERIC
+  apo: INACTIVE
+  unknown: UNKNOWN
+
+# ============================================================================
+# PTM-RESIDUE COMPATIBILITY
+# ============================================================================
+
+ptm_residue_compatibility:
+  # Map PTM types to valid amino acid residues (one-letter code)
+  phosphorylation:
+    - S  # Serine
+    - T  # Threonine
+    - Y  # Tyrosine
+  
+  acetylation:
+    - K  # Lysine
+  
+  ubiquitination:
+    - K  # Lysine
+  
+  methylation:
+    - K  # Lysine
+    - R  # Arginine
+  
+  sumoylation:
+    - K  # Lysine
+  
+  glycosylation:
+    - N  # Asparagine
+    - S  # Serine
+    - T  # Threonine
+  
+  hydroxylation:
+    - P  # Proline
+    - K  # Lysine
+  
+  nitrosylation:
+    - C  # Cysteine
+
+# ============================================================================
+# CONFIDENCE SCORE MAPPINGS
+# ============================================================================
+
+confidence_scores:
+  # Map confidence levels to numeric scores (0-1)
+  high: 0.9
+  medium: 0.7
+  low: 0.5
+  predicted: 0.3
+
+# ============================================================================
+# PARSER SETTINGS
+# ============================================================================
+
+parser:
+  # XSD validation
+  validate_schema: true
+  xsd_path: "lmp_v2_schema.xsd"
+  
+  # Error handling
+  strict_mode: false  # If true, warnings are treated as errors
+  skip_invalid: false  # If true, skip invalid elements instead of failing
+  
+  # Multi-chain support
+  support_multi_chain: true
+  default_chain_id: "A"
+  
+  # Domain nesting
+  support_nested_domains: true
+  max_domain_depth: 3
+  
+  # Logging
+  log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  log_file: "lmp_parser.log"
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# ============================================================================
+# GENERATOR SETTINGS
+# ============================================================================
+
+generator:
+  # API endpoints
+  uniprot_api: "https://rest.uniprot.org/uniprotkb"
+  pdb_api: "https://data.rcsb.org/rest/v1/core/entry"
+  phosphosite_api: null  # Requires authentication
+
+  # PubChem enrichment (optional; direct REST calls, no MCP)
+  # Notes:
+  # - Enrichment is best-effort and cached; generation should not fail if PubChem is down.
+  # - By default, results are written as sidecar JSON in cache_dir to avoid changing LMP XML schema.
+  pubchem:
+    enabled: true
+    api_base: "https://pubchem.ncbi.nlm.nih.gov/rest/pug"
+    timeout_seconds: 10
+    rate_limit: 0.25
+    max_ligands_per_pdb: 20
+    include_synonyms: false
+    property_fields:
+      - CanonicalSMILES
+      - IsomericSMILES
+      - InChI
+      - InChIKey
+      - MolecularFormula
+      - MolecularWeight
+      - IUPACName
+    write_sidecar_json: true
+    sidecar_prefix: "pubchem_enrichment"
+    xml_include_pubchem_cid: false
+  
+  # Rate limiting (seconds between requests)
+  rate_limit: 0.5
+  
+  # Caching
+  cache_enabled: true
+  cache_dir: "lmp_cache"
+  cache_ttl: 86400  # 24 hours in seconds
+  
+  # Default states for M-CSA proteins
+  mcsa_default_states:
+    - Apo_Inactive
+    - Substrate_bound_Active
+  
+  # State inference
+  infer_states_from_ptms: true
+  infer_states_from_pdb: true
+
+# ============================================================================
+# VALIDATOR SETTINGS
+# ============================================================================
+
+validator:
+  # Validation layers
+  validate_schema: true
+  validate_vocabularies: true
+  validate_causality: true
+  validate_biology: true
+  
+  # Strictness
+  strict_mode: false
+  fail_on_warning: false
+  
+  # Biology checks
+  check_residue_ptm_compatibility: true
+  check_sequence_position_bounds: true
+  check_binding_site_positions: true
+
+# ============================================================================
+# STATE ANNOTATOR SETTINGS
+# ============================================================================
+
+annotator:
+  # M-CSA dataset
+  mcsa_csv_columns:
+    - uniprot_id
+    - gene_name
+    - catalytic_residues
+    - mechanism_type
+  
+  # Output
+  output_format: "xml"  # xml, json
+  naming_convention: "{uniprot_id}_{state_name}.xml"
+  
+  # ESE signature linking
+  link_ese_signatures: true
+  ese_signature_format: "ese_{uniprot_id}_{state_name}_{trajectory_id}"
+  
+  # Validation
+  validate_after_generation: true
+  skip_invalid_after_generation: false
+
+# ============================================================================
+# DOMAIN-SPECIFIC FEATURE STATES
+# ============================================================================
+
+feature_states:
+  # Kinase domains
+  kinase:
+    activation_loop:
+      active:
+        - "Substrate-accessible"
+        - "Phosphorylated"
+        - "Extended"
+      inactive:
+        - "Blocked"
+        - "Dephosphorylated"
+        - "Collapsed"
+    
+    atp_binding_site:
+      active:
+        - "Competent"
+        - "Aligned"
+      inactive:
+        - "Distorted"
+        - "Misaligned"
+  
+  # GPCR domains
+  gpcr:
+    transmembrane_helices:
+      active:
+        - "Outward"
+        - "Open"
+      inactive:
+        - "Inward"
+        - "Closed"
+    
+    g_protein_coupling_site:
+      active:
+        - "Accessible"
+        - "Engaged"
+      inactive:
+        - "Occluded"
+        - "Disengaged"
+  
+  # Protease domains
+  protease:
+    catalytic_triad:
+      active:
+        - "Aligned"
+        - "Substrate-bound"
+      inactive:
+        - "Misaligned"
+        - "Apo"
+    
+    substrate_binding_pocket:
+      active:
+        - "Open"
+        - "Occupied"
+      inactive:
+        - "Closed"
+        - "Empty"
+
+# ============================================================================
+# EXTENSION POINTS
+# ============================================================================
+
+extensions:
+  # Custom PTM types (beyond controlled vocabulary)
+  allow_custom_ptm_types: true
+  custom_ptm_prefix: "custom_"
+  
+  # Custom ligand types
+  allow_custom_ligand_types: true
+  
+  # Custom states
+  allow_custom_states: true
+  
+  # Plugins
+  plugin_directory: "lmp_plugins"
+  enabled_plugins: []

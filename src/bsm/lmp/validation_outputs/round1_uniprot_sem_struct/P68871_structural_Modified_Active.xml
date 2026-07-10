@@ -1,0 +1,154 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="structural">
+  <lmp:Identity>
+    <lmp:BudoID>budo:HBB_HUMAN_v2</lmp:BudoID>
+    <lmp:PrimaryAccession>P68871</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>HBB_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606">Homo sapiens</lmp:Organism>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>A4GX73</lmp:Value>
+      <lmp:Value>B2ZUE0</lmp:Value>
+      <lmp:Value>P02023</lmp:Value>
+      <lmp:Value>Q13852</lmp:Value>
+      <lmp:Value>Q14481</lmp:Value>
+      <lmp:Value>Q14510</lmp:Value>
+      <lmp:Value>Q45KT0</lmp:Value>
+      <lmp:Value>Q549N7</lmp:Value>
+      <lmp:Value>Q6FI08</lmp:Value>
+      <lmp:Value>Q6R7N2</lmp:Value>
+      <lmp:Value>Q8IZI1</lmp:Value>
+      <lmp:Value>Q9BX96</lmp:Value>
+      <lmp:Value>Q9UCD6</lmp:Value>
+      <lmp:Value>Q9UCP8</lmp:Value>
+      <lmp:Value>Q9UCP9</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Geometry>
+    <lmp:Sequence length="147">MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH</lmp:Sequence>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=A res_start=4 res_end=17 len=14"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=A res_start=21 res_end=35 len=15"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=A res_start=37 res_end=42 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=A res_start=53 res_end=71 len=19"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=A res_start=76 res_end=79 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=A res_start=81 res_end=85 len=5"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=A res_start=86 res_end=91 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=A res_start=96 res_end=112 len=17"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=A res_start=119 res_end=136 len=18"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=C res_start=4 res_end=17 len=14"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=C res_start=21 res_end=35 len=15"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=C res_start=37 res_end=42 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=C res_start=53 res_end=71 len=19"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=C res_start=76 res_end=79 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=C res_start=81 res_end=86 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=C res_start=87 res_end=91 len=5"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=C res_start=96 res_end=112 len=17"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=C res_start=119 res_end=137 len=19"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=B res_start=5 res_end=15 len=11"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=B res_start=20 res_end=34 len=15"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=B res_start=36 res_end=41 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=B res_start=51 res_end=56 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=B res_start=58 res_end=75 len=18"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=B res_start=81 res_end=90 len=10"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=B res_start=91 res_end=96 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=B res_start=101 res_end=118 len=18"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=B res_start=124 res_end=142 len=19"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=D res_start=5 res_end=15 len=11"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=D res_start=20 res_end=34 len=15"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=D res_start=36 res_end=41 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=D res_start=51 res_end=55 len=5"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=D res_start=58 res_end=75 len=18"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=D res_start=81 res_end=90 len=10"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=D res_start=91 res_end=95 len=5"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=D res_start=101 res_end=118 len=18"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4HHB chain=D res_start=124 res_end=142 len=19"/>
+    <lmp:Feature type="pdb:cell" description="pdb=4HHB a=63.15 b=83.59 c=53.8 alpha=90.0 beta=99.34 gamma=90.0"/>
+    <lmp:Feature type="pdb:resolution" description="pdb=4HHB resolution=1.74"/>
+    <lmp:Feature type="pdb:citation" description="pdb=4HHB doi=10.1016/0022-2836(84)90472-8 pmid=6726807 title=The crystal structure of human deoxyhaemoglobin at 1.74 A resolution"/>
+    <lmp:Feature type="geometry:com" description="pdb=4HHB chain=A x=23.764 y=18.606 z=29.892"/>
+    <lmp:Feature type="geometry:rg" description="pdb=4HHB chain=A rg=14.648"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=4HHB chain=A min=[0.996, 0.582, 12.404] max=[42.491, 38.053, 49.169]"/>
+    <lmp:Feature type="geometry:com" description="pdb=4HHB chain=B x=23.415 y=4.169 z=49.746"/>
+    <lmp:Feature type="geometry:rg" description="pdb=4HHB chain=B rg=15.254"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=4HHB chain=B min=[0.693, -15.297, 29.363] max=[42.747, 26.014, 68.475]"/>
+    <lmp:Feature type="geometry:com" description="pdb=4HHB chain=C x=-0.804 y=24.157 z=48.287"/>
+    <lmp:Feature type="geometry:rg" description="pdb=4HHB chain=C rg=14.666"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=4HHB chain=C min=[-19.795, 5.699, 29.57] max=[22.581, 41.915, 66.788]"/>
+    <lmp:Feature type="geometry:com" description="pdb=4HHB chain=D x=-5.389 y=6.966 z=31.528"/>
+    <lmp:Feature type="geometry:rg" description="pdb=4HHB chain=D rg=15.222"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=4HHB chain=D min=[-24.242, -11.569, 11.202] max=[16.064, 28.315, 53.74]"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=4HHB chain_a=A chain_b=B com_distance=24.551"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=4HHB chain_a=A chain_b=C com_distance=31.189"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=4HHB chain_a=A chain_b=D com_distance=31.433"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=4HHB chain_a=B chain_b=C com_distance=31.436"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=4HHB chain_a=B chain_b=D com_distance=34.196"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=4HHB chain_a=C chain_b=D com_distance=24.442"/>
+    <lmp:Chain id="A" sequence="MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH" state="Modified_Active">
+      <lmp:Domain name="Globin" type="domain" start="3" end="147"/>
+      <lmp:Domain name="Globin (InterPro)" type="domain" start="3" end="147" interpro_id="IPR000971"/>
+      <lmp:Domain name="Hemoglobin, beta-type (InterPro)" type="family" start="8" end="146" interpro_id="IPR002337"/>
+      <lmp:Domain name="Globin-like superfamily (InterPro)" type="homologous_superfamily" start="2" end="147" interpro_id="IPR009050"/>
+      <lmp:Domain name="Globin/Protoglobin (InterPro)" type="homologous_superfamily" start="2" end="147" interpro_id="IPR012292"/>
+      <lmp:Domain name="Hemoglobin and related oxygen transporters (InterPro)" type="family" start="1" end="147" interpro_id="IPR050056"/>
+      <lmp:Domain name="GlobalFeatures" type="global" start="1" end="147">
+        <lmp:PTM id="ptm_2" type="n_terminal_acetylation" residue="V" position="2" status="present"/>
+        <lmp:PTM id="ptm_10" type="phosphorylation" residue="S" position="10" status="present"/>
+        <lmp:PTM id="ptm_13" type="phosphorylation" residue="T" position="13" status="present"/>
+        <lmp:PTM id="ptm_45" type="phosphorylation" residue="S" position="45" status="present"/>
+        <lmp:PTM id="ptm_51" type="phosphorylation" residue="T" position="51" status="present"/>
+        <lmp:PTM id="ptm_60" type="acetylation" residue="K" position="60" status="present"/>
+        <lmp:PTM id="ptm_83" type="acetylation" residue="K" position="83" status="present"/>
+        <lmp:PTM id="ptm_88" type="phosphorylation" residue="T" position="88" status="present"/>
+        <lmp:PTM id="ptm_94" type="nitrosylation" residue="C" position="94" status="present"/>
+        <lmp:PTM id="ptm_145" type="acetylation" residue="K" position="145" status="present"/>
+        <lmp:PTM id="ptm_9" type="glycosylation" residue="K" position="9" status="present"/>
+        <lmp:PTM id="ptm_18" type="glycosylation" residue="K" position="18" status="present"/>
+        <lmp:PTM id="ptm_67" type="glycosylation" residue="K" position="67" status="present"/>
+        <lmp:PTM id="ptm_121" type="glycosylation" residue="K" position="121" status="present"/>
+        <lmp:BindingSite type="(2R)-2,3-BISPHOSPHOGLYCERATE-binding" residues="2,3,83,144">
+          <lmp:Ligand name="(2R)-2,3-BISPHOSPHOGLYCERATE" type="substrate" effect="catalysis" id="lig_2R_2_3_BISPHOSPHOGLYCERATE"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="HEME B-binding" residues="64,93">
+          <lmp:Ligand name="HEME B" type="substrate" effect="catalysis" id="lig_HEME_B"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="PDB:4HHB:ligands" residues="1">
+          <lmp:Ligand name="HEM" type="substrate" effect="catalysis" id="lig_4HHB_HEM" smiles="Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"/>
+          <lmp:Ligand name="PO4" type="substrate" effect="catalysis" id="lig_4HHB_PO4" smiles="[O-]P(=O)([O-])[O-]"/>
+        </lmp:BindingSite>
+      </lmp:Domain>
+    </lmp:Chain>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>2</lmp:SequenceVersion>
+      <lmp:EntryVersion>217</lmp:EntryVersion>
+      <lmp:FirstPublicDate>1986-07-21</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>2007-01-23</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>structural</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:37:18.088957+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "P68871", "xref_total": 997, "xref_db_counts": {"PDB": 334, "PDBsum": 334, "EMBL": 104, "EMDB": 37, "GO": 29, "Orphanet": 24, "DrugBank": 21, "Reactome": 10, "MIM": 6, "InterPro": 5, "ComplexPortal": 3, "REPRODUCTION-2DPAGE": 2, "Ensembl": 2, "PANTHER": 2, "CCDS": 1, "PIR": 1, "RefSeq": 1, "AlphaFoldDB": 1, "BMRB": 1, "SASBDB": 1, "SMR": 1, "BioGRID": 1, "CORUM": 1, "DIP": 1, "FunCoup": 1}, "xref_examples": {"EMBL": ["M25079", "V00499", "DQ126270", "DQ126271", "DQ126272", "DQ126273", "DQ126274", "DQ126275"], "CCDS": ["CCDS7753.1"], "PIR": ["A53136"], "RefSeq": ["NP_000509.1"], "PDB": ["1A00", "1A01", "1A0U", "1A0Z", "1A3N", "1A3O", "1ABW", "1ABY"], "PDBsum": ["1A00", "1A01", "1A0U", "1A0Z", "1A3N", "1A3O", "1ABW", "1ABY"], "AlphaFoldDB": ["P68871"], "BMRB": ["P68871"], "EMDB": ["EMD-0407", "EMD-0408", "EMD-13319", "EMD-13320", "EMD-13325", "EMD-31915", "EMD-33189", "EMD-37574"], "SASBDB": ["P68871"], "SMR": ["P68871"], "BioGRID": ["109293"], "ComplexPortal": ["CPX-2158", "CPX-2929", "CPX-2936"], "CORUM": ["P68871"], "DIP": ["DIP-35526N"], "FunCoup": ["P68871"], "IntAct": ["P68871"], "MINT": ["P68871"], "STRING": ["9606.ENSP00000494175"], "BindingDB": ["P68871"], "ChEMBL": ["CHEMBL4331"], "DrugBank": ["DB08262", "DB07427", "DB08077", "DB07428", "DB02126", "DB09130", "DB08486", "DB09147"], "DrugCentral": ["P68871"], "TCDB": ["1.A.107.1.2"], "CarbonylDB": ["P68871"], "GlyConnect": ["2875"], "GlyCosmos": ["P68871"], "GlyGen": ["P68871"], "iPTMnet": ["P68871"], "MetOSite": ["P68871"], "PhosphoSitePlus": ["P68871"], "BioMuta": ["HBB"], "DMDM": ["56749856"], "REPRODUCTION-2DPAGE": ["IPI00654755", "P68871"], "CPTAC": ["CPTAC-5884"], "jPOST": ["P68871"], "MassIVE": ["P68871"], "PaxDb": ["9606-ENSP00000333994"], "PeptideAtlas": ["P68871"], "PRIDE": ["P68871"], "ProteomicsDB": ["57543"], "TopDownProteomics": ["P68871"], "ABCD": ["P68871"], "Antibodypedia": ["34986"], "DNASU": ["3043"], "Ensembl": ["ENST00000335295.4", "ENST00000647020.1"], "GeneID": ["3043"], "KEGG": ["hsa:3043"], "MANE-Select": ["ENST00000335295.4"], "UCSC": ["uc001mae.2"], "AGR": ["HGNC:4827"], "CIViC": ["3043"], "ClinPGx": ["PA29202"], "CTD": ["3043"], "DisGeNET": ["3043"], "GeneCards": ["HBB"], "GeneReviews": ["HBB"], "HGNC": ["HGNC:4827"], "HPA": ["ENSG00000244734"], "MalaCards": ["HBB"], "MIM": ["140700", "141900", "603902", "603903", "611162", "613985"], "OpenTargets": ["ENSG00000244734"], "Orphanet": ["247511", "231222", "231214", "231237", "2132", "231242", "90039", "2133"], "VEuPathDB": ["HostDB:ENSG00000244734"], "eggNOG": ["KOG3378"], "GeneTree": ["ENSGT00940000163476"], "HOGENOM": ["CLU_003827_10_0_1"], "InParanoid": ["P68871"], "OMA": ["HAIVSIW"], "OrthoDB": ["9886081at2759"], "PAN-GO": ["P68871"], "PhylomeDB": ["P68871"], "PathwayCommons": ["P68871"], "Reactome": ["R-HSA-1237044", "R-HSA-1247673", "R-HSA-2168880", "R-HSA-6798695", "R-HSA-9613829", "R-HSA-9615710", "R-HSA-9707564", "R-HSA-9707616"], "SignaLink": ["P68871"], "SIGNOR": ["P68871"], "Agora": ["ENSG00000244734"], "BioGRID-ORCS": ["3043"], "ChiTaRS": ["HBB"], "EvolutionaryTrace": ["P68871"], "GeneWiki": ["HBB"], "GenomeRNAi": ["3043"], "Pharos": ["P68871"], "PRO": ["PR:P68871"], "Proteomes": ["UP000005640"], "RNAct": ["P68871"], "Bgee": ["ENSG00000244734"], "ExpressionAtlas": ["P68871"], "GO": ["GO:0072562", "GO:0005829", "GO:0071682", "GO:0070062", "GO:0005576", "GO:0005615", "GO:1904813", "GO:0031838"], "CDD": ["cd08925"], "FunFam": ["1.10.490.10:FF:000001"], "Gene3D": ["1.10.490.10"], "InterPro": ["IPR000971", "IPR009050", "IPR012292", "IPR002337", "IPR050056"], "PANTHER": ["PTHR11442", "PTHR11442:SF42"], "Pfam": ["PF00042"], "PRINTS": ["PR00814"], "SUPFAM": ["SSF46458"], "PROSITE": ["PS01033"]}, "generated_at": "2026-02-25T00:37:18.089956"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="structural">
+  <lmp:Identity>
+    <lmp:BudoID>budo:P53_HUMAN_v4</lmp:BudoID>
+    <lmp:PrimaryAccession>P04637</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>P53_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606">Homo sapiens</lmp:Organism>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>Q15086</lmp:Value>
+      <lmp:Value>Q15087</lmp:Value>
+      <lmp:Value>Q15088</lmp:Value>
+      <lmp:Value>Q16535</lmp:Value>
+      <lmp:Value>Q16807</lmp:Value>
+      <lmp:Value>Q16808</lmp:Value>
+      <lmp:Value>Q16809</lmp:Value>
+      <lmp:Value>Q16810</lmp:Value>
+      <lmp:Value>Q16811</lmp:Value>
+      <lmp:Value>Q16848</lmp:Value>
+      <lmp:Value>Q2XN98</lmp:Value>
+      <lmp:Value>Q3LRW1</lmp:Value>
+      <lmp:Value>Q3LRW2</lmp:Value>
+      <lmp:Value>Q3LRW3</lmp:Value>
+      <lmp:Value>Q3LRW4</lmp:Value>
+      <lmp:Value>Q3LRW5</lmp:Value>
+      <lmp:Value>Q86UG1</lmp:Value>
+      <lmp:Value>Q8J016</lmp:Value>
+      <lmp:Value>Q99659</lmp:Value>
+      <lmp:Value>Q9BTM4</lmp:Value>
+      <lmp:Value>Q9HAQ8</lmp:Value>
+      <lmp:Value>Q9NP68</lmp:Value>
+      <lmp:Value>Q9NPJ2</lmp:Value>
+      <lmp:Value>Q9NZD0</lmp:Value>
+      <lmp:Value>Q9UBI2</lmp:Value>
+      <lmp:Value>Q9UQ61</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Geometry>
+    <lmp:Sequence length="393">MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHERCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPGGSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD</lmp:Sequence>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=A res_start=84 res_end=87 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=A res_start=185 res_end=194 len=10"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=17 res_end=19 len=3 strand_id=2"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=31 res_end=34 len=4 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=39 res_end=42 len=4 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=48 res_end=53 len=6 strand_id=2"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=63 res_end=70 len=8 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=102 res_end=105 len=4 strand_id=2"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=111 res_end=114 len=4 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=121 res_end=126 len=6 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=137 res_end=143 len=7 strand_id=2"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=158 res_end=165 len=8 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=171 res_end=181 len=11 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=B res_start=74 res_end=77 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=B res_start=84 res_end=88 len=5"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=B res_start=185 res_end=194 len=10"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=17 res_end=19 len=3 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=31 res_end=34 len=4 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=39 res_end=42 len=4 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=48 res_end=53 len=6 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=63 res_end=70 len=8 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=102 res_end=105 len=4 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=111 res_end=114 len=4 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=121 res_end=126 len=6 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=137 res_end=143 len=7 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=158 res_end=165 len=8 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=171 res_end=181 len=11 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=C res_start=73 res_end=76 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=C res_start=84 res_end=87 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=C res_start=185 res_end=192 len=8"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=17 res_end=19 len=3 strand_id=6"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=32 res_end=34 len=3 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=39 res_end=43 len=5 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=48 res_end=53 len=6 strand_id=6"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=63 res_end=70 len=8 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=102 res_end=104 len=3 strand_id=6"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=111 res_end=114 len=4 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=121 res_end=126 len=6 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=137 res_end=143 len=7 strand_id=6"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=158 res_end=165 len=8 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=171 res_end=182 len=12 strand_id=5"/>
+    <lmp:Feature type="pdb:cell" description="pdb=1TSR a=117.5 b=67.9 c=108.8 alpha=90.0 beta=105.5 gamma=90.0"/>
+    <lmp:Feature type="pdb:resolution" description="pdb=1TSR resolution=2.2"/>
+    <lmp:Feature type="pdb:citation" description="pdb=1TSR pmid=8023157 title=Crystal structure of a p53 tumor suppressor-DNA complex: understanding tumorigenic mutations."/>
+    <lmp:Feature type="geometry:com" description="pdb=1TSR chain=A x=72.869 y=28.827 z=56.714"/>
+    <lmp:Feature type="geometry:rg" description="pdb=1TSR chain=A rg=16.247"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=1TSR chain=A min=[50.574, 5.071, 36.64] max=[96.058, 52.087, 81.485]"/>
+    <lmp:Feature type="geometry:com" description="pdb=1TSR chain=B x=67.753 y=12.706 z=88.586"/>
+    <lmp:Feature type="geometry:rg" description="pdb=1TSR chain=B rg=16.233"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=1TSR chain=B min=[46.52, -9.59, 61.606] max=[94.37, 37.119, 108.078]"/>
+    <lmp:Feature type="geometry:com" description="pdb=1TSR chain=C x=38.183 y=-4.932 z=88.212"/>
+    <lmp:Feature type="geometry:rg" description="pdb=1TSR chain=C rg=16.2"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=1TSR chain=C min=[16.809, -26.682, 62.954] max=[62.102, 18.877, 108.43]"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=1TSR chain_a=A chain_b=B com_distance=36.082"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=1TSR chain_a=A chain_b=C com_distance=57.749"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=1TSR chain_a=B chain_b=C com_distance=34.433"/>
+    <lmp:Chain id="A" sequence="MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHERCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPGGSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD" state="Modified_Active">
+      <lmp:Domain name="Interaction with CCAR2" type="region" start="1" end="320"/>
+      <lmp:Domain name="Interaction with HRMT1L2" type="region" start="1" end="83"/>
+      <lmp:Domain name="Transcription activation (acidic)" type="region" start="1" end="44"/>
+      <lmp:Domain name="Disordered" type="region" start="50" end="96"/>
+      <lmp:Domain name="Interaction with WWOX" type="region" start="66" end="110"/>
+      <lmp:Domain name="Interaction with HIPK1" type="region" start="100" end="370"/>
+      <lmp:Domain name="Required for interaction with ZNF385A" type="region" start="100" end="300"/>
+      <lmp:Domain name="Required for interaction with FBXO42" type="region" start="113" end="236"/>
+      <lmp:Domain name="Interaction with AXIN1" type="region" start="116" end="292"/>
+      <lmp:Domain name="Interaction with the 53BP2 SH3 domain" type="region" start="241" end="248"/>
+      <lmp:Domain name="Interaction with E4F1" type="region" start="256" end="294"/>
+      <lmp:Domain name="Interaction with DNA" type="region" start="273" end="280"/>
+      <lmp:Domain name="Disordered" type="region" start="282" end="325"/>
+      <lmp:Domain name="Interaction with CARM1" type="region" start="300" end="393"/>
+      <lmp:Domain name="Interaction with HIPK2" type="region" start="319" end="360"/>
+      <lmp:Domain name="Oligomerization" type="region" start="325" end="356"/>
+      <lmp:Domain name="Disordered" type="region" start="351" end="393"/>
+      <lmp:Domain name="Interaction with USP7" type="region" start="359" end="363"/>
+      <lmp:Domain name="Basic (repression of DNA-binding)" type="region" start="368" end="387"/>
+      <lmp:Domain name="Interaction with MORN3" type="region" start="374" end="393"/>
+      <lmp:Domain name="Pro residues" type="compositional bias" start="69" end="90"/>
+      <lmp:Domain name="Basic and acidic residues" type="compositional bias" start="282" end="299"/>
+      <lmp:Domain name="Basic residues" type="compositional bias" start="365" end="384"/>
+      <lmp:Domain name="p53 tumour suppressor family (InterPro)" type="family" start="3" end="369" interpro_id="IPR002117"/>
+      <lmp:Domain name="p53-like transcription factor, DNA-binding domain superfamily (InterPro)" type="homologous_superfamily" start="97" end="287" interpro_id="IPR008967"/>
+      <lmp:Domain name="p53, tetramerisation domain (InterPro)" type="domain" start="319" end="357" interpro_id="IPR010991"/>
+      <lmp:Domain name="p53, DNA-binding domain (InterPro)" type="domain" start="100" end="288" interpro_id="IPR011615"/>
+      <lmp:Domain name="p53/RUNT-type transcription factor, DNA-binding domain superfamily (InterPro)" type="homologous_superfamily" start="95" end="294" interpro_id="IPR012346"/>
+      <lmp:Domain name="p53, transactivation domain (InterPro)" type="domain" start="6" end="30" interpro_id="IPR013872"/>
+      <lmp:Domain name="p53-like tetramerisation domain superfamily (InterPro)" type="homologous_superfamily" start="319" end="360" interpro_id="IPR036674"/>
+      <lmp:Domain name="Cellular tumor antigen p53, transactivation domain 2 (InterPro)" type="domain" start="35" end="59" interpro_id="IPR040926"/>
+      <lmp:Domain name="p53, central conserved site (InterPro)" type="conserved_site" start="237" end="249" interpro_id="IPR057064"/>
+      <lmp:Domain name="GlobalFeatures" type="global" start="1" end="393">
+        <lmp:Motif name="TADI" start="17" end="25" type="motif"/>
+        <lmp:Motif name="TADII" start="48" end="56" type="motif"/>
+        <lmp:Motif name="NLS" start="305" end="321" type="motif"/>
+        <lmp:Motif name="NES" start="339" end="350" type="motif"/>
+        <lmp:Motif name="[KR]-[STA]-K motif" start="370" end="372" type="motif"/>
+        <lmp:PTM id="ptm_9" type="phosphorylation" residue="S" position="9" status="present"/>
+        <lmp:PTM id="ptm_15" type="phosphorylation" residue="S" position="15" status="present"/>
+        <lmp:PTM id="ptm_18" type="phosphorylation" residue="T" position="18" status="present"/>
+        <lmp:PTM id="ptm_20" type="phosphorylation" residue="S" position="20" status="present"/>
+        <lmp:PTM id="ptm_33" type="phosphorylation" residue="S" position="33" status="present"/>
+        <lmp:PTM id="ptm_37" type="phosphorylation" residue="S" position="37" status="present"/>
+        <lmp:PTM id="ptm_46" type="phosphorylation" residue="S" position="46" status="present"/>
+        <lmp:PTM id="ptm_55" type="phosphorylation" residue="T" position="55" status="present"/>
+        <lmp:PTM id="ptm_120" type="acetylation" residue="K" position="120" status="present"/>
+        <lmp:PTM id="ptm_139" type="other" residue="K" position="139" status="present"/>
+        <lmp:PTM id="ptm_183" type="phosphorylation" residue="S" position="183" status="present"/>
+        <lmp:PTM id="ptm_269" type="phosphorylation" residue="S" position="269" status="present"/>
+        <lmp:PTM id="ptm_284" type="phosphorylation" residue="T" position="284" status="present"/>
+        <lmp:PTM id="ptm_305" type="acetylation" residue="K" position="305" status="present"/>
+        <lmp:PTM id="ptm_315" type="phosphorylation" residue="S" position="315" status="present"/>
+        <lmp:PTM id="ptm_321" type="acetylation" residue="K" position="321" status="present"/>
+        <lmp:PTM id="ptm_333" type="methylation" residue="R" position="333" status="present"/>
+        <lmp:PTM id="ptm_335" type="methylation" residue="R" position="335" status="present"/>
+        <lmp:PTM id="ptm_337" type="methylation" residue="R" position="337" status="present"/>
+        <lmp:PTM id="ptm_370" type="methylation" residue="K" position="370" status="present"/>
+        <lmp:PTM id="ptm_372" type="methylation" residue="K" position="372" status="present"/>
+        <lmp:PTM id="ptm_373" type="methylation" residue="K" position="373" status="present"/>
+        <lmp:PTM id="ptm_381" type="acetylation" residue="K" position="381" status="present"/>
+        <lmp:PTM id="ptm_382" type="methylation" residue="K" position="382" status="present"/>
+        <lmp:PTM id="ptm_392" type="phosphorylation" residue="S" position="392" status="present"/>
+        <lmp:PTM id="ptm_24" type="ubiquitination" residue="K" position="24" status="present"/>
+        <lmp:PTM id="ptm_291" type="ubiquitination" residue="K" position="291" status="present"/>
+        <lmp:PTM id="ptm_292" type="ubiquitination" residue="K" position="292" status="present"/>
+        <lmp:PTM id="ptm_351" type="ubiquitination" residue="K" position="351" status="present"/>
+        <lmp:PTM id="ptm_357" type="ubiquitination" residue="K" position="357" status="present"/>
+        <lmp:PTM id="ptm_386" type="sumoylation" residue="K" position="386" status="present"/>
+        <lmp:BindingSite type="DNA-binding" residues="102">
+          <lmp:Ligand name="DNA" type="substrate" effect="catalysis" id="lig_DNA"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="ZN(2+)-binding" residues="176,179,238,242">
+          <lmp:Ligand name="ZN(2+)" type="substrate" effect="catalysis" id="lig_ZN_2"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="PDB:1TSR:ligands" residues="1">
+          <lmp:Ligand name="ZN" type="substrate" effect="catalysis" id="lig_1TSR_ZN" smiles="[Zn+2]"/>
+        </lmp:BindingSite>
+      </lmp:Domain>
+    </lmp:Chain>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>4</lmp:SequenceVersion>
+      <lmp:EntryVersion>313</lmp:EntryVersion>
+      <lmp:FirstPublicDate>1987-08-13</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>2009-11-24</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>structural</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:36:22.125450+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "P04637", "xref_total": 1110, "xref_db_counts": {"PDB": 286, "PDBsum": 286, "GO": 173, "EMBL": 85, "Reactome": 45, "RefSeq": 25, "Orphanet": 20, "EMDB": 19, "Ensembl": 17, "DrugBank": 16, "CCDS": 9, "ProteomicsDB": 9, "MIM": 9, "InterPro": 9, "CD-CODE": 6, "Pfam": 4, "ComplexPortal": 3, "CPTAC": 3, "Gene3D": 3, "FunFam": 2, "PANTHER": 2, "SUPFAM": 2, "PIR": 1, "AlphaFoldDB": 1, "BMRB": 1}, "xref_examples": {"EMBL": ["X02469", "M13121", "M13112", "M13113", "M13114", "M13115", "M13116", "M13117"], "CCDS": ["CCDS11118.1", "CCDS45605.1", "CCDS45606.1", "CCDS73966.1", "CCDS73967.1", "CCDS73968.1", "CCDS73969.1", "CCDS73970.1"], "PIR": ["A25224"], "RefSeq": ["NP_000537.3", "NP_001119584.1", "NP_001119585.1", "NP_001119586.1", "NP_001119587.1", "NP_001119588.1", "NP_001119589.1", "NP_001119590.1"], "PDB": ["1A1U", "1AIE", "1C26", "1DT7", "1GZH", "1H26", "1HS5", "1JSP"], "PDBsum": ["1A1U", "1AIE", "1C26", "1DT7", "1GZH", "1H26", "1HS5", "1JSP"], "AlphaFoldDB": ["P04637"], "BMRB": ["P04637"], "EMDB": ["EMD-0378", "EMD-17265", "EMD-17266", "EMD-18809", "EMD-18810", "EMD-22294", "EMD-22827", "EMD-29941"], "SMR": ["P04637"], "BioGRID": ["113010"], "ComplexPortal": ["CPX-6093", "CPX-663", "CPX-759"], "CORUM": ["P04637"], "DIP": ["DIP-368N"], "ELM": ["P04637"], "FunCoup": ["P04637"], "IntAct": ["P04637"], "MINT": ["P04637"], "STRING": ["9606.ENSP00000269305"], "BindingDB": ["P04637"], "ChEMBL": ["CHEMBL4096"], "DrugBank": ["DB08363", "DB13010", "DB00945", "DB17549", "DB05404", "DB17507", "DB11684", "DB17039"], "MoonDB": ["P04637"], "TCDB": ["1.C.110.1.1"], "GlyCosmos": ["P04637"], "GlyGen": ["P04637"], "iPTMnet": ["P04637"], "MetOSite": ["P04637"], "PhosphoSitePlus": ["P04637"], "SwissPalm": ["P04637"], "BioMuta": ["TP53"], "DMDM": ["269849759"], "CPTAC": ["CPTAC-5895", "CPTAC-5896", "CPTAC-951"], "jPOST": ["P04637"], "MassIVE": ["P04637"], "PaxDb": ["9606-ENSP00000269305"], "PeptideAtlas": ["P04637"], "ProteomicsDB": ["51728", "51729", "51730", "51731", "51732", "51733", "51734", "51735"], "Pumba": ["P04637"], "ABCD": ["P04637"], "Antibodypedia": ["3525"], "CPTC": ["P04637"], "DNASU": ["7157"], "Ensembl": ["ENST00000269305.9", "ENST00000420246.6", "ENST00000445888.6", "ENST00000455263.6", "ENST00000503591.2", "ENST00000504290.5", "ENST00000504937.5", "ENST00000508793.6"], "GeneID": ["7157"], "KEGG": ["hsa:7157"], "MANE-Select": ["ENST00000269305.9"], "UCSC": ["uc002gij.4"], "AGR": ["HGNC:11998"], "CIViC": ["7157"], "ClinPGx": ["PA36679"], "CTD": ["7157"], "DisGeNET": ["7157"], "GeneCards": ["TP53"], "GeneReviews": ["TP53"], "HGNC": ["HGNC:11998"], "HPA": ["ENSG00000141510"], "MalaCards": ["TP53"], "MIM": ["133239", "151623", "191170", "202300", "211980", "260500", "275355", "614740"], "OpenTargets": ["ENSG00000141510"], "Orphanet": ["1501", "210159", "99756", "67038", "585909", "667662", "251899", "96253"], "VEuPathDB": ["HostDB:ENSG00000141510"], "eggNOG": ["ENOG502QVY3"], "GeneTree": ["ENSGT00950000183153"], "InParanoid": ["P04637"], "OMA": ["HKKGEPC"], "OrthoDB": ["5915660at2759"], "PAN-GO": ["P04637"], "PhylomeDB": ["P04637"], "PathwayCommons": ["P04637"], "Reactome": ["R-HSA-111448", "R-HSA-139915", "R-HSA-1912408", "R-HSA-2559580", "R-HSA-2559584", "R-HSA-2559585", "R-HSA-2559586", "R-HSA-3232118"], "SABIO-RK": ["P04637"], "SignaLink": ["P04637"], "SIGNOR": ["P04637"], "Agora": ["ENSG00000141510"], "BioGRID-ORCS": ["7157"], "CD-CODE": ["1A18FFC4", "8C2F96ED", "91857CE7", "A1A97FAB", "B5B9A610", "E11B6BAB"], "ChiTaRS": ["TP53"], "EvolutionaryTrace": ["P04637"], "GeneWiki": ["P53"], "GenomeRNAi": ["7157"], "Pharos": ["P04637"], "PRO": ["PR:P04637"], "Proteomes": ["UP000005640"], "RNAct": ["P04637"], "Bgee": ["ENSG00000141510"], "ExpressionAtlas": ["P04637"], "GO": ["GO:0005813", "GO:0000785", "GO:0005737", "GO:0005829", "GO:0005783", "GO:0043073", "GO:0005759", "GO:0005739"], "CDD": ["cd08367"], "DisProt": ["DP00086"], "FunFam": ["2.60.40.720:FF:000003", "4.10.170.10:FF:000003"], "Gene3D": ["2.60.40.720", "6.10.50.20", "4.10.170.10"], "IDEAL": ["IID00015"], "InterPro": ["IPR008967", "IPR012346", "IPR057064", "IPR011615", "IPR040926", "IPR036674", "IPR010991", "IPR013872"], "PANTHER": ["PTHR11447", "PTHR11447:SF6"], "Pfam": ["PF00870", "PF08563", "PF07710", "PF18521"], "PRINTS": ["PR00386"], "SUPFAM": ["SSF47719", "SSF49417"], "PROSITE": ["PS00348"]}, "generated_at": "2026-02-25T00:36:22.126526"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="structural">
+  <lmp:Identity>
+    <lmp:BudoID>budo:3HTB_v1</lmp:BudoID>
+    <lmp:PrimaryAccession>3HTB</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>3HTB</lmp:UniProtKBId>
+    <lmp:Organism>Homo sapiens</lmp:Organism>
+  </lmp:Identity>
+  <lmp:Geometry>
+    <lmp:Sequence length="164">MNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPDLNAAKSELDKAIGRNCNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCAAINQVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPDRAKRVITTFRTGTWDAYKNL</lmp:Sequence>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3HTB chain=A res_start=3 res_end=11 len=9"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3HTB chain=A res_start=39 res_end=50 len=12"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3HTB chain=A res_start=60 res_end=80 len=21"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3HTB chain=A res_start=85 res_end=90 len=6"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3HTB chain=A res_start=93 res_end=112 len=20"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3HTB chain=A res_start=115 res_end=122 len=8"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3HTB chain=A res_start=126 res_end=134 len=9"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3HTB chain=A res_start=137 res_end=141 len=5"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=3HTB chain=A res_start=143 res_end=155 len=13"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=3HTB chain=A res_start=14 res_end=15 len=2 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=3HTB chain=A res_start=17 res_end=19 len=3 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=3HTB chain=A res_start=25 res_end=28 len=4 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=3HTB chain=A res_start=31 res_end=34 len=4 strand_id=1"/>
+    <lmp:Feature type="pdb:cell" description="pdb=3HTB a=59.95 b=59.95 c=96.61 alpha=90.0 beta=90.0 gamma=120.0"/>
+    <lmp:Feature type="pdb:resolution" description="pdb=3HTB resolution=1.81"/>
+    <lmp:Feature type="pdb:citation" description="pdb=3HTB doi=10.1016/j.jmb.2009.09.049 pmid=19782087 title=Predicting ligand binding affinity with alchemical free energy methods in a polar model binding site."/>
+    <lmp:Feature type="geometry:com" description="pdb=3HTB chain=A x=22.314 y=-16.721 z=-9.279"/>
+    <lmp:Feature type="geometry:rg" description="pdb=3HTB chain=A rg=16.332"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=3HTB chain=A min=[2.689, -36.159, -36.141] max=[42.145, 4.494, 13.244]"/>
+    <lmp:Chain id="A" sequence="MNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPDLNAAKSELDKAIGRNCNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCAAINQVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPDRAKRVITTFRTGTWDAYKNL" state="Active"/>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>structural</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:41:58.190794+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+  </lmp:Provenance>
+</lmp:LMP>

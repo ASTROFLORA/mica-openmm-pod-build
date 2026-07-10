@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<LMP xmlns="http://ai-university.edu/lmp/v4.0" version="4.0" preset="plm-esm2">
+  <Identity>
+    <BudoID>budo:P00519</BudoID>
+    <PrimaryAccession>P00519</PrimaryAccession>
+    <UniProtKBId>ABL1_HUMAN</UniProtKBId>
+    <Active>true</Active>
+    <ProteinExistence>Evidence at protein level</ProteinExistence>
+    <Organism id="9606">Homo sapiens</Organism>
+  </Identity>
+  <Semantics>
+    <ProteinName>ABL1 tyrosine kinase</ProteinName>
+    <Genes>
+      <Value>ABL1</Value>
+    </Genes>
+    <Keywords>
+      <Value>Kinase</Value>
+      <Value>Tyrosine-protein kinase</Value>
+      <Value>ATP-binding</Value>
+    </Keywords>
+    <NeSyGrammar version="2.0">[SH3][SH2][KIN:ABL1](ATP)&lt;DFG&gt;*ACTIVE*</NeSyGrammar>
+  </Semantics>
+  <Provenance>
+    <EntryAudit>
+      <FirstPublicDate>2026-01-20</FirstPublicDate>
+    </EntryAudit>
+    <GenerationInfo>
+      <Generator>LMPv4Generator</Generator>
+      <GeneratorVersion>4.0.0</GeneratorVersion>
+      <Preset>plm-esm2</Preset>
+      <Timestamp>2026-02-24T23:32:15Z</Timestamp>
+    </GenerationInfo>
+  </Provenance>
+</LMP>

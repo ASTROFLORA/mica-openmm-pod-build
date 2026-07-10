@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LMP v4 Validation Report — 2026-02-24 18:44</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 2em; background: #0d1117; color: #c9d1d9; }
+h1, h2 { color: #58a6ff; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+th, td { border: 1px solid #30363d; padding: 6px 10px; text-align: left; font-size: 13px; }
+th { background: #161b22; color: #58a6ff; }
+tr:nth-child(even) { background: #161b22; }
+.pass { color: #3fb950; font-weight: bold; }
+.fail { color: #f85149; font-weight: bold; }
+.warn { color: #d29922; font-weight: bold; }
+.info { color: #8b949e; }
+.stats { display: flex; gap: 2em; margin: 1em 0; }
+.stat-box { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1em 2em; }
+.stat-val { font-size: 2em; font-weight: bold; color: #58a6ff; }
+.stat-label { color: #8b949e; }
+</style>
+</head>
+<body>
+<h1>LMP v4 Validation Report</h1>
+<p>Generated: 2026-02-24 18:44:28 | Entries: 5 | Presets: 2</p>
+
+<div class="stats">
+  <div class="stat-box"><div class="stat-val">20</div><div class="stat-label">Total Runs</div></div>
+  <div class="stat-box"><div class="stat-val pass">20</div><div class="stat-label">XSD Pass</div></div>
+  <div class="stat-box"><div class="stat-val fail">0</div><div class="stat-label">XSD Fail</div></div>
+  <div class="stat-box"><div class="stat-val warn">34</div><div class="stat-label">Total Gaps</div></div>
+</div>
+
+<h2>Coverage Matrix</h2>
+<table>
+<tr><th>Entry</th><th>Gene</th><th>Preset</th><th>State</th><th>XSD</th><th>Size KB</th>
+<th>ID</th><th>Sem</th><th>Geo</th><th>Feat</th><th>KG</th><th>IFP</th><th>NeSy</th>
+<th>Domains</th><th>PTMs</th><th>Gaps</th><th>Time</th></tr>
+<tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>full</td>
+            <td>Apo_Inactive</td>
+            <td class="pass">OK</td>
+            <td>539.02</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>32</td>
+            <td>34</td>
+            <td class="warn">2</td>
+            <td>5.418s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>full</td>
+            <td>Phosphorylated_Active</td>
+            <td class="pass">OK</td>
+            <td>539.28</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>32</td>
+            <td>34</td>
+            <td class="warn">2</td>
+            <td>5.418s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>md-ifp</td>
+            <td>Apo_Inactive</td>
+            <td class="pass">OK</td>
+            <td>10.15</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">1</td>
+            <td>0.479s</td>
+        </tr><tr>
+            <td>P00519</td>
+            <td>ABL1</td>
+            <td>md-ifp</td>
+            <td>Phosphorylated_Active</td>
+            <td class="pass">OK</td>
+            <td>10.16</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">1</td>
+            <td>0.479s</td>
+        </tr><tr>
+            <td>P04637</td>
+            <td>TP53</td>
+            <td>full</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>1574.84</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>33</td>
+            <td>31</td>
+            <td class="warn">2</td>
+            <td>3.333s</td>
+        </tr><tr>
+            <td>P04637</td>
+            <td>TP53</td>
+            <td>full</td>
+            <td>Modified_Active</td>
+            <td class="pass">OK</td>
+            <td>1575.1</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>33</td>
+            <td>31</td>
+            <td class="warn">2</td>
+            <td>3.333s</td>
+        </tr><tr>
+            <td>P04637</td>
+            <td>TP53</td>
+            <td>md-ifp</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>9.11</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">1</td>
+            <td>0.987s</td>
+        </tr><tr>
+            <td>P04637</td>
+            <td>TP53</td>
+            <td>md-ifp</td>
+            <td>Modified_Active</td>
+            <td class="pass">OK</td>
+            <td>9.11</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">1</td>
+            <td>0.987s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>full</td>
+            <td>Apo</td>
+            <td class="pass">OK</td>
+            <td>1935.78</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>90</td>
+            <td>2</td>
+            <td class="fail">3</td>
+            <td>3.087s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>full</td>
+            <td>Substrate_bound</td>
+            <td class="pass">OK</td>
+            <td>1935.81</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>90</td>
+            <td>2</td>
+            <td class="fail">3</td>
+            <td>3.087s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>md-ifp</td>
+            <td>Apo</td>
+            <td class="pass">OK</td>
+            <td>18.36</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.149s</td>
+        </tr><tr>
+            <td>P0DTD1</td>
+            <td>rep</td>
+            <td>md-ifp</td>
+            <td>Substrate_bound</td>
+            <td class="pass">OK</td>
+            <td>18.38</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>0.149s</td>
+        </tr><tr>
+            <td>P00533</td>
+            <td>EGFR</td>
+            <td>full</td>
+            <td>Apo_Inactive</td>
+            <td class="pass">OK</td>
+            <td>900.35</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>27</td>
+            <td>48</td>
+            <td class="warn">2</td>
+            <td>2.597s</td>
+        </tr><tr>
+            <td>P00533</td>
+            <td>EGFR</td>
+            <td>full</td>
+            <td>Phosphorylated_Active</td>
+            <td class="pass">OK</td>
+            <td>900.82</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>27</td>
+            <td>48</td>
+            <td class="warn">2</td>
+            <td>2.597s</td>
+        </tr><tr>
+            <td>P00533</td>
+            <td>EGFR</td>
+            <td>md-ifp</td>
+            <td>Apo_Inactive</td>
+            <td class="pass">OK</td>
+            <td>10.23</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">1</td>
+            <td>0.272s</td>
+        </tr><tr>
+            <td>P00533</td>
+            <td>EGFR</td>
+            <td>md-ifp</td>
+            <td>Phosphorylated_Active</td>
+            <td class="pass">OK</td>
+            <td>10.24</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">1</td>
+            <td>0.272s</td>
+        </tr><tr>
+            <td>1IEP</td>
+            <td>ABL1</td>
+            <td>full</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>10.0</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>2.432s</td>
+        </tr><tr>
+            <td>1IEP</td>
+            <td>ABL1</td>
+            <td>full</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>10.01</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">2</td>
+            <td>2.432s</td>
+        </tr><tr>
+            <td>1IEP</td>
+            <td>ABL1</td>
+            <td>md-ifp</td>
+            <td>Active</td>
+            <td class="pass">OK</td>
+            <td>3.55</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">1</td>
+            <td>1.367s</td>
+        </tr><tr>
+            <td>1IEP</td>
+            <td>ABL1</td>
+            <td>md-ifp</td>
+            <td>Inactive</td>
+            <td class="pass">OK</td>
+            <td>3.55</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Y</td>
+            <td>-</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="warn">1</td>
+            <td>1.367s</td>
+        </tr>
+</table>
+
+<h2>Gap Analysis (34 total)</h2>
+<table>
+<tr><th>Severity</th><th>Category</th><th>Entry</th><th>Preset</th><th>Message</th></tr>
+<tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>full</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>full</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>full</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>full</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>md-ifp</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00519</td>
+                <td>md-ifp</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P04637</td>
+                <td>full</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P04637</td>
+                <td>full</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P04637</td>
+                <td>full</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P04637</td>
+                <td>full</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P04637</td>
+                <td>md-ifp</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P04637</td>
+                <td>md-ifp</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>full</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>full</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>ifp</td>
+                <td>P0DTD1</td>
+                <td>full</td>
+                <td>Preset expects TrajectoryIFP but block missing (no traj input?)</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>full</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>full</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>ifp</td>
+                <td>P0DTD1</td>
+                <td>full</td>
+                <td>Preset expects TrajectoryIFP but block missing (no traj input?)</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>md-ifp</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>ifp</td>
+                <td>P0DTD1</td>
+                <td>md-ifp</td>
+                <td>Preset expects TrajectoryIFP but block missing (no traj input?)</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P0DTD1</td>
+                <td>md-ifp</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>ifp</td>
+                <td>P0DTD1</td>
+                <td>md-ifp</td>
+                <td>Preset expects TrajectoryIFP but block missing (no traj input?)</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00533</td>
+                <td>full</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00533</td>
+                <td>full</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00533</td>
+                <td>full</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00533</td>
+                <td>full</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00533</td>
+                <td>md-ifp</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>P00533</td>
+                <td>md-ifp</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1IEP</td>
+                <td>full</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1IEP</td>
+                <td>full</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1IEP</td>
+                <td>full</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1IEP</td>
+                <td>full</td>
+                <td>Semantics present but 0 keywords</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1IEP</td>
+                <td>md-ifp</td>
+                <td>Identity present but sequence is empty</td>
+            </tr><tr>
+                <td class="warn">WARNING</td>
+                <td>annotation</td>
+                <td>1IEP</td>
+                <td>md-ifp</td>
+                <td>Identity present but sequence is empty</td>
+            </tr>
+</table>
+
+<h2>DSSP Secondary Structure</h2>
+<table>
+<tr><th>Entry</th><th>Chain</th><th>Helices</th><th>Helix Res</th><th>Strands</th><th>Strand Res</th><th>Coils</th></tr>
+</table>
+</body>
+</html>

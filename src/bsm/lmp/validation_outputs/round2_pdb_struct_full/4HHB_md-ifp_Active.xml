@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="md-ifp">
+  <lmp:Identity>
+    <lmp:BudoID>budo:4HHB_v1</lmp:BudoID>
+    <lmp:PrimaryAccession>4HHB</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>4HHB</lmp:UniProtKBId>
+    <lmp:Organism>Homo sapiens</lmp:Organism>
+  </lmp:Identity>
+  <lmp:Geometry>
+    <lmp:Sequence length="146">VHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH</lmp:Sequence>
+    <lmp:Chain id="A" sequence="VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR" state="Active"/>
+    <lmp:Chain id="B" sequence="VHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH" state="Active"/>
+    <lmp:Chain id="C" sequence="VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR" state="Active"/>
+    <lmp:Chain id="D" sequence="VHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH" state="Active"/>
+    <lmp:TrajectoryIFP pdb_id="4HHB" ligand="HEM" total_frames="1" stride="1">
+      <!--mica:smic_context {"engine":"smic_core.ifp_engine:IFPEngine","pdb_id":"4HHB","topology":"lmp_cache\\pdb_files\\4HHB.pdb","trajectory":"src\\bsm\\lmp\\validation_outputs\\round2_pdb_struct_full\\_pdb_cache\\4HHB.pdb","ligand":"HEM","ligand_sel":"resname HEM","receptor_sel":"protein","receptor_chain":null,"stride":1,"end_frame":1,"detect_metals":false}-->
+      <lmp:Frame number="0" time_ns="0.000">
+        <lmp:Interaction type="Hydrophobic" residue="PHE43" distance="3.320" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="PHE46" distance="3.563" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="VAL62" distance="3.923" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="LEU83" distance="3.689" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="LEU86" distance="3.274" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="LEU91" distance="3.428" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="VAL93" distance="3.527" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="PHE98" distance="3.449" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="LEU101" distance="3.417" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="LEU136" distance="3.564" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="LEU31" distance="3.930" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="PHE41" distance="3.676" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="PHE42" distance="3.731" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="VAL67" distance="3.619" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="LEU88" distance="3.881" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="LEU96" distance="3.348" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="VAL98" distance="3.812" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="PHE103" distance="3.535" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="LEU106" distance="3.922" occupancy="1.000000"/>
+        <lmp:Interaction type="Hydrophobic" residue="LEU141" distance="3.563" occupancy="1.000000"/>
+        <lmp:Fingerprint>01000000</lmp:Fingerprint>
+      </lmp:Frame>
+      <lmp:Summary total_interactions="20" average_interactions_per_frame="20.000">
+        <lmp:KeyInteraction residue="PHE43" type="Hydrophobic" occupancy="1.000000"/>
+      </lmp:Summary>
+    </lmp:TrajectoryIFP>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>md-ifp</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:41:29.429458+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+  </lmp:Provenance>
+</lmp:LMP>

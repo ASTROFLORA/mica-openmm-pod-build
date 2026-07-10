@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="structural">
+  <lmp:Identity>
+    <lmp:BudoID>budo:WNK1_HUMAN_v2</lmp:BudoID>
+    <lmp:PrimaryAccession>Q9H4A3</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>WNK1_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606">Homo sapiens</lmp:Organism>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>A1L4B0</lmp:Value>
+      <lmp:Value>C5HTZ5</lmp:Value>
+      <lmp:Value>C5HTZ6</lmp:Value>
+      <lmp:Value>C5HTZ7</lmp:Value>
+      <lmp:Value>H6WZW3</lmp:Value>
+      <lmp:Value>O15052</lmp:Value>
+      <lmp:Value>P54963</lmp:Value>
+      <lmp:Value>Q4VBX9</lmp:Value>
+      <lmp:Value>Q6IFS5</lmp:Value>
+      <lmp:Value>Q86WL5</lmp:Value>
+      <lmp:Value>Q8N673</lmp:Value>
+      <lmp:Value>Q96CZ6</lmp:Value>
+      <lmp:Value>Q9P1S9</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Geometry>
+    <lmp:Sequence length="2382">MSGGAAEKQSSTPGSLFLSPPAPAPKNGSSSDSSVGEKLGAAAADAVTGRTEEYRRRRHTMDKDSRGAAATTTTTEHRFFRRSVICDSNATALELPGLPLSLPQPSIPAAVPQSAPPEPHREETVTATATSQVAQQPPAAAAPGEQAVAGPAPSTVPSSTSKDRPVSQPSLVGSKEEPPPARSGSGGGSAKEPQEERSQQQDDIEELETKAVGMSNDGRFLKFDIEIGRGSFKTVYKGLDTETTVEVAWCELQDRKLTKSERQRFKEEAEMLKGLQHPNIVRFYDSWESTVKGKKCIVLVTELMTSGTLKTYLKRFKVMKIKVLRSWCRQILKGLQFLHTRTPPIIHRDLKCDNIFITGPTGSVKIGDLGLATLKRASFAKSVIGTPEFMAPEMYEEKYDESVDVYAFGMCMLEMATSEYPYSECQNAAQIYRRVTSGVKPASFDKVAIPEVKEIIEGCIRQNKDERYSIKDLLNHAFFQEETGVRVELAEEDDGEKIAIKLWLRIEDIKKLKGKYKDNEAIEFSFDLERDVPEDVAQEMVESGYVCEGDHKTMAKAIKDRVSLIKRKREQRQLVREEQEKKKQEESSLKQQVEQSSASQTGIKQLPSASTGIPTASTTSASVSTQVEPEEPEADQHQQLQYQQPSISVLSDGTVDSGQGSSVFTESRVSSQQTVSYGSQHEQAHSTGTVPGHIPSTVQAQSQPHGVYPPSSVAQGQSQGQPSSSSLTGVSSSQPIQHPQQQQGIQQTAPPQQTVQYSLSQTSTSSEATTAQPVSQPQAPQVLPQVSAGKQLPVSQPVPTIQGEPQIPVATQPSVVPVHSGAHFLPVGQPLPTPLLPQYPVSQIPISTPHVSTAQTGFSSLPITMAAGITQPLLTLASSATTAAIPGVSTVVPSQLPTLLQPVTQLPSQVHPQLLQPAVQSMGIPANLGQAAEVPLSSGDVLYQGFPPRLPPQYPGDSNIAPSSNVASVCIHSTVLSPPMPTEVLATPGYFPTVVQPYVESNLLVPMGGVGGQVQVSQPGGSLAQAPTTSSQQAVLESTQGVSQVAPAEPVAVAQTQATQPTTLASSVDSAHSDVASGMSDGNENVPSSSGRHEGRTTKRHYRKSVRSRSRHEKTSRPKLRILNVSNKGDRVVECQLETHNRKMVTFKFDLDGDNPEEIATIMVNNDFILAIERESFVDQVREIIEKADEMLSEDVSVEPEGDQGLESLQGKDDYGFSGSQKLEGEFKQPIPASSMPQQIGIPTSSLTQVVHSAGRRFIVSPVPESRLRESKVFPSEITDTVAASTAQSPGMNLSHSASSLSLQQAFSELRRAQMTEGPNTAPPNFSHTGPTFPVVPPFLSSIAGVPTTAAATAPVPATSSPPNDISTSVIQSEVTVPTEEGIAGVATSTGVVTSGGLPIPPVSESPVLSSVVSSITIPAVVSISTTSPSLQVPTSTSEIVVSSTALYPSVTVSATSASAGGSTATPGPKPPAVVSQQAAGSTTVGATLTSVSTTTSFPSTASQLCIQLSSSTSTPTLAETVVVSAHSLDKTSHSSTTGLAFSLSAPSSSSSPGAGVSSYISQPGGLHPLVIPSVIASTPILPQAAGPTSTPLLPQVPSIPPLVQPVANVPAVQQTLIHSQPQPALLPNQPHTHCPEVDSDTQPKAPGIDDIKTLEEKLRSLFSEHSSSGAQHASVSLETSLVIESTVTPGIPTTAVAPSKLLTSTTSTCLPPTNLPLGTVALPVTPVVTPGQVSTPVSTTTSGVKPGTAPSKPPLTKAPVLPVGTELPAGTLPSEQLPPFPGPSLTQSQQPLEDLDAQLRRTLSPEMITVTSAVGPVSMAAPTAITEAGTQPQKGVSQVKEGPVLATSSGAGVFKMGRFQVSVAADGAQKEGKNKSEDAKSVHFESSTSESSVLSSSSPESTLVKPEPNGITIPGISSDVPESAHKTTASEAKSDTGQPTKVGRFQVTTTANKVGRFSVSKTEDKITDTKKEGPVASPPFMDLEQAVLPAVIPKKEKPELSEPSHLNGPSSDPEAAFLSRDVDDGSGSPHSPHQLSSKSLPSQNLSQSLSNSFNSSYMSSDNESDIEDEDLKLELRRLRDKHLKEIQDLQSRQKHEIESLYTKLGKVPPAVIIPPAAPLSGRRRRPTKSKGSKSSRSSSLGNKSPQLSGNLSGQSAASVLHPQQTLHPPGNIPESGQNQLLQPLKPSPSSDNLYSAFTSDGAISVPSLSAPGQGTSSTNTVGATVNSQAAQAQPPAMTSSRKGTFTDDLHKLVDNWARDAMNLSGRRGSKGHMNYEGPGMARKFSAPGQLCISMTSNLGGSAPISAASATSLGHFTKSMCPPQQYGFPATPFGAQWSGTGGPAPQPLGQFQPVGTASLQNFNISNLQKSISNPPGSNLRTT</lmp:Sequence>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4PWN chain=A res_start=57 res_end=64 len=8"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4PWN chain=A res_start=100 res_end=107 len=8"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4PWN chain=A res_start=112 res_end=131 len=20"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4PWN chain=A res_start=184 res_end=188 len=5"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4PWN chain=A res_start=194 res_end=209 len=16"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4PWN chain=A res_start=220 res_end=227 len=8"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4PWN chain=A res_start=234 res_end=238 len=5"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4PWN chain=A res_start=242 res_end=251 len=10"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4PWN chain=A res_start=262 res_end=266 len=5"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=4PWN chain=A res_start=269 res_end=273 len=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4PWN chain=A res_start=2 res_end=5 len=4 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4PWN chain=A res_start=11 res_end=19 len=9 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4PWN chain=A res_start=24 res_end=31 len=8 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4PWN chain=A res_start=36 res_end=43 len=8 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4PWN chain=A res_start=74 res_end=79 len=6 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4PWN chain=A res_start=88 res_end=93 len=6 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4PWN chain=A res_start=146 res_end=148 len=3 strand_id=2"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=4PWN chain=A res_start=155 res_end=157 len=3 strand_id=2"/>
+    <lmp:Feature type="pdb:cell" description="pdb=4PWN a=44.737 b=64.226 c=42.082 alpha=90.0 beta=92.0 gamma=90.0"/>
+    <lmp:Feature type="pdb:resolution" description="pdb=4PWN resolution=1.84"/>
+    <lmp:Feature type="pdb:citation" description="pdb=4PWN doi=10.1126/scisignal.2005050 pmid=24803536 title=Chloride Sensing by WNK1 Involves Inhibition of Autophosphorylation."/>
+    <lmp:Feature type="geometry:com" description="pdb=4PWN chain=A x=13.335 y=-0.188 z=11.377"/>
+    <lmp:Feature type="geometry:rg" description="pdb=4PWN chain=A rg=18.897"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=4PWN chain=A min=[-11.916, -23.515, -13.612] max=[39.642, 28.778, 32.538]"/>
+    <lmp:Chain id="A" sequence="MSGGAAEKQSSTPGSLFLSPPAPAPKNGSSSDSSVGEKLGAAAADAVTGRTEEYRRRRHTMDKDSRGAAATTTTTEHRFFRRSVICDSNATALELPGLPLSLPQPSIPAAVPQSAPPEPHREETVTATATSQVAQQPPAAAAPGEQAVAGPAPSTVPSSTSKDRPVSQPSLVGSKEEPPPARSGSGGGSAKEPQEERSQQQDDIEELETKAVGMSNDGRFLKFDIEIGRGSFKTVYKGLDTETTVEVAWCELQDRKLTKSERQRFKEEAEMLKGLQHPNIVRFYDSWESTVKGKKCIVLVTELMTSGTLKTYLKRFKVMKIKVLRSWCRQILKGLQFLHTRTPPIIHRDLKCDNIFITGPTGSVKIGDLGLATLKRASFAKSVIGTPEFMAPEMYEEKYDESVDVYAFGMCMLEMATSEYPYSECQNAAQIYRRVTSGVKPASFDKVAIPEVKEIIEGCIRQNKDERYSIKDLLNHAFFQEETGVRVELAEEDDGEKIAIKLWLRIEDIKKLKGKYKDNEAIEFSFDLERDVPEDVAQEMVESGYVCEGDHKTMAKAIKDRVSLIKRKREQRQLVREEQEKKKQEESSLKQQVEQSSASQTGIKQLPSASTGIPTASTTSASVSTQVEPEEPEADQHQQLQYQQPSISVLSDGTVDSGQGSSVFTESRVSSQQTVSYGSQHEQAHSTGTVPGHIPSTVQAQSQPHGVYPPSSVAQGQSQGQPSSSSLTGVSSSQPIQHPQQQQGIQQTAPPQQTVQYSLSQTSTSSEATTAQPVSQPQAPQVLPQVSAGKQLPVSQPVPTIQGEPQIPVATQPSVVPVHSGAHFLPVGQPLPTPLLPQYPVSQIPISTPHVSTAQTGFSSLPITMAAGITQPLLTLASSATTAAIPGVSTVVPSQLPTLLQPVTQLPSQVHPQLLQPAVQSMGIPANLGQAAEVPLSSGDVLYQGFPPRLPPQYPGDSNIAPSSNVASVCIHSTVLSPPMPTEVLATPGYFPTVVQPYVESNLLVPMGGVGGQVQVSQPGGSLAQAPTTSSQQAVLESTQGVSQVAPAEPVAVAQTQATQPTTLASSVDSAHSDVASGMSDGNENVPSSSGRHEGRTTKRHYRKSVRSRSRHEKTSRPKLRILNVSNKGDRVVECQLETHNRKMVTFKFDLDGDNPEEIATIMVNNDFILAIERESFVDQVREIIEKADEMLSEDVSVEPEGDQGLESLQGKDDYGFSGSQKLEGEFKQPIPASSMPQQIGIPTSSLTQVVHSAGRRFIVSPVPESRLRESKVFPSEITDTVAASTAQSPGMNLSHSASSLSLQQAFSELRRAQMTEGPNTAPPNFSHTGPTFPVVPPFLSSIAGVPTTAAATAPVPATSSPPNDISTSVIQSEVTVPTEEGIAGVATSTGVVTSGGLPIPPVSESPVLSSVVSSITIPAVVSISTTSPSLQVPTSTSEIVVSSTALYPSVTVSATSASAGGSTATPGPKPPAVVSQQAAGSTTVGATLTSVSTTTSFPSTASQLCIQLSSSTSTPTLAETVVVSAHSLDKTSHSSTTGLAFSLSAPSSSSSPGAGVSSYISQPGGLHPLVIPSVIASTPILPQAAGPTSTPLLPQVPSIPPLVQPVANVPAVQQTLIHSQPQPALLPNQPHTHCPEVDSDTQPKAPGIDDIKTLEEKLRSLFSEHSSSGAQHASVSLETSLVIESTVTPGIPTTAVAPSKLLTSTTSTCLPPTNLPLGTVALPVTPVVTPGQVSTPVSTTTSGVKPGTAPSKPPLTKAPVLPVGTELPAGTLPSEQLPPFPGPSLTQSQQPLEDLDAQLRRTLSPEMITVTSAVGPVSMAAPTAITEAGTQPQKGVSQVKEGPVLATSSGAGVFKMGRFQVSVAADGAQKEGKNKSEDAKSVHFESSTSESSVLSSSSPESTLVKPEPNGITIPGISSDVPESAHKTTASEAKSDTGQPTKVGRFQVTTTANKVGRFSVSKTEDKITDTKKEGPVASPPFMDLEQAVLPAVIPKKEKPELSEPSHLNGPSSDPEAAFLSRDVDDGSGSPHSPHQLSSKSLPSQNLSQSLSNSFNSSYMSSDNESDIEDEDLKLELRRLRDKHLKEIQDLQSRQKHEIESLYTKLGKVPPAVIIPPAAPLSGRRRRPTKSKGSKSSRSSSLGNKSPQLSGNLSGQSAASVLHPQQTLHPPGNIPESGQNQLLQPLKPSPSSDNLYSAFTSDGAISVPSLSAPGQGTSSTNTVGATVNSQAAQAQPPAMTSSRKGTFTDDLHKLVDNWARDAMNLSGRRGSKGHMNYEGPGMARKFSAPGQLCISMTSNLGGSAPISAASATSLGHFTKSMCPPQQYGFPATPFGAQWSGTGGPAPQPLGQFQPVGTASLQNFNISNLQKSISNPPGSNLRTT" state="Apo_Inactive">
+      <lmp:Domain name="Protein kinase" type="domain" start="221" end="479"/>
+      <lmp:Domain name="Disordered" type="region" start="1" end="81"/>
+      <lmp:Domain name="Disordered" type="region" start="95" end="203"/>
+      <lmp:Domain name="Autoinhibitory domain" type="region" start="488" end="555"/>
+      <lmp:Domain name="Disordered" type="region" start="573" end="779"/>
+      <lmp:Domain name="Interaction with KLHL3" type="region" start="628" end="638"/>
+      <lmp:Domain name="Disordered" type="region" start="1018" end="1041"/>
+      <lmp:Domain name="Disordered" type="region" start="1053" end="1119"/>
+      <lmp:Domain name="Disordered" type="region" start="1457" end="1476"/>
+      <lmp:Domain name="Disordered" type="region" start="1733" end="1790"/>
+      <lmp:Domain name="Disordered" type="region" start="1866" end="1948"/>
+      <lmp:Domain name="Disordered" type="region" start="1994" end="2069"/>
+      <lmp:Domain name="Disordered" type="region" start="2101" end="2196"/>
+      <lmp:Domain name="Amphipathic alpha-helix" type="region" start="2241" end="2261"/>
+      <lmp:Domain name="Disordered" type="region" start="2332" end="2352"/>
+      <lmp:Domain name="Basic and acidic residues" type="compositional bias" start="50" end="66"/>
+      <lmp:Domain name="Low complexity" type="compositional bias" start="95" end="108"/>
+      <lmp:Domain name="Low complexity" type="compositional bias" start="125" end="153"/>
+      <lmp:Domain name="Basic and acidic residues" type="compositional bias" start="573" end="588"/>
+      <lmp:Domain name="Polar residues" type="compositional bias" start="598" end="614"/>
+      <lmp:Domain name="Low complexity" type="compositional bias" start="615" end="625"/>
+      <lmp:Domain name="Polar residues" type="compositional bias" start="637" end="689"/>
+      <lmp:Domain name="Low complexity" type="compositional bias" start="709" end="779"/>
+      <lmp:Domain name="Polar residues" type="compositional bias" start="1025" end="1041"/>
+      <lmp:Domain name="Low complexity" type="compositional bias" start="1053" end="1077"/>
+      <lmp:Domain name="Polar residues" type="compositional bias" start="1080" end="1090"/>
+      <lmp:Domain name="Basic residues" type="compositional bias" start="1098" end="1119"/>
+      <lmp:Domain name="Low complexity" type="compositional bias" start="1457" end="1467"/>
+      <lmp:Domain name="Low complexity" type="compositional bias" start="1733" end="1745"/>
+      <lmp:Domain name="Basic and acidic residues" type="compositional bias" start="1869" end="1884"/>
+      <lmp:Domain name="Low complexity" type="compositional bias" start="1887" end="1905"/>
+      <lmp:Domain name="Polar residues" type="compositional bias" start="1927" end="1940"/>
+      <lmp:Domain name="Basic and acidic residues" type="compositional bias" start="1994" end="2003"/>
+      <lmp:Domain name="Low complexity" type="compositional bias" start="2035" end="2062"/>
+      <lmp:Domain name="Basic residues" type="compositional bias" start="2122" end="2134"/>
+      <lmp:Domain name="Low complexity" type="compositional bias" start="2135" end="2145"/>
+      <lmp:Domain name="Polar residues" type="compositional bias" start="2146" end="2167"/>
+      <lmp:Domain name="Polar residues" type="compositional bias" start="2175" end="2196"/>
+      <lmp:Domain name="Protein kinase domain (InterPro)" type="domain" start="221" end="479" interpro_id="IPR000719"/>
+      <lmp:Domain name="Serine/threonine-protein kinase, active site (InterPro)" type="active_site" start="345" end="357" interpro_id="IPR008271"/>
+      <lmp:Domain name="Protein kinase-like domain superfamily (InterPro)" type="homologous_superfamily" start="226" end="769" interpro_id="IPR011009"/>
+      <lmp:Domain name="Serine/threonine-protein kinase OSR1/WNK, CCT domain (InterPro)" type="domain" start="500" end="563" interpro_id="IPR024678"/>
+      <lmp:Domain name="With No Lysine (K) Ser/Thr Protein Kinase (InterPro)" type="family" start="198" end="760" interpro_id="IPR050588"/>
+      <lmp:Domain name="Serine/threonine-protein kinase WNK, CCTL2 domain (InterPro)" type="domain" start="1118" end="1192" interpro_id="IPR056865"/>
+      <lmp:Domain name="GlobalFeatures" type="global" start="1" end="2382">
+        <lmp:Motif name="RFXV motif 1" start="1257" end="1260" type="motif"/>
+        <lmp:Motif name="RFXV motif 2" start="1859" end="1862" type="motif"/>
+        <lmp:Motif name="RFXV motif 3" start="1945" end="1948" type="motif"/>
+        <lmp:Motif name="RFXV motif 4" start="1957" end="1960" type="motif"/>
+        <lmp:PTM id="ptm_15" type="phosphorylation" residue="S" position="15" status="absent"/>
+        <lmp:PTM id="ptm_19" type="phosphorylation" residue="S" position="19" status="absent"/>
+        <lmp:PTM id="ptm_60" type="phosphorylation" residue="T" position="60" status="absent"/>
+        <lmp:PTM id="ptm_167" type="phosphorylation" residue="S" position="167" status="absent"/>
+        <lmp:PTM id="ptm_174" type="phosphorylation" residue="S" position="174" status="absent"/>
+        <lmp:PTM id="ptm_378" type="phosphorylation" residue="S" position="378" status="absent"/>
+        <lmp:PTM id="ptm_382" type="phosphorylation" residue="S" position="382" status="absent"/>
+        <lmp:PTM id="ptm_1261" type="phosphorylation" residue="S" position="1261" status="absent"/>
+        <lmp:PTM id="ptm_1848" type="phosphorylation" residue="T" position="1848" status="absent"/>
+        <lmp:PTM id="ptm_1978" type="phosphorylation" residue="S" position="1978" status="absent"/>
+        <lmp:PTM id="ptm_2002" type="phosphorylation" residue="S" position="2002" status="absent"/>
+        <lmp:PTM id="ptm_2011" type="phosphorylation" residue="S" position="2011" status="absent"/>
+        <lmp:PTM id="ptm_2012" type="phosphorylation" residue="S" position="2012" status="absent"/>
+        <lmp:PTM id="ptm_2027" type="phosphorylation" residue="S" position="2027" status="absent"/>
+        <lmp:PTM id="ptm_2029" type="phosphorylation" residue="S" position="2029" status="absent"/>
+        <lmp:PTM id="ptm_2032" type="phosphorylation" residue="S" position="2032" status="absent"/>
+        <lmp:PTM id="ptm_2121" type="phosphorylation" residue="S" position="2121" status="absent"/>
+        <lmp:PTM id="ptm_2270" type="phosphorylation" residue="S" position="2270" status="absent"/>
+        <lmp:PTM id="ptm_2286" type="phosphorylation" residue="S" position="2286" status="absent"/>
+        <lmp:PTM id="ptm_2370" type="phosphorylation" residue="S" position="2370" status="absent"/>
+        <lmp:PTM id="ptm_2372" type="phosphorylation" residue="S" position="2372" status="absent"/>
+        <lmp:BindingSite type="catalytic" residues="368"/>
+        <lmp:BindingSite type="ATP-binding" residues="231,301,351">
+          <lmp:Ligand name="ATP" type="substrate" effect="catalysis" id="lig_ATP"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="CHLORIDE-binding" residues="283,299,369,371">
+          <lmp:Ligand name="CHLORIDE" type="substrate" effect="catalysis" id="lig_CHLORIDE"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="PDB:4PWN:ligands" residues="1">
+          <lmp:Ligand name="PO4" type="substrate" effect="catalysis" id="lig_4PWN_PO4" smiles="[O-]P(=O)([O-])[O-]"/>
+        </lmp:BindingSite>
+      </lmp:Domain>
+    </lmp:Chain>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>2</lmp:SequenceVersion>
+      <lmp:EntryVersion>231</lmp:EntryVersion>
+      <lmp:FirstPublicDate>2004-02-02</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>2010-05-18</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>structural</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T23:37:34.687975+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "Q9H4A3", "xref_total": 193, "xref_db_counts": {"GO": 53, "EMBL": 14, "RefSeq": 6, "InterPro": 6, "PDB": 5, "PDBsum": 5, "ProteomicsDB": 5, "Ensembl": 5, "FunFam": 4, "MIM": 3, "Gene3D": 3, "Pfam": 3, "CCDS": 2, "Orphanet": 2, "CD-CODE": 2, "PROSITE": 2, "AlphaFoldDB": 1, "BMRB": 1, "SMR": 1, "BioGRID": 1, "CORUM": 1, "DIP": 1, "ELM": 1, "FunCoup": 1, "IntAct": 1}, "xref_examples": {"EMBL": ["AJ296290", "JQ358908", "FJ515833", "FJ515833", "FJ515833", "AC004765", "AC004803", "AF061944"], "CCDS": ["CCDS73419.1", "CCDS8506.1"], "RefSeq": ["NP_001171914.1", "NP_055638.2", "NP_061852.3", "NP_998820.3", "XP_016875326.1", "XP_016875327.1"], "PDB": ["4PWN", "5TF9", "5WDY", "5WE8", "6FBK"], "PDBsum": ["4PWN", "5TF9", "5WDY", "5WE8", "6FBK"], "AlphaFoldDB": ["Q9H4A3"], "BMRB": ["Q9H4A3"], "SMR": ["Q9H4A3"], "BioGRID": ["122403"], "CORUM": ["Q9H4A3"], "DIP": ["DIP-32648N"], "ELM": ["Q9H4A3"], "FunCoup": ["Q9H4A3"], "IntAct": ["Q9H4A3"], "MINT": ["Q9H4A3"], "STRING": ["9606.ENSP00000341292"], "BindingDB": ["Q9H4A3"], "ChEMBL": ["CHEMBL1075173"], "GuidetoPHARMACOLOGY": ["2280"], "MoonDB": ["Q9H4A3"], "TCDB": ["8.A.23.1.69"], "GlyConnect": ["484"], "GlyCosmos": ["Q9H4A3"], "GlyGen": ["Q9H4A3"], "iPTMnet": ["Q9H4A3"], "MetOSite": ["Q9H4A3"], "PhosphoSitePlus": ["Q9H4A3"], "BioMuta": ["WNK1"], "DMDM": ["296453029"], "jPOST": ["Q9H4A3"], "MassIVE": ["Q9H4A3"], "PeptideAtlas": ["Q9H4A3"], "ProteomicsDB": ["80804", "80805", "80806", "80807", "80808"], "Pumba": ["Q9H4A3"], "Antibodypedia": ["22083"], "DNASU": ["65125"], "Ensembl": ["ENST00000315939.11", "ENST00000340908.9", "ENST00000530271.6", "ENST00000537687.5", "ENST00000675631.1"], "GeneID": ["65125"], "KEGG": ["hsa:65125"], "MANE-Select": ["ENST00000315939.11"], "UCSC": ["uc001qio.4"], "AGR": ["HGNC:14540"], "CIViC": ["65125"], "ClinPGx": ["PA33782"], "CTD": ["65125"], "DisGeNET": ["65125"], "GeneCards": ["WNK1"], "GeneReviews": ["WNK1"], "HGNC": ["HGNC:14540"], "HPA": ["ENSG00000060237"], "MalaCards": ["WNK1"], "MIM": ["201300", "605232", "614492"], "OpenTargets": ["ENSG00000060237"], "Orphanet": ["970", "88940"], "VEuPathDB": ["HostDB:ENSG00000060237"], "eggNOG": ["KOG0584"], "GeneTree": ["ENSGT00940000155474"], "InParanoid": ["Q9H4A3"], "OMA": ["PEPNGMT"], "OrthoDB": ["4062651at2759"], "PAN-GO": ["Q9H4A3"], "PhylomeDB": ["Q9H4A3"], "PathwayCommons": ["Q9H4A3"], "Reactome": ["R-HSA-2672351"], "SignaLink": ["Q9H4A3"], "SIGNOR": ["Q9H4A3"], "Agora": ["ENSG00000060237"], "BioGRID-ORCS": ["65125"], "CD-CODE": ["DEE660B4", "FB4E32DD"], "ChiTaRS": ["WNK1"], "EvolutionaryTrace": ["Q9H4A3"], "GeneWiki": ["WNK1"], "GenomeRNAi": ["65125"], "Pharos": ["Q9H4A3"], "PRO": ["PR:Q9H4A3"], "Proteomes": ["UP000005640"], "RNAct": ["Q9H4A3"], "Bgee": ["ENSG00000060237"], "ExpressionAtlas": ["Q9H4A3"], "GO": ["GO:0005737", "GO:0005829", "GO:0043232", "GO:0016020", "GO:0072686", "GO:0005634", "GO:0032991", "GO:0005524"], "CDD": ["cd14030"], "FunFam": ["3.10.20.90:FF:000007", "1.10.510.10:FF:000006", "3.10.20.90:FF:000012", "3.30.200.20:FF:000494"], "Gene3D": ["3.10.20.90", "3.30.200.20", "1.10.510.10"], "InterPro": ["IPR056865", "IPR011009", "IPR024678", "IPR000719", "IPR008271", "IPR050588"], "PANTHER": ["PTHR13902"], "Pfam": ["PF24889", "PF12202", "PF00069"], "SMART": ["SM00220"], "SUPFAM": ["SSF56112"], "PROSITE": ["PS50011", "PS00108"]}, "generated_at": "2026-02-25T23:37:34.688303"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

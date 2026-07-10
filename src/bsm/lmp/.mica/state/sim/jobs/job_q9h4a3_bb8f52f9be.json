@@ -1,0 +1,13 @@
+{
+  "job_id": "job_q9h4a3_bb8f52f9be",
+  "entity": "Q9H4A3",
+  "status": "done",
+  "submitted_at": "2026-05-03T00:42:10.138417+00:00",
+  "completed_at": "2026-05-03T00:42:10.138417+00:00",
+  "provider": "simulated.compute.route",
+  "artifacts": [
+    ".mica/artifacts/job_q9h4a3_bb8f52f9be/trajectory.xtc",
+    ".mica/artifacts/job_q9h4a3_bb8f52f9be/topology.pdb",
+    ".mica/artifacts/job_q9h4a3_bb8f52f9be/summary.json"
+  ]
+}

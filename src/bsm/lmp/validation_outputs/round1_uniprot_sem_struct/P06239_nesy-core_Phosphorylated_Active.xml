@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="nesy-core">
+  <lmp:Identity>
+    <lmp:BudoID>budo:LCK_HUMAN_v6</lmp:BudoID>
+    <lmp:PrimaryAccession>P06239</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>LCK_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606">Homo sapiens</lmp:Organism>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>D3DPP8</lmp:Value>
+      <lmp:Value>P07100</lmp:Value>
+      <lmp:Value>Q12850</lmp:Value>
+      <lmp:Value>Q13152</lmp:Value>
+      <lmp:Value>Q5TDH8</lmp:Value>
+      <lmp:Value>Q5TDH9</lmp:Value>
+      <lmp:Value>Q7RTZ3</lmp:Value>
+      <lmp:Value>Q96DW4</lmp:Value>
+      <lmp:Value>Q9NYT8</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Semantics>
+    <lmp:ProteinName>Tyrosine-protein kinase Lck</lmp:ProteinName>
+    <lmp:Genes>
+      <lmp:Value>LCK</lmp:Value>
+    </lmp:Genes>
+    <lmp:NeSyGrammar version="2.0" length="822">M[DOM:Interactions with CD4 and CD8]G{Myr}C{Pal}GC{Pal}SSHPEDDWMENIDVCENCHYPIVPLDGKGTLLIRNGSEVRDPLVT[/DOM][DOM:SH3-like domain superfamily (InterPro)]YEGSNPPASPLQDNLVIALHSYEPSHDGDL[/DOM][DOM:Non-receptor tyrosine kinases involved in cell signaling (InterPro)]GFEKGEQLRILEQSGEWWK{Ub}AQS{P}LTTGQEGFIPFNFVAKANSLEPEPWFFKNLSRKDAERQLLAPGNTHGSFLIRESEST{P}AGS{P}FSLSVRDFDQNQGEVVKHYKIRNLDNGGFY{P}IS{P}PRITFPGLHELVRHYTNASDGLCTRLSRPCQTQKPQKPWWEDEWEVPRETLKLVER[BIND:ATP|ChEBI:ChEBI:CHEBI:30616]L[/BIND]GAGQFGEVWMGYYNGHTKVAV[BIND:ATP|ChEBI:ChEBI:CHEBI:30616]K[/BIND]SLK{Ub}QGSMSPDAFLAEANLMKQLQHQRLVRLYAVVTQEPIYIITEYMENGSLVDFLKTPSGIKLTINKLLDMAAQIAEGMAFIEERNYIHR[BIND:CAT]D[/BIND]LRAANILVSDTLSCKIADFGLARLIEDNEY{P}TAREGAKFPIKWTAPEAINYGTFTIKSDVWSFGILLTEIVTHGRIPYPGMTNPEVIQNLERGYRMVRPDNCPEELYQLMRLCWKERPEDRPTFDYLRSVLEDFFTATEGQ[/DOM]Y{P}QPQP</lmp:NeSyGrammar>
+    <lmp:Comment type="FUNCTION">Non-receptor tyrosine-protein kinase that plays an essential role in the selection and maturation of developing T-cells in the thymus and in the function of mature T-cells (PubMed:2470098). Plays a key role in T-cell antigen receptor (TCR)-linked signal transduction pathways (PubMed:2470098). Constitutively associated with the cytoplasmic portions of the CD4 and CD8 surface receptors (PubMed:2470098). Association of the TCR with a peptide antigen-bound MHC complex facilitates the interaction of CD4 and CD8 with MHC class II and class I molecules, respectively, thereby recruiting the associated LCK protein to the vicinity of the TCR-CD3 complex (PubMed:2470098). LCK then phosphorylates tyrosine residues within the immunoreceptor tyrosine-based activation motifs (ITAM) of the cytoplasmic tails of the TCR-gamma chains and CD3 subunits, initiating the TCR-CD3 signaling pathway (PubMed:2470098, PubMed:40592325). Once stimulated, the TCR recruits the tyrosine kinase ZAP70, that becomes phosphorylated and activated by LCK. Following this, a large number of signaling molecules are recruited, ultimately leading to lymphokine production. LCK also contributes to signaling by other receptor molecules. Associates directly with the cytoplasmic tail of CD2, which leads to hyperphosphorylation and activation of LCK. Also plays a role in the IL2 receptor-linked signaling pathway that controls the T-cell proliferative response. Binding of IL2 to its receptor results in increased activity of LCK. Is expressed at all stages of thymocyte development and is required for the regulation of maturation events that are governed by both pre-TCR and mature alpha beta TCR. Phosphorylates other substrates including RUNX3, PTK2B/PYK2, the microtubule-associated protein MAPT, RHOH or TYROBP. Interacts with FYB2 (PubMed:27335501)</lmp:Comment>
+    <lmp:Comment type="ACTIVITY REGULATION">The relative activities of the inhibitory tyrosine-protein kinase CSK and the activating tyrosine-protein phosphatase PTPRC/CD45 determine the level of LCK activity. These interactions allow rapid and efficient activation of LCK in response to TCR stimulation</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">Binds to the cytoplasmic domain of cell surface receptors, such as AXL, CD2, CD4, CD5, CD8, CD44, CD45 and CD122. Also binds to effector molecules, such as PI4K, VAV1, RASA1, FYB1 and to other protein kinases including CDK1, RAF1, ZAP70 and SYK. Binds to phosphatidylinositol 3'-kinase (PI3K) from T-lymphocytes through its SH3 domain and to the tyrosine phosphorylated form of KHDRBS1/p70 through its SH2 domain. This interaction inhibits its tyrosine-kinase activity. Interacts with SQSTM1. Interacts with phosphorylated LIME1. Interacts with CBLB and PTPRH. Interacts with RUNX3. Forms a signaling complex with EPHA1, PTK2B and PI3-KINASE; upon activation by EFNA1 which may regulate T-lymphocyte migration. Associates with ZAP70 and RHOH; these interactions allow LCK-mediated RHOH and CD3 subunit phosphorylation in the presence of functional ZAP70. Interacts with UNC119; this interaction plays a crucial role in activation of LCK. Interacts with CEACAM1 (via cytoplasmic domain); mediates CEACAM1 phosphorylation resulting in PTPN6 recruitment that dephosphorylates TCR stimulation-induced CD247 and ZAP70 (PubMed:18424730). Interacts with CD160. Interacts with CD48 (PubMed:12007789)</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with herpes simplex virus 1 UL46; this interaction activates LCK</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with HIV-1 Nef through its SH3 domain</lmp:Comment>
+    <lmp:Comment type="TISSUE SPECIFICITY">Expressed specifically in lymphoid cells</lmp:Comment>
+    <lmp:Comment type="DOMAIN">The SH2 domain mediates interaction with SQSTM1. Interaction is regulated by Ser-59 phosphorylation</lmp:Comment>
+    <lmp:Comment type="PTM">Autophosphorylated on Tyr-394, increasing enzymatic activity, this site is dephosphorylated by PTN22. Phosphorylated on Tyr-505 by CSK, decreasing activity (PubMed:40592325). Dephosphorylated by PTPRC/CD45. Dephosphorylation at Tyr-394 by PTPN2 negatively regulates T-cell receptor signaling. Dephosphorylation at Tyr-394 by DUSP22 negatively regulates T-cell receptor signaling (PubMed:24714587, PubMed:38225265)</lmp:Comment>
+    <lmp:Comment type="PTM">Myristoylation is required prior to palmitoylation</lmp:Comment>
+    <lmp:Comment type="PTM">Palmitoylation regulates association with the plasma membrane and could be mediated by ZDHHC2</lmp:Comment>
+    <lmp:Comment type="PTM">'Lys-63'-linked ubiquitinated at Lys-99 and Lys-276 by UBR2; this modification is required for autophosphorylation at Tyr-394</lmp:Comment>
+    <lmp:Comment type="SIMILARITY">Belongs to the protein kinase superfamily. Tyr protein kinase family. SRC subfamily</lmp:Comment>
+  </lmp:Semantics>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>6</lmp:SequenceVersion>
+      <lmp:EntryVersion>286</lmp:EntryVersion>
+      <lmp:FirstPublicDate>1988-01-01</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>2007-01-23</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>nesy-core</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:38:29.018634+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "P06239", "xref_total": 355, "xref_db_counts": {"PDB": 57, "PDBsum": 57, "GO": 50, "DrugBank": 26, "Reactome": 23, "EMBL": 18, "InterPro": 13, "PROSITE": 5, "FunFam": 4, "Gene3D": 4, "ProteomicsDB": 3, "CDD": 3, "Pfam": 3, "PRINTS": 3, "SMART": 3, "SUPFAM": 3, "RefSeq": 2, "CPTAC": 2, "Ensembl": 2, "MIM": 2, "CCDS": 1, "PIR": 1, "AlphaFoldDB": 1, "BMRB": 1, "SMR": 1}, "xref_examples": {"EMBL": ["X05027", "X13529", "M36881", "X14055", "X14053", "X14054", "U07236", "U23852"], "CCDS": ["CCDS359.1"], "PIR": ["JQ0152"], "RefSeq": ["NP_001036236.1", "NP_005347.3"], "PDB": ["1BHF", "1BHH", "1CWD", "1CWE", "1FBZ", "1H92", "1IJR", "1KIK"], "PDBsum": ["1BHF", "1BHH", "1CWD", "1CWE", "1FBZ", "1H92", "1IJR", "1KIK"], "AlphaFoldDB": ["P06239"], "BMRB": ["P06239"], "SMR": ["P06239"], "BioGRID": ["110124"], "CORUM": ["P06239"], "DIP": ["DIP-553N"], "ELM": ["P06239"], "FunCoup": ["P06239"], "IntAct": ["P06239"], "MINT": ["P06239"], "STRING": ["9606.ENSP00000477713"], "BindingDB": ["P06239"], "ChEMBL": ["CHEMBL258"], "DrugBank": ["DB08039", "DB03023", "DB07146", "DB06925", "DB07297", "DB01830", "DB03777", "DB12429"], "DrugCentral": ["P06239"], "GuidetoPHARMACOLOGY": ["2053"], "GlyGen": ["P06239"], "iPTMnet": ["P06239"], "PhosphoSitePlus": ["P06239"], "SwissPalm": ["P06239"], "BioMuta": ["LCK"], "DMDM": ["125474"], "CPTAC": ["CPTAC-1775", "CPTAC-929"], "jPOST": ["P06239"], "MassIVE": ["P06239"], "PaxDb": ["9606-ENSP00000337825"], "PeptideAtlas": ["P06239"], "ProteomicsDB": ["51874", "51875", "51876"], "ABCD": ["P06239"], "Antibodypedia": ["735"], "DNASU": ["3932"], "Ensembl": ["ENST00000333070.4", "ENST00000336890.10"], "GeneID": ["3932"], "KEGG": ["hsa:3932"], "MANE-Select": ["ENST00000336890.10"], "UCSC": ["uc001bux.3"], "AGR": ["HGNC:6524"], "ClinPGx": ["PA30307"], "CTD": ["3932"], "DisGeNET": ["3932"], "GeneCards": ["LCK"], "HGNC": ["HGNC:6524"], "HPA": ["ENSG00000182866"], "MalaCards": ["LCK"], "MIM": ["153390", "615758"], "OpenTargets": ["ENSG00000182866"], "Orphanet": ["280142"], "VEuPathDB": ["HostDB:ENSG00000182866"], "eggNOG": ["KOG0197"], "GeneTree": ["ENSGT00940000161163"], "HOGENOM": ["CLU_000288_7_2_1"], "InParanoid": ["P06239"], "OMA": ["CSPMQDK"], "OrthoDB": ["4062651at2759"], "PAN-GO": ["P06239"], "PhylomeDB": ["P06239"], "BRENDA": ["2.7.10.2"], "PathwayCommons": ["P06239"], "Reactome": ["R-HSA-114604", "R-HSA-1257604", "R-HSA-1433557", "R-HSA-1433559", "R-HSA-164944", "R-HSA-167590", "R-HSA-202424", "R-HSA-202427"], "SignaLink": ["P06239"], "SIGNOR": ["P06239"], "Agora": ["ENSG00000182866"], "BioGRID-ORCS": ["3932"], "CD-CODE": ["8C2F96ED"], "ChiTaRS": ["LCK"], "EvolutionaryTrace": ["P06239"], "GeneWiki": ["Lck"], "GenomeRNAi": ["3932"], "Pharos": ["P06239"], "PRO": ["PR:P06239"], "Proteomes": ["UP000005640"], "RNAct": ["P06239"], "Bgee": ["ENSG00000182866"], "ExpressionAtlas": ["P06239"], "GO": ["GO:0005911", "GO:0005737", "GO:0005829", "GO:0070062", "GO:0001772", "GO:0045121", "GO:0000242", "GO:0005886"], "CDD": ["cd05067", "cd10362", "cd12005"], "DisProt": ["DP01580"], "FunFam": ["1.10.510.10:FF:000553", "2.30.30.40:FF:000152", "3.30.200.20:FF:000036", "3.30.505.10:FF:000077"], "Gene3D": ["3.30.200.20", "3.30.505.10", "2.30.30.40", "1.10.510.10"], "InterPro": ["IPR011009", "IPR035850", "IPR035749", "IPR050198", "IPR000719", "IPR017441", "IPR001245", "IPR000980"], "PANTHER": ["PTHR24418"], "Pfam": ["PF07714", "PF00017", "PF00018"], "PRINTS": ["PR00401", "PR00452", "PR00109"], "SMART": ["SM00252", "SM00326", "SM00219"], "SUPFAM": ["SSF56112", "SSF55550", "SSF50044"], "PROSITE": ["PS00107", "PS50011", "PS00109", "PS50001", "PS50002"]}, "generated_at": "2026-02-25T00:38:29.018995"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

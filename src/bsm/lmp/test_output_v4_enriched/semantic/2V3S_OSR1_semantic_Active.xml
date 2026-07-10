@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="semantic">
+  <lmp:Identity>
+    <lmp:BudoID>budo:SERINE_THREONINE-PROTEIN_KINASE_OSR1_HUMAN_v1</lmp:BudoID>
+    <lmp:PrimaryAccession>2V3S</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>2V3S</lmp:UniProtKBId>
+    <lmp:Organism>Homo sapiens</lmp:Organism>
+  </lmp:Identity>
+  <lmp:Semantics>
+    <lmp:Genes>
+      <lmp:Value>OSR1</lmp:Value>
+      <lmp:Value>SERINE/THREONINE-PROTEIN KINASE OSR1</lmp:Value>
+    </lmp:Genes>
+  </lmp:Semantics>
+  <lmp:KnowledgeGraph/>
+  <lmp:Provenance>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>semantic</lmp:Preset>
+      <lmp:Timestamp>2026-02-27T23:08:39.856750+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+  </lmp:Provenance>
+</lmp:LMP>

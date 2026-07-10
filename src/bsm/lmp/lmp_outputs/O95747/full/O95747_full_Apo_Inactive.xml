@@ -1,0 +1,1056 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="full">
+  <lmp:Identity>
+    <lmp:BudoID>budo:OXSR1_HUMAN_v1</lmp:BudoID>
+    <lmp:PrimaryAccession>O95747</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>OXSR1_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606"/>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>Q3LR53</lmp:Value>
+      <lmp:Value>Q7Z501</lmp:Value>
+      <lmp:Value>Q9UPQ1</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Semantics>
+    <lmp:ProteinName>Serine/threonine-protein kinase OSR1</lmp:ProteinName>
+    <lmp:Genes>
+      <lmp:Value>OXSR1</lmp:Value>
+    </lmp:Genes>
+    <lmp:Keywords>
+      <lmp:Value>3D-structure</lmp:Value>
+      <lmp:Value>Acetylation</lmp:Value>
+      <lmp:Value>ATP-binding</lmp:Value>
+      <lmp:Value>Cytoplasm</lmp:Value>
+      <lmp:Value>Kinase</lmp:Value>
+      <lmp:Value>Magnesium</lmp:Value>
+      <lmp:Value>Metal-binding</lmp:Value>
+      <lmp:Value>Nucleotide-binding</lmp:Value>
+      <lmp:Value>Phosphoprotein</lmp:Value>
+      <lmp:Value>Proteomics identification</lmp:Value>
+      <lmp:Value>Reference proteome</lmp:Value>
+      <lmp:Value>Serine/threonine-protein kinase</lmp:Value>
+      <lmp:Value>Transferase</lmp:Value>
+    </lmp:Keywords>
+    <lmp:NeSyGrammar version="2.0" length="788">MS{Ac}EDSSA[DOM:Protein kinase-like domain superfamily (InterPro)]LP[/DOM][DOM:STE20/SPS1-related Proline-Alanine-rich Kinase (InterPro)]WSINRDDYELQEV[BIND:ATP|PMID:14707132|ChEBI:ChEBI:CHEBI:30616]I[/BIND]GSGATAVVQAAYCAPKKEKVAI[BIND:ATP|PMID:14707132|ChEBI:ChEBI:CHEBI:30616]K[/BIND]RINLEKCQTSMDELLKEIQAMSQCHHPNIVSYYTSFVVKDELWLVMKLLSGGSVLDIIKHIVAKGEHKSGVLDESTIATILREVLEGLEYLHKNGQIHR[BIND:CAT]D[/BIND]VKAGNILLGEDGSVQIADFGVSAFLATGGDITRNKVRKTFVGTPCWMAPEVMEQVRGYDFKADIWSFGITAIELATGAAPYHKYPPMKVLMLTLQNDPPSLETGVQDKEMLKKYGKSFRKMISLCLQKDPEKRPTAAELLRHKFFQKAKNKEFLQEKTLQRAPTISERAKKVRRVPGSSGRLHKTEDGGWEWSDDEFDEESEEGKAAISQLRSPRVKESISNSELFPTTDPVGTLLQVPEQISAHLPQPAGQIATQPTQVSLPPTAEPAKTAQALSSGSGSQETKIPISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEEPQSNRSVTFKLA[/DOM]SGVEGSDIPDDGKLIGFAQLSIS</lmp:NeSyGrammar>
+    <lmp:Comment type="FUNCTION">Effector serine/threonine-protein kinase component of the WNK-SPAK/OSR1 kinase cascade, which is involved in various processes, such as ion transport, response to hypertonic stress and blood pressure (PubMed:16669787, PubMed:18270262, PubMed:21321328, PubMed:34289367). Specifically recognizes and binds proteins with a RFXV motif (PubMed:16669787, PubMed:17721439, PubMed:21321328). Acts downstream of WNK kinases (WNK1, WNK2, WNK3 or WNK4): following activation by WNK kinases, catalyzes phosphorylation of ion cotransporters, such as SLC12A1/NKCC2, SLC12A2/NKCC1, SLC12A3/NCC, SLC12A5/KCC2 or SLC12A6/KCC3, regulating their activity (PubMed:17721439). Mediates regulatory volume increase in response to hyperosmotic stress by catalyzing phosphorylation of ion cotransporters SLC12A1/NKCC2, SLC12A2/NKCC1 and SLC12A6/KCC3 downstream of WNK1 and WNK3 kinases (PubMed:16669787, PubMed:21321328). Phosphorylation of Na-K-Cl cotransporters SLC12A2/NKCC1 and SLC12A2/NKCC1 promote their activation and ion influx; simultaneously, phosphorylation of K-Cl cotransporters SLC12A5/KCC2 and SLC12A6/KCC3 inhibit their activity, blocking ion efflux (PubMed:16669787, PubMed:19665974, PubMed:21321328). Acts as a regulator of NaCl reabsorption in the distal nephron by mediating phosphorylation and activation of the thiazide-sensitive Na-Cl cotransporter SLC12A3/NCC in distal convoluted tubule cells of kidney downstream of WNK4 (PubMed:18270262). Also acts as a regulator of angiogenesis in endothelial cells downstream of WNK1 (PubMed:23386621, PubMed:25362046). Acts as an activator of inward rectifier potassium channels KCNJ2/Kir2.1 and KCNJ4/Kir2.3 downstream of WNK1: recognizes and binds the RXFXV/I variant motif on KCNJ2/Kir2.1 and KCNJ4/Kir2.3 and regulates their localization to the cell membrane without mediating their phosphorylation (PubMed:29581290). Phosphorylates RELL1, RELL2 and RELT (PubMed:16389068, PubMed:28688764). Phosphorylates PAK1 (PubMed:14707132). Phosphorylates PLSCR1 in the presence of RELT (PubMed:22052202)</lmp:Comment>
+    <lmp:Comment type="ACTIVITY REGULATION">Activated following phosphorylation by WNK kinases (WNK1, WNK2, WNK3 or WNK4)</lmp:Comment>
+    <lmp:Comment type="TISSUE SPECIFICITY">Ubiquitously expressed in all tissue examined</lmp:Comment>
+    <lmp:Comment type="PTM">Phosphorylation at Thr-185 by WNK kinases (WNK1, WNK2, WNK3 or WNK4) is required for activation (PubMed:16669787, PubMed:16832045, PubMed:17190791, PubMed:21321328, PubMed:22989884, PubMed:29581290). Autophosphorylated; promoting its activity (PubMed:14707132, PubMed:22052202)</lmp:Comment>
+    <lmp:Comment type="SIMILARITY">Belongs to the protein kinase superfamily. STE Ser/Thr protein kinase family. STE20 subfamily</lmp:Comment>
+  </lmp:Semantics>
+  <lmp:Geometry>
+    <lmp:Sequence length="527">MSEDSSALPWSINRDDYELQEVIGSGATAVVQAAYCAPKKEKVAIKRINLEKCQTSMDELLKEIQAMSQCHHPNIVSYYTSFVVKDELWLVMKLLSGGSVLDIIKHIVAKGEHKSGVLDESTIATILREVLEGLEYLHKNGQIHRDVKAGNILLGEDGSVQIADFGVSAFLATGGDITRNKVRKTFVGTPCWMAPEVMEQVRGYDFKADIWSFGITAIELATGAAPYHKYPPMKVLMLTLQNDPPSLETGVQDKEMLKKYGKSFRKMISLCLQKDPEKRPTAAELLRHKFFQKAKNKEFLQEKTLQRAPTISERAKKVRRVPGSSGRLHKTEDGGWEWSDDEFDEESEEGKAAISQLRSPRVKESISNSELFPTTDPVGTLLQVPEQISAHLPQPAGQIATQPTQVSLPPTAEPAKTAQALSSGSGSQETKIPISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEEPQSNRSVTFKLASGVEGSDIPDDGKLIGFAQLSIS</lmp:Sequence>
+    <lmp:Chain id="A" sequence="MS{Ac}EDSSA[DOM:Protein kinase-like domain superfamily (InterPro)]LP[/DOM][DOM:STE20/SPS1-related Proline-Alanine-rich Kinase (InterPro)]WSINRDDYELQEV[BIND:ATP|PMID:14707132|ChEBI:ChEBI:CHEBI:30616]I[/BIND]GSGATAVVQAAYCAPKKEKVAI[BIND:ATP|PMID:14707132|ChEBI:ChEBI:CHEBI:30616]K[/BIND]RINLEKCQTSMDELLKEIQAMSQCHHPNIVSYYTSFVVKDELWLVMKLLSGGSVLDIIKHIVAKGEHKSGVLDESTIATILREVLEGLEYLHKNGQIHR[BIND:CAT]D[/BIND]VKAGNILLGEDGSVQIADFGVSAFLATGGDITRNKVRKTFVGTPCWMAPEVMEQVRGYDFKADIWSFGITAIELATGAAPYHKYPPMKVLMLTLQNDPPSLETGVQDKEMLKKYGKSFRKMISLCLQKDPEKRPTAAELLRHKFFQKAKNKEFLQEKTLQRAPTISERAKKVRRVPGSSGRLHKTEDGGWEWSDDEFDEESEEGKAAISQLRSPRVKESISNSELFPTTDPVGTLLQVPEQISAHLPQPAGQIATQPTQVSLPPTAEPAKTAQALSSGSGSQETKIPISLVLRLRNSKKELNDIRFEFTPGRDTAEGVSQELISAGLVDGRDLVIVAANLQKIVEEPQSNRSVTFKLA[/DOM]SGVEGSDIPDDGKLIGFAQLSIS" state="Apo_Inactive">
+      <lmp:Domain name="Protein kinase" type="domain" start="17" end="291"/>
+      <lmp:Domain name="Disordered" type="region" start="315" end="360"/>
+      <lmp:Domain name="Disordered" type="region" start="405" end="427"/>
+      <lmp:Domain name="Acidic residues" type="compositional bias" start="334" end="348"/>
+      <lmp:Domain name="Protein kinase domain (InterPro)" type="domain" start="17" end="291" interpro_id="IPR000719" pfam_id="PF00069"/>
+      <lmp:Domain name="Protein kinase-like domain superfamily (InterPro)" type="homologous_superfamily" start="8" end="310" interpro_id="IPR011009"/>
+      <lmp:Domain name="Protein kinase, ATP binding site (InterPro)" type="binding_site" start="23" end="46" interpro_id="IPR017441"/>
+      <lmp:Domain name="Serine/threonine-protein kinase OSR1/WNK, CCT domain (InterPro)" type="domain" start="434" end="491" interpro_id="IPR024678" pfam_id="PF12202"/>
+      <lmp:Domain name="STE20/SPS1-related Proline-Alanine-rich Kinase (InterPro)" type="family" start="10" end="504" interpro_id="IPR050629"/>
+      <lmp:Domain name="GlobalFeatures" type="global" start="1" end="527">
+        <lmp:PTM id="ptm_2" type="n_terminal_acetylation" residue="S" position="2" status="present"/>
+        <lmp:PTM id="ptm_185" type="phosphorylation" residue="T" position="185" status="absent"/>
+        <lmp:PTM id="ptm_310" type="phosphorylation" residue="T" position="310" status="absent"/>
+        <lmp:PTM id="ptm_324" type="phosphorylation" residue="S" position="324" status="absent"/>
+        <lmp:PTM id="ptm_325" type="phosphorylation" residue="S" position="325" status="absent"/>
+        <lmp:PTM id="ptm_339" type="phosphorylation" residue="S" position="339" status="absent"/>
+        <lmp:PTM id="ptm_347" type="phosphorylation" residue="S" position="347" status="absent"/>
+        <lmp:PTM id="ptm_359" type="phosphorylation" residue="S" position="359" status="absent"/>
+        <lmp:PTM id="ptm_427" type="phosphorylation" residue="S" position="427" status="absent"/>
+        <lmp:BindingSite type="catalytic" residues="146"/>
+        <lmp:BindingSite type="ATP-binding" residues="23,46">
+          <lmp:Ligand name="ATP" type="substrate" effect="catalysis" id="lig_ATP"/>
+        </lmp:BindingSite>
+      </lmp:Domain>
+    </lmp:Chain>
+  </lmp:Geometry>
+  <lmp:KnowledgeGraph>
+    <lmp:CrossReference db="EMBL" id="AB017642">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">BAA75674.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="AB029024">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">BAA83053.2</lmp:Property>
+      <lmp:Property name="Status">ALT_FRAME</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="DQ201638">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ABA27097.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="BC008726">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAH08726.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="AF087893">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAP97192.1</lmp:Property>
+      <lmp:Property name="Status">ALT_INIT</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CCDS" id="CCDS2675.1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RefSeq" id="NP_005100.1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NucleotideSequenceId">NM_005109.3</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2V3S">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.70 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=433-527</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2VWI">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.15 A</lmp:Property>
+      <lmp:Property name="Chains">A/B/C/D=1-303</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3DAK">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.25 A</lmp:Property>
+      <lmp:Property name="Chains">A/B/C/D=6-295</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="7OKW">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.62 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=423-527</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2V3S">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2VWI">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3DAK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="7OKW">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="AlphaFoldDB" id="O95747">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SMR" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BioGRID" id="115269">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Interactions">182</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CORUM" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DIP" id="DIP-34977N">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ELM" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunCoup" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Number of interactors">2820</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="IntAct" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Interactions">117</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MINT" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="STRING" id="9606.ENSP00000311713">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BindingDB" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ChEMBL" id="CHEMBL1163104">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB12010">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Fostamatinib</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugCentral" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GlyGen" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="glycosylation">2 sites, 1 N-linked glycan (1 site), 1 O-linked glycan (1 site)</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="iPTMnet" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PhosphoSitePlus" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SwissPalm" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BioMuta" id="OXSR1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="jPOST" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MassIVE" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PaxDb" id="9606-ENSP00000311713">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PeptideAtlas" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ProteomicsDB" id="51019">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pumba" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Antibodypedia" id="2101">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="antibodies">551 antibodies from 37 providers</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DNASU" id="9943">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Ensembl" id="ENST00000311806.8">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000311713.3</lmp:Property>
+      <lmp:Property name="GeneId">ENSG00000172939.10</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneID" id="9943">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="KEGG" id="hsa:9943">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MANE-Select" id="ENST00000311806.8">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000311713.3</lmp:Property>
+      <lmp:Property name="RefSeqNucleotideId">NM_005109.3</lmp:Property>
+      <lmp:Property name="RefSeqProteinId">NP_005100.1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="UCSC" id="uc003chy.4">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="OrganismName">human</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="AGR" id="HGNC:8508">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ClinPGx" id="PA134973207">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CTD" id="9943">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DisGeNET" id="9943">
+      <lmp:Property name="category">disease</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneCards" id="OXSR1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="HGNC" id="HGNC:8508">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GeneName">OXSR1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="HPA" id="ENSG00000172939">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ExpressionPatterns">Low tissue specificity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MalaCards" id="OXSR1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MIM" id="604046">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Type">gene</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="OpenTargets" id="ENSG00000172939">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="VEuPathDB" id="HostDB:ENSG00000172939">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="eggNOG" id="KOG0582">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ToxonomicScope">Eukaryota</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneTree" id="ENSGT00940000162134">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="HOGENOM" id="CLU_000288_111_1_1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InParanoid" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="OMA" id="KMRTANC">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Fingerprint">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="OrthoDB" id="8693905at2759">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PAN-GO" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Number of GO annotations">7 GO annotations based on evolutionary models</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PhylomeDB" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PathwayCommons" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SignaLink" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SIGNOR" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Agora" id="ENSG00000172939">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NominatedTarget">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BioGRID-ORCS" id="9943">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="hits">23 hits in 1194 CRISPR screens</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ChiTaRS" id="OXSR1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="OrganismName">human</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EvolutionaryTrace" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneWiki" id="OXSR1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GenomeRNAi" id="9943">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pharos" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="DevelopmentLevel">Tbio</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PRO" id="PR:O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Proteomes" id="UP000005640">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Component">Chromosome 3</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RNAct" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="moleculeType">protein</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Bgee" id="ENSG00000172939">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ExpressionPatterns">Expressed in buccal mucosa cell and 209 other cell types or tissues</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ExpressionAtlas" id="O95747">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ExpressionPatterns">baseline and differential</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005737">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:cytoplasm</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProt</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005829">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:cytosol</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:HPA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0070062">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:extracellular exosome</lmp:Property>
+      <lmp:Property name="GoEvidenceType">HDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005524">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:ATP binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0042802">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:identical protein binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:IntAct</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0099106">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:ion channel regulator activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:ParkinsonsUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0000287">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:magnesium ion binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0019870">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:potassium channel inhibitor activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:ParkinsonsUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0019901">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:protein kinase binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:ParkinsonsUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0106310">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:protein serine kinase activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:RHEA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0004674">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:protein serine/threonine kinase activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0044325">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:transmembrane transporter binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:ParkinsonsUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006884">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:cell volume homeostasis</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProt</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0071474">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:cellular hyperosmotic response</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProt</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0071476">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:cellular hypotonic response</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1990869">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:cellular response to chemokine</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:BHF-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0038116">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:chemokine (C-C motif) ligand 21 signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">ISS:BHF-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0038146">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:chemokine (C-X-C motif) ligand 12 signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:BHF-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0035556">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:intracellular signal transduction</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1901380">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:negative regulation of potassium ion transmembrane transport</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0007231">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:osmosensory signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:ParkinsonsUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0010820">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of T cell chemotaxis</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:BHF-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0046777">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:protein autophosphorylation</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006468">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:protein phosphorylation</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0070294">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:renal sodium ion absorption</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProt</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006979">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:response to oxidative stress</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:ProtInc</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0009410">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:response to xenobiotic stimulus</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0007165">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:signal transduction</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:ParkinsonsUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CDD" id="cd06610">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">STKc_OSR1_SPAK</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunFam" id="3.10.20.90:FF:000043">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">serine/threonine-protein kinase OSR1 isoform X1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunFam" id="3.30.200.20:FF:000114">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">serine/threonine-protein kinase OSR1 isoform X1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunFam" id="1.10.510.10:FF:000068">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">STE20/SPS1-related proline-alanine-rich protein kinase</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Gene3D" id="3.10.20.90">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Phosphatidylinositol 3-kinase Catalytic Subunit, Chain A, domain 1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Gene3D" id="3.30.200.20">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Phosphorylase Kinase, domain 1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Gene3D" id="1.10.510.10">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Transferase(Phosphotransferase) domain 1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR011009">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Kinase-like_dom_sf</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR024678">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Kinase_OSR1/WNK_CCT</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR000719">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Prot_kinase_dom</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR017441">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Protein_kinase_ATP_BS</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR050629">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">STE20/SPS1-PAK</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PANTHER" id="PTHR48012:SF1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">SERINE_THREONINE-PROTEIN KINASE OSR1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PANTHER" id="PTHR48012">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">STERILE20-LIKE KINASE, ISOFORM B-RELATED</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pfam" id="PF12202">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">OSR1_C</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pfam" id="PF00069">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Pkinase</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SMART" id="SM00220">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">S_TKc</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SUPFAM" id="SSF56112">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Protein kinase-like (PK-like)</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PROSITE" id="PS00107">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">PROTEIN_KINASE_ATP</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PROSITE" id="PS50011">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">PROTEIN_KINASE_DOM</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:Reference number="1">
+      <lmp:Citation>Isolation and characterization of a novel serine threonine kinase gene on chromosome 3p22-21.3.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">10083736</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1007/s100380050121</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="2">
+      <lmp:Citation>Prediction of the coding sequences of unidentified human genes. XIV. The complete sequences of 100 new cDNA clones from brain which code for large proteins in vitro.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">10470851</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1093/dnares/6.3.197</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="3"/>
+    <lmp:Reference number="4">
+      <lmp:Citation>The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).</lmp:Citation>
+      <lmp:CitationXref name="PubMed">15489334</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1101/gr.2596504</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="5">
+      <lmp:Citation>Cloning and characterization of a novel human cDNA homologous to human DCHT mRNA.</lmp:Citation>
+    </lmp:Reference>
+    <lmp:Reference number="6">
+      <lmp:Citation>Characterization of OSR1, a member of the mammalian Ste20p/germinal center kinase subfamily.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">14707132</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m313562200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="7">
+      <lmp:Citation>Identification of RELT homologues that associate with RELT and are phosphorylated by OSR1.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16389068</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.bbrc.2005.12.033</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="8">
+      <lmp:Citation>Functional interactions of the SPAK/OSR1 kinases with their upstream activator WNK1 and downstream substrate NKCC1.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16669787</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1042/bj20060220</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="9">
+      <lmp:Citation>WNK1 and OSR1 regulate the Na+, K+, 2Cl- cotransporter in HeLa cells.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16832045</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1073/pnas.0604607103</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="10">
+      <lmp:Citation>Global, in vivo, and site-specific phosphorylation dynamics in signaling networks.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">17081983</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.cell.2006.09.026</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="11">
+      <lmp:Citation>Regulation of activity and localization of the WNK1 protein kinase by hyperosmotic stress.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">17190791</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1083/jcb.200605093</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="12">
+      <lmp:Citation>ATM and ATR substrate analysis reveals extensive protein networks responsive to DNA damage.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">17525332</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1126/science.1140321</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="13">
+      <lmp:Citation>Activation of the thiazide-sensitive Na+-Cl- cotransporter by the WNK-regulated kinases SPAK and OSR1.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18270262</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1242/jcs.025312</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="14">
+      <lmp:Citation>A quantitative atlas of mitotic phosphorylation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18669648</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1073/pnas.0805139105</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="15">
+      <lmp:Citation>Large-scale phosphoproteome analysis of human liver tissue by enrichment and fractionation of phosphopeptides with strong anion exchange chromatography.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18318008</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1002/pmic.200700884</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="16">
+      <lmp:Citation>Lys-N and trypsin cover complementary parts of the phosphoproteome in a refined SCX-based approach.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">19413330</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1021/ac9004309</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="17">
+      <lmp:Citation>Sites of regulated phosphorylation that control K-Cl cotransporter activity.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">19665974</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.cell.2009.05.031</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="18">
+      <lmp:Citation>Quantitative phosphoproteomic analysis of T cell receptor signaling reveals system-wide modulation of protein-protein interactions.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">19690332</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1126/scisignal.2000007</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="19">
+      <lmp:Citation>Quantitative phosphoproteomics reveals widespread full phosphorylation site occupancy during mitosis.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">20068231</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1126/scisignal.2000475</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="20">
+      <lmp:Citation>Initial characterization of the human central proteome.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21269460</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1186/1752-0509-5-17</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="21">
+      <lmp:Citation>Regulation of the NKCC2 ion cotransporter by SPAK-OSR1-dependent and -independent pathways.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21321328</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1242/jcs.077230</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="22">
+      <lmp:Citation>System-wide temporal characterization of the proteome and phosphoproteome of human embryonic stem cell differentiation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21406692</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1126/scisignal.2001570</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="23">
+      <lmp:Citation>Interactions with WNK (with no lysine) family members regulate oxidative stress response 1 and ion co-transporter activity.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">22989884</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m112.398750</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="24">
+      <lmp:Citation>Systematic validation of antibody binding and protein subcellular localization using siRNA and confocal microscopy.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">22361696</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.jprot.2012.01.030</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="25">
+      <lmp:Citation>Identification of PLSCR1 as a protein that interacts with RELT family members.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">22052202</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1007/s11010-011-1127-4</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="26">
+      <lmp:Citation>Comparative large-scale characterisation of plant vs. mammal proteins reveals similar and idiosyncratic N-alpha acetylation features.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">22223895</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/mcp.m111.015131</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="27">
+      <lmp:Citation>Toward a comprehensive characterization of a human cancer cell phosphoproteome.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">23186163</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1021/pr300630k</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="28">
+      <lmp:Citation>WNK1 protein kinase regulates embryonic cardiovascular development through the OSR1 signaling cascade.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">23386621</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m113.451575</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="29">
+      <lmp:Citation>An enzyme assisted RP-RPLC approach for in-depth analysis of human liver phosphoproteome.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">24275569</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.jprot.2013.11.014</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="30">
+      <lmp:Citation>Actions of the protein kinase WNK1 on endothelial cells are differentially mediated by its substrate kinases OSR1 and SPAK.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">25362046</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1073/pnas.1419057111</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="31">
+      <lmp:Citation>RELT family members activate p38 and induce apoptosis by a mechanism distinct from TNFR1.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">28688764</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.bbrc.2017.07.022</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="32">
+      <lmp:Citation>OSR1 regulates a subset of inward rectifier potassium channels via a binding motif variant.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">29581290</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1073/pnas.1802339115</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="33">
+      <lmp:Citation>Phosphorylated WNK kinase networks in recoded bacteria recapitulate physiological function.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">34289367</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.celrep.2021.109416</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="34">
+      <lmp:Citation>Structural insights into the recognition of substrates and activators by the OSR1 kinase.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">17721439</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/sj.embor.7401048</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="35">
+      <lmp:Citation>Patterns of somatic mutation in human cancer genomes.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">17344846</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/nature05610</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2V3S" source="budo:OXSR1_HUMAN_v1" target="PDB:2V3S"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2VWI" source="budo:OXSR1_HUMAN_v1" target="PDB:2VWI"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3DAK" source="budo:OXSR1_HUMAN_v1" target="PDB:3DAK"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="7OKW" source="budo:OXSR1_HUMAN_v1" target="PDB:7OKW"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="ChEMBL" id="CHEMBL1163104" source="budo:OXSR1_HUMAN_v1" target="ChEMBL:CHEMBL1163104"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB12010" source="budo:OXSR1_HUMAN_v1" target="DrugBank:DB12010"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="KEGG" id="hsa:9943" source="budo:OXSR1_HUMAN_v1" target="KEGG:hsa:9943"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005737" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0005737"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005829" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0005829"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0070062" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0070062"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005524" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0005524"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0042802" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0042802"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0099106" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0099106"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0000287" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0000287"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0019870" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0019870"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0019901" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0019901"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0106310" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0106310"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0004674" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0004674"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0044325" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0044325"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006884" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0006884"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0071474" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0071474"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0071476" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0071476"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1990869" source="budo:OXSR1_HUMAN_v1" target="GO:GO:1990869"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0038116" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0038116"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0038146" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0038146"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0035556" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0035556"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1901380" source="budo:OXSR1_HUMAN_v1" target="GO:GO:1901380"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0007231" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0007231"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0010820" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0010820"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0046777" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0046777"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006468" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0006468"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0070294" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0070294"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006979" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0006979"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0009410" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0009410"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0007165" source="budo:OXSR1_HUMAN_v1" target="GO:GO:0007165"/>
+  </lmp:KnowledgeGraph>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>1</lmp:SequenceVersion>
+      <lmp:EntryVersion>213</lmp:EntryVersion>
+      <lmp:FirstPublicDate>2005-08-16</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>1999-05-01</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GroundTruthEntry contentType="application/json" encoding="base64">eyJ1bmlwcm90X2lkIjogIk85NTc0NyIsICJwcmltYXJ5QWNjZXNzaW9uIjogIk85NTc0NyIsICJ1bmlQcm90a2JJZCI6ICJPWFNSMV9IVU1BTiIsICJnZW5lX25hbWUiOiAiT1hTUjEiLCAib3JnYW5pc20iOiAiSG9tbyBzYXBpZW5zIiwgInRheG9ub215X2lkIjogOTYwNiwgInNlcXVlbmNlIjogIk1TRURTU0FMUFdTSU5SRERZRUxRRVZJR1NHQVRBVlZRQUFZQ0FQS0tFS1ZBSUtSSU5MRUtDUVRTTURFTExLRUlRQU1TUUNISFBOSVZTWVlUU0ZWVktERUxXTFZNS0xMU0dHU1ZMRElJS0hJVkFLR0VIS1NHVkxERVNUSUFUSUxSRVZMRUdMRVlMSEtOR1FJSFJEVktBR05JTExHRURHU1ZRSUFERkdWU0FGTEFUR0dESVRSTktWUktURlZHVFBDV01BUEVWTUVRVlJHWURGS0FESVdTRkdJVEFJRUxBVEdBQVBZSEtZUFBNS1ZMTUxUTFFORFBQU0xFVEdWUURLRU1MS0tZR0tTRlJLTUlTTENMUUtEUEVLUlBUQUFFTExSSEtGRlFLQUtOS0VGTFFFS1RMUVJBUFRJU0VSQUtLVlJSVlBHU1NHUkxIS1RFREdHV0VXU0RERUZERUVTRUVHS0FBSVNRTFJTUFJWS0VTSVNOU0VMRlBUVERQVkdUTExRVlBFUUlTQUhMUFFQQUdRSUFUUVBUUVZTTFBQVEFFUEFLVEFRQUxTU0dTR1NRRVRLSVBJU0xWTFJMUk5TS0tFTE5ESVJGRUZUUEdSRFRBRUdWU1FFTElTQUdMVkRHUkRMVklWQUFOTFFLSVZFRVBRU05SU1ZURktMQVNHVkVHU0RJUERER0tMSUdGQVFMU0lTIiwgInByb3RlaW5fbmFtZSI6ICJTZXJpbmUvdGhyZW9uaW5lLXByb3RlaW4ga2luYXNlIE9TUjEiLCAia2V5d29yZHMiOiBbIjNELXN0cnVjdHVyZSIsICJBY2V0eWxhdGlvbiIsICJBVFAtYmluZGluZyIsICJDeXRvcGxhc20iLCAiS2luYXNlIiwgIk1hZ25lc2l1bSIsICJNZXRhbC1iaW5kaW5nIiwgIk51Y2xlb3RpZGUtYmluZGluZyIsICJQaG9zcGhvcHJvdGVpbiIsICJQcm90ZW9taWNzIGlkZW50aWZpY2F0aW9uIiwgIlJlZmVyZW5jZSBwcm90ZW9tZSIsICJTZXJpbmUvdGhyZW9uaW5lLXByb3RlaW4ga2luYXNlIiwgIlRyYW5zZmVyYXNlIl0sICJsaW5lYWdlcyI6IFsiRXVrYXJ5b3RhIiwgIk1ldGF6b2EiLCAiQ2hvcmRhdGEiLCAiQ3JhbmlhdGEiLCAiVmVydGVicmF0YSIsICJFdXRlbGVvc3RvbWkiLCAiTWFtbWFsaWEiLCAiRXV0aGVyaWEiLCAiRXVhcmNob250b2dsaXJlcyIsICJQcmltYXRlcyIsICJIYXBsb3JyaGluaSIsICJDYXRhcnJoaW5pIiwgIkhvbWluaWRhZSIsICJIb21vIl0sICJmZWF0dXJlcyI6IFt7InR5cGUiOiAiSW5pdGlhdG9yIG1ldGhpb25pbmUiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDEsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDEsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIlJlbW92ZWQiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3NzQ0IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjIyMjM4OTUifV19LCB7InR5cGUiOiAiQ2hhaW4iLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDIsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDUyNywgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiU2VyaW5lL3RocmVvbmluZS1wcm90ZWluIGtpbmFzZSBPU1IxIiwgImZlYXR1cmVJZCI6ICJQUk9fMDAwMDA4NjQ1NiJ9LCB7InR5cGUiOiAiRG9tYWluIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAxNywgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMjkxLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJQcm90ZWluIGtpbmFzZSIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNTUiLCAic291cmNlIjogIlBST1NJVEUtUHJvUnVsZSIsICJpZCI6ICJQUlUwMDE1OSJ9XX0sIHsidHlwZSI6ICJSZWdpb24iLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDMxNSwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMzYwLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJEaXNvcmRlcmVkIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI1NiIsICJzb3VyY2UiOiAiU0FNIiwgImlkIjogIk1vYmlEQi1saXRlIn1dfSwgeyJ0eXBlIjogIlJlZ2lvbiIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogNDA1LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA0MjcsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIkRpc29yZGVyZWQiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjU2IiwgInNvdXJjZSI6ICJTQU0iLCAiaWQiOiAiTW9iaURCLWxpdGUifV19LCB7InR5cGUiOiAiQ29tcG9zaXRpb25hbCBiaWFzIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAzMzQsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDM0OCwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiQWNpZGljIHJlc2lkdWVzIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI1NiIsICJzb3VyY2UiOiAiU0FNIiwgImlkIjogIk1vYmlEQi1saXRlIn1dfSwgeyJ0eXBlIjogIkFjdGl2ZSBzaXRlIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAxNDYsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDE0NiwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiUHJvdG9uIGFjY2VwdG9yIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI1MCIsICJzb3VyY2UiOiAiVW5pUHJvdEtCIiwgImlkIjogIlE5WjFXOSJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI1NSIsICJzb3VyY2UiOiAiUFJPU0lURS1Qcm9SdWxlIiwgImlkIjogIlBSVTAwMTU5In1dfSwgeyJ0eXBlIjogIkJpbmRpbmcgc2l0ZSIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMjMsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDMxLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZmVhdHVyZUNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIkNoRUJJIiwgImlkIjogIkNIRUJJOjMwNjE2In1dLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjUwIiwgInNvdXJjZSI6ICJVbmlQcm90S0IiLCAiaWQiOiAiUTlaMVc5In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjU1IiwgInNvdXJjZSI6ICJQUk9TSVRFLVByb1J1bGUiLCAiaWQiOiAiUFJVMDAxNTkifV0sICJsaWdhbmQiOiB7Im5hbWUiOiAiQVRQIiwgImlkIjogIkNoRUJJOkNIRUJJOjMwNjE2In19LCB7InR5cGUiOiAiQmluZGluZyBzaXRlIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiA0NiwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDYsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJmZWF0dXJlQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiQ2hFQkkiLCAiaWQiOiAiQ0hFQkk6MzA2MTYifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNTUiLCAic291cmNlIjogIlBST1NJVEUtUHJvUnVsZSIsICJpZCI6ICJQUlUwMDE1OSJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE0NzA3MTMyIn1dLCAibGlnYW5kIjogeyJuYW1lIjogIkFUUCIsICJpZCI6ICJDaEVCSTpDSEVCSTozMDYxNiJ9fSwgeyJ0eXBlIjogIk1vZGlmaWVkIHJlc2lkdWUiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDIsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDIsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIk4tYWNldHlsc2VyaW5lIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzc0NCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjIyMjIzODk1In1dfSwgeyJ0eXBlIjogIk1vZGlmaWVkIHJlc2lkdWUiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDE4NSwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMTg1LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJQaG9zcGhvdGhyZW9uaW5lOyBieSBXTksxIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE2NjY5Nzg3In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTY4MzIwNDUifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzE5MDc5MSJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjIxMzIxMzI4In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjMzODY2MjEifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyOTU4MTI5MCJ9XX0sIHsidHlwZSI6ICJNb2RpZmllZCByZXNpZHVlIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAzMTAsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDMxMCwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiUGhvc3Bob3RocmVvbmluZSIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc3NDQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMzE4NjE2MyJ9XX0sIHsidHlwZSI6ICJNb2RpZmllZCByZXNpZHVlIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAzMjQsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDMyNCwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiUGhvc3Bob3NlcmluZSIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc3NDQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMzE4NjE2MyJ9XX0sIHsidHlwZSI6ICJNb2RpZmllZCByZXNpZHVlIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAzMjUsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDMyNSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiUGhvc3Bob3NlcmluZSIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzE5MDc5MSJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjIzMzg2NjIxIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjk1ODEyOTAifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc3NDQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMzE4NjE2MyJ9XX0sIHsidHlwZSI6ICJNb2RpZmllZCByZXNpZHVlIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAzMzksICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDMzOSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiUGhvc3Bob3NlcmluZSIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc3NDQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzA4MTk4MyJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzc0NCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE4MzE4MDA4In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3NzQ0IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTg2Njk2NDgifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc3NDQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxOTY5MDMzMiJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzc0NCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjIwMDY4MjMxIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3NzQ0IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjE0MDY2OTIifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc3NDQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMzE4NjE2MyJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzc0NCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjI0Mjc1NTY5In1dfSwgeyJ0eXBlIjogIk1vZGlmaWVkIHJlc2lkdWUiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDM0NywgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMzQ3LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJQaG9zcGhvc2VyaW5lIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzc0NCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE5NjkwMzMyIn1dfSwgeyJ0eXBlIjogIk1vZGlmaWVkIHJlc2lkdWUiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDM1OSwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMzU5LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJQaG9zcGhvc2VyaW5lIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzc0NCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjIzMTg2MTYzIn1dfSwgeyJ0eXBlIjogIk1vZGlmaWVkIHJlc2lkdWUiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDQyNywgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDI3LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJQaG9zcGhvc2VyaW5lIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzc0NCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE3NTI1MzMyIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3NzQ0IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTg2Njk2NDgifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc3NDQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMDA2ODIzMSJ9XX0sIHsidHlwZSI6ICJOYXR1cmFsIHZhcmlhbnQiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDMwNCwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMzA0LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJpbiBkYlNOUDpyczY1OTkwNzkiLCAiZmVhdHVyZUNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogImRiU05QIiwgImlkIjogInJzNjU5OTA3OSJ9XSwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjEwMDgzNzM2In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTczNDQ4NDYifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlJlZmVyZW5jZSIsICJpZCI6ICJSZWYuMyJ9XSwgImZlYXR1cmVJZCI6ICJWQVJfMDIzMjMyIiwgImFsdGVybmF0aXZlU2VxdWVuY2UiOiB7Im9yaWdpbmFsU2VxdWVuY2UiOiAiVCIsICJhbHRlcm5hdGl2ZVNlcXVlbmNlcyI6IFsiSSJdfX0sIHsidHlwZSI6ICJOYXR1cmFsIHZhcmlhbnQiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDQyNSwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDI1LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJpbiBkYlNOUDpyczM1Mjk1NzcyIiwgImZlYXR1cmVDcm9zc1JlZmVyZW5jZXMiOiBbeyJkYXRhYmFzZSI6ICJkYlNOUCIsICJpZCI6ICJyczM1Mjk1NzcyIn1dLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJSZWZlcmVuY2UiLCAiaWQiOiAiUmVmLjMifV0sICJmZWF0dXJlSWQiOiAiVkFSXzAyNTE4MSIsICJhbHRlcm5hdGl2ZVNlcXVlbmNlIjogeyJvcmlnaW5hbFNlcXVlbmNlIjogIlMiLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZXMiOiBbIlQiXX19LCB7InR5cGUiOiAiTmF0dXJhbCB2YXJpYW50IiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiA0MzMsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDQzMywgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiaW4gYSBtZXRhc3RhdGljIG1lbGFub21hIHNhbXBsZTsgc29tYXRpYyBtdXRhdGlvbjsgZGJTTlA6cnMxNzAzMTcwNzMxIiwgImZlYXR1cmVDcm9zc1JlZmVyZW5jZXMiOiBbeyJkYXRhYmFzZSI6ICJkYlNOUCIsICJpZCI6ICJyczE3MDMxNzA3MzEifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzM0NDg0NiJ9XSwgImZlYXR1cmVJZCI6ICJWQVJfMDQwOTY5IiwgImFsdGVybmF0aXZlU2VxdWVuY2UiOiB7Im9yaWdpbmFsU2VxdWVuY2UiOiAiUCIsICJhbHRlcm5hdGl2ZVNlcXVlbmNlcyI6IFsiUyJdfX0sIHsidHlwZSI6ICJNdXRhZ2VuZXNpcyIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogNDYsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDQ2LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJMb3NzIG9mIGF1dG9waG9zcGhvcnlsYXRpb24gYW5kIGtpbmFzZSBhY3Rpdml0eS4iLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTQ3MDcxMzIifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNjM4OTA2OCJ9XSwgImFsdGVybmF0aXZlU2VxdWVuY2UiOiB7Im9yaWdpbmFsU2VxdWVuY2UiOiAiSyIsICJhbHRlcm5hdGl2ZVNlcXVlbmNlcyI6IFsiQSJdfX0sIHsidHlwZSI6ICJNdXRhZ2VuZXNpcyIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogNDYsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDQ2LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJMb3NzIG9mIFJFTFQsIFJFTEwxIGFuZCBSRUxMMiBwaG9zcGhvcnlsYXRpb24uIFJldGVudGlvbiBvZiBzb21lIGF1dG9waG9zcGhvcnlsYXRpb24gYWN0aXZpdHkgbWF5IGJlIGR1ZSB0byBjb21wbGV4IGZvcm1hdGlvbiB3aXRoIG90aGVyIGVuZG9nZW5vdXMga2luYXNlcyBpbiB0aGUgYXNzYXkuIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE0NzA3MTMyIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTYzODkwNjgifV0sICJhbHRlcm5hdGl2ZVNlcXVlbmNlIjogeyJvcmlnaW5hbFNlcXVlbmNlIjogIksiLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZXMiOiBbIk0iXX19LCB7InR5cGUiOiAiTXV0YWdlbmVzaXMiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDE4NSwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMTg1LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJQcmV2ZW50cyBwaG9zcGhvcnlsYXRpb24gYW5kIGFjdGl2YXRpb24gYnkgV05LIGtpbmFzZXMuIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE3MTkwNzkxIn1dLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZSI6IHsib3JpZ2luYWxTZXF1ZW5jZSI6ICJUIiwgImFsdGVybmF0aXZlU2VxdWVuY2VzIjogWyJBIl19fSwgeyJ0eXBlIjogIk11dGFnZW5lc2lzIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAxODUsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDE4NSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiTWltaWNzIHBob3NwaG9yeWxhdGlvbjsgcHJvbW90aW5nIGtpbmFzZSBhY3Rpdml0eSBpbmRlcGVuZGVudGx5IG9mIFdOSyBraW5hc2VzLiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNjY2OTc4NyJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE2ODMyMDQ1In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTcxOTA3OTEifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMTMyMTMyOCJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjIzMzg2NjIxIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjk1ODEyOTAifV0sICJhbHRlcm5hdGl2ZVNlcXVlbmNlIjogeyJvcmlnaW5hbFNlcXVlbmNlIjogIlQiLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZXMiOiBbIkUiLCAiRCJdfX0sIHsidHlwZSI6ICJNdXRhZ2VuZXNpcyIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMzI1LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiAzMjUsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIkRvZXMgbm90IGFmZmVjdCBhY3RpdmF0aW9uIGJ5IFdOSyBraW5hc2VzLiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzE5MDc5MSJ9XSwgImFsdGVybmF0aXZlU2VxdWVuY2UiOiB7Im9yaWdpbmFsU2VxdWVuY2UiOiAiUyIsICJhbHRlcm5hdGl2ZVNlcXVlbmNlcyI6IFsiQSJdfX0sIHsidHlwZSI6ICJNdXRhZ2VuZXNpcyIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMzI1LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiAzMjUsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIk1pbWljcyBwaG9zcGhvcnlsYXRpb247IHNsaWdodGx5IHByb21vdGluZyBraW5hc2UgYWN0aXZpdHkgaW5kZXBlbmRlbnRseSBvZiBXTksga2luYXNlcy4iLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTcxOTA3OTEifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMzM4NjYyMSJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjI5NTgxMjkwIn1dLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZSI6IHsib3JpZ2luYWxTZXF1ZW5jZSI6ICJTIiwgImFsdGVybmF0aXZlU2VxdWVuY2VzIjogWyJFIiwgIkQiXX19LCB7InR5cGUiOiAiTXV0YWdlbmVzaXMiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDQ0NiwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDQ2LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJEZWNyZWFzZWQgaW50ZXJhY3Rpb24gd2l0aCBXTks0LiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzcyMTQzOSJ9XSwgImFsdGVybmF0aXZlU2VxdWVuY2UiOiB7Im9yaWdpbmFsU2VxdWVuY2UiOiAiRSIsICJhbHRlcm5hdGl2ZVNlcXVlbmNlcyI6IFsiQSJdfX0sIHsidHlwZSI6ICJNdXRhZ2VuZXNpcyIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogNDQ4LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA0NDgsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIkRlY3JlYXNlZCBpbnRlcmFjdGlvbiB3aXRoIFdOSzQuIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE3NzIxNDM5In1dLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZSI6IHsib3JpZ2luYWxTZXF1ZW5jZSI6ICJOIiwgImFsdGVybmF0aXZlU2VxdWVuY2VzIjogWyJBIl19fSwgeyJ0eXBlIjogIk11dGFnZW5lc2lzIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiA0NDksICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDQ0OSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiRGVjcmVhc2VkIGludGVyYWN0aW9uIHdpdGggV05LNC4iLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTc3MjE0MzkifV0sICJhbHRlcm5hdGl2ZVNlcXVlbmNlIjogeyJvcmlnaW5hbFNlcXVlbmNlIjogIkQiLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZXMiOiBbIkEiXX19LCB7InR5cGUiOiAiTXV0YWdlbmVzaXMiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDQ1MCwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDUwLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJBYm9saXNoZWQgaW50ZXJhY3Rpb24gd2l0aCBXTks0LiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzcyMTQzOSJ9XSwgImFsdGVybmF0aXZlU2VxdWVuY2UiOiB7Im9yaWdpbmFsU2VxdWVuY2UiOiAiSSIsICJhbHRlcm5hdGl2ZVNlcXVlbmNlcyI6IFsiQSJdfX0sIHsidHlwZSI6ICJNdXRhZ2VuZXNpcyIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogNDUxLCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA0NTEsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIkRlY3JlYXNlZCBpbnRlcmFjdGlvbiB3aXRoIFdOSzQuIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE3NzIxNDM5In1dLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZSI6IHsib3JpZ2luYWxTZXF1ZW5jZSI6ICJSIiwgImFsdGVybmF0aXZlU2VxdWVuY2VzIjogWyJBIl19fSwgeyJ0eXBlIjogIk11dGFnZW5lc2lzIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiA0NTksICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDQ1OSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiQWJvbGlzaGVkIGludGVyYWN0aW9uIHdpdGggU0xDMTJBMi9OS0NDMSBhbmQgV05LNC4iLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTc3MjE0MzkifV0sICJhbHRlcm5hdGl2ZVNlcXVlbmNlIjogeyJvcmlnaW5hbFNlcXVlbmNlIjogIkQiLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZXMiOiBbIkEiXX19LCB7InR5cGUiOiAiTXV0YWdlbmVzaXMiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDQ2NywgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDY3LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJBYm9saXNoZWQgaW50ZXJhY3Rpb24gd2l0aCBXTks0LiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzcyMTQzOSJ9XSwgImFsdGVybmF0aXZlU2VxdWVuY2UiOiB7Im9yaWdpbmFsU2VxdWVuY2UiOiAiRSIsICJhbHRlcm5hdGl2ZVNlcXVlbmNlcyI6IFsiQSJdfX0sIHsidHlwZSI6ICJNdXRhZ2VuZXNpcyIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogNDY4LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA0NjgsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIkFib2xpc2hlZCBpbnRlcmFjdGlvbiB3aXRoIFdOSzQuIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE3NzIxNDM5In1dLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZSI6IHsib3JpZ2luYWxTZXF1ZW5jZSI6ICJMIiwgImFsdGVybmF0aXZlU2VxdWVuY2VzIjogWyJGIl19fSwgeyJ0eXBlIjogIk11dGFnZW5lc2lzIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiA0NzEsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDQ3MSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiRGVjcmVhc2VkIGludGVyYWN0aW9uIHdpdGggV05LNC4iLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTc3MjE0MzkifV0sICJhbHRlcm5hdGl2ZVNlcXVlbmNlIjogeyJvcmlnaW5hbFNlcXVlbmNlIjogIkEiLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZXMiOiBbIkwiXX19LCB7InR5cGUiOiAiTXV0YWdlbmVzaXMiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDQ3MywgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDczLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJBYm9saXNoZWQgaW50ZXJhY3Rpb24gd2l0aCBTTEMxMkEyL05LQ0MxIGFuZCBXTks0LiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzcyMTQzOSJ9XSwgImFsdGVybmF0aXZlU2VxdWVuY2UiOiB7Im9yaWdpbmFsU2VxdWVuY2UiOiAiTCIsICJhbHRlcm5hdGl2ZVNlcXVlbmNlcyI6IFsiQSJdfX0sIHsidHlwZSI6ICJTZXF1ZW5jZSBjb25mbGljdCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMzE2LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiAzMTYsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogImluIFJlZi4gNTsgQUFQOTcxOTIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzA1In1dLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZSI6IHsib3JpZ2luYWxTZXF1ZW5jZSI6ICJLIiwgImFsdGVybmF0aXZlU2VxdWVuY2VzIjogWyJSIl19fSwgeyJ0eXBlIjogIlNlcXVlbmNlIGNvbmZsaWN0IiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAzMjUsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDMyNSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiaW4gUmVmLiA1OyBBQVA5NzE5MiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMDUifV0sICJhbHRlcm5hdGl2ZVNlcXVlbmNlIjogeyJvcmlnaW5hbFNlcXVlbmNlIjogIlMiLCAiYWx0ZXJuYXRpdmVTZXF1ZW5jZXMiOiBbIkciXX19LCB7InR5cGUiOiAiU2VxdWVuY2UgY29uZmxpY3QiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDM2MywgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMzYzLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICJpbiBSZWYuIDU7IEFBUDk3MTkyIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDMwNSJ9XSwgImFsdGVybmF0aXZlU2VxdWVuY2UiOiB7Im9yaWdpbmFsU2VxdWVuY2UiOiAiSyIsICJhbHRlcm5hdGl2ZVNlcXVlbmNlcyI6IFsiUiJdfX0sIHsidHlwZSI6ICJIZWxpeCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMTQsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDE2LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiM0RBSyJ9XX0sIHsidHlwZSI6ICJCZXRhIHN0cmFuZCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMTgsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDI0LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiMlZXSSJ9XX0sIHsidHlwZSI6ICJCZXRhIHN0cmFuZCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMzEsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDM1LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiMlZXSSJ9XX0sIHsidHlwZSI6ICJUdXJuIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAzNywgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDAsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc4MjkiLCAic291cmNlIjogIlBEQiIsICJpZCI6ICIyVldJIn1dfSwgeyJ0eXBlIjogIkJldGEgc3RyYW5kIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiA0MiwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDYsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc4MjkiLCAic291cmNlIjogIlBEQiIsICJpZCI6ICIyVldJIn1dfSwgeyJ0eXBlIjogIlR1cm4iLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDUwLCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA1NCwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjJWV0kifV19LCB7InR5cGUiOiAiSGVsaXgiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDU3LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA2NSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjJWV0kifV19LCB7InR5cGUiOiAiQmV0YSBzdHJhbmQiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDc4LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA4NiwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjJWV0kifV19LCB7InR5cGUiOiAiQmV0YSBzdHJhbmQiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDg4LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA5MywgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjJWV0kifV19LCB7InR5cGUiOiAiSGVsaXgiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDEwMCwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMTA5LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiMlZXSSJ9XX0sIHsidHlwZSI6ICJUdXJuIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAxMTAsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDExNSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjJWV0kifV19LCB7InR5cGUiOiAiSGVsaXgiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDEyMCwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMTM5LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiMlZXSSJ9XX0sIHsidHlwZSI6ICJIZWxpeCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMTQ5LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiAxNTEsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc4MjkiLCAic291cmNlIjogIlBEQiIsICJpZCI6ICIyVldJIn1dfSwgeyJ0eXBlIjogIkJldGEgc3RyYW5kIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAxNTIsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDE1NCwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjJWV0kifV19LCB7InR5cGUiOiAiQmV0YSBzdHJhbmQiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDE2MCwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMTYyLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiMlZXSSJ9XX0sIHsidHlwZSI6ICJIZWxpeCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMTY2LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiAxNzAsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc4MjkiLCAic291cmNlIjogIlBEQiIsICJpZCI6ICIyVldJIn1dfSwgeyJ0eXBlIjogIkhlbGl4IiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAxOTUsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDIwMiwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjJWV0kifV19LCB7InR5cGUiOiAiSGVsaXgiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDIwNywgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMjIyLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiMlZXSSJ9XX0sIHsidHlwZSI6ICJUdXJuIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAyMjYsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDIyOSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjJWV0kifV19LCB7InR5cGUiOiAiSGVsaXgiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDIzMiwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMjM0LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiMlZXSSJ9XX0sIHsidHlwZSI6ICJIZWxpeCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMjM1LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiAyNDAsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc4MjkiLCAic291cmNlIjogIlBEQiIsICJpZCI6ICIyVldJIn1dfSwgeyJ0eXBlIjogIlR1cm4iLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDI0NywgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMjUwLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiM0RBSyJ9XX0sIHsidHlwZSI6ICJIZWxpeCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMjU0LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiAyNTcsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc4MjkiLCAic291cmNlIjogIlBEQiIsICJpZCI6ICIzREFLIn1dfSwgeyJ0eXBlIjogIkhlbGl4IiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAyNjIsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDI3MSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjJWV0kifV19LCB7InR5cGUiOiAiSGVsaXgiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDI3NiwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogMjc4LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiMlZXSSJ9XX0sIHsidHlwZSI6ICJIZWxpeCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogMjgyLCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiAyODYsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc4MjkiLCAic291cmNlIjogIlBEQiIsICJpZCI6ICIyVldJIn1dfSwgeyJ0eXBlIjogIkhlbGl4IiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiAyODksICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDI5MywgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjNEQUsifV19LCB7InR5cGUiOiAiQmV0YSBzdHJhbmQiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDQzNCwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDQxLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiN09LVyJ9XX0sIHsidHlwZSI6ICJCZXRhIHN0cmFuZCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogNDQ3LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA0NTQsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc4MjkiLCAic291cmNlIjogIlBEQiIsICJpZCI6ICI3T0tXIn1dfSwgeyJ0eXBlIjogIlR1cm4iLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDQ1NiwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDU4LCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiN09LVyJ9XX0sIHsidHlwZSI6ICJIZWxpeCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogNDYxLCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA0NzAsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc4MjkiLCAic291cmNlIjogIlBEQiIsICJpZCI6ICI3T0tXIn1dfSwgeyJ0eXBlIjogIkhlbGl4IiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiA0NzYsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDQ3OCwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjdPS1cifV19LCB7InR5cGUiOiAiSGVsaXgiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDQ3OSwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNDkxLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiN09LVyJ9XX0sIHsidHlwZSI6ICJUdXJuIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiA0OTMsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDQ5NSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjdPS1cifV19LCB7InR5cGUiOiAiQmV0YSBzdHJhbmQiLCAibG9jYXRpb24iOiB7InN0YXJ0IjogeyJ2YWx1ZSI6IDQ5NiwgIm1vZGlmaWVyIjogIkVYQUNUIn0sICJlbmQiOiB7InZhbHVlIjogNTAyLCAibW9kaWZpZXIiOiAiRVhBQ1QifX0sICJkZXNjcmlwdGlvbiI6ICIiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDA3ODI5IiwgInNvdXJjZSI6ICJQREIiLCAiaWQiOiAiN09LVyJ9XX0sIHsidHlwZSI6ICJIZWxpeCIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogNTA0LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA1MDYsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc4MjkiLCAic291cmNlIjogIlBEQiIsICJpZCI6ICIyVjNTIn1dfSwgeyJ0eXBlIjogIkJldGEgc3RyYW5kIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiA1MDcsICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDUxMSwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjJWM1MifV19LCB7InR5cGUiOiAiVHVybiIsICJsb2NhdGlvbiI6IHsic3RhcnQiOiB7InZhbHVlIjogNTE1LCAibW9kaWZpZXIiOiAiRVhBQ1QifSwgImVuZCI6IHsidmFsdWUiOiA1MTgsICJtb2RpZmllciI6ICJFWEFDVCJ9fSwgImRlc2NyaXB0aW9uIjogIiIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDc4MjkiLCAic291cmNlIjogIlBEQiIsICJpZCI6ICI3T0tXIn1dfSwgeyJ0eXBlIjogIkJldGEgc3RyYW5kIiwgImxvY2F0aW9uIjogeyJzdGFydCI6IHsidmFsdWUiOiA1MTksICJtb2RpZmllciI6ICJFWEFDVCJ9LCAiZW5kIjogeyJ2YWx1ZSI6IDUyNiwgIm1vZGlmaWVyIjogIkVYQUNUIn19LCAiZGVzY3JpcHRpb24iOiAiIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzgyOSIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjdPS1cifV19XSwgImRiUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIkVNQkwiLCAiaWQiOiAiQUIwMTc2NDIiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJQcm90ZWluSWQiLCAidmFsdWUiOiAiQkFBNzU2NzQuMSJ9LCB7ImtleSI6ICJTdGF0dXMiLCAidmFsdWUiOiAiLSJ9LCB7ImtleSI6ICJNb2xlY3VsZVR5cGUiLCAidmFsdWUiOiAibVJOQSJ9XX0sIHsiZGF0YWJhc2UiOiAiRU1CTCIsICJpZCI6ICJBQjAyOTAyNCIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIlByb3RlaW5JZCIsICJ2YWx1ZSI6ICJCQUE4MzA1My4yIn0sIHsia2V5IjogIlN0YXR1cyIsICJ2YWx1ZSI6ICJBTFRfRlJBTUUifSwgeyJrZXkiOiAiTW9sZWN1bGVUeXBlIiwgInZhbHVlIjogIm1STkEifV19LCB7ImRhdGFiYXNlIjogIkVNQkwiLCAiaWQiOiAiRFEyMDE2MzgiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJQcm90ZWluSWQiLCAidmFsdWUiOiAiQUJBMjcwOTcuMSJ9LCB7ImtleSI6ICJTdGF0dXMiLCAidmFsdWUiOiAiLSJ9LCB7ImtleSI6ICJNb2xlY3VsZVR5cGUiLCAidmFsdWUiOiAiR2Vub21pY19ETkEifV19LCB7ImRhdGFiYXNlIjogIkVNQkwiLCAiaWQiOiAiQkMwMDg3MjYiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJQcm90ZWluSWQiLCAidmFsdWUiOiAiQUFIMDg3MjYuMSJ9LCB7ImtleSI6ICJTdGF0dXMiLCAidmFsdWUiOiAiLSJ9LCB7ImtleSI6ICJNb2xlY3VsZVR5cGUiLCAidmFsdWUiOiAibVJOQSJ9XX0sIHsiZGF0YWJhc2UiOiAiRU1CTCIsICJpZCI6ICJBRjA4Nzg5MyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIlByb3RlaW5JZCIsICJ2YWx1ZSI6ICJBQVA5NzE5Mi4xIn0sIHsia2V5IjogIlN0YXR1cyIsICJ2YWx1ZSI6ICJBTFRfSU5JVCJ9LCB7ImtleSI6ICJNb2xlY3VsZVR5cGUiLCAidmFsdWUiOiAibVJOQSJ9XX0sIHsiZGF0YWJhc2UiOiAiQ0NEUyIsICJpZCI6ICJDQ0RTMjY3NS4xIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiUmVmU2VxIiwgImlkIjogIk5QXzAwNTEwMC4xIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiTnVjbGVvdGlkZVNlcXVlbmNlSWQiLCAidmFsdWUiOiAiTk1fMDA1MTA5LjMifV19LCB7ImRhdGFiYXNlIjogIlBEQiIsICJpZCI6ICIyVjNTIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiTWV0aG9kIiwgInZhbHVlIjogIlgtcmF5In0sIHsia2V5IjogIlJlc29sdXRpb24iLCAidmFsdWUiOiAiMS43MCBBIn0sIHsia2V5IjogIkNoYWlucyIsICJ2YWx1ZSI6ICJBL0I9NDMzLTUyNyJ9XX0sIHsiZGF0YWJhc2UiOiAiUERCIiwgImlkIjogIjJWV0kiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJNZXRob2QiLCAidmFsdWUiOiAiWC1yYXkifSwgeyJrZXkiOiAiUmVzb2x1dGlvbiIsICJ2YWx1ZSI6ICIyLjE1IEEifSwgeyJrZXkiOiAiQ2hhaW5zIiwgInZhbHVlIjogIkEvQi9DL0Q9MS0zMDMifV19LCB7ImRhdGFiYXNlIjogIlBEQiIsICJpZCI6ICIzREFLIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiTWV0aG9kIiwgInZhbHVlIjogIlgtcmF5In0sIHsia2V5IjogIlJlc29sdXRpb24iLCAidmFsdWUiOiAiMi4yNSBBIn0sIHsia2V5IjogIkNoYWlucyIsICJ2YWx1ZSI6ICJBL0IvQy9EPTYtMjk1In1dfSwgeyJkYXRhYmFzZSI6ICJQREIiLCAiaWQiOiAiN09LVyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIk1ldGhvZCIsICJ2YWx1ZSI6ICJYLXJheSJ9LCB7ImtleSI6ICJSZXNvbHV0aW9uIiwgInZhbHVlIjogIjEuNjIgQSJ9LCB7ImtleSI6ICJDaGFpbnMiLCAidmFsdWUiOiAiQS9CPTQyMy01MjcifV19LCB7ImRhdGFiYXNlIjogIlBEQnN1bSIsICJpZCI6ICIyVjNTIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiUERCc3VtIiwgImlkIjogIjJWV0kiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJEZXNjcmlwdGlvbiIsICJ2YWx1ZSI6ICItIn1dfSwgeyJkYXRhYmFzZSI6ICJQREJzdW0iLCAiaWQiOiAiM0RBSyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIlBEQnN1bSIsICJpZCI6ICI3T0tXIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiQWxwaGFGb2xkREIiLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiU01SIiwgImlkIjogIk85NTc0NyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIkJpb0dSSUQiLCAiaWQiOiAiMTE1MjY5IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiSW50ZXJhY3Rpb25zIiwgInZhbHVlIjogIjE4MiJ9XX0sIHsiZGF0YWJhc2UiOiAiQ09SVU0iLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiRElQIiwgImlkIjogIkRJUC0zNDk3N04iLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJEZXNjcmlwdGlvbiIsICJ2YWx1ZSI6ICItIn1dfSwgeyJkYXRhYmFzZSI6ICJFTE0iLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiRnVuQ291cCIsICJpZCI6ICJPOTU3NDciLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJOdW1iZXIgb2YgaW50ZXJhY3RvcnMiLCAidmFsdWUiOiAiMjgyMCJ9XX0sIHsiZGF0YWJhc2UiOiAiSW50QWN0IiwgImlkIjogIk85NTc0NyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkludGVyYWN0aW9ucyIsICJ2YWx1ZSI6ICIxMTcifV19LCB7ImRhdGFiYXNlIjogIk1JTlQiLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiU1RSSU5HIiwgImlkIjogIjk2MDYuRU5TUDAwMDAwMzExNzEzIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiQmluZGluZ0RCIiwgImlkIjogIk85NTc0NyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIkNoRU1CTCIsICJpZCI6ICJDSEVNQkwxMTYzMTA0IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiRHJ1Z0JhbmsiLCAiaWQiOiAiREIxMjAxMCIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkdlbmVyaWNOYW1lIiwgInZhbHVlIjogIkZvc3RhbWF0aW5pYiJ9XX0sIHsiZGF0YWJhc2UiOiAiRHJ1Z0NlbnRyYWwiLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiR2x5R2VuIiwgImlkIjogIk85NTc0NyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogImdseWNvc3lsYXRpb24iLCAidmFsdWUiOiAiMiBzaXRlcywgMSBOLWxpbmtlZCBnbHljYW4gKDEgc2l0ZSksIDEgTy1saW5rZWQgZ2x5Y2FuICgxIHNpdGUpIn1dfSwgeyJkYXRhYmFzZSI6ICJpUFRNbmV0IiwgImlkIjogIk85NTc0NyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIlBob3NwaG9TaXRlUGx1cyIsICJpZCI6ICJPOTU3NDciLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJEZXNjcmlwdGlvbiIsICJ2YWx1ZSI6ICItIn1dfSwgeyJkYXRhYmFzZSI6ICJTd2lzc1BhbG0iLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiQmlvTXV0YSIsICJpZCI6ICJPWFNSMSIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogImpQT1NUIiwgImlkIjogIk85NTc0NyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIk1hc3NJVkUiLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiUGF4RGIiLCAiaWQiOiAiOTYwNi1FTlNQMDAwMDAzMTE3MTMiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJEZXNjcmlwdGlvbiIsICJ2YWx1ZSI6ICItIn1dfSwgeyJkYXRhYmFzZSI6ICJQZXB0aWRlQXRsYXMiLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiUHJvdGVvbWljc0RCIiwgImlkIjogIjUxMDE5IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiUHVtYmEiLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiQW50aWJvZHlwZWRpYSIsICJpZCI6ICIyMTAxIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiYW50aWJvZGllcyIsICJ2YWx1ZSI6ICI1NTEgYW50aWJvZGllcyBmcm9tIDM3IHByb3ZpZGVycyJ9XX0sIHsiZGF0YWJhc2UiOiAiRE5BU1UiLCAiaWQiOiAiOTk0MyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIkVuc2VtYmwiLCAiaWQiOiAiRU5TVDAwMDAwMzExODA2LjgiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJQcm90ZWluSWQiLCAidmFsdWUiOiAiRU5TUDAwMDAwMzExNzEzLjMifSwgeyJrZXkiOiAiR2VuZUlkIiwgInZhbHVlIjogIkVOU0cwMDAwMDE3MjkzOS4xMCJ9XX0sIHsiZGF0YWJhc2UiOiAiR2VuZUlEIiwgImlkIjogIjk5NDMiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJEZXNjcmlwdGlvbiIsICJ2YWx1ZSI6ICItIn1dfSwgeyJkYXRhYmFzZSI6ICJLRUdHIiwgImlkIjogImhzYTo5OTQzIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiTUFORS1TZWxlY3QiLCAiaWQiOiAiRU5TVDAwMDAwMzExODA2LjgiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJQcm90ZWluSWQiLCAidmFsdWUiOiAiRU5TUDAwMDAwMzExNzEzLjMifSwgeyJrZXkiOiAiUmVmU2VxTnVjbGVvdGlkZUlkIiwgInZhbHVlIjogIk5NXzAwNTEwOS4zIn0sIHsia2V5IjogIlJlZlNlcVByb3RlaW5JZCIsICJ2YWx1ZSI6ICJOUF8wMDUxMDAuMSJ9XX0sIHsiZGF0YWJhc2UiOiAiVUNTQyIsICJpZCI6ICJ1YzAwM2NoeS40IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiT3JnYW5pc21OYW1lIiwgInZhbHVlIjogImh1bWFuIn1dfSwgeyJkYXRhYmFzZSI6ICJBR1IiLCAiaWQiOiAiSEdOQzo4NTA4IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiQ2xpblBHeCIsICJpZCI6ICJQQTEzNDk3MzIwNyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIkNURCIsICJpZCI6ICI5OTQzIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiRGlzR2VORVQiLCAiaWQiOiAiOTk0MyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIkdlbmVDYXJkcyIsICJpZCI6ICJPWFNSMSIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIkhHTkMiLCAiaWQiOiAiSEdOQzo4NTA4IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR2VuZU5hbWUiLCAidmFsdWUiOiAiT1hTUjEifV19LCB7ImRhdGFiYXNlIjogIkhQQSIsICJpZCI6ICJFTlNHMDAwMDAxNzI5MzkiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJFeHByZXNzaW9uUGF0dGVybnMiLCAidmFsdWUiOiAiTG93IHRpc3N1ZSBzcGVjaWZpY2l0eSJ9XX0sIHsiZGF0YWJhc2UiOiAiTWFsYUNhcmRzIiwgImlkIjogIk9YU1IxIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiTUlNIiwgImlkIjogIjYwNDA0NiIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIlR5cGUiLCAidmFsdWUiOiAiZ2VuZSJ9XX0sIHsiZGF0YWJhc2UiOiAiT3BlblRhcmdldHMiLCAiaWQiOiAiRU5TRzAwMDAwMTcyOTM5IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiVkV1UGF0aERCIiwgImlkIjogIkhvc3REQjpFTlNHMDAwMDAxNzI5MzkiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJEZXNjcmlwdGlvbiIsICJ2YWx1ZSI6ICItIn1dfSwgeyJkYXRhYmFzZSI6ICJlZ2dOT0ciLCAiaWQiOiAiS09HMDU4MiIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIlRveG9ub21pY1Njb3BlIiwgInZhbHVlIjogIkV1a2FyeW90YSJ9XX0sIHsiZGF0YWJhc2UiOiAiR2VuZVRyZWUiLCAiaWQiOiAiRU5TR1QwMDk0MDAwMDE2MjEzNCIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIkhPR0VOT00iLCAiaWQiOiAiQ0xVXzAwMDI4OF8xMTFfMV8xIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiSW5QYXJhbm9pZCIsICJpZCI6ICJPOTU3NDciLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJEZXNjcmlwdGlvbiIsICJ2YWx1ZSI6ICItIn1dfSwgeyJkYXRhYmFzZSI6ICJPTUEiLCAiaWQiOiAiS01SVEFOQyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkZpbmdlcnByaW50IiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIk9ydGhvREIiLCAiaWQiOiAiODY5MzkwNWF0Mjc1OSIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIlBBTi1HTyIsICJpZCI6ICJPOTU3NDciLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJOdW1iZXIgb2YgR08gYW5ub3RhdGlvbnMiLCAidmFsdWUiOiAiNyBHTyBhbm5vdGF0aW9ucyBiYXNlZCBvbiBldm9sdXRpb25hcnkgbW9kZWxzIn1dfSwgeyJkYXRhYmFzZSI6ICJQaHlsb21lREIiLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiUGF0aHdheUNvbW1vbnMiLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiU2lnbmFMaW5rIiwgImlkIjogIk85NTc0NyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkRlc2NyaXB0aW9uIiwgInZhbHVlIjogIi0ifV19LCB7ImRhdGFiYXNlIjogIlNJR05PUiIsICJpZCI6ICJPOTU3NDciLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJEZXNjcmlwdGlvbiIsICJ2YWx1ZSI6ICItIn1dfSwgeyJkYXRhYmFzZSI6ICJBZ29yYSIsICJpZCI6ICJFTlNHMDAwMDAxNzI5MzkiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJOb21pbmF0ZWRUYXJnZXQiLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiQmlvR1JJRC1PUkNTIiwgImlkIjogIjk5NDMiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJoaXRzIiwgInZhbHVlIjogIjIzIGhpdHMgaW4gMTE5NCBDUklTUFIgc2NyZWVucyJ9XX0sIHsiZGF0YWJhc2UiOiAiQ2hpVGFSUyIsICJpZCI6ICJPWFNSMSIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIk9yZ2FuaXNtTmFtZSIsICJ2YWx1ZSI6ICJodW1hbiJ9XX0sIHsiZGF0YWJhc2UiOiAiRXZvbHV0aW9uYXJ5VHJhY2UiLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiR2VuZVdpa2kiLCAiaWQiOiAiT1hTUjEiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJEZXNjcmlwdGlvbiIsICJ2YWx1ZSI6ICItIn1dfSwgeyJkYXRhYmFzZSI6ICJHZW5vbWVSTkFpIiwgImlkIjogIjk5NDMiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJEZXNjcmlwdGlvbiIsICJ2YWx1ZSI6ICItIn1dfSwgeyJkYXRhYmFzZSI6ICJQaGFyb3MiLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGV2ZWxvcG1lbnRMZXZlbCIsICJ2YWx1ZSI6ICJUYmlvIn1dfSwgeyJkYXRhYmFzZSI6ICJQUk8iLCAiaWQiOiAiUFI6Tzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRGVzY3JpcHRpb24iLCAidmFsdWUiOiAiLSJ9XX0sIHsiZGF0YWJhc2UiOiAiUHJvdGVvbWVzIiwgImlkIjogIlVQMDAwMDA1NjQwIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiQ29tcG9uZW50IiwgInZhbHVlIjogIkNocm9tb3NvbWUgMyJ9XX0sIHsiZGF0YWJhc2UiOiAiUk5BY3QiLCAiaWQiOiAiTzk1NzQ3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAibW9sZWN1bGVUeXBlIiwgInZhbHVlIjogInByb3RlaW4ifV19LCB7ImRhdGFiYXNlIjogIkJnZWUiLCAiaWQiOiAiRU5TRzAwMDAwMTcyOTM5IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRXhwcmVzc2lvblBhdHRlcm5zIiwgInZhbHVlIjogIkV4cHJlc3NlZCBpbiBidWNjYWwgbXVjb3NhIGNlbGwgYW5kIDIwOSBvdGhlciBjZWxsIHR5cGVzIG9yIHRpc3N1ZXMifV19LCB7ImRhdGFiYXNlIjogIkV4cHJlc3Npb25BdGxhcyIsICJpZCI6ICJPOTU3NDciLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJFeHByZXNzaW9uUGF0dGVybnMiLCAidmFsdWUiOiAiYmFzZWxpbmUgYW5kIGRpZmZlcmVudGlhbCJ9XX0sIHsiZGF0YWJhc2UiOiAiR08iLCAiaWQiOiAiR086MDAwNTczNyIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkdvVGVybSIsICJ2YWx1ZSI6ICJDOmN5dG9wbGFzbSJ9LCB7ImtleSI6ICJHb0V2aWRlbmNlVHlwZSIsICJ2YWx1ZSI6ICJJREE6VW5pUHJvdCJ9XSwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDMxNCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjIyOTg5ODg0In1dfSwgeyJkYXRhYmFzZSI6ICJHTyIsICJpZCI6ICJHTzowMDA1ODI5IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR29UZXJtIiwgInZhbHVlIjogIkM6Y3l0b3NvbCJ9LCB7ImtleSI6ICJHb0V2aWRlbmNlVHlwZSIsICJ2YWx1ZSI6ICJJREE6SFBBIn1dfSwgeyJkYXRhYmFzZSI6ICJHTyIsICJpZCI6ICJHTzowMDcwMDYyIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR29UZXJtIiwgInZhbHVlIjogIkM6ZXh0cmFjZWxsdWxhciBleG9zb21lIn0sIHsia2V5IjogIkdvRXZpZGVuY2VUeXBlIiwgInZhbHVlIjogIkhEQTpVbmlQcm90S0IifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDcwMDUiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxOTA1Njg2NyJ9XX0sIHsiZGF0YWJhc2UiOiAiR08iLCAiaWQiOiAiR086MDAwNTUyNCIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkdvVGVybSIsICJ2YWx1ZSI6ICJGOkFUUCBiaW5kaW5nIn0sIHsia2V5IjogIkdvRXZpZGVuY2VUeXBlIiwgInZhbHVlIjogIklEQTpVbmlQcm90S0IifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMTQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNDcwNzEzMiJ9XX0sIHsiZGF0YWJhc2UiOiAiR08iLCAiaWQiOiAiR086MDA0MjgwMiIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkdvVGVybSIsICJ2YWx1ZSI6ICJGOmlkZW50aWNhbCBwcm90ZWluIGJpbmRpbmcifSwgeyJrZXkiOiAiR29FdmlkZW5jZVR5cGUiLCAidmFsdWUiOiAiSVBJOkludEFjdCJ9XSwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDM1MyIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE2ODMyMDQ1In1dfSwgeyJkYXRhYmFzZSI6ICJHTyIsICJpZCI6ICJHTzowMDk5MTA2IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR29UZXJtIiwgInZhbHVlIjogIkY6aW9uIGNoYW5uZWwgcmVndWxhdG9yIGFjdGl2aXR5In0sIHsia2V5IjogIkdvRXZpZGVuY2VUeXBlIiwgInZhbHVlIjogIklNUDpQYXJraW5zb25zVUstVUNMIn1dLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzE1IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTY2Njk3ODcifV19LCB7ImRhdGFiYXNlIjogIkdPIiwgImlkIjogIkdPOjAwMDAyODciLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJHb1Rlcm0iLCAidmFsdWUiOiAiRjptYWduZXNpdW0gaW9uIGJpbmRpbmcifSwgeyJrZXkiOiAiR29FdmlkZW5jZVR5cGUiLCAidmFsdWUiOiAiSURBOlVuaVByb3RLQiJ9XSwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDMxNCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE0NzA3MTMyIn1dfSwgeyJkYXRhYmFzZSI6ICJHTyIsICJpZCI6ICJHTzowMDE5ODcwIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR29UZXJtIiwgInZhbHVlIjogIkY6cG90YXNzaXVtIGNoYW5uZWwgaW5oaWJpdG9yIGFjdGl2aXR5In0sIHsia2V5IjogIkdvRXZpZGVuY2VUeXBlIiwgInZhbHVlIjogIklEQTpQYXJraW5zb25zVUstVUNMIn1dLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzE0IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjQzOTMwMzUifV19LCB7ImRhdGFiYXNlIjogIkdPIiwgImlkIjogIkdPOjAwMTk5MDEiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJHb1Rlcm0iLCAidmFsdWUiOiAiRjpwcm90ZWluIGtpbmFzZSBiaW5kaW5nIn0sIHsia2V5IjogIkdvRXZpZGVuY2VUeXBlIiwgInZhbHVlIjogIklQSTpQYXJraW5zb25zVUstVUNMIn1dLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzUzIiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTY2Njk3ODcifV19LCB7ImRhdGFiYXNlIjogIkdPIiwgImlkIjogIkdPOjAxMDYzMTAiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJHb1Rlcm0iLCAidmFsdWUiOiAiRjpwcm90ZWluIHNlcmluZSBraW5hc2UgYWN0aXZpdHkifSwgeyJrZXkiOiAiR29FdmlkZW5jZVR5cGUiLCAidmFsdWUiOiAiSUVBOlJIRUEifV19LCB7ImRhdGFiYXNlIjogIkdPIiwgImlkIjogIkdPOjAwMDQ2NzQiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJHb1Rlcm0iLCAidmFsdWUiOiAiRjpwcm90ZWluIHNlcmluZS90aHJlb25pbmUga2luYXNlIGFjdGl2aXR5In0sIHsia2V5IjogIkdvRXZpZGVuY2VUeXBlIiwgInZhbHVlIjogIklEQTpVbmlQcm90S0IifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMTQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNDcwNzEzMiJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDMxNCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE4MjcwMjYyIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzE0IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTk2NjU5NzQifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMTQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMTMyMTMyOCJ9XX0sIHsiZGF0YWJhc2UiOiAiR08iLCAiaWQiOiAiR086MDA0NDMyNSIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkdvVGVybSIsICJ2YWx1ZSI6ICJGOnRyYW5zbWVtYnJhbmUgdHJhbnNwb3J0ZXIgYmluZGluZyJ9LCB7ImtleSI6ICJHb0V2aWRlbmNlVHlwZSIsICJ2YWx1ZSI6ICJJUEk6UGFya2luc29uc1VLLVVDTCJ9XSwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDM1MyIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjI0MzkzMDM1In1dfSwgeyJkYXRhYmFzZSI6ICJHTyIsICJpZCI6ICJHTzowMDA2ODg0IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR29UZXJtIiwgInZhbHVlIjogIlA6Y2VsbCB2b2x1bWUgaG9tZW9zdGFzaXMifSwgeyJrZXkiOiAiR29FdmlkZW5jZVR5cGUiLCAidmFsdWUiOiAiSURBOlVuaVByb3QifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMTQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIzNjMxODkyMiJ9XX0sIHsiZGF0YWJhc2UiOiAiR08iLCAiaWQiOiAiR086MDA3MTQ3NCIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkdvVGVybSIsICJ2YWx1ZSI6ICJQOmNlbGx1bGFyIGh5cGVyb3Ntb3RpYyByZXNwb25zZSJ9LCB7ImtleSI6ICJHb0V2aWRlbmNlVHlwZSIsICJ2YWx1ZSI6ICJJREE6VW5pUHJvdCJ9XSwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDMxNCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjM2MzE4OTIyIn1dfSwgeyJkYXRhYmFzZSI6ICJHTyIsICJpZCI6ICJHTzowMDcxNDc2IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR29UZXJtIiwgInZhbHVlIjogIlA6Y2VsbHVsYXIgaHlwb3RvbmljIHJlc3BvbnNlIn0sIHsia2V5IjogIkdvRXZpZGVuY2VUeXBlIiwgInZhbHVlIjogIklFQTpFbnNlbWJsIn1dfSwgeyJkYXRhYmFzZSI6ICJHTyIsICJpZCI6ICJHTzoxOTkwODY5IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR29UZXJtIiwgInZhbHVlIjogIlA6Y2VsbHVsYXIgcmVzcG9uc2UgdG8gY2hlbW9raW5lIn0sIHsia2V5IjogIkdvRXZpZGVuY2VUeXBlIiwgInZhbHVlIjogIklNUDpCSEYtVUNMIn1dLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzE1IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjc0MDAxNDkifV19LCB7ImRhdGFiYXNlIjogIkdPIiwgImlkIjogIkdPOjAwMzgxMTYiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJHb1Rlcm0iLCAidmFsdWUiOiAiUDpjaGVtb2tpbmUgKEMtQyBtb3RpZikgbGlnYW5kIDIxIHNpZ25hbGluZyBwYXRod2F5In0sIHsia2V5IjogIkdvRXZpZGVuY2VUeXBlIiwgInZhbHVlIjogIklTUzpCSEYtVUNMIn1dLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjUwIiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjc0MDAxNDkifV19LCB7ImRhdGFiYXNlIjogIkdPIiwgImlkIjogIkdPOjAwMzgxNDYiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJHb1Rlcm0iLCAidmFsdWUiOiAiUDpjaGVtb2tpbmUgKEMtWC1DIG1vdGlmKSBsaWdhbmQgMTIgc2lnbmFsaW5nIHBhdGh3YXkifSwgeyJrZXkiOiAiR29FdmlkZW5jZVR5cGUiLCAidmFsdWUiOiAiSU1QOkJIRi1VQ0wifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMTUiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyNzQwMDE0OSJ9XX0sIHsiZGF0YWJhc2UiOiAiR08iLCAiaWQiOiAiR086MDAzNTU1NiIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkdvVGVybSIsICJ2YWx1ZSI6ICJQOmludHJhY2VsbHVsYXIgc2lnbmFsIHRyYW5zZHVjdGlvbiJ9LCB7ImtleSI6ICJHb0V2aWRlbmNlVHlwZSIsICJ2YWx1ZSI6ICJJREE6VW5pUHJvdEtCIn1dLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzE0IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTQ3MDcxMzIifV19LCB7ImRhdGFiYXNlIjogIkdPIiwgImlkIjogIkdPOjE5MDEzODAiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJHb1Rlcm0iLCAidmFsdWUiOiAiUDpuZWdhdGl2ZSByZWd1bGF0aW9uIG9mIHBvdGFzc2l1bSBpb24gdHJhbnNtZW1icmFuZSB0cmFuc3BvcnQifSwgeyJrZXkiOiAiR29FdmlkZW5jZVR5cGUiLCAidmFsdWUiOiAiSUVBOkVuc2VtYmwifV19LCB7ImRhdGFiYXNlIjogIkdPIiwgImlkIjogIkdPOjAwMDcyMzEiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJHb1Rlcm0iLCAidmFsdWUiOiAiUDpvc21vc2Vuc29yeSBzaWduYWxpbmcgcGF0aHdheSJ9LCB7ImtleSI6ICJHb0V2aWRlbmNlVHlwZSIsICJ2YWx1ZSI6ICJJTVA6UGFya2luc29uc1VLLVVDTCJ9XSwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDMxNSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE2NjY5Nzg3In1dfSwgeyJkYXRhYmFzZSI6ICJHTyIsICJpZCI6ICJHTzowMDEwODIwIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR29UZXJtIiwgInZhbHVlIjogIlA6cG9zaXRpdmUgcmVndWxhdGlvbiBvZiBUIGNlbGwgY2hlbW90YXhpcyJ9LCB7ImtleSI6ICJHb0V2aWRlbmNlVHlwZSIsICJ2YWx1ZSI6ICJJTVA6QkhGLVVDTCJ9XSwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDMxNSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjI3NDAwMTQ5In1dfSwgeyJkYXRhYmFzZSI6ICJHTyIsICJpZCI6ICJHTzowMDQ2Nzc3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR29UZXJtIiwgInZhbHVlIjogIlA6cHJvdGVpbiBhdXRvcGhvc3Bob3J5bGF0aW9uIn0sIHsia2V5IjogIkdvRXZpZGVuY2VUeXBlIiwgInZhbHVlIjogIklEQTpVbmlQcm90S0IifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMTQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMjA1MjIwMiJ9XX0sIHsiZGF0YWJhc2UiOiAiR08iLCAiaWQiOiAiR086MDAwNjQ2OCIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkdvVGVybSIsICJ2YWx1ZSI6ICJQOnByb3RlaW4gcGhvc3Bob3J5bGF0aW9uIn0sIHsia2V5IjogIkdvRXZpZGVuY2VUeXBlIiwgInZhbHVlIjogIklEQTpVbmlQcm90S0IifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMTQiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNDcwNzEzMiJ9XX0sIHsiZGF0YWJhc2UiOiAiR08iLCAiaWQiOiAiR086MDA3MDI5NCIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkdvVGVybSIsICJ2YWx1ZSI6ICJQOnJlbmFsIHNvZGl1bSBpb24gYWJzb3JwdGlvbiJ9LCB7ImtleSI6ICJHb0V2aWRlbmNlVHlwZSIsICJ2YWx1ZSI6ICJJREE6VW5pUHJvdCJ9XSwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDMxNCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE4MjcwMjYyIn1dfSwgeyJkYXRhYmFzZSI6ICJHTyIsICJpZCI6ICJHTzowMDA2OTc5IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR29UZXJtIiwgInZhbHVlIjogIlA6cmVzcG9uc2UgdG8gb3hpZGF0aXZlIHN0cmVzcyJ9LCB7ImtleSI6ICJHb0V2aWRlbmNlVHlwZSIsICJ2YWx1ZSI6ICJUQVM6UHJvdEluYyJ9XSwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDMwNCIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjEwMDgzNzM2In1dfSwgeyJkYXRhYmFzZSI6ICJHTyIsICJpZCI6ICJHTzowMDA5NDEwIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiR29UZXJtIiwgInZhbHVlIjogIlA6cmVzcG9uc2UgdG8geGVub2Jpb3RpYyBzdGltdWx1cyJ9LCB7ImtleSI6ICJHb0V2aWRlbmNlVHlwZSIsICJ2YWx1ZSI6ICJJRUE6RW5zZW1ibCJ9XX0sIHsiZGF0YWJhc2UiOiAiR08iLCAiaWQiOiAiR086MDAwNzE2NSIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkdvVGVybSIsICJ2YWx1ZSI6ICJQOnNpZ25hbCB0cmFuc2R1Y3Rpb24ifSwgeyJrZXkiOiAiR29FdmlkZW5jZVR5cGUiLCAidmFsdWUiOiAiSU1QOlBhcmtpbnNvbnNVSy1VQ0wifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMTUiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNjY2OTc4NyJ9XX0sIHsiZGF0YWJhc2UiOiAiQ0REIiwgImlkIjogImNkMDY2MTAiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJFbnRyeU5hbWUiLCAidmFsdWUiOiAiU1RLY19PU1IxX1NQQUsifSwgeyJrZXkiOiAiTWF0Y2hTdGF0dXMiLCAidmFsdWUiOiAiMSJ9XX0sIHsiZGF0YWJhc2UiOiAiRnVuRmFtIiwgImlkIjogIjMuMTAuMjAuOTA6RkY6MDAwMDQzIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRW50cnlOYW1lIiwgInZhbHVlIjogInNlcmluZS90aHJlb25pbmUtcHJvdGVpbiBraW5hc2UgT1NSMSBpc29mb3JtIFgxIn0sIHsia2V5IjogIk1hdGNoU3RhdHVzIiwgInZhbHVlIjogIjEifV19LCB7ImRhdGFiYXNlIjogIkZ1bkZhbSIsICJpZCI6ICIzLjMwLjIwMC4yMDpGRjowMDAxMTQiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJFbnRyeU5hbWUiLCAidmFsdWUiOiAic2VyaW5lL3RocmVvbmluZS1wcm90ZWluIGtpbmFzZSBPU1IxIGlzb2Zvcm0gWDEifSwgeyJrZXkiOiAiTWF0Y2hTdGF0dXMiLCAidmFsdWUiOiAiMSJ9XX0sIHsiZGF0YWJhc2UiOiAiRnVuRmFtIiwgImlkIjogIjEuMTAuNTEwLjEwOkZGOjAwMDA2OCIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkVudHJ5TmFtZSIsICJ2YWx1ZSI6ICJTVEUyMC9TUFMxLXJlbGF0ZWQgcHJvbGluZS1hbGFuaW5lLXJpY2ggcHJvdGVpbiBraW5hc2UifSwgeyJrZXkiOiAiTWF0Y2hTdGF0dXMiLCAidmFsdWUiOiAiMSJ9XX0sIHsiZGF0YWJhc2UiOiAiR2VuZTNEIiwgImlkIjogIjMuMTAuMjAuOTAiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJFbnRyeU5hbWUiLCAidmFsdWUiOiAiUGhvc3BoYXRpZHlsaW5vc2l0b2wgMy1raW5hc2UgQ2F0YWx5dGljIFN1YnVuaXQsIENoYWluIEEsIGRvbWFpbiAxIn0sIHsia2V5IjogIk1hdGNoU3RhdHVzIiwgInZhbHVlIjogIjEifV19LCB7ImRhdGFiYXNlIjogIkdlbmUzRCIsICJpZCI6ICIzLjMwLjIwMC4yMCIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkVudHJ5TmFtZSIsICJ2YWx1ZSI6ICJQaG9zcGhvcnlsYXNlIEtpbmFzZSwgZG9tYWluIDEifSwgeyJrZXkiOiAiTWF0Y2hTdGF0dXMiLCAidmFsdWUiOiAiMSJ9XX0sIHsiZGF0YWJhc2UiOiAiR2VuZTNEIiwgImlkIjogIjEuMTAuNTEwLjEwIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRW50cnlOYW1lIiwgInZhbHVlIjogIlRyYW5zZmVyYXNlKFBob3NwaG90cmFuc2ZlcmFzZSkgZG9tYWluIDEifSwgeyJrZXkiOiAiTWF0Y2hTdGF0dXMiLCAidmFsdWUiOiAiMSJ9XX0sIHsiZGF0YWJhc2UiOiAiSW50ZXJQcm8iLCAiaWQiOiAiSVBSMDExMDA5IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRW50cnlOYW1lIiwgInZhbHVlIjogIktpbmFzZS1saWtlX2RvbV9zZiJ9XX0sIHsiZGF0YWJhc2UiOiAiSW50ZXJQcm8iLCAiaWQiOiAiSVBSMDI0Njc4IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRW50cnlOYW1lIiwgInZhbHVlIjogIktpbmFzZV9PU1IxL1dOS19DQ1QifV19LCB7ImRhdGFiYXNlIjogIkludGVyUHJvIiwgImlkIjogIklQUjAwMDcxOSIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkVudHJ5TmFtZSIsICJ2YWx1ZSI6ICJQcm90X2tpbmFzZV9kb20ifV19LCB7ImRhdGFiYXNlIjogIkludGVyUHJvIiwgImlkIjogIklQUjAxNzQ0MSIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkVudHJ5TmFtZSIsICJ2YWx1ZSI6ICJQcm90ZWluX2tpbmFzZV9BVFBfQlMifV19LCB7ImRhdGFiYXNlIjogIkludGVyUHJvIiwgImlkIjogIklQUjA1MDYyOSIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkVudHJ5TmFtZSIsICJ2YWx1ZSI6ICJTVEUyMC9TUFMxLVBBSyJ9XX0sIHsiZGF0YWJhc2UiOiAiUEFOVEhFUiIsICJpZCI6ICJQVEhSNDgwMTI6U0YxIiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRW50cnlOYW1lIiwgInZhbHVlIjogIlNFUklORV9USFJFT05JTkUtUFJPVEVJTiBLSU5BU0UgT1NSMSJ9LCB7ImtleSI6ICJNYXRjaFN0YXR1cyIsICJ2YWx1ZSI6ICIxIn1dfSwgeyJkYXRhYmFzZSI6ICJQQU5USEVSIiwgImlkIjogIlBUSFI0ODAxMiIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkVudHJ5TmFtZSIsICJ2YWx1ZSI6ICJTVEVSSUxFMjAtTElLRSBLSU5BU0UsIElTT0ZPUk0gQi1SRUxBVEVEIn0sIHsia2V5IjogIk1hdGNoU3RhdHVzIiwgInZhbHVlIjogIjEifV19LCB7ImRhdGFiYXNlIjogIlBmYW0iLCAiaWQiOiAiUEYxMjIwMiIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkVudHJ5TmFtZSIsICJ2YWx1ZSI6ICJPU1IxX0MifSwgeyJrZXkiOiAiTWF0Y2hTdGF0dXMiLCAidmFsdWUiOiAiMSJ9XX0sIHsiZGF0YWJhc2UiOiAiUGZhbSIsICJpZCI6ICJQRjAwMDY5IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRW50cnlOYW1lIiwgInZhbHVlIjogIlBraW5hc2UifSwgeyJrZXkiOiAiTWF0Y2hTdGF0dXMiLCAidmFsdWUiOiAiMSJ9XX0sIHsiZGF0YWJhc2UiOiAiU01BUlQiLCAiaWQiOiAiU00wMDIyMCIsICJwcm9wZXJ0aWVzIjogW3sia2V5IjogIkVudHJ5TmFtZSIsICJ2YWx1ZSI6ICJTX1RLYyJ9LCB7ImtleSI6ICJNYXRjaFN0YXR1cyIsICJ2YWx1ZSI6ICIxIn1dfSwgeyJkYXRhYmFzZSI6ICJTVVBGQU0iLCAiaWQiOiAiU1NGNTYxMTIiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJFbnRyeU5hbWUiLCAidmFsdWUiOiAiUHJvdGVpbiBraW5hc2UtbGlrZSAoUEstbGlrZSkifSwgeyJrZXkiOiAiTWF0Y2hTdGF0dXMiLCAidmFsdWUiOiAiMSJ9XX0sIHsiZGF0YWJhc2UiOiAiUFJPU0lURSIsICJpZCI6ICJQUzAwMTA3IiwgInByb3BlcnRpZXMiOiBbeyJrZXkiOiAiRW50cnlOYW1lIiwgInZhbHVlIjogIlBST1RFSU5fS0lOQVNFX0FUUCJ9LCB7ImtleSI6ICJNYXRjaFN0YXR1cyIsICJ2YWx1ZSI6ICIxIn1dfSwgeyJkYXRhYmFzZSI6ICJQUk9TSVRFIiwgImlkIjogIlBTNTAwMTEiLCAicHJvcGVydGllcyI6IFt7ImtleSI6ICJFbnRyeU5hbWUiLCAidmFsdWUiOiAiUFJPVEVJTl9LSU5BU0VfRE9NIn0sIHsia2V5IjogIk1hdGNoU3RhdHVzIiwgInZhbHVlIjogIjEifV19XSwgImNvbW1lbnRzIjogW3sidGV4dHMiOiBbeyJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNDcwNzEzMiJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE2Mzg5MDY4In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTY2Njk3ODcifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzcyMTQzOSJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE4MjcwMjYyIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTk2NjU5NzQifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMTMyMTMyOCJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjIyMDUyMjAyIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjMzODY2MjEifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyNTM2MjA0NiJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjI4Njg4NzY0In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjk1ODEyOTAifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIzNDI4OTM2NyJ9XSwgInZhbHVlIjogIkVmZmVjdG9yIHNlcmluZS90aHJlb25pbmUtcHJvdGVpbiBraW5hc2UgY29tcG9uZW50IG9mIHRoZSBXTkstU1BBSy9PU1IxIGtpbmFzZSBjYXNjYWRlLCB3aGljaCBpcyBpbnZvbHZlZCBpbiB2YXJpb3VzIHByb2Nlc3Nlcywgc3VjaCBhcyBpb24gdHJhbnNwb3J0LCByZXNwb25zZSB0byBoeXBlcnRvbmljIHN0cmVzcyBhbmQgYmxvb2QgcHJlc3N1cmUgKFB1Yk1lZDoxNjY2OTc4NywgUHViTWVkOjE4MjcwMjYyLCBQdWJNZWQ6MjEzMjEzMjgsIFB1Yk1lZDozNDI4OTM2NykuIFNwZWNpZmljYWxseSByZWNvZ25pemVzIGFuZCBiaW5kcyBwcm90ZWlucyB3aXRoIGEgUkZYViBtb3RpZiAoUHViTWVkOjE2NjY5Nzg3LCBQdWJNZWQ6MTc3MjE0MzksIFB1Yk1lZDoyMTMyMTMyOCkuIEFjdHMgZG93bnN0cmVhbSBvZiBXTksga2luYXNlcyAoV05LMSwgV05LMiwgV05LMyBvciBXTks0KTogZm9sbG93aW5nIGFjdGl2YXRpb24gYnkgV05LIGtpbmFzZXMsIGNhdGFseXplcyBwaG9zcGhvcnlsYXRpb24gb2YgaW9uIGNvdHJhbnNwb3J0ZXJzLCBzdWNoIGFzIFNMQzEyQTEvTktDQzIsIFNMQzEyQTIvTktDQzEsIFNMQzEyQTMvTkNDLCBTTEMxMkE1L0tDQzIgb3IgU0xDMTJBNi9LQ0MzLCByZWd1bGF0aW5nIHRoZWlyIGFjdGl2aXR5IChQdWJNZWQ6MTc3MjE0MzkpLiBNZWRpYXRlcyByZWd1bGF0b3J5IHZvbHVtZSBpbmNyZWFzZSBpbiByZXNwb25zZSB0byBoeXBlcm9zbW90aWMgc3RyZXNzIGJ5IGNhdGFseXppbmcgcGhvc3Bob3J5bGF0aW9uIG9mIGlvbiBjb3RyYW5zcG9ydGVycyBTTEMxMkExL05LQ0MyLCBTTEMxMkEyL05LQ0MxIGFuZCBTTEMxMkE2L0tDQzMgZG93bnN0cmVhbSBvZiBXTksxIGFuZCBXTkszIGtpbmFzZXMgKFB1Yk1lZDoxNjY2OTc4NywgUHViTWVkOjIxMzIxMzI4KS4gUGhvc3Bob3J5bGF0aW9uIG9mIE5hLUstQ2wgY290cmFuc3BvcnRlcnMgU0xDMTJBMi9OS0NDMSBhbmQgU0xDMTJBMi9OS0NDMSBwcm9tb3RlIHRoZWlyIGFjdGl2YXRpb24gYW5kIGlvbiBpbmZsdXg7IHNpbXVsdGFuZW91c2x5LCBwaG9zcGhvcnlsYXRpb24gb2YgSy1DbCBjb3RyYW5zcG9ydGVycyBTTEMxMkE1L0tDQzIgYW5kIFNMQzEyQTYvS0NDMyBpbmhpYml0IHRoZWlyIGFjdGl2aXR5LCBibG9ja2luZyBpb24gZWZmbHV4IChQdWJNZWQ6MTY2Njk3ODcsIFB1Yk1lZDoxOTY2NTk3NCwgUHViTWVkOjIxMzIxMzI4KS4gQWN0cyBhcyBhIHJlZ3VsYXRvciBvZiBOYUNsIHJlYWJzb3JwdGlvbiBpbiB0aGUgZGlzdGFsIG5lcGhyb24gYnkgbWVkaWF0aW5nIHBob3NwaG9yeWxhdGlvbiBhbmQgYWN0aXZhdGlvbiBvZiB0aGUgdGhpYXppZGUtc2Vuc2l0aXZlIE5hLUNsIGNvdHJhbnNwb3J0ZXIgU0xDMTJBMy9OQ0MgaW4gZGlzdGFsIGNvbnZvbHV0ZWQgdHVidWxlIGNlbGxzIG9mIGtpZG5leSBkb3duc3RyZWFtIG9mIFdOSzQgKFB1Yk1lZDoxODI3MDI2MikuIEFsc28gYWN0cyBhcyBhIHJlZ3VsYXRvciBvZiBhbmdpb2dlbmVzaXMgaW4gZW5kb3RoZWxpYWwgY2VsbHMgZG93bnN0cmVhbSBvZiBXTksxIChQdWJNZWQ6MjMzODY2MjEsIFB1Yk1lZDoyNTM2MjA0NikuIEFjdHMgYXMgYW4gYWN0aXZhdG9yIG9mIGlud2FyZCByZWN0aWZpZXIgcG90YXNzaXVtIGNoYW5uZWxzIEtDTkoyL0tpcjIuMSBhbmQgS0NOSjQvS2lyMi4zIGRvd25zdHJlYW0gb2YgV05LMTogcmVjb2duaXplcyBhbmQgYmluZHMgdGhlIFJYRlhWL0kgdmFyaWFudCBtb3RpZiBvbiBLQ05KMi9LaXIyLjEgYW5kIEtDTko0L0tpcjIuMyBhbmQgcmVndWxhdGVzIHRoZWlyIGxvY2FsaXphdGlvbiB0byB0aGUgY2VsbCBtZW1icmFuZSB3aXRob3V0IG1lZGlhdGluZyB0aGVpciBwaG9zcGhvcnlsYXRpb24gKFB1Yk1lZDoyOTU4MTI5MCkuIFBob3NwaG9yeWxhdGVzIFJFTEwxLCBSRUxMMiBhbmQgUkVMVCAoUHViTWVkOjE2Mzg5MDY4LCBQdWJNZWQ6Mjg2ODg3NjQpLiBQaG9zcGhvcnlsYXRlcyBQQUsxIChQdWJNZWQ6MTQ3MDcxMzIpLiBQaG9zcGhvcnlsYXRlcyBQTFNDUjEgaW4gdGhlIHByZXNlbmNlIG9mIFJFTFQgKFB1Yk1lZDoyMjA1MjIwMikifV0sICJjb21tZW50VHlwZSI6ICJGVU5DVElPTiJ9LCB7ImNvbW1lbnRUeXBlIjogIkNBVEFMWVRJQyBBQ1RJVklUWSIsICJyZWFjdGlvbiI6IHsibmFtZSI6ICJMLXNlcnlsLVtwcm90ZWluXSArIEFUUCA9IE8tcGhvc3Boby1MLXNlcnlsLVtwcm90ZWluXSArIEFEUCArIEgoKykiLCAicmVhY3Rpb25Dcm9zc1JlZmVyZW5jZXMiOiBbeyJkYXRhYmFzZSI6ICJSaGVhIiwgImlkIjogIlJIRUE6MTc5ODkifSwgeyJkYXRhYmFzZSI6ICJSaGVhIiwgImlkIjogIlJIRUEtQ09NUDo5ODYzIn0sIHsiZGF0YWJhc2UiOiAiUmhlYSIsICJpZCI6ICJSSEVBLUNPTVA6MTE2MDQifSwgeyJkYXRhYmFzZSI6ICJDaEVCSSIsICJpZCI6ICJDSEVCSToxNTM3OCJ9LCB7ImRhdGFiYXNlIjogIkNoRUJJIiwgImlkIjogIkNIRUJJOjI5OTk5In0sIHsiZGF0YWJhc2UiOiAiQ2hFQkkiLCAiaWQiOiAiQ0hFQkk6MzA2MTYifSwgeyJkYXRhYmFzZSI6ICJDaEVCSSIsICJpZCI6ICJDSEVCSTo4MzQyMSJ9LCB7ImRhdGFiYXNlIjogIkNoRUJJIiwgImlkIjogIkNIRUJJOjQ1NjIxNiJ9XSwgImVjTnVtYmVyIjogIjIuNy4xMS4xIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE0NzA3MTMyIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjEzMjEzMjgifV19fSwgeyJjb21tZW50VHlwZSI6ICJDQVRBTFlUSUMgQUNUSVZJVFkiLCAicmVhY3Rpb24iOiB7Im5hbWUiOiAiTC10aHJlb255bC1bcHJvdGVpbl0gKyBBVFAgPSBPLXBob3NwaG8tTC10aHJlb255bC1bcHJvdGVpbl0gKyBBRFAgKyBIKCspIiwgInJlYWN0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUmhlYSIsICJpZCI6ICJSSEVBOjQ2NjA4In0sIHsiZGF0YWJhc2UiOiAiUmhlYSIsICJpZCI6ICJSSEVBLUNPTVA6MTEwNjAifSwgeyJkYXRhYmFzZSI6ICJSaGVhIiwgImlkIjogIlJIRUEtQ09NUDoxMTYwNSJ9LCB7ImRhdGFiYXNlIjogIkNoRUJJIiwgImlkIjogIkNIRUJJOjE1Mzc4In0sIHsiZGF0YWJhc2UiOiAiQ2hFQkkiLCAiaWQiOiAiQ0hFQkk6MzAwMTMifSwgeyJkYXRhYmFzZSI6ICJDaEVCSSIsICJpZCI6ICJDSEVCSTozMDYxNiJ9LCB7ImRhdGFiYXNlIjogIkNoRUJJIiwgImlkIjogIkNIRUJJOjYxOTc3In0sIHsiZGF0YWJhc2UiOiAiQ2hFQkkiLCAiaWQiOiAiQ0hFQkk6NDU2MjE2In1dLCAiZWNOdW1iZXIiOiAiMi43LjExLjEiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTQ3MDcxMzIifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNjY2OTc4NyJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE4MjcwMjYyIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjEzMjEzMjgifV19fSwgeyJjb21tZW50VHlwZSI6ICJDT0ZBQ1RPUiIsICJjb2ZhY3RvcnMiOiBbeyJuYW1lIjogIk1nKDIrKSIsICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNDcwNzEzMiJ9XSwgImNvZmFjdG9yQ3Jvc3NSZWZlcmVuY2UiOiB7ImRhdGFiYXNlIjogIkNoRUJJIiwgImlkIjogIkNIRUJJOjE4NDIwIn19XX0sIHsidGV4dHMiOiBbeyJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNjY2OTc4NyJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE2ODMyMDQ1In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTcxOTA3OTEifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMTMyMTMyOCJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjIyOTg5ODg0In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjMzODY2MjEifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyOTU4MTI5MCJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjM0Mjg5MzY3In1dLCAidmFsdWUiOiAiQWN0aXZhdGVkIGZvbGxvd2luZyBwaG9zcGhvcnlsYXRpb24gYnkgV05LIGtpbmFzZXMgKFdOSzEsIFdOSzIsIFdOSzMgb3IgV05LNCkifV0sICJjb21tZW50VHlwZSI6ICJBQ1RJVklUWSBSRUdVTEFUSU9OIn0sIHsiY29tbWVudFR5cGUiOiAiSU5URVJBQ1RJT04iLCAiaW50ZXJhY3Rpb25zIjogW3siaW50ZXJhY3RhbnRPbmUiOiB7InVuaVByb3RLQkFjY2Vzc2lvbiI6ICJPOTU3NDciLCAiaW50QWN0SWQiOiAiRUJJLTYyMDg1MyJ9LCAiaW50ZXJhY3RhbnRUd28iOiB7InVuaVByb3RLQkFjY2Vzc2lvbiI6ICJROVkzNzYiLCAiZ2VuZU5hbWUiOiAiQ0FCMzkiLCAiaW50QWN0SWQiOiAiRUJJLTMwNjkwNSJ9LCAibnVtYmVyT2ZFeHBlcmltZW50cyI6IDMsICJvcmdhbmlzbURpZmZlciI6IGZhbHNlfSwgeyJpbnRlcmFjdGFudE9uZSI6IHsidW5pUHJvdEtCQWNjZXNzaW9uIjogIk85NTc0NyIsICJpbnRBY3RJZCI6ICJFQkktNjIwODUzIn0sICJpbnRlcmFjdGFudFR3byI6IHsidW5pUHJvdEtCQWNjZXNzaW9uIjogIk85NTc0NyIsICJnZW5lTmFtZSI6ICJPWFNSMSIsICJpbnRBY3RJZCI6ICJFQkktNjIwODUzIn0sICJudW1iZXJPZkV4cGVyaW1lbnRzIjogNCwgIm9yZ2FuaXNtRGlmZmVyIjogZmFsc2V9LCB7ImludGVyYWN0YW50T25lIjogeyJ1bmlQcm90S0JBY2Nlc3Npb24iOiAiTzk1NzQ3IiwgImludEFjdElkIjogIkVCSS02MjA4NTMifSwgImludGVyYWN0YW50VHdvIjogeyJ1bmlQcm90S0JBY2Nlc3Npb24iOiAiUThOQzI0IiwgImdlbmVOYW1lIjogIlJFTEwyIiwgImludEFjdElkIjogIkVCSS0xMDI2OTIwOSJ9LCAibnVtYmVyT2ZFeHBlcmltZW50cyI6IDksICJvcmdhbmlzbURpZmZlciI6IGZhbHNlfSwgeyJpbnRlcmFjdGFudE9uZSI6IHsidW5pUHJvdEtCQWNjZXNzaW9uIjogIk85NTc0NyIsICJpbnRBY3RJZCI6ICJFQkktNjIwODUzIn0sICJpbnRlcmFjdGFudFR3byI6IHsidW5pUHJvdEtCQWNjZXNzaW9uIjogIlA1NTAxMSIsICJnZW5lTmFtZSI6ICJTTEMxMkEyIiwgImludEFjdElkIjogIkVCSS0yODAxNDQ5In0sICJudW1iZXJPZkV4cGVyaW1lbnRzIjogMiwgIm9yZ2FuaXNtRGlmZmVyIjogZmFsc2V9LCB7ImludGVyYWN0YW50T25lIjogeyJ1bmlQcm90S0JBY2Nlc3Npb24iOiAiTzk1NzQ3IiwgImludEFjdElkIjogIkVCSS02MjA4NTMifSwgImludGVyYWN0YW50VHdvIjogeyJ1bmlQcm90S0JBY2Nlc3Npb24iOiAiUTlINEEzIiwgImdlbmVOYW1lIjogIldOSzEiLCAiaW50QWN0SWQiOiAiRUJJLTQ1NzkwNyJ9LCAibnVtYmVyT2ZFeHBlcmltZW50cyI6IDksICJvcmdhbmlzbURpZmZlciI6IGZhbHNlfSwgeyJpbnRlcmFjdGFudE9uZSI6IHsidW5pUHJvdEtCQWNjZXNzaW9uIjogIk85NTc0NyIsICJpbnRBY3RJZCI6ICJFQkktNjIwODUzIn0sICJpbnRlcmFjdGFudFR3byI6IHsidW5pUHJvdEtCQWNjZXNzaW9uIjogIlE5WTNTMSIsICJnZW5lTmFtZSI6ICJXTksyIiwgImludEFjdElkIjogIkVCSS05NDg1MjEifSwgIm51bWJlck9mRXhwZXJpbWVudHMiOiAyLCAib3JnYW5pc21EaWZmZXIiOiBmYWxzZX0sIHsiaW50ZXJhY3RhbnRPbmUiOiB7InVuaVByb3RLQkFjY2Vzc2lvbiI6ICJPOTU3NDciLCAiaW50QWN0SWQiOiAiRUJJLTYyMDg1MyJ9LCAiaW50ZXJhY3RhbnRUd28iOiB7InVuaVByb3RLQkFjY2Vzc2lvbiI6ICJROTZKOTIiLCAiZ2VuZU5hbWUiOiAiV05LNCIsICJpbnRBY3RJZCI6ICJFQkktNzY2MzUyIn0sICJudW1iZXJPZkV4cGVyaW1lbnRzIjogMTIsICJvcmdhbmlzbURpZmZlciI6IGZhbHNlfV19LCB7ImNvbW1lbnRUeXBlIjogIlNVQkNFTExVTEFSIExPQ0FUSU9OIiwgInN1YmNlbGx1bGFyTG9jYXRpb25zIjogW3sibG9jYXRpb24iOiB7ImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjIyMzYxNjk2In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjI5ODk4ODQifV0sICJ2YWx1ZSI6ICJDeXRvcGxhc20iLCAiaWQiOiAiU0wtMDA4NiJ9fV19LCB7InRleHRzIjogW3siZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTAwODM3MzYifV0sICJ2YWx1ZSI6ICJVYmlxdWl0b3VzbHkgZXhwcmVzc2VkIGluIGFsbCB0aXNzdWUgZXhhbWluZWQifV0sICJjb21tZW50VHlwZSI6ICJUSVNTVUUgU1BFQ0lGSUNJVFkifSwgeyJ0ZXh0cyI6IFt7ImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE0NzA3MTMyIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTY2Njk3ODcifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNjgzMjA0NSJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjE3MTkwNzkxIn0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjEzMjEzMjgifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAyNjkiLCAic291cmNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMjA1MjIwMiJ9LCB7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDI2OSIsICJzb3VyY2UiOiAiUHViTWVkIiwgImlkIjogIjIyOTg5ODg0In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMjY5IiwgInNvdXJjZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjk1ODEyOTAifV0sICJ2YWx1ZSI6ICJQaG9zcGhvcnlsYXRpb24gYXQgVGhyLTE4NSBieSBXTksga2luYXNlcyAoV05LMSwgV05LMiwgV05LMyBvciBXTks0KSBpcyByZXF1aXJlZCBmb3IgYWN0aXZhdGlvbiAoUHViTWVkOjE2NjY5Nzg3LCBQdWJNZWQ6MTY4MzIwNDUsIFB1Yk1lZDoxNzE5MDc5MSwgUHViTWVkOjIxMzIxMzI4LCBQdWJNZWQ6MjI5ODk4ODQsIFB1Yk1lZDoyOTU4MTI5MCkuIEF1dG9waG9zcGhvcnlsYXRlZDsgcHJvbW90aW5nIGl0cyBhY3Rpdml0eSAoUHViTWVkOjE0NzA3MTMyLCBQdWJNZWQ6MjIwNTIyMDIpIn1dLCAiY29tbWVudFR5cGUiOiAiUFRNIn0sIHsidGV4dHMiOiBbeyJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMDUifV0sICJ2YWx1ZSI6ICJCZWxvbmdzIHRvIHRoZSBwcm90ZWluIGtpbmFzZSBzdXBlcmZhbWlseS4gU1RFIFNlci9UaHIgcHJvdGVpbiBraW5hc2UgZmFtaWx5LiBTVEUyMCBzdWJmYW1pbHkifV0sICJjb21tZW50VHlwZSI6ICJTSU1JTEFSSVRZIn0sIHsiY29tbWVudFR5cGUiOiAiU0VRVUVOQ0UgQ0FVVElPTiIsICJzZXF1ZW5jZUNhdXRpb25UeXBlIjogIkVycm9uZW91cyBpbml0aWF0aW9uIiwgInNlcXVlbmNlIjogIkFBUDk3MTkyLjEiLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzA1In1dfSwgeyJjb21tZW50VHlwZSI6ICJTRVFVRU5DRSBDQVVUSU9OIiwgInNlcXVlbmNlQ2F1dGlvblR5cGUiOiAiRnJhbWVzaGlmdCIsICJzZXF1ZW5jZSI6ICJCQUE4MzA1My4yIiwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDMwNSJ9XX1dLCAicmVmZXJlbmNlcyI6IFt7InJlZmVyZW5jZU51bWJlciI6IDEsICJjaXRhdGlvbiI6IHsiaWQiOiAiMTAwODM3MzYiLCAiY2l0YXRpb25UeXBlIjogImpvdXJuYWwgYXJ0aWNsZSIsICJhdXRob3JzIjogWyJUYW1hcmkgTS4iLCAiRGFpZ28gWS4iLCAiTmFrYW11cmEgWS4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjEwMDgzNzM2In0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjEwMDcvczEwMDM4MDA1MDEyMSJ9XSwgInRpdGxlIjogIklzb2xhdGlvbiBhbmQgY2hhcmFjdGVyaXphdGlvbiBvZiBhIG5vdmVsIHNlcmluZSB0aHJlb25pbmUga2luYXNlIGdlbmUgb24gY2hyb21vc29tZSAzcDIyLTIxLjMuIiwgInB1YmxpY2F0aW9uRGF0ZSI6ICIxOTk5IiwgImpvdXJuYWwiOiAiSi4gSHVtLiBHZW5ldC4iLCAiZmlyc3RQYWdlIjogIjExNiIsICJsYXN0UGFnZSI6ICIxMjAiLCAidm9sdW1lIjogIjQ0In0sICJyZWZlcmVuY2VQb3NpdGlvbnMiOiBbIk5VQ0xFT1RJREUgU0VRVUVOQ0UgW01STkFdIiwgIlRJU1NVRSBTUEVDSUZJQ0lUWSIsICJWQVJJQU5UIElMRS0zMDQiXSwgInJlZmVyZW5jZUNvbW1lbnRzIjogW3siZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzEyIiwgInNvdXJjZSI6ICJFTUJMIiwgImlkIjogIkJBQTc1Njc0LjEifV0sICJ2YWx1ZSI6ICJTa2VsZXRhbCBtdXNjbGUiLCAidHlwZSI6ICJUSVNTVUUifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMDUifSwgeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMTIiLCAic291cmNlIjogIkVNQkwiLCAiaWQiOiAiQkFBNzU2NzQuMSJ9XX0sIHsicmVmZXJlbmNlTnVtYmVyIjogMiwgImNpdGF0aW9uIjogeyJpZCI6ICIxMDQ3MDg1MSIsICJjaXRhdGlvblR5cGUiOiAiam91cm5hbCBhcnRpY2xlIiwgImF1dGhvcnMiOiBbIktpa3VubyBSLiIsICJOYWdhc2UgVC4iLCAiSXNoaWthd2EgSy4iLCAiSGlyb3Nhd2EgTS4iLCAiTWl5YWppbWEgTi4iLCAiVGFuYWthIEEuIiwgIktvdGFuaSBILiIsICJOb211cmEgTi4iLCAiT2hhcmEgTy4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjEwNDcwODUxIn0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjEwOTMvZG5hcmVzLzYuMy4xOTcifV0sICJ0aXRsZSI6ICJQcmVkaWN0aW9uIG9mIHRoZSBjb2Rpbmcgc2VxdWVuY2VzIG9mIHVuaWRlbnRpZmllZCBodW1hbiBnZW5lcy4gWElWLiBUaGUgY29tcGxldGUgc2VxdWVuY2VzIG9mIDEwMCBuZXcgY0ROQSBjbG9uZXMgZnJvbSBicmFpbiB3aGljaCBjb2RlIGZvciBsYXJnZSBwcm90ZWlucyBpbiB2aXRyby4iLCAicHVibGljYXRpb25EYXRlIjogIjE5OTkiLCAiam91cm5hbCI6ICJETkEgUmVzLiIsICJmaXJzdFBhZ2UiOiAiMTk3IiwgImxhc3RQYWdlIjogIjIwNSIsICJ2b2x1bWUiOiAiNiJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJOVUNMRU9USURFIFNFUVVFTkNFIFtMQVJHRSBTQ0FMRSBNUk5BXSJdLCAicmVmZXJlbmNlQ29tbWVudHMiOiBbeyJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMTIiLCAic291cmNlIjogIkVNQkwiLCAiaWQiOiAiQkFBODMwNTMuMiJ9XSwgInZhbHVlIjogIkJyYWluIiwgInR5cGUiOiAiVElTU1VFIn1dLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzEyIiwgInNvdXJjZSI6ICJFTUJMIiwgImlkIjogIkJBQTgzMDUzLjIifV19LCB7InJlZmVyZW5jZU51bWJlciI6IDMsICJjaXRhdGlvbiI6IHsiaWQiOiAiQ0ktN0NBTEhWM1BRSzNEMyIsICJjaXRhdGlvblR5cGUiOiAic3VibWlzc2lvbiIsICJhdXRob3JpbmdHcm91cCI6IFsiTklFSFMgU05QcyBwcm9ncmFtIl0sICJwdWJsaWNhdGlvbkRhdGUiOiAiU0VQLTIwMDUiLCAic3VibWlzc2lvbkRhdGFiYXNlIjogIkVNQkwvR2VuQmFuay9EREJKIGRhdGFiYXNlcyJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJOVUNMRU9USURFIFNFUVVFTkNFIFtHRU5PTUlDIEROQV0iLCAiVkFSSUFOVFMgSUxFLTMwNCBBTkQgVEhSLTQyNSJdLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzA1In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzEyIiwgInNvdXJjZSI6ICJFTUJMIiwgImlkIjogIkFBUDk3MTkyLjEifV19LCB7InJlZmVyZW5jZU51bWJlciI6IDQsICJjaXRhdGlvbiI6IHsiaWQiOiAiMTU0ODkzMzQiLCAiY2l0YXRpb25UeXBlIjogImpvdXJuYWwgYXJ0aWNsZSIsICJhdXRob3JpbmdHcm91cCI6IFsiVGhlIE1HQyBQcm9qZWN0IFRlYW0iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjE1NDg5MzM0In0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjExMDEvZ3IuMjU5NjUwNCJ9XSwgInRpdGxlIjogIlRoZSBzdGF0dXMsIHF1YWxpdHksIGFuZCBleHBhbnNpb24gb2YgdGhlIE5JSCBmdWxsLWxlbmd0aCBjRE5BIHByb2plY3Q6IHRoZSBNYW1tYWxpYW4gR2VuZSBDb2xsZWN0aW9uIChNR0MpLiIsICJwdWJsaWNhdGlvbkRhdGUiOiAiMjAwNCIsICJqb3VybmFsIjogIkdlbm9tZSBSZXMuIiwgImZpcnN0UGFnZSI6ICIyMTIxIiwgImxhc3RQYWdlIjogIjIxMjciLCAidm9sdW1lIjogIjE0In0sICJyZWZlcmVuY2VQb3NpdGlvbnMiOiBbIk5VQ0xFT1RJREUgU0VRVUVOQ0UgW0xBUkdFIFNDQUxFIE1STkFdIl0sICJyZWZlcmVuY2VDb21tZW50cyI6IFt7ImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwMDMxMiIsICJzb3VyY2UiOiAiRU1CTCIsICJpZCI6ICJBQUgwODcyNi4xIn1dLCAidmFsdWUiOiAiQnJhaW4iLCAidHlwZSI6ICJUSVNTVUUifV0sICJldmlkZW5jZXMiOiBbeyJldmlkZW5jZUNvZGUiOiAiRUNPOjAwMDAzMTIiLCAic291cmNlIjogIkVNQkwiLCAiaWQiOiAiQUFIMDg3MjYuMSJ9XX0sIHsicmVmZXJlbmNlTnVtYmVyIjogNSwgImNpdGF0aW9uIjogeyJpZCI6ICJDSS04NkE1T0JWM0JKTTZDIiwgImNpdGF0aW9uVHlwZSI6ICJzdWJtaXNzaW9uIiwgImF1dGhvcnMiOiBbIkRpbmcgSi5CLiIsICJZdSBMLiIsICJHb25nIFIuTS4iLCAiTWFvIE4uSC4iLCAiSGFuIFguRi4iLCAiWmhhbyBTLlkuIl0sICJ0aXRsZSI6ICJDbG9uaW5nIGFuZCBjaGFyYWN0ZXJpemF0aW9uIG9mIGEgbm92ZWwgaHVtYW4gY0ROQSBob21vbG9nb3VzIHRvIGh1bWFuIERDSFQgbVJOQS4iLCAicHVibGljYXRpb25EYXRlIjogIkpVTC0yMDAzIiwgInN1Ym1pc3Npb25EYXRhYmFzZSI6ICJFTUJML0dlbkJhbmsvRERCSiBkYXRhYmFzZXMifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiTlVDTEVPVElERSBTRVFVRU5DRSBbTVJOQV0gT0YgMTcyLTUyNyJdLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzA1In0sIHsiZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzEyIiwgInNvdXJjZSI6ICJFTUJMIiwgImlkIjogIkFBUDk3MTkyLjEifV19LCB7InJlZmVyZW5jZU51bWJlciI6IDYsICJjaXRhdGlvbiI6IHsiaWQiOiAiMTQ3MDcxMzIiLCAiY2l0YXRpb25UeXBlIjogImpvdXJuYWwgYXJ0aWNsZSIsICJhdXRob3JzIjogWyJDaGVuIFcuIiwgIllhemljaW9nbHUgTS4iLCAiQ29iYiBNLkguIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNDcwNzEzMiJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMDc0L2piYy5tMzEzNTYyMjAwIn1dLCAidGl0bGUiOiAiQ2hhcmFjdGVyaXphdGlvbiBvZiBPU1IxLCBhIG1lbWJlciBvZiB0aGUgbWFtbWFsaWFuIFN0ZTIwcC9nZXJtaW5hbCBjZW50ZXIga2luYXNlIHN1YmZhbWlseS4iLCAicHVibGljYXRpb25EYXRlIjogIjIwMDQiLCAiam91cm5hbCI6ICJKLiBCaW9sLiBDaGVtLiIsICJmaXJzdFBhZ2UiOiAiMTExMjkiLCAibGFzdFBhZ2UiOiAiMTExMzYiLCAidm9sdW1lIjogIjI3OSJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJGVU5DVElPTiIsICJBVVRPUEhPU1BIT1JZTEFUSU9OIiwgIk1VVEFHRU5FU0lTIE9GIExZUy00NiJdLCAiZXZpZGVuY2VzIjogW3siZXZpZGVuY2VDb2RlIjogIkVDTzowMDAwMzA1In1dfSwgeyJyZWZlcmVuY2VOdW1iZXIiOiA3LCAiY2l0YXRpb24iOiB7ImlkIjogIjE2Mzg5MDY4IiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiQ3VzaWNrIEouSy4iLCAiWHUgTC4tRy4iLCAiQmluIEwuLUguIiwgIkhhbiBLLi1KLiIsICJTaHUgSC4tQi4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjE2Mzg5MDY4In0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjEwMTYvai5iYnJjLjIwMDUuMTIuMDMzIn1dLCAidGl0bGUiOiAiSWRlbnRpZmljYXRpb24gb2YgUkVMVCBob21vbG9ndWVzIHRoYXQgYXNzb2NpYXRlIHdpdGggUkVMVCBhbmQgYXJlIHBob3NwaG9yeWxhdGVkIGJ5IE9TUjEuIiwgInB1YmxpY2F0aW9uRGF0ZSI6ICIyMDA2IiwgImpvdXJuYWwiOiAiQmlvY2hlbS4gQmlvcGh5cy4gUmVzLiBDb21tdW4uIiwgImZpcnN0UGFnZSI6ICI1MzUiLCAibGFzdFBhZ2UiOiAiNTQzIiwgInZvbHVtZSI6ICIzNDAifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiRlVOQ1RJT04iLCAiTVVUQUdFTkVTSVMgT0YgTFlTLTQ2Il19LCB7InJlZmVyZW5jZU51bWJlciI6IDgsICJjaXRhdGlvbiI6IHsiaWQiOiAiMTY2Njk3ODciLCAiY2l0YXRpb25UeXBlIjogImpvdXJuYWwgYXJ0aWNsZSIsICJhdXRob3JzIjogWyJWaXRhcmkgQS5DLiIsICJUaGFzdHJ1cCBKLiIsICJSYWZpcWkgRi5ILiIsICJEZWFrIE0uIiwgIk1vcnJpY2UgTi5BLiIsICJLYXJsc3NvbiBILksuIiwgIkFsZXNzaSBELlIuIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNjY2OTc4NyJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMDQyL2JqMjAwNjAyMjAifV0sICJ0aXRsZSI6ICJGdW5jdGlvbmFsIGludGVyYWN0aW9ucyBvZiB0aGUgU1BBSy9PU1IxIGtpbmFzZXMgd2l0aCB0aGVpciB1cHN0cmVhbSBhY3RpdmF0b3IgV05LMSBhbmQgZG93bnN0cmVhbSBzdWJzdHJhdGUgTktDQzEuIiwgInB1YmxpY2F0aW9uRGF0ZSI6ICIyMDA2IiwgImpvdXJuYWwiOiAiQmlvY2hlbS4gSi4iLCAiZmlyc3RQYWdlIjogIjIyMyIsICJsYXN0UGFnZSI6ICIyMzEiLCAidm9sdW1lIjogIjM5NyJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJGVU5DVElPTiIsICJDQVRBTFlUSUMgQUNUSVZJVFkiLCAiQUNUSVZJVFkgUkVHVUxBVElPTiIsICJQSE9TUEhPUllMQVRJT04gQVQgVEhSLTE4NSIsICJNVVRBR0VORVNJUyBPRiBUSFItMTg1Il19LCB7InJlZmVyZW5jZU51bWJlciI6IDksICJjaXRhdGlvbiI6IHsiaWQiOiAiMTY4MzIwNDUiLCAiY2l0YXRpb25UeXBlIjogImpvdXJuYWwgYXJ0aWNsZSIsICJhdXRob3JzIjogWyJBbnNlbG1vIEEuTi4iLCAiRWFybmVzdCBTLiIsICJDaGVuIFcuIiwgIkp1YW5nIFkuQy4iLCAiS2ltIFMuQy4iLCAiWmhhbyBZLiIsICJDb2JiIE0uSC4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjE2ODMyMDQ1In0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjEwNzMvcG5hcy4wNjA0NjA3MTAzIn1dLCAidGl0bGUiOiAiV05LMSBhbmQgT1NSMSByZWd1bGF0ZSB0aGUgTmErLCBLKywgMkNsLSBjb3RyYW5zcG9ydGVyIGluIEhlTGEgY2VsbHMuIiwgInB1YmxpY2F0aW9uRGF0ZSI6ICIyMDA2IiwgImpvdXJuYWwiOiAiUHJvYy4gTmF0bC4gQWNhZC4gU2NpLiBVLlMuQS4iLCAiZmlyc3RQYWdlIjogIjEwODgzIiwgImxhc3RQYWdlIjogIjEwODg4IiwgInZvbHVtZSI6ICIxMDMifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiQUNUSVZJVFkgUkVHVUxBVElPTiIsICJQSE9TUEhPUllMQVRJT04gQVQgVEhSLTE4NSIsICJNVVRBR0VORVNJUyBPRiBUSFItMTg1Il19LCB7InJlZmVyZW5jZU51bWJlciI6IDEwLCAiY2l0YXRpb24iOiB7ImlkIjogIjE3MDgxOTgzIiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiT2xzZW4gSi5WLiIsICJCbGFnb2V2IEIuIiwgIkduYWQgRi4iLCAiTWFjZWsgQi4iLCAiS3VtYXIgQy4iLCAiTW9ydGVuc2VuIFAuIiwgIk1hbm4gTS4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjE3MDgxOTgzIn0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjEwMTYvai5jZWxsLjIwMDYuMDkuMDI2In1dLCAidGl0bGUiOiAiR2xvYmFsLCBpbiB2aXZvLCBhbmQgc2l0ZS1zcGVjaWZpYyBwaG9zcGhvcnlsYXRpb24gZHluYW1pY3MgaW4gc2lnbmFsaW5nIG5ldHdvcmtzLiIsICJwdWJsaWNhdGlvbkRhdGUiOiAiMjAwNiIsICJqb3VybmFsIjogIkNlbGwiLCAiZmlyc3RQYWdlIjogIjYzNSIsICJsYXN0UGFnZSI6ICI2NDgiLCAidm9sdW1lIjogIjEyNyJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJQSE9TUEhPUllMQVRJT04gW0xBUkdFIFNDQUxFIEFOQUxZU0lTXSBBVCBTRVItMzM5IiwgIklERU5USUZJQ0FUSU9OIEJZIE1BU1MgU1BFQ1RST01FVFJZIFtMQVJHRSBTQ0FMRSBBTkFMWVNJU10iXSwgInJlZmVyZW5jZUNvbW1lbnRzIjogW3sidmFsdWUiOiAiQ2Vydml4IGNhcmNpbm9tYSIsICJ0eXBlIjogIlRJU1NVRSJ9XX0sIHsicmVmZXJlbmNlTnVtYmVyIjogMTEsICJjaXRhdGlvbiI6IHsiaWQiOiAiMTcxOTA3OTEiLCAiY2l0YXRpb25UeXBlIjogImpvdXJuYWwgYXJ0aWNsZSIsICJhdXRob3JzIjogWyJaYWdvcnNrYSBBLiIsICJQb3pvLUd1aXNhZG8gRS4iLCAiQm91ZGVhdSBKLiIsICJWaXRhcmkgQS5DLiIsICJSYWZpcWkgRi5ILiIsICJUaGFzdHJ1cCBKLiIsICJEZWFrIE0uIiwgIkNhbXBiZWxsIEQuRy4iLCAiTW9ycmljZSBOLkEuIiwgIlByZXNjb3R0IEEuUi4iLCAiQWxlc3NpIEQuUi4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjE3MTkwNzkxIn0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjEwODMvamNiLjIwMDYwNTA5MyJ9XSwgInRpdGxlIjogIlJlZ3VsYXRpb24gb2YgYWN0aXZpdHkgYW5kIGxvY2FsaXphdGlvbiBvZiB0aGUgV05LMSBwcm90ZWluIGtpbmFzZSBieSBoeXBlcm9zbW90aWMgc3RyZXNzLiIsICJwdWJsaWNhdGlvbkRhdGUiOiAiMjAwNyIsICJqb3VybmFsIjogIkouIENlbGwgQmlvbC4iLCAiZmlyc3RQYWdlIjogIjg5IiwgImxhc3RQYWdlIjogIjEwMCIsICJ2b2x1bWUiOiAiMTc2In0sICJyZWZlcmVuY2VQb3NpdGlvbnMiOiBbIkFDVElWSVRZIFJFR1VMQVRJT04iLCAiUEhPU1BIT1JZTEFUSU9OIEFUIFRIUi0xODUgQU5EIFNFUi0zMjUiLCAiTVVUQUdFTkVTSVMgT0YgVEhSLTE4NSBBTkQgU0VSLTMyNSJdfSwgeyJyZWZlcmVuY2VOdW1iZXIiOiAxMiwgImNpdGF0aW9uIjogeyJpZCI6ICIxNzUyNTMzMiIsICJjaXRhdGlvblR5cGUiOiAiam91cm5hbCBhcnRpY2xlIiwgImF1dGhvcnMiOiBbIk1hdHN1b2thIFMuIiwgIkJhbGxpZiBCLkEuIiwgIlNtb2dvcnpld3NrYSBBLiIsICJNY0RvbmFsZCBFLlIuIElJSSIsICJIdXJvdiBLLkUuIiwgIkx1byBKLiIsICJCYWthbGFyc2tpIEMuRS4iLCAiWmhhbyBaLiIsICJTb2xpbWluaSBOLiIsICJMZXJlbnRoYWwgWS4iLCAiU2hpbG9oIFkuIiwgIkd5Z2kgUy5QLiIsICJFbGxlZGdlIFMuSi4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjE3NTI1MzMyIn0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjExMjYvc2NpZW5jZS4xMTQwMzIxIn1dLCAidGl0bGUiOiAiQVRNIGFuZCBBVFIgc3Vic3RyYXRlIGFuYWx5c2lzIHJldmVhbHMgZXh0ZW5zaXZlIHByb3RlaW4gbmV0d29ya3MgcmVzcG9uc2l2ZSB0byBETkEgZGFtYWdlLiIsICJwdWJsaWNhdGlvbkRhdGUiOiAiMjAwNyIsICJqb3VybmFsIjogIlNjaWVuY2UiLCAiZmlyc3RQYWdlIjogIjExNjAiLCAibGFzdFBhZ2UiOiAiMTE2NiIsICJ2b2x1bWUiOiAiMzE2In0sICJyZWZlcmVuY2VQb3NpdGlvbnMiOiBbIlBIT1NQSE9SWUxBVElPTiBbTEFSR0UgU0NBTEUgQU5BTFlTSVNdIEFUIFNFUi00MjciLCAiSURFTlRJRklDQVRJT04gQlkgTUFTUyBTUEVDVFJPTUVUUlkgW0xBUkdFIFNDQUxFIEFOQUxZU0lTXSJdLCAicmVmZXJlbmNlQ29tbWVudHMiOiBbeyJ2YWx1ZSI6ICJFbWJyeW9uaWMga2lkbmV5IiwgInR5cGUiOiAiVElTU1VFIn1dfSwgeyJyZWZlcmVuY2VOdW1iZXIiOiAxMywgImNpdGF0aW9uIjogeyJpZCI6ICIxODI3MDI2MiIsICJjaXRhdGlvblR5cGUiOiAiam91cm5hbCBhcnRpY2xlIiwgImF1dGhvcnMiOiBbIlJpY2hhcmRzb24gQy4iLCAiUmFmaXFpIEYuSC4iLCAiS2FybHNzb24gSC5LLiIsICJNb2xlbGVraSBOLiIsICJWYW5kZXdhbGxlIEEuIiwgIkNhbXBiZWxsIEQuRy4iLCAiTW9ycmljZSBOLkEuIiwgIkFsZXNzaSBELlIuIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIxODI3MDI2MiJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMjQyL2pjcy4wMjUzMTIifV0sICJ0aXRsZSI6ICJBY3RpdmF0aW9uIG9mIHRoZSB0aGlhemlkZS1zZW5zaXRpdmUgTmErLUNsLSBjb3RyYW5zcG9ydGVyIGJ5IHRoZSBXTkstcmVndWxhdGVkIGtpbmFzZXMgU1BBSyBhbmQgT1NSMS4iLCAicHVibGljYXRpb25EYXRlIjogIjIwMDgiLCAiam91cm5hbCI6ICJKLiBDZWxsIFNjaS4iLCAiZmlyc3RQYWdlIjogIjY3NSIsICJsYXN0UGFnZSI6ICI2ODQiLCAidm9sdW1lIjogIjEyMSJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJGVU5DVElPTiIsICJDQVRBTFlUSUMgQUNUSVZJVFkiXX0sIHsicmVmZXJlbmNlTnVtYmVyIjogMTQsICJjaXRhdGlvbiI6IHsiaWQiOiAiMTg2Njk2NDgiLCAiY2l0YXRpb25UeXBlIjogImpvdXJuYWwgYXJ0aWNsZSIsICJhdXRob3JzIjogWyJEZXBob3VyZSBOLiIsICJaaG91IEMuIiwgIlZpbGxlbiBKLiIsICJCZWF1c29sZWlsIFMuQS4iLCAiQmFrYWxhcnNraSBDLkUuIiwgIkVsbGVkZ2UgUy5KLiIsICJHeWdpIFMuUC4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjE4NjY5NjQ4In0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjEwNzMvcG5hcy4wODA1MTM5MTA1In1dLCAidGl0bGUiOiAiQSBxdWFudGl0YXRpdmUgYXRsYXMgb2YgbWl0b3RpYyBwaG9zcGhvcnlsYXRpb24uIiwgInB1YmxpY2F0aW9uRGF0ZSI6ICIyMDA4IiwgImpvdXJuYWwiOiAiUHJvYy4gTmF0bC4gQWNhZC4gU2NpLiBVLlMuQS4iLCAiZmlyc3RQYWdlIjogIjEwNzYyIiwgImxhc3RQYWdlIjogIjEwNzY3IiwgInZvbHVtZSI6ICIxMDUifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiUEhPU1BIT1JZTEFUSU9OIFtMQVJHRSBTQ0FMRSBBTkFMWVNJU10gQVQgU0VSLTMzOSBBTkQgU0VSLTQyNyIsICJJREVOVElGSUNBVElPTiBCWSBNQVNTIFNQRUNUUk9NRVRSWSBbTEFSR0UgU0NBTEUgQU5BTFlTSVNdIl0sICJyZWZlcmVuY2VDb21tZW50cyI6IFt7InZhbHVlIjogIkNlcnZpeCBjYXJjaW5vbWEiLCAidHlwZSI6ICJUSVNTVUUifV19LCB7InJlZmVyZW5jZU51bWJlciI6IDE1LCAiY2l0YXRpb24iOiB7ImlkIjogIjE4MzE4MDA4IiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiSGFuIEcuIiwgIlllIE0uIiwgIlpob3UgSC4iLCAiSmlhbmcgWC4iLCAiRmVuZyBTLiIsICJKaWFuZyBYLiIsICJUaWFuIFIuIiwgIldhbiBELiIsICJab3UgSC4iLCAiR3UgSi4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjE4MzE4MDA4In0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjEwMDIvcG1pYy4yMDA3MDA4ODQifV0sICJ0aXRsZSI6ICJMYXJnZS1zY2FsZSBwaG9zcGhvcHJvdGVvbWUgYW5hbHlzaXMgb2YgaHVtYW4gbGl2ZXIgdGlzc3VlIGJ5IGVucmljaG1lbnQgYW5kIGZyYWN0aW9uYXRpb24gb2YgcGhvc3Bob3BlcHRpZGVzIHdpdGggc3Ryb25nIGFuaW9uIGV4Y2hhbmdlIGNocm9tYXRvZ3JhcGh5LiIsICJwdWJsaWNhdGlvbkRhdGUiOiAiMjAwOCIsICJqb3VybmFsIjogIlByb3Rlb21pY3MiLCAiZmlyc3RQYWdlIjogIjEzNDYiLCAibGFzdFBhZ2UiOiAiMTM2MSIsICJ2b2x1bWUiOiAiOCJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJQSE9TUEhPUllMQVRJT04gW0xBUkdFIFNDQUxFIEFOQUxZU0lTXSBBVCBTRVItMzM5IiwgIklERU5USUZJQ0FUSU9OIEJZIE1BU1MgU1BFQ1RST01FVFJZIFtMQVJHRSBTQ0FMRSBBTkFMWVNJU10iXSwgInJlZmVyZW5jZUNvbW1lbnRzIjogW3sidmFsdWUiOiAiTGl2ZXIiLCAidHlwZSI6ICJUSVNTVUUifV19LCB7InJlZmVyZW5jZU51bWJlciI6IDE2LCAiY2l0YXRpb24iOiB7ImlkIjogIjE5NDEzMzMwIiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiR2F1Y2kgUy4iLCAiSGVsYmlnIEEuTy4iLCAiU2xpanBlciBNLiIsICJLcmlqZ3N2ZWxkIEouIiwgIkhlY2sgQS5KLiIsICJNb2hhbW1lZCBTLiJdLCAiY2l0YXRpb25Dcm9zc1JlZmVyZW5jZXMiOiBbeyJkYXRhYmFzZSI6ICJQdWJNZWQiLCAiaWQiOiAiMTk0MTMzMzAifSwgeyJkYXRhYmFzZSI6ICJET0kiLCAiaWQiOiAiMTAuMTAyMS9hYzkwMDQzMDkifV0sICJ0aXRsZSI6ICJMeXMtTiBhbmQgdHJ5cHNpbiBjb3ZlciBjb21wbGVtZW50YXJ5IHBhcnRzIG9mIHRoZSBwaG9zcGhvcHJvdGVvbWUgaW4gYSByZWZpbmVkIFNDWC1iYXNlZCBhcHByb2FjaC4iLCAicHVibGljYXRpb25EYXRlIjogIjIwMDkiLCAiam91cm5hbCI6ICJBbmFsLiBDaGVtLiIsICJmaXJzdFBhZ2UiOiAiNDQ5MyIsICJsYXN0UGFnZSI6ICI0NTAxIiwgInZvbHVtZSI6ICI4MSJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJJREVOVElGSUNBVElPTiBCWSBNQVNTIFNQRUNUUk9NRVRSWSBbTEFSR0UgU0NBTEUgQU5BTFlTSVNdIl19LCB7InJlZmVyZW5jZU51bWJlciI6IDE3LCAiY2l0YXRpb24iOiB7ImlkIjogIjE5NjY1OTc0IiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiUmluZWhhcnQgSi4iLCAiTWFrc2ltb3ZhIFkuRC4iLCAiVGFuaXMgSi5FLiIsICJTdG9uZSBLLkwuIiwgIkhvZHNvbiBDLkEuIiwgIlpoYW5nIEouIiwgIlJpc2luZ2VyIE0uIiwgIlBhbiBXLiIsICJXdSBELiIsICJDb2xhbmdlbG8gQy5NLiIsICJGb3JidXNoIEIuIiwgIkpvaW5lciBDLkguIiwgIkd1bGNpY2VrIEUuRS4iLCAiR2FsbGFnaGVyIFAuRy4iLCAiTGlmdG9uIFIuUC4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjE5NjY1OTc0In0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjEwMTYvai5jZWxsLjIwMDkuMDUuMDMxIn1dLCAidGl0bGUiOiAiU2l0ZXMgb2YgcmVndWxhdGVkIHBob3NwaG9yeWxhdGlvbiB0aGF0IGNvbnRyb2wgSy1DbCBjb3RyYW5zcG9ydGVyIGFjdGl2aXR5LiIsICJwdWJsaWNhdGlvbkRhdGUiOiAiMjAwOSIsICJqb3VybmFsIjogIkNlbGwiLCAiZmlyc3RQYWdlIjogIjUyNSIsICJsYXN0UGFnZSI6ICI1MzYiLCAidm9sdW1lIjogIjEzOCJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJGVU5DVElPTiJdfSwgeyJyZWZlcmVuY2VOdW1iZXIiOiAxOCwgImNpdGF0aW9uIjogeyJpZCI6ICIxOTY5MDMzMiIsICJjaXRhdGlvblR5cGUiOiAiam91cm5hbCBhcnRpY2xlIiwgImF1dGhvcnMiOiBbIk1heXlhIFYuIiwgIkx1bmRncmVuIEQuSC4iLCAiSHdhbmcgUy4tSS4iLCAiUmV6YXVsIEsuIiwgIld1IEwuIiwgIkVuZyBKLksuIiwgIlJvZGlvbm92IFYuIiwgIkhhbiBELksuIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIxOTY5MDMzMiJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMTI2L3NjaXNpZ25hbC4yMDAwMDA3In1dLCAidGl0bGUiOiAiUXVhbnRpdGF0aXZlIHBob3NwaG9wcm90ZW9taWMgYW5hbHlzaXMgb2YgVCBjZWxsIHJlY2VwdG9yIHNpZ25hbGluZyByZXZlYWxzIHN5c3RlbS13aWRlIG1vZHVsYXRpb24gb2YgcHJvdGVpbi1wcm90ZWluIGludGVyYWN0aW9ucy4iLCAicHVibGljYXRpb25EYXRlIjogIjIwMDkiLCAiam91cm5hbCI6ICJTY2kuIFNpZ25hbC4iLCAiZmlyc3RQYWdlIjogIlJBNDYiLCAibGFzdFBhZ2UiOiAiUkE0NiIsICJ2b2x1bWUiOiAiMiJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJQSE9TUEhPUllMQVRJT04gW0xBUkdFIFNDQUxFIEFOQUxZU0lTXSBBVCBTRVItMzM5IEFORCBTRVItMzQ3IiwgIklERU5USUZJQ0FUSU9OIEJZIE1BU1MgU1BFQ1RST01FVFJZIFtMQVJHRSBTQ0FMRSBBTkFMWVNJU10iXSwgInJlZmVyZW5jZUNvbW1lbnRzIjogW3sidmFsdWUiOiAiTGV1a2VtaWMgVC1jZWxsIiwgInR5cGUiOiAiVElTU1VFIn1dfSwgeyJyZWZlcmVuY2VOdW1iZXIiOiAxOSwgImNpdGF0aW9uIjogeyJpZCI6ICIyMDA2ODIzMSIsICJjaXRhdGlvblR5cGUiOiAiam91cm5hbCBhcnRpY2xlIiwgImF1dGhvcnMiOiBbIk9sc2VuIEouVi4iLCAiVmVybWV1bGVuIE0uIiwgIlNhbnRhbWFyaWEgQS4iLCAiS3VtYXIgQy4iLCAiTWlsbGVyIE0uTC4iLCAiSmVuc2VuIEwuSi4iLCAiR25hZCBGLiIsICJDb3ggSi4iLCAiSmVuc2VuIFQuUy4iLCAiTmlnZyBFLkEuIiwgIkJydW5hayBTLiIsICJNYW5uIE0uIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMDA2ODIzMSJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMTI2L3NjaXNpZ25hbC4yMDAwNDc1In1dLCAidGl0bGUiOiAiUXVhbnRpdGF0aXZlIHBob3NwaG9wcm90ZW9taWNzIHJldmVhbHMgd2lkZXNwcmVhZCBmdWxsIHBob3NwaG9yeWxhdGlvbiBzaXRlIG9jY3VwYW5jeSBkdXJpbmcgbWl0b3Npcy4iLCAicHVibGljYXRpb25EYXRlIjogIjIwMTAiLCAiam91cm5hbCI6ICJTY2kuIFNpZ25hbC4iLCAiZmlyc3RQYWdlIjogIlJBMyIsICJsYXN0UGFnZSI6ICJSQTMiLCAidm9sdW1lIjogIjMifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiUEhPU1BIT1JZTEFUSU9OIFtMQVJHRSBTQ0FMRSBBTkFMWVNJU10gQVQgU0VSLTMzOSBBTkQgU0VSLTQyNyIsICJJREVOVElGSUNBVElPTiBCWSBNQVNTIFNQRUNUUk9NRVRSWSBbTEFSR0UgU0NBTEUgQU5BTFlTSVNdIl0sICJyZWZlcmVuY2VDb21tZW50cyI6IFt7InZhbHVlIjogIkNlcnZpeCBjYXJjaW5vbWEiLCAidHlwZSI6ICJUSVNTVUUifV19LCB7InJlZmVyZW5jZU51bWJlciI6IDIwLCAiY2l0YXRpb24iOiB7ImlkIjogIjIxMjY5NDYwIiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiQnVya2FyZCBULlIuIiwgIlBsYW55YXZza3kgTS4iLCAiS2F1cGUgSS4iLCAiQnJlaXR3aWVzZXIgRi5QLiIsICJCdWVyY2tzdHVlbW1lciBULiIsICJCZW5uZXR0IEsuTC4iLCAiU3VwZXJ0aS1GdXJnYSBHLiIsICJDb2xpbmdlIEouIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMTI2OTQ2MCJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMTg2LzE3NTItMDUwOS01LTE3In1dLCAidGl0bGUiOiAiSW5pdGlhbCBjaGFyYWN0ZXJpemF0aW9uIG9mIHRoZSBodW1hbiBjZW50cmFsIHByb3Rlb21lLiIsICJwdWJsaWNhdGlvbkRhdGUiOiAiMjAxMSIsICJqb3VybmFsIjogIkJNQyBTeXN0LiBCaW9sLiIsICJmaXJzdFBhZ2UiOiAiMTciLCAibGFzdFBhZ2UiOiAiMTciLCAidm9sdW1lIjogIjUifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiSURFTlRJRklDQVRJT04gQlkgTUFTUyBTUEVDVFJPTUVUUlkgW0xBUkdFIFNDQUxFIEFOQUxZU0lTXSJdfSwgeyJyZWZlcmVuY2VOdW1iZXIiOiAyMSwgImNpdGF0aW9uIjogeyJpZCI6ICIyMTMyMTMyOCIsICJjaXRhdGlvblR5cGUiOiAiam91cm5hbCBhcnRpY2xlIiwgImF1dGhvcnMiOiBbIlJpY2hhcmRzb24gQy4iLCAiU2FrYW1vdG8gSy4iLCAiZGUgbG9zIEhlcm9zIFAuIiwgIkRlYWsgTS4iLCAiQ2FtcGJlbGwgRC5HLiIsICJQcmVzY290dCBBLlIuIiwgIkFsZXNzaSBELlIuIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMTMyMTMyOCJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMjQyL2pjcy4wNzcyMzAifV0sICJ0aXRsZSI6ICJSZWd1bGF0aW9uIG9mIHRoZSBOS0NDMiBpb24gY290cmFuc3BvcnRlciBieSBTUEFLLU9TUjEtZGVwZW5kZW50IGFuZCAtaW5kZXBlbmRlbnQgcGF0aHdheXMuIiwgInB1YmxpY2F0aW9uRGF0ZSI6ICIyMDExIiwgImpvdXJuYWwiOiAiSi4gQ2VsbCBTY2kuIiwgImZpcnN0UGFnZSI6ICI3ODkiLCAibGFzdFBhZ2UiOiAiODAwIiwgInZvbHVtZSI6ICIxMjQifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiRlVOQ1RJT04iLCAiQ0FUQUxZVElDIEFDVElWSVRZIiwgIkFDVElWSVRZIFJFR1VMQVRJT04iLCAiUEhPU1BIT1JZTEFUSU9OIEFUIFRIUi0xODUiLCAiTVVUQUdFTkVTSVMgT0YgVEhSLTE4NSJdfSwgeyJyZWZlcmVuY2VOdW1iZXIiOiAyMiwgImNpdGF0aW9uIjogeyJpZCI6ICIyMTQwNjY5MiIsICJjaXRhdGlvblR5cGUiOiAiam91cm5hbCBhcnRpY2xlIiwgImF1dGhvcnMiOiBbIlJpZ2JvbHQgSy5ULiIsICJQcm9raG9yb3ZhIFQuQS4iLCAiQWtpbW92IFYuIiwgIkhlbm5pbmdzZW4gSi4iLCAiSm9oYW5zZW4gUC5ULiIsICJLcmF0Y2htYXJvdmEgSS4iLCAiS2Fzc2VtIE0uIiwgIk1hbm4gTS4iLCAiT2xzZW4gSi5WLiIsICJCbGFnb2V2IEIuIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMTQwNjY5MiJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMTI2L3NjaXNpZ25hbC4yMDAxNTcwIn1dLCAidGl0bGUiOiAiU3lzdGVtLXdpZGUgdGVtcG9yYWwgY2hhcmFjdGVyaXphdGlvbiBvZiB0aGUgcHJvdGVvbWUgYW5kIHBob3NwaG9wcm90ZW9tZSBvZiBodW1hbiBlbWJyeW9uaWMgc3RlbSBjZWxsIGRpZmZlcmVudGlhdGlvbi4iLCAicHVibGljYXRpb25EYXRlIjogIjIwMTEiLCAiam91cm5hbCI6ICJTY2kuIFNpZ25hbC4iLCAiZmlyc3RQYWdlIjogIlJTMyIsICJsYXN0UGFnZSI6ICJSUzMiLCAidm9sdW1lIjogIjQifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiUEhPU1BIT1JZTEFUSU9OIFtMQVJHRSBTQ0FMRSBBTkFMWVNJU10gQVQgU0VSLTMzOSIsICJJREVOVElGSUNBVElPTiBCWSBNQVNTIFNQRUNUUk9NRVRSWSBbTEFSR0UgU0NBTEUgQU5BTFlTSVNdIl19LCB7InJlZmVyZW5jZU51bWJlciI6IDIzLCAiY2l0YXRpb24iOiB7ImlkIjogIjIyOTg5ODg0IiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiU2VuZ3VwdGEgUy4iLCAiVHUgUy5XLiIsICJXZWRpbiBLLiIsICJFYXJuZXN0IFMuIiwgIlN0aXBwZWMgUy4iLCAiTHVieS1QaGVscHMgSy4iLCAiQ29iYiBNLkguIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMjk4OTg4NCJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMDc0L2piYy5tMTEyLjM5ODc1MCJ9XSwgInRpdGxlIjogIkludGVyYWN0aW9ucyB3aXRoIFdOSyAod2l0aCBubyBseXNpbmUpIGZhbWlseSBtZW1iZXJzIHJlZ3VsYXRlIG94aWRhdGl2ZSBzdHJlc3MgcmVzcG9uc2UgMSBhbmQgaW9uIGNvLXRyYW5zcG9ydGVyIGFjdGl2aXR5LiIsICJwdWJsaWNhdGlvbkRhdGUiOiAiMjAxMiIsICJqb3VybmFsIjogIkouIEJpb2wuIENoZW0uIiwgImZpcnN0UGFnZSI6ICIzNzg2OCIsICJsYXN0UGFnZSI6ICIzNzg3OSIsICJ2b2x1bWUiOiAiMjg3In0sICJyZWZlcmVuY2VQb3NpdGlvbnMiOiBbIlNVQkNFTExVTEFSIExPQ0FUSU9OIiwgIkFDVElWSVRZIFJFR1VMQVRJT04iLCAiUEhPU1BIT1JZTEFUSU9OIl19LCB7InJlZmVyZW5jZU51bWJlciI6IDI0LCAiY2l0YXRpb24iOiB7ImlkIjogIjIyMzYxNjk2IiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiU3RhZGxlciBDLiIsICJIamVsbWFyZSBNLiIsICJOZXVtYW5uIEIuIiwgIkpvbmFzc29uIEsuIiwgIlBlcHBlcmtvayBSLiIsICJVaGxlbiBNLiIsICJMdW5kYmVyZyBFLiJdLCAiY2l0YXRpb25Dcm9zc1JlZmVyZW5jZXMiOiBbeyJkYXRhYmFzZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjIzNjE2OTYifSwgeyJkYXRhYmFzZSI6ICJET0kiLCAiaWQiOiAiMTAuMTAxNi9qLmpwcm90LjIwMTIuMDEuMDMwIn1dLCAidGl0bGUiOiAiU3lzdGVtYXRpYyB2YWxpZGF0aW9uIG9mIGFudGlib2R5IGJpbmRpbmcgYW5kIHByb3RlaW4gc3ViY2VsbHVsYXIgbG9jYWxpemF0aW9uIHVzaW5nIHNpUk5BIGFuZCBjb25mb2NhbCBtaWNyb3Njb3B5LiIsICJwdWJsaWNhdGlvbkRhdGUiOiAiMjAxMiIsICJqb3VybmFsIjogIkouIFByb3Rlb21pY3MiLCAiZmlyc3RQYWdlIjogIjIyMzYiLCAibGFzdFBhZ2UiOiAiMjI1MSIsICJ2b2x1bWUiOiAiNzUifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiU1VCQ0VMTFVMQVIgTE9DQVRJT04iXX0sIHsicmVmZXJlbmNlTnVtYmVyIjogMjUsICJjaXRhdGlvbiI6IHsiaWQiOiAiMjIwNTIyMDIiLCAiY2l0YXRpb25UeXBlIjogImpvdXJuYWwgYXJ0aWNsZSIsICJhdXRob3JzIjogWyJDdXNpY2sgSi5LLiIsICJNdXN0aWFuIEEuIiwgIkphY29icyBBLlQuIiwgIlJleWxhbmQgTS5FLiJdLCAiY2l0YXRpb25Dcm9zc1JlZmVyZW5jZXMiOiBbeyJkYXRhYmFzZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjIwNTIyMDIifSwgeyJkYXRhYmFzZSI6ICJET0kiLCAiaWQiOiAiMTAuMTAwNy9zMTEwMTAtMDExLTExMjctNCJ9XSwgInRpdGxlIjogIklkZW50aWZpY2F0aW9uIG9mIFBMU0NSMSBhcyBhIHByb3RlaW4gdGhhdCBpbnRlcmFjdHMgd2l0aCBSRUxUIGZhbWlseSBtZW1iZXJzLiIsICJwdWJsaWNhdGlvbkRhdGUiOiAiMjAxMiIsICJqb3VybmFsIjogIk1vbC4gQ2VsbC4gQmlvY2hlbS4iLCAiZmlyc3RQYWdlIjogIjU1IiwgImxhc3RQYWdlIjogIjYzIiwgInZvbHVtZSI6ICIzNjIifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiRlVOQ1RJT04iLCAiQVVUT1BIT1NQSE9SWUxBVElPTiJdfSwgeyJyZWZlcmVuY2VOdW1iZXIiOiAyNiwgImNpdGF0aW9uIjogeyJpZCI6ICIyMjIyMzg5NSIsICJjaXRhdGlvblR5cGUiOiAiam91cm5hbCBhcnRpY2xlIiwgImF1dGhvcnMiOiBbIkJpZW52ZW51dCBXLlYuIiwgIlN1bXB0b24gRC4iLCAiTWFydGluZXogQS4iLCAiTGlsbGEgUy4iLCAiRXNwYWduZSBDLiIsICJNZWlubmVsIFQuIiwgIkdpZ2xpb25lIEMuIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMjIyMzg5NSJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMDc0L21jcC5tMTExLjAxNTEzMSJ9XSwgInRpdGxlIjogIkNvbXBhcmF0aXZlIGxhcmdlLXNjYWxlIGNoYXJhY3RlcmlzYXRpb24gb2YgcGxhbnQgdnMuIG1hbW1hbCBwcm90ZWlucyByZXZlYWxzIHNpbWlsYXIgYW5kIGlkaW9zeW5jcmF0aWMgTi1hbHBoYSBhY2V0eWxhdGlvbiBmZWF0dXJlcy4iLCAicHVibGljYXRpb25EYXRlIjogIjIwMTIiLCAiam91cm5hbCI6ICJNb2wuIENlbGwuIFByb3Rlb21pY3MiLCAiZmlyc3RQYWdlIjogIk0xMTEuMDE1MTMxIiwgImxhc3RQYWdlIjogIk0xMTEuMDE1MTMxIiwgInZvbHVtZSI6ICIxMSJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJBQ0VUWUxBVElPTiBbTEFSR0UgU0NBTEUgQU5BTFlTSVNdIEFUIFNFUi0yIiwgIkNMRUFWQUdFIE9GIElOSVRJQVRPUiBNRVRISU9OSU5FIFtMQVJHRSBTQ0FMRSBBTkFMWVNJU10iLCAiSURFTlRJRklDQVRJT04gQlkgTUFTUyBTUEVDVFJPTUVUUlkgW0xBUkdFIFNDQUxFIEFOQUxZU0lTXSJdfSwgeyJyZWZlcmVuY2VOdW1iZXIiOiAyNywgImNpdGF0aW9uIjogeyJpZCI6ICIyMzE4NjE2MyIsICJjaXRhdGlvblR5cGUiOiAiam91cm5hbCBhcnRpY2xlIiwgImF1dGhvcnMiOiBbIlpob3UgSC4iLCAiRGkgUGFsbWEgUy4iLCAiUHJlaXNpbmdlciBDLiIsICJQZW5nIE0uIiwgIlBvbGF0IEEuTi4iLCAiSGVjayBBLkouIiwgIk1vaGFtbWVkIFMuIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIyMzE4NjE2MyJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMDIxL3ByMzAwNjMwayJ9XSwgInRpdGxlIjogIlRvd2FyZCBhIGNvbXByZWhlbnNpdmUgY2hhcmFjdGVyaXphdGlvbiBvZiBhIGh1bWFuIGNhbmNlciBjZWxsIHBob3NwaG9wcm90ZW9tZS4iLCAicHVibGljYXRpb25EYXRlIjogIjIwMTMiLCAiam91cm5hbCI6ICJKLiBQcm90ZW9tZSBSZXMuIiwgImZpcnN0UGFnZSI6ICIyNjAiLCAibGFzdFBhZ2UiOiAiMjcxIiwgInZvbHVtZSI6ICIxMiJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJQSE9TUEhPUllMQVRJT04gW0xBUkdFIFNDQUxFIEFOQUxZU0lTXSBBVCBUSFItMzEwOyBTRVItMzI0OyBTRVItMzI1OyBTRVItMzM5IEFORCBTRVItMzU5IiwgIklERU5USUZJQ0FUSU9OIEJZIE1BU1MgU1BFQ1RST01FVFJZIFtMQVJHRSBTQ0FMRSBBTkFMWVNJU10iXSwgInJlZmVyZW5jZUNvbW1lbnRzIjogW3sidmFsdWUiOiAiQ2Vydml4IGNhcmNpbm9tYSIsICJ0eXBlIjogIlRJU1NVRSJ9LCB7InZhbHVlIjogIkVyeXRocm9sZXVrZW1pYSIsICJ0eXBlIjogIlRJU1NVRSJ9XX0sIHsicmVmZXJlbmNlTnVtYmVyIjogMjgsICJjaXRhdGlvbiI6IHsiaWQiOiAiMjMzODY2MjEiLCAiY2l0YXRpb25UeXBlIjogImpvdXJuYWwgYXJ0aWNsZSIsICJhdXRob3JzIjogWyJYaWUgSi4iLCAiWW9vbiBKLiIsICJZYW5nIFMuUy4iLCAiTGluIFMuSC4iLCAiSHVhbmcgQy5MLiJdLCAiY2l0YXRpb25Dcm9zc1JlZmVyZW5jZXMiOiBbeyJkYXRhYmFzZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjMzODY2MjEifSwgeyJkYXRhYmFzZSI6ICJET0kiLCAiaWQiOiAiMTAuMTA3NC9qYmMubTExMy40NTE1NzUifV0sICJ0aXRsZSI6ICJXTksxIHByb3RlaW4ga2luYXNlIHJlZ3VsYXRlcyBlbWJyeW9uaWMgY2FyZGlvdmFzY3VsYXIgZGV2ZWxvcG1lbnQgdGhyb3VnaCB0aGUgT1NSMSBzaWduYWxpbmcgY2FzY2FkZS4iLCAicHVibGljYXRpb25EYXRlIjogIjIwMTMiLCAiam91cm5hbCI6ICJKLiBCaW9sLiBDaGVtLiIsICJmaXJzdFBhZ2UiOiAiODU2NiIsICJsYXN0UGFnZSI6ICI4NTc0IiwgInZvbHVtZSI6ICIyODgifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiRlVOQ1RJT04iLCAiQUNUSVZJVFkgUkVHVUxBVElPTiIsICJQSE9TUEhPUllMQVRJT04gQVQgVEhSLTE4NSBBTkQgU0VSLTMyNSIsICJNVVRBR0VORVNJUyBPRiBUSFItMTg1IEFORCBTRVItMzI1Il19LCB7InJlZmVyZW5jZU51bWJlciI6IDI5LCAiY2l0YXRpb24iOiB7ImlkIjogIjI0Mjc1NTY5IiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiQmlhbiBZLiIsICJTb25nIEMuIiwgIkNoZW5nIEsuIiwgIkRvbmcgTS4iLCAiV2FuZyBGLiIsICJIdWFuZyBKLiIsICJTdW4gRC4iLCAiV2FuZyBMLiIsICJZZSBNLiIsICJab3UgSC4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjI0Mjc1NTY5In0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjEwMTYvai5qcHJvdC4yMDEzLjExLjAxNCJ9XSwgInRpdGxlIjogIkFuIGVuenltZSBhc3Npc3RlZCBSUC1SUExDIGFwcHJvYWNoIGZvciBpbi1kZXB0aCBhbmFseXNpcyBvZiBodW1hbiBsaXZlciBwaG9zcGhvcHJvdGVvbWUuIiwgInB1YmxpY2F0aW9uRGF0ZSI6ICIyMDE0IiwgImpvdXJuYWwiOiAiSi4gUHJvdGVvbWljcyIsICJmaXJzdFBhZ2UiOiAiMjUzIiwgImxhc3RQYWdlIjogIjI2MiIsICJ2b2x1bWUiOiAiOTYifSwgInJlZmVyZW5jZVBvc2l0aW9ucyI6IFsiUEhPU1BIT1JZTEFUSU9OIFtMQVJHRSBTQ0FMRSBBTkFMWVNJU10gQVQgU0VSLTMzOSIsICJJREVOVElGSUNBVElPTiBCWSBNQVNTIFNQRUNUUk9NRVRSWSBbTEFSR0UgU0NBTEUgQU5BTFlTSVNdIl0sICJyZWZlcmVuY2VDb21tZW50cyI6IFt7InZhbHVlIjogIkxpdmVyIiwgInR5cGUiOiAiVElTU1VFIn1dfSwgeyJyZWZlcmVuY2VOdW1iZXIiOiAzMCwgImNpdGF0aW9uIjogeyJpZCI6ICIyNTM2MjA0NiIsICJjaXRhdGlvblR5cGUiOiAiam91cm5hbCBhcnRpY2xlIiwgImF1dGhvcnMiOiBbIkRib3VrIEguQS4iLCAiV2VpbCBMLk0uIiwgIlBlcmVyYSBHLksuIiwgIkRlbGxpbmdlciBNLlQuIiwgIlBlYXJzb24gRy4iLCAiQnJla2tlbiBSLkEuIiwgIkNvYmIgTS5ILiJdLCAiY2l0YXRpb25Dcm9zc1JlZmVyZW5jZXMiOiBbeyJkYXRhYmFzZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjUzNjIwNDYifSwgeyJkYXRhYmFzZSI6ICJET0kiLCAiaWQiOiAiMTAuMTA3My9wbmFzLjE0MTkwNTcxMTEifV0sICJ0aXRsZSI6ICJBY3Rpb25zIG9mIHRoZSBwcm90ZWluIGtpbmFzZSBXTksxIG9uIGVuZG90aGVsaWFsIGNlbGxzIGFyZSBkaWZmZXJlbnRpYWxseSBtZWRpYXRlZCBieSBpdHMgc3Vic3RyYXRlIGtpbmFzZXMgT1NSMSBhbmQgU1BBSy4iLCAicHVibGljYXRpb25EYXRlIjogIjIwMTQiLCAiam91cm5hbCI6ICJQcm9jLiBOYXRsLiBBY2FkLiBTY2kuIFUuUy5BLiIsICJmaXJzdFBhZ2UiOiAiMTU5OTkiLCAibGFzdFBhZ2UiOiAiMTYwMDQiLCAidm9sdW1lIjogIjExMSJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJGVU5DVElPTiJdfSwgeyJyZWZlcmVuY2VOdW1iZXIiOiAzMSwgImNpdGF0aW9uIjogeyJpZCI6ICIyODY4ODc2NCIsICJjaXRhdGlvblR5cGUiOiAiam91cm5hbCBhcnRpY2xlIiwgImF1dGhvcnMiOiBbIk1vdWEgUC4iLCAiQ2hlY2tldHRzIE0uIiwgIlh1IEwuRy4iLCAiU2h1IEguQi4iLCAiUmV5bGFuZCBNLkUuIiwgIkN1c2ljayBKLksuIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIyODY4ODc2NCJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMDE2L2ouYmJyYy4yMDE3LjA3LjAyMiJ9XSwgInRpdGxlIjogIlJFTFQgZmFtaWx5IG1lbWJlcnMgYWN0aXZhdGUgcDM4IGFuZCBpbmR1Y2UgYXBvcHRvc2lzIGJ5IGEgbWVjaGFuaXNtIGRpc3RpbmN0IGZyb20gVE5GUjEuIiwgInB1YmxpY2F0aW9uRGF0ZSI6ICIyMDE3IiwgImpvdXJuYWwiOiAiQmlvY2hlbS4gQmlvcGh5cy4gUmVzLiBDb21tdW4uIiwgImZpcnN0UGFnZSI6ICIyNSIsICJsYXN0UGFnZSI6ICIzMiIsICJ2b2x1bWUiOiAiNDkxIn0sICJyZWZlcmVuY2VQb3NpdGlvbnMiOiBbIkZVTkNUSU9OIl19LCB7InJlZmVyZW5jZU51bWJlciI6IDMyLCAiY2l0YXRpb24iOiB7ImlkIjogIjI5NTgxMjkwIiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiVGF5bG9yIEMuQS4gSVYiLCAiQW4gUy5XLiIsICJLYW5rYW5hbWFsYWdlIFMuRy4iLCAiU3RpcHBlYyBTLiIsICJFYXJuZXN0IFMuIiwgIlRyaXZlZGkgQS5ULiIsICJZYW5nIEouWi4iLCAiTWlyemFlaSBILiIsICJIdWFuZyBDLkwuIiwgIkNvYmIgTS5ILiJdLCAiY2l0YXRpb25Dcm9zc1JlZmVyZW5jZXMiOiBbeyJkYXRhYmFzZSI6ICJQdWJNZWQiLCAiaWQiOiAiMjk1ODEyOTAifSwgeyJkYXRhYmFzZSI6ICJET0kiLCAiaWQiOiAiMTAuMTA3My9wbmFzLjE4MDIzMzkxMTUifV0sICJ0aXRsZSI6ICJPU1IxIHJlZ3VsYXRlcyBhIHN1YnNldCBvZiBpbndhcmQgcmVjdGlmaWVyIHBvdGFzc2l1bSBjaGFubmVscyB2aWEgYSBiaW5kaW5nIG1vdGlmIHZhcmlhbnQuIiwgInB1YmxpY2F0aW9uRGF0ZSI6ICIyMDE4IiwgImpvdXJuYWwiOiAiUHJvYy4gTmF0bC4gQWNhZC4gU2NpLiBVLlMuQS4iLCAiZmlyc3RQYWdlIjogIjM4NDAiLCAibGFzdFBhZ2UiOiAiMzg0NSIsICJ2b2x1bWUiOiAiMTE1In0sICJyZWZlcmVuY2VQb3NpdGlvbnMiOiBbIkZVTkNUSU9OIiwgIkNBVEFMWVRJQyBBQ1RJVklUWSIsICJBQ1RJVklUWSBSRUdVTEFUSU9OIiwgIlBIT1NQSE9SWUxBVElPTiBBVCBUSFItMTg1IEFORCBTRVItMzI1IiwgIk1VVEFHRU5FU0lTIE9GIFRIUi0xODUgQU5EIFNFUi0zMjUiXX0sIHsicmVmZXJlbmNlTnVtYmVyIjogMzMsICJjaXRhdGlvbiI6IHsiaWQiOiAiMzQyODkzNjciLCAiY2l0YXRpb25UeXBlIjogImpvdXJuYWwgYXJ0aWNsZSIsICJhdXRob3JzIjogWyJTY2hpYXBwYXJlbGxpIFAuIiwgIlBpcm1hbiBOLkwuIiwgIk1vaGxlciBLLiIsICJNaXJhbmRhLUhlcnJlcmEgUC5BLiIsICJaYXJjbyBOLiIsICJLaWxpYyBPLiIsICJNaWxsZXIgQy4iLCAiU2hhaCBTLlIuIiwgIlJvZ3VsaW5hIFMuIiwgIkh1bmdlcmZvcmQgVy4iLCAiQWJyaW9sYSBMLiIsICJIb3llciBELiIsICJUdXJrIEIuRS4iLCAiR3VlcnJlcm8tQ2F6YXJlcyBILiIsICJJc2FhY3MgRi5KLiIsICJRdWlub25lcy1IaW5vam9zYSBBLiIsICJMZXZjaGVua28gQS4iLCAiUmluZWhhcnQgSi4iXSwgImNpdGF0aW9uQ3Jvc3NSZWZlcmVuY2VzIjogW3siZGF0YWJhc2UiOiAiUHViTWVkIiwgImlkIjogIjM0Mjg5MzY3In0sIHsiZGF0YWJhc2UiOiAiRE9JIiwgImlkIjogIjEwLjEwMTYvai5jZWxyZXAuMjAyMS4xMDk0MTYifV0sICJ0aXRsZSI6ICJQaG9zcGhvcnlsYXRlZCBXTksga2luYXNlIG5ldHdvcmtzIGluIHJlY29kZWQgYmFjdGVyaWEgcmVjYXBpdHVsYXRlIHBoeXNpb2xvZ2ljYWwgZnVuY3Rpb24uIiwgInB1YmxpY2F0aW9uRGF0ZSI6ICIyMDIxIiwgImpvdXJuYWwiOiAiQ2VsbCBSZXAuIiwgImZpcnN0UGFnZSI6ICIxMDk0MTYiLCAibGFzdFBhZ2UiOiAiMTA5NDE2IiwgInZvbHVtZSI6ICIzNiJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJGVU5DVElPTiIsICJBQ1RJVklUWSBSRUdVTEFUSU9OIl19LCB7InJlZmVyZW5jZU51bWJlciI6IDM0LCAiY2l0YXRpb24iOiB7ImlkIjogIjE3NzIxNDM5IiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiVmlsbGEgRi4iLCAiR29lYmVsIEouIiwgIlJhZmlxaSBGLkguIiwgIkRlYWsgTS4iLCAiVGhhc3RydXAgSi4iLCAiQWxlc3NpIEQuUi4iLCAidmFuIEFhbHRlbiBELk0uIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzcyMTQzOSJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMDM4L3NqLmVtYm9yLjc0MDEwNDgifV0sICJ0aXRsZSI6ICJTdHJ1Y3R1cmFsIGluc2lnaHRzIGludG8gdGhlIHJlY29nbml0aW9uIG9mIHN1YnN0cmF0ZXMgYW5kIGFjdGl2YXRvcnMgYnkgdGhlIE9TUjEga2luYXNlLiIsICJwdWJsaWNhdGlvbkRhdGUiOiAiMjAwNyIsICJqb3VybmFsIjogIkVNQk8gUmVwLiIsICJmaXJzdFBhZ2UiOiAiODM5IiwgImxhc3RQYWdlIjogIjg0NSIsICJ2b2x1bWUiOiAiOCJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJYLVJBWSBDUllTVEFMTE9HUkFQSFkgKDEuNzAgQU5HU1RST01TKSBPRiA0MzMtNTI3IElOIENPTVBMRVggV0lUSCBXTks0IiwgIkZVTkNUSU9OIiwgIk1VVEFHRU5FU0lTIE9GIEdMVS00NDY7IEFTTi00NDg7IEFTUC00NDk7IElMRS00NTA7IEFSRy00NTE7IEFTUC00NTk7IEdMVS00Njc7IExFVS00Njg7IEFMQS00NzEgQU5EIExFVS00NzMiXSwgImV2aWRlbmNlcyI6IFt7ImV2aWRlbmNlQ29kZSI6ICJFQ086MDAwNzc0NCIsICJzb3VyY2UiOiAiUERCIiwgImlkIjogIjJWM1MifV19LCB7InJlZmVyZW5jZU51bWJlciI6IDM1LCAiY2l0YXRpb24iOiB7ImlkIjogIjE3MzQ0ODQ2IiwgImNpdGF0aW9uVHlwZSI6ICJqb3VybmFsIGFydGljbGUiLCAiYXV0aG9ycyI6IFsiR3JlZW5tYW4gQy4iLCAiU3RlcGhlbnMgUC4iLCAiU21pdGggUi4iLCAiRGFsZ2xpZXNoIEcuTC4iLCAiSHVudGVyIEMuIiwgIkJpZ25lbGwgRy4iLCAiRGF2aWVzIEguIiwgIlRlYWd1ZSBKLiIsICJCdXRsZXIgQS4iLCAiU3RldmVucyBDLiIsICJFZGtpbnMgUy4iLCAiTydNZWFyYSBTLiIsICJWYXN0cmlrIEkuIiwgIlNjaG1pZHQgRS5FLiIsICJBdmlzIFQuIiwgIkJhcnRob3JwZSBTLiIsICJCaGFtcmEgRy4iLCAiQnVjayBHLiIsICJDaG91ZGh1cnkgQi4iLCAiQ2xlbWVudHMgSi4iLCAiQ29sZSBKLiIsICJEaWNrcyBFLiIsICJGb3JiZXMgUy4iLCAiR3JheSBLLiIsICJIYWxsaWRheSBLLiIsICJIYXJyaXNvbiBSLiIsICJIaWxscyBLLiIsICJIaW50b24gSi4iLCAiSmVua2luc29uIEEuIiwgIkpvbmVzIEQuIiwgIk1lbnppZXMgQS4iLCAiTWlyb25lbmtvIFQuIiwgIlBlcnJ5IEouIiwgIlJhaW5lIEsuIiwgIlJpY2hhcmRzb24gRC4iLCAiU2hlcGhlcmQgUi4iLCAiU21hbGwgQS4iLCAiVG9mdHMgQy4iLCAiVmFyaWFuIEouIiwgIldlYmIgVC4iLCAiV2VzdCBTLiIsICJXaWRhYSBTLiIsICJZYXRlcyBBLiIsICJDYWhpbGwgRC5QLiIsICJMb3VpcyBELk4uIiwgIkdvbGRzdHJhdyBQLiIsICJOaWNob2xzb24gQS5HLiIsICJCcmFzc2V1ciBGLiIsICJMb29pamVuZ2EgTC4iLCAiV2ViZXIgQi5MLiIsICJDaGlldyBZLi1FLiIsICJEZUZhemlvIEEuIiwgIkdyZWF2ZXMgTS5GLiIsICJHcmVlbiBBLlIuIiwgIkNhbXBiZWxsIFAuIiwgIkJpcm5leSBFLiIsICJFYXN0b24gRC5GLiIsICJDaGVuZXZpeC1UcmVuY2ggRy4iLCAiVGFuIE0uLUguIiwgIktob28gUy5LLiIsICJUZWggQi5ULiIsICJZdWVuIFMuVC4iLCAiTGV1bmcgUy5ZLiIsICJXb29zdGVyIFIuIiwgIkZ1dHJlYWwgUC5BLiIsICJTdHJhdHRvbiBNLlIuIl0sICJjaXRhdGlvbkNyb3NzUmVmZXJlbmNlcyI6IFt7ImRhdGFiYXNlIjogIlB1Yk1lZCIsICJpZCI6ICIxNzM0NDg0NiJ9LCB7ImRhdGFiYXNlIjogIkRPSSIsICJpZCI6ICIxMC4xMDM4L25hdHVyZTA1NjEwIn1dLCAidGl0bGUiOiAiUGF0dGVybnMgb2Ygc29tYXRpYyBtdXRhdGlvbiBpbiBodW1hbiBjYW5jZXIgZ2Vub21lcy4iLCAicHVibGljYXRpb25EYXRlIjogIjIwMDciLCAiam91cm5hbCI6ICJOYXR1cmUiLCAiZmlyc3RQYWdlIjogIjE1MyIsICJsYXN0UGFnZSI6ICIxNTgiLCAidm9sdW1lIjogIjQ0NiJ9LCAicmVmZXJlbmNlUG9zaXRpb25zIjogWyJWQVJJQU5UUyBbTEFSR0UgU0NBTEUgQU5BTFlTSVNdIElMRS0zMDQgQU5EIFNFUi00MzMiXX1dLCAiZW50cnlBdWRpdCI6IHsiZmlyc3RQdWJsaWNEYXRlIjogIjIwMDUtMDgtMTYiLCAibGFzdEFubm90YXRpb25VcGRhdGVEYXRlIjogIjIwMjYtMDEtMjgiLCAibGFzdFNlcXVlbmNlVXBkYXRlRGF0ZSI6ICIxOTk5LTA1LTAxIiwgImVudHJ5VmVyc2lvbiI6IDIxMywgInNlcXVlbmNlVmVyc2lvbiI6IDF9LCAic2Vjb25kYXJ5QWNjZXNzaW9ucyI6IFsiUTNMUjUzIiwgIlE3WjUwMSIsICJROVVQUTEiXSwgImVudHJ5VHlwZSI6ICJVbmlQcm90S0IgcmV2aWV3ZWQgKFN3aXNzLVByb3QpIiwgImFjdGl2ZSI6IG51bGwsICJwcm90ZWluRXhpc3RlbmNlIjogIjE6IEV2aWRlbmNlIGF0IHByb3RlaW4gbGV2ZWwiLCAiaW50ZXJwcm9fbWF0Y2hlcyI6IFt7Im1ldGFkYXRhIjogeyJhY2Nlc3Npb24iOiAiSVBSMDAwNzE5IiwgIm5hbWUiOiAiUHJvdGVpbiBraW5hc2UgZG9tYWluIiwgInNvdXJjZV9kYXRhYmFzZSI6ICJpbnRlcnBybyIsICJ0eXBlIjogImRvbWFpbiIsICJpbnRlZ3JhdGVkIjogbnVsbCwgIm1lbWJlcl9kYXRhYmFzZXMiOiB7InByb2ZpbGUiOiB7IlBTNTAwMTEiOiAiUHJvdGVpbiBraW5hc2UgZG9tYWluIHByb2ZpbGUifSwgInBmYW0iOiB7IlBGMDAwNjkiOiAiUHJvdGVpbiBraW5hc2UgZG9tYWluIn0sICJzbWFydCI6IHsiU00wMDIyMCI6ICJTZXJpbmUvVGhyZW9uaW5lIHByb3RlaW4ga2luYXNlcywgY2F0YWx5dGljIGRvbWFpbiJ9fSwgImdvX3Rlcm1zIjogW3siaWRlbnRpZmllciI6ICJHTzowMDA0NjcyIiwgIm5hbWUiOiAicHJvdGVpbiBraW5hc2UgYWN0aXZpdHkiLCAiY2F0ZWdvcnkiOiB7ImNvZGUiOiAiRiIsICJuYW1lIjogIm1vbGVjdWxhcl9mdW5jdGlvbiJ9fSwgeyJpZGVudGlmaWVyIjogIkdPOjAwMDU1MjQiLCAibmFtZSI6ICJBVFAgYmluZGluZyIsICJjYXRlZ29yeSI6IHsiY29kZSI6ICJGIiwgIm5hbWUiOiAibW9sZWN1bGFyX2Z1bmN0aW9uIn19LCB7ImlkZW50aWZpZXIiOiAiR086MDAwNjQ2OCIsICJuYW1lIjogInByb3RlaW4gcGhvc3Bob3J5bGF0aW9uIiwgImNhdGVnb3J5IjogeyJjb2RlIjogIlAiLCAibmFtZSI6ICJiaW9sb2dpY2FsX3Byb2Nlc3MifX1dfSwgInByb3RlaW5zIjogW3siYWNjZXNzaW9uIjogIm85NTc0NyIsICJwcm90ZWluX2xlbmd0aCI6IDUyNywgInNvdXJjZV9kYXRhYmFzZSI6ICJyZXZpZXdlZCIsICJvcmdhbmlzbSI6ICI5NjA2IiwgImluX2FscGhhZm9sZCI6IHRydWUsICJpbl9iZnZkIjogZmFsc2UsICJlbnRyeV9wcm90ZWluX2xvY2F0aW9ucyI6IFt7ImZyYWdtZW50cyI6IFt7InN0YXJ0IjogMTcsICJlbmQiOiAyOTEsICJkYy1zdGF0dXMiOiAiQ09OVElOVU9VUyJ9XSwgInJlcHJlc2VudGF0aXZlIjogZmFsc2UsICJtb2RlbCI6IG51bGwsICJzY29yZSI6IG51bGx9XX1dfSwgeyJtZXRhZGF0YSI6IHsiYWNjZXNzaW9uIjogIklQUjAxMTAwOSIsICJuYW1lIjogIlByb3RlaW4ga2luYXNlLWxpa2UgZG9tYWluIHN1cGVyZmFtaWx5IiwgInNvdXJjZV9kYXRhYmFzZSI6ICJpbnRlcnBybyIsICJ0eXBlIjogImhvbW9sb2dvdXNfc3VwZXJmYW1pbHkiLCAiaW50ZWdyYXRlZCI6IG51bGwsICJtZW1iZXJfZGF0YWJhc2VzIjogeyJzc2YiOiB7IlNTRjU2MTEyIjogIlByb3RlaW4ga2luYXNlLWxpa2UgKFBLLWxpa2UpIn19LCAiZ29fdGVybXMiOiBudWxsfSwgInByb3RlaW5zIjogW3siYWNjZXNzaW9uIjogIm85NTc0NyIsICJwcm90ZWluX2xlbmd0aCI6IDUyNywgInNvdXJjZV9kYXRhYmFzZSI6ICJyZXZpZXdlZCIsICJvcmdhbmlzbSI6ICI5NjA2IiwgImluX2FscGhhZm9sZCI6IHRydWUsICJpbl9iZnZkIjogZmFsc2UsICJlbnRyeV9wcm90ZWluX2xvY2F0aW9ucyI6IFt7ImZyYWdtZW50cyI6IFt7InN0YXJ0IjogOCwgImVuZCI6IDMxMCwgImRjLXN0YXR1cyI6ICJDT05USU5VT1VTIn1dLCAicmVwcmVzZW50YXRpdmUiOiBmYWxzZSwgIm1vZGVsIjogbnVsbCwgInNjb3JlIjogbnVsbH1dfV19LCB7Im1ldGFkYXRhIjogeyJhY2Nlc3Npb24iOiAiSVBSMDE3NDQxIiwgIm5hbWUiOiAiUHJvdGVpbiBraW5hc2UsIEFUUCBiaW5kaW5nIHNpdGUiLCAic291cmNlX2RhdGFiYXNlIjogImludGVycHJvIiwgInR5cGUiOiAiYmluZGluZ19zaXRlIiwgImludGVncmF0ZWQiOiBudWxsLCAibWVtYmVyX2RhdGFiYXNlcyI6IHsicHJvc2l0ZSI6IHsiUFMwMDEwNyI6ICJQcm90ZWluIGtpbmFzZXMgQVRQLWJpbmRpbmcgcmVnaW9uIHNpZ25hdHVyZSJ9fSwgImdvX3Rlcm1zIjogW3siaWRlbnRpZmllciI6ICJHTzowMDA1NTI0IiwgIm5hbWUiOiAiQVRQIGJpbmRpbmciLCAiY2F0ZWdvcnkiOiB7ImNvZGUiOiAiRiIsICJuYW1lIjogIm1vbGVjdWxhcl9mdW5jdGlvbiJ9fV19LCAicHJvdGVpbnMiOiBbeyJhY2Nlc3Npb24iOiAibzk1NzQ3IiwgInByb3RlaW5fbGVuZ3RoIjogNTI3LCAic291cmNlX2RhdGFiYXNlIjogInJldmlld2VkIiwgIm9yZ2FuaXNtIjogIjk2MDYiLCAiaW5fYWxwaGFmb2xkIjogdHJ1ZSwgImluX2JmdmQiOiBmYWxzZSwgImVudHJ5X3Byb3RlaW5fbG9jYXRpb25zIjogW3siZnJhZ21lbnRzIjogW3sic3RhcnQiOiAyMywgImVuZCI6IDQ2LCAiZGMtc3RhdHVzIjogIkNPTlRJTlVPVVMifV0sICJyZXByZXNlbnRhdGl2ZSI6IGZhbHNlLCAibW9kZWwiOiBudWxsLCAic2NvcmUiOiBudWxsfV19XX0sIHsibWV0YWRhdGEiOiB7ImFjY2Vzc2lvbiI6ICJJUFIwMjQ2NzgiLCAibmFtZSI6ICJTZXJpbmUvdGhyZW9uaW5lLXByb3RlaW4ga2luYXNlIE9TUjEvV05LLCBDQ1QgZG9tYWluIiwgInNvdXJjZV9kYXRhYmFzZSI6ICJpbnRlcnBybyIsICJ0eXBlIjogImRvbWFpbiIsICJpbnRlZ3JhdGVkIjogbnVsbCwgIm1lbWJlcl9kYXRhYmFzZXMiOiB7InBmYW0iOiB7IlBGMTIyMDIiOiAiT3hpZGF0aXZlLXN0cmVzcy1yZXNwb25zaXZlIGtpbmFzZSAxIEMtdGVybWluYWwgZG9tYWluIn19LCAiZ29fdGVybXMiOiBbeyJpZGVudGlmaWVyIjogIkdPOjAwMDQ2NzQiLCAibmFtZSI6ICJwcm90ZWluIHNlcmluZS90aHJlb25pbmUga2luYXNlIGFjdGl2aXR5IiwgImNhdGVnb3J5IjogeyJjb2RlIjogIkYiLCAibmFtZSI6ICJtb2xlY3VsYXJfZnVuY3Rpb24ifX0sIHsiaWRlbnRpZmllciI6ICJHTzowMDA1NTI0IiwgIm5hbWUiOiAiQVRQIGJpbmRpbmciLCAiY2F0ZWdvcnkiOiB7ImNvZGUiOiAiRiIsICJuYW1lIjogIm1vbGVjdWxhcl9mdW5jdGlvbiJ9fV19LCAicHJvdGVpbnMiOiBbeyJhY2Nlc3Npb24iOiAibzk1NzQ3IiwgInByb3RlaW5fbGVuZ3RoIjogNTI3LCAic291cmNlX2RhdGFiYXNlIjogInJldmlld2VkIiwgIm9yZ2FuaXNtIjogIjk2MDYiLCAiaW5fYWxwaGFmb2xkIjogdHJ1ZSwgImluX2JmdmQiOiBmYWxzZSwgImVudHJ5X3Byb3RlaW5fbG9jYXRpb25zIjogW3siZnJhZ21lbnRzIjogW3sic3RhcnQiOiA0MzQsICJlbmQiOiA0OTEsICJkYy1zdGF0dXMiOiAiQ09OVElOVU9VUyJ9XSwgInJlcHJlc2VudGF0aXZlIjogZmFsc2UsICJtb2RlbCI6IG51bGwsICJzY29yZSI6IG51bGx9XX1dfSwgeyJtZXRhZGF0YSI6IHsiYWNjZXNzaW9uIjogIklQUjA1MDYyOSIsICJuYW1lIjogIlNURTIwL1NQUzEtcmVsYXRlZCBQcm9saW5lLUFsYW5pbmUtcmljaCBLaW5hc2UiLCAic291cmNlX2RhdGFiYXNlIjogImludGVycHJvIiwgInR5cGUiOiAiZmFtaWx5IiwgImludGVncmF0ZWQiOiBudWxsLCAibWVtYmVyX2RhdGFiYXNlcyI6IHsicGFudGhlciI6IHsiUFRIUjQ4MDEyIjogIlNURTIwL1NQUzEtcmVsYXRlZCBQcm9saW5lLUFsYW5pbmUtcmljaCBLaW5hc2UifX0sICJnb190ZXJtcyI6IG51bGx9LCAicHJvdGVpbnMiOiBbeyJhY2Nlc3Npb24iOiAibzk1NzQ3IiwgInByb3RlaW5fbGVuZ3RoIjogNTI3LCAic291cmNlX2RhdGFiYXNlIjogInJldmlld2VkIiwgIm9yZ2FuaXNtIjogIjk2MDYiLCAiaW5fYWxwaGFmb2xkIjogdHJ1ZSwgImluX2JmdmQiOiBmYWxzZSwgImVudHJ5X3Byb3RlaW5fbG9jYXRpb25zIjogW3siZnJhZ21lbnRzIjogW3sic3RhcnQiOiAxMCwgImVuZCI6IDUwNCwgImRjLXN0YXR1cyI6ICJDT05USU5VT1VTIn1dLCAicmVwcmVzZW50YXRpdmUiOiBmYWxzZSwgIm1vZGVsIjogbnVsbCwgInNjb3JlIjogbnVsbH1dfV19XX0=</lmp:GroundTruthEntry>
+    <lmp:GroundTruthMeta contentType="application/json" encoding="base64">eyJwZGJfaWRzIjogW10sICJwZGJfaWRfZm9yX2lmcCI6IG51bGwsICJzdGF0ZSI6ICJBcG9fSW5hY3RpdmUifQ==</lmp:GroundTruthMeta>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>full</lmp:Preset>
+      <lmp:Timestamp>2026-02-28T15:55:51.753405+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "O95747", "xref_total": 129, "xref_db_counts": {"GO": 28, "EMBL": 5, "InterPro": 5, "PDB": 4, "PDBsum": 4, "FunFam": 3, "Gene3D": 3, "PANTHER": 2, "Pfam": 2, "PROSITE": 2, "CCDS": 1, "RefSeq": 1, "AlphaFoldDB": 1, "SMR": 1, "BioGRID": 1, "CORUM": 1, "DIP": 1, "ELM": 1, "FunCoup": 1, "IntAct": 1, "MINT": 1, "STRING": 1, "BindingDB": 1, "ChEMBL": 1, "DrugBank": 1}, "xref_examples": {"EMBL": ["AB017642", "AB029024", "DQ201638", "BC008726", "AF087893"], "CCDS": ["CCDS2675.1"], "RefSeq": ["NP_005100.1"], "PDB": ["2V3S", "2VWI", "3DAK", "7OKW"], "PDBsum": ["2V3S", "2VWI", "3DAK", "7OKW"], "AlphaFoldDB": ["O95747"], "SMR": ["O95747"], "BioGRID": ["115269"], "CORUM": ["O95747"], "DIP": ["DIP-34977N"], "ELM": ["O95747"], "FunCoup": ["O95747"], "IntAct": ["O95747"], "MINT": ["O95747"], "STRING": ["9606.ENSP00000311713"], "BindingDB": ["O95747"], "ChEMBL": ["CHEMBL1163104"], "DrugBank": ["DB12010"], "DrugCentral": ["O95747"], "GlyGen": ["O95747"], "iPTMnet": ["O95747"], "PhosphoSitePlus": ["O95747"], "SwissPalm": ["O95747"], "BioMuta": ["OXSR1"], "jPOST": ["O95747"], "MassIVE": ["O95747"], "PaxDb": ["9606-ENSP00000311713"], "PeptideAtlas": ["O95747"], "ProteomicsDB": ["51019"], "Pumba": ["O95747"], "Antibodypedia": ["2101"], "DNASU": ["9943"], "Ensembl": ["ENST00000311806.8"], "GeneID": ["9943"], "KEGG": ["hsa:9943"], "MANE-Select": ["ENST00000311806.8"], "UCSC": ["uc003chy.4"], "AGR": ["HGNC:8508"], "ClinPGx": ["PA134973207"], "CTD": ["9943"], "DisGeNET": ["9943"], "GeneCards": ["OXSR1"], "HGNC": ["HGNC:8508"], "HPA": ["ENSG00000172939"], "MalaCards": ["OXSR1"], "MIM": ["604046"], "OpenTargets": ["ENSG00000172939"], "VEuPathDB": ["HostDB:ENSG00000172939"], "eggNOG": ["KOG0582"], "GeneTree": ["ENSGT00940000162134"], "HOGENOM": ["CLU_000288_111_1_1"], "InParanoid": ["O95747"], "OMA": ["KMRTANC"], "OrthoDB": ["8693905at2759"], "PAN-GO": ["O95747"], "PhylomeDB": ["O95747"], "PathwayCommons": ["O95747"], "SignaLink": ["O95747"], "SIGNOR": ["O95747"], "Agora": ["ENSG00000172939"], "BioGRID-ORCS": ["9943"], "ChiTaRS": ["OXSR1"], "EvolutionaryTrace": ["O95747"], "GeneWiki": ["OXSR1"], "GenomeRNAi": ["9943"], "Pharos": ["O95747"], "PRO": ["PR:O95747"], "Proteomes": ["UP000005640"], "RNAct": ["O95747"], "Bgee": ["ENSG00000172939"], "ExpressionAtlas": ["O95747"], "GO": ["GO:0005737", "GO:0005829", "GO:0070062", "GO:0005524", "GO:0042802", "GO:0099106", "GO:0000287", "GO:0019870"], "CDD": ["cd06610"], "FunFam": ["3.10.20.90:FF:000043", "3.30.200.20:FF:000114", "1.10.510.10:FF:000068"], "Gene3D": ["3.10.20.90", "3.30.200.20", "1.10.510.10"], "InterPro": ["IPR011009", "IPR024678", "IPR000719", "IPR017441", "IPR050629"], "PANTHER": ["PTHR48012:SF1", "PTHR48012"], "Pfam": ["PF12202", "PF00069"], "SMART": ["SM00220"], "SUPFAM": ["SSF56112"], "PROSITE": ["PS00107", "PS50011"]}, "generated_at": "2026-02-28T15:55:51.753630"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

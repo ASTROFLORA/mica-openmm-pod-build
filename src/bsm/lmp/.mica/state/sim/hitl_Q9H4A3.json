@@ -1,0 +1,31 @@
+{
+  "session_id": "hitl-q9h4a3",
+  "updated_at": "2026-05-03T02:06:44.708211+00:00",
+  "question": "question capture",
+  "layer": 2,
+  "awaiting": false,
+  "checkpoint": {
+    "id": "protocol_confirm",
+    "layer": 2,
+    "mandatory": false,
+    "resolved": true
+  },
+  "construct_proposals": [
+    {
+      "id": "option_1",
+      "label": "CCT focused",
+      "construct_start": 488,
+      "construct_end": 578,
+      "score": 0.87
+    },
+    {
+      "id": "option_2",
+      "label": "Kinase + CCT linker",
+      "construct_start": 208,
+      "construct_end": 578,
+      "score": 0.71
+    }
+  ],
+  "construct_selected": "option_1",
+  "protocol_confirmed": true
+}

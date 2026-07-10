@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="structural">
+  <lmp:Identity>
+    <lmp:BudoID>budo:SERINE_THREONINE-PROTEIN_KINASE_WNK2_HUMAN_v1</lmp:BudoID>
+    <lmp:PrimaryAccession>6FBK</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>6FBK</lmp:UniProtKBId>
+    <lmp:Organism>Homo sapiens</lmp:Organism>
+  </lmp:Identity>
+  <lmp:Geometry>
+    <lmp:Sequence length="98">SMAEDTGVRVELAEEDHGRKSTIALRLWVEDPKKLKGKPKDNGAIEFTFDLEKETPDEVAQEMIESGFFHESDVKIVAKSIRDRVALIQWRRERIWPA</lmp:Sequence>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=6FBK chain=A res_start=56 res_end=64 len=9"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=6FBK chain=A res_start=74 res_end=90 len=17"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=6FBK chain=A res_start=8 res_end=12 len=5 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=6FBK chain=A res_start=22 res_end=29 len=8 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=6FBK chain=A res_start=44 res_end=50 len=7 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=6FBK chain=P res_start=2 res_end=5 len=4 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=6FBK chain=P res_start=11 res_end=15 len=5 strand_id=1"/>
+    <lmp:Feature type="pdb:cell" description="pdb=6FBK a=78.047 b=78.047 c=37.736 alpha=90.0 beta=90.0 gamma=90.0"/>
+    <lmp:Feature type="pdb:resolution" description="pdb=6FBK resolution=1.743"/>
+    <lmp:Feature type="pdb:citation" description="pdb=6FBK title=Crystal structure of the human WNK2 CCT-like 1 domain in complex with a WNK1 RFXV peptide"/>
+    <lmp:Feature type="geometry:com" description="pdb=6FBK chain=A x=38.873 y=21.19 z=9.24"/>
+    <lmp:Feature type="geometry:rg" description="pdb=6FBK chain=A rg=12.375"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=6FBK chain=A min=[24.943, 1.788, -7.638] max=[53.766, 36.628, 27.533]"/>
+    <lmp:Feature type="geometry:com" description="pdb=6FBK chain=P x=37.712 y=33.713 z=4.671"/>
+    <lmp:Feature type="geometry:rg" description="pdb=6FBK chain=P rg=8.578"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=6FBK chain=P min=[24.092, 24.958, -5.047] max=[50.127, 40.381, 14.148]"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=6FBK chain_a=A chain_b=P com_distance=13.381"/>
+    <lmp:Chain id="A" sequence="SMAEDTGVRVELAEEDHGRKSTIALRLWVEDPKKLKGKPKDNGAIEFTFDLEKETPDEVAQEMIESGFFHESDVKIVAKSIRDRVALIQWRRERIWPA" state="Active"/>
+    <lmp:Chain id="P" sequence="LTQVVHSAGRRFIVSPVPESRLR" state="Active"/>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>structural</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T23:37:44.591045+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+  </lmp:Provenance>
+</lmp:LMP>

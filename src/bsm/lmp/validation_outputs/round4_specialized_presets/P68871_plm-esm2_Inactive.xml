@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="plm-esm2">
+  <lmp:Identity>
+    <lmp:BudoID>budo:HBB_HUMAN_v2</lmp:BudoID>
+    <lmp:PrimaryAccession>P68871</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>HBB_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606">Homo sapiens</lmp:Organism>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>A4GX73</lmp:Value>
+      <lmp:Value>B2ZUE0</lmp:Value>
+      <lmp:Value>P02023</lmp:Value>
+      <lmp:Value>Q13852</lmp:Value>
+      <lmp:Value>Q14481</lmp:Value>
+      <lmp:Value>Q14510</lmp:Value>
+      <lmp:Value>Q45KT0</lmp:Value>
+      <lmp:Value>Q549N7</lmp:Value>
+      <lmp:Value>Q6FI08</lmp:Value>
+      <lmp:Value>Q6R7N2</lmp:Value>
+      <lmp:Value>Q8IZI1</lmp:Value>
+      <lmp:Value>Q9BX96</lmp:Value>
+      <lmp:Value>Q9UCD6</lmp:Value>
+      <lmp:Value>Q9UCP8</lmp:Value>
+      <lmp:Value>Q9UCP9</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Semantics>
+    <lmp:ProteinName>Hemoglobin subunit beta</lmp:ProteinName>
+    <lmp:Genes>
+      <lmp:Value>HBB</lmp:Value>
+    </lmp:Genes>
+    <lmp:NeSyGrammar version="2.0" length="220">[DOM:Hemoglobin and related oxygen transporters (InterPro)]MV{Ac}HLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHC{NO}DKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH[/DOM]</lmp:NeSyGrammar>
+    <lmp:Comment type="FUNCTION">Involved in oxygen transport from the lung to the various peripheral tissues</lmp:Comment>
+    <lmp:Comment type="FUNCTION">LVV-hemorphin-7 potentiates the activity of bradykinin, causing a decrease in blood pressure</lmp:Comment>
+    <lmp:Comment type="FUNCTION">Functions as an endogenous inhibitor of enkephalin-degrading enzymes such as DPP3, and as a selective antagonist of the P2RX3 receptor which is involved in pain signaling, these properties implicate it as a regulator of pain and inflammation</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">Heterotetramer of two alpha chains and two beta chains in adult hemoglobin A (HbA). Heterotetramer of two zeta chains and two beta chains in hemoglobin Portland-2, detected in fetuses and neonates with homozygous alpha-thalassemia</lmp:Comment>
+    <lmp:Comment type="TISSUE SPECIFICITY">Red blood cells</lmp:Comment>
+    <lmp:Comment type="PTM">Glucose reacts non-enzymatically with the N-terminus of the beta chain to form a stable ketoamine linkage. This takes place slowly and continuously throughout the 120-day life span of the red blood cell. The rate of glycation is increased in patients with diabetes mellitus</lmp:Comment>
+    <lmp:Comment type="PTM">S-nitrosylated; a nitric oxide group is first bound to Fe(2+) and then transferred to Cys-94 to allow capture of O(2)</lmp:Comment>
+    <lmp:Comment type="PTM">Acetylated on Lys-60, Lys-83 and Lys-145 upon aspirin exposure</lmp:Comment>
+    <lmp:Comment type="POLYMORPHISM">Genetic variations in HBB are involved in resistance to malaria [MIM:611162]. Hemoglobin S (Hb S), which at homozygosity is responsible for sickle cell anemia, is not associated with any clinical abnormality when heterozygous. At heterozygosity, Hb S confers an increase in protection from life-threatening malaria. Additional variants conferring resistance against severe malaria are hemoglobin C (Hb C) and hemoglobin E (Hb E)</lmp:Comment>
+    <lmp:Comment type="MISCELLANEOUS">One molecule of 2,3-bisphosphoglycerate can bind to two beta chains per hemoglobin tetramer</lmp:Comment>
+    <lmp:Comment type="SIMILARITY">Belongs to the globin family</lmp:Comment>
+    <lmp:Comment type="CAUTION">The modification form of Leu-142 is subject of controversy and could be the artifactual result of sample handling</lmp:Comment>
+    <lmp:Comment type="CAUTION">It is unclear if hemoglobin Beckman (Hb Beckman) is defined by p.Ala136Glu or p.Ala136Asp. Hb Beckman has been originally identified by reverse phase-HPLC and tandem mass spectrometry, and has been reported as variant p.Ala136Glu (Ref.140). Subsequently, variant p.Ala136Asp has been reported based on HBB gene complete sequencing results (PubMed:19453576). Variant p.Ala136Asp has also been detected by mass spectrometry (PubMed:26209877). Although the name Hb Beckman is currently used for variant p.Ala136Asp, it cannot be ruled out that Hb Beckman is indeed variant p.Ala136Glu (PubMed:19453576)</lmp:Comment>
+  </lmp:Semantics>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>2</lmp:SequenceVersion>
+      <lmp:EntryVersion>217</lmp:EntryVersion>
+      <lmp:FirstPublicDate>1986-07-21</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>2007-01-23</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>plm-esm2</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:45:53.390007+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "P68871", "xref_total": 997, "xref_db_counts": {"PDB": 334, "PDBsum": 334, "EMBL": 104, "EMDB": 37, "GO": 29, "Orphanet": 24, "DrugBank": 21, "Reactome": 10, "MIM": 6, "InterPro": 5, "ComplexPortal": 3, "REPRODUCTION-2DPAGE": 2, "Ensembl": 2, "PANTHER": 2, "CCDS": 1, "PIR": 1, "RefSeq": 1, "AlphaFoldDB": 1, "BMRB": 1, "SASBDB": 1, "SMR": 1, "BioGRID": 1, "CORUM": 1, "DIP": 1, "FunCoup": 1}, "xref_examples": {"EMBL": ["M25079", "V00499", "DQ126270", "DQ126271", "DQ126272", "DQ126273", "DQ126274", "DQ126275"], "CCDS": ["CCDS7753.1"], "PIR": ["A53136"], "RefSeq": ["NP_000509.1"], "PDB": ["1A00", "1A01", "1A0U", "1A0Z", "1A3N", "1A3O", "1ABW", "1ABY"], "PDBsum": ["1A00", "1A01", "1A0U", "1A0Z", "1A3N", "1A3O", "1ABW", "1ABY"], "AlphaFoldDB": ["P68871"], "BMRB": ["P68871"], "EMDB": ["EMD-0407", "EMD-0408", "EMD-13319", "EMD-13320", "EMD-13325", "EMD-31915", "EMD-33189", "EMD-37574"], "SASBDB": ["P68871"], "SMR": ["P68871"], "BioGRID": ["109293"], "ComplexPortal": ["CPX-2158", "CPX-2929", "CPX-2936"], "CORUM": ["P68871"], "DIP": ["DIP-35526N"], "FunCoup": ["P68871"], "IntAct": ["P68871"], "MINT": ["P68871"], "STRING": ["9606.ENSP00000494175"], "BindingDB": ["P68871"], "ChEMBL": ["CHEMBL4331"], "DrugBank": ["DB08262", "DB07427", "DB08077", "DB07428", "DB02126", "DB09130", "DB08486", "DB09147"], "DrugCentral": ["P68871"], "TCDB": ["1.A.107.1.2"], "CarbonylDB": ["P68871"], "GlyConnect": ["2875"], "GlyCosmos": ["P68871"], "GlyGen": ["P68871"], "iPTMnet": ["P68871"], "MetOSite": ["P68871"], "PhosphoSitePlus": ["P68871"], "BioMuta": ["HBB"], "DMDM": ["56749856"], "REPRODUCTION-2DPAGE": ["IPI00654755", "P68871"], "CPTAC": ["CPTAC-5884"], "jPOST": ["P68871"], "MassIVE": ["P68871"], "PaxDb": ["9606-ENSP00000333994"], "PeptideAtlas": ["P68871"], "PRIDE": ["P68871"], "ProteomicsDB": ["57543"], "TopDownProteomics": ["P68871"], "ABCD": ["P68871"], "Antibodypedia": ["34986"], "DNASU": ["3043"], "Ensembl": ["ENST00000335295.4", "ENST00000647020.1"], "GeneID": ["3043"], "KEGG": ["hsa:3043"], "MANE-Select": ["ENST00000335295.4"], "UCSC": ["uc001mae.2"], "AGR": ["HGNC:4827"], "CIViC": ["3043"], "ClinPGx": ["PA29202"], "CTD": ["3043"], "DisGeNET": ["3043"], "GeneCards": ["HBB"], "GeneReviews": ["HBB"], "HGNC": ["HGNC:4827"], "HPA": ["ENSG00000244734"], "MalaCards": ["HBB"], "MIM": ["140700", "141900", "603902", "603903", "611162", "613985"], "OpenTargets": ["ENSG00000244734"], "Orphanet": ["247511", "231222", "231214", "231237", "2132", "231242", "90039", "2133"], "VEuPathDB": ["HostDB:ENSG00000244734"], "eggNOG": ["KOG3378"], "GeneTree": ["ENSGT00940000163476"], "HOGENOM": ["CLU_003827_10_0_1"], "InParanoid": ["P68871"], "OMA": ["HAIVSIW"], "OrthoDB": ["9886081at2759"], "PAN-GO": ["P68871"], "PhylomeDB": ["P68871"], "PathwayCommons": ["P68871"], "Reactome": ["R-HSA-1237044", "R-HSA-1247673", "R-HSA-2168880", "R-HSA-6798695", "R-HSA-9613829", "R-HSA-9615710", "R-HSA-9707564", "R-HSA-9707616"], "SignaLink": ["P68871"], "SIGNOR": ["P68871"], "Agora": ["ENSG00000244734"], "BioGRID-ORCS": ["3043"], "ChiTaRS": ["HBB"], "EvolutionaryTrace": ["P68871"], "GeneWiki": ["HBB"], "GenomeRNAi": ["3043"], "Pharos": ["P68871"], "PRO": ["PR:P68871"], "Proteomes": ["UP000005640"], "RNAct": ["P68871"], "Bgee": ["ENSG00000244734"], "ExpressionAtlas": ["P68871"], "GO": ["GO:0072562", "GO:0005829", "GO:0071682", "GO:0070062", "GO:0005576", "GO:0005615", "GO:1904813", "GO:0031838"], "CDD": ["cd08925"], "FunFam": ["1.10.490.10:FF:000001"], "Gene3D": ["1.10.490.10"], "InterPro": ["IPR000971", "IPR009050", "IPR012292", "IPR002337", "IPR050056"], "PANTHER": ["PTHR11442", "PTHR11442:SF42"], "Pfam": ["PF00042"], "PRINTS": ["PR00814"], "SUPFAM": ["SSF46458"], "PROSITE": ["PS01033"]}, "generated_at": "2026-02-25T00:45:53.390910"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

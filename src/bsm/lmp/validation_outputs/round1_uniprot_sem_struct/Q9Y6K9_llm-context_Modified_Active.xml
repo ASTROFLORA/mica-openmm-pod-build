@@ -1,0 +1,1987 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="llm-context">
+  <lmp:Identity>
+    <lmp:BudoID>budo:NEMO_HUMAN_v2</lmp:BudoID>
+    <lmp:PrimaryAccession>Q9Y6K9</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>NEMO_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606">Homo sapiens</lmp:Organism>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>Q7LBY6</lmp:Value>
+      <lmp:Value>Q7Z7F1</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Semantics>
+    <lmp:ProteinName>NF-kappa-B essential modulator</lmp:ProteinName>
+    <lmp:Genes>
+      <lmp:Value>NEMO</lmp:Value>
+      <lmp:Value>IKBKG</lmp:Value>
+    </lmp:Genes>
+    <lmp:Comment type="FUNCTION">Regulatory subunit of the IKK core complex which phosphorylates inhibitors of NF-kappa-B thus leading to the dissociation of the inhibitor/NF-kappa-B complex and ultimately the degradation of the inhibitor (PubMed:14695475, PubMed:20724660, PubMed:21518757, PubMed:9751060). Its binding to scaffolding polyubiquitin plays a key role in IKK activation by multiple signaling receptor pathways (PubMed:16547522, PubMed:18287044, PubMed:19033441, PubMed:19185524, PubMed:21606507, PubMed:27777308, PubMed:33567255). Can recognize and bind both 'Lys-63'-linked and linear polyubiquitin upon cell stimulation, with a much higher affinity for linear polyubiquitin (PubMed:16547522, PubMed:18287044, PubMed:19033441, PubMed:19185524, PubMed:21606507, PubMed:27777308). Could be implicated in NF-kappa-B-mediated protection from cytokine toxicity. Essential for viral activation of IRF3 (PubMed:19854139). Involved in TLR3- and IFIH1-mediated antiviral innate response; this function requires 'Lys-27'-linked polyubiquitination (PubMed:20724660)</lmp:Comment>
+    <lmp:Comment type="FUNCTION">(Microbial infection) Also considered to be a mediator for HTLV-1 Tax oncoprotein activation of NF-kappa-B</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">Homodimer; disulfide-linked (PubMed:18164680). Component of the I-kappa-B-kinase (IKK) core complex consisting of CHUK, IKBKB and IKBKG; probably four alpha/CHUK-beta/IKBKB dimers are associated with four gamma/IKBKG subunits (PubMed:11080499, PubMed:17977820, PubMed:18462684, PubMed:32935379, PubMed:9751060, PubMed:9891086). The IKK core complex seems to associate with regulatory or adapter proteins to form a IKK-signalosome holo-complex (PubMed:11080499, PubMed:9751060, PubMed:9891086). The IKK complex associates with TERF2IP/RAP1, leading to promote IKK-mediated phosphorylation of RELA/p65 (By similarity). Part of a complex composed of NCOA2, NCOA3, CHUK/IKKA, IKBKB, IKBKG and CREBBP (PubMed:11971985). Interacts with COPS3, CYLD, NALP2, TRPC4AP and PIDD1 (PubMed:11418127, PubMed:12917691, PubMed:15456791, PubMed:16360037). Interacts with ATM; the complex is exported from the nucleus (PubMed:16497931). Interacts with TRAF6 (PubMed:17728323). Interacts with IKBKE (PubMed:23453969). Interacts with TANK; the interaction is enhanced by IKBKE and TBK1 (PubMed:12133833). Part of a ternary complex consisting of TANK, IKBKB and IKBKG (PubMed:12133833). Interacts with ZFAND5 (PubMed:14754897). Interacts with RIPK2 (PubMed:18079694). Interacts with TNIP1 and TNFAIP3; TNIP1 facilitates the TNFAIP3-mediated de-ubiquitination of IKBKG (PubMed:11389905, PubMed:22099304). Interacts with TNFAIP3; the interaction is induced by TNF stimulation and by polyubiquitin (PubMed:11389905, PubMed:22099304). Binds (via UBAN region) polyubiquitin; binds both 'Lys-63'-linked and linear polyubiquitin, with higher affinity for linear ubiquitin (PubMed:16547522, PubMed:19033441, PubMed:19185524, PubMed:21606507). Interacts with NLRP10 (PubMed:22672233). Interacts with TANK; this interaction increases in response to DNA damage (PubMed:25861989). Interacts with USP10; this interaction increases in response to DNA damage (PubMed:25861989). Interacts with ZC3H12A; this interaction increases in response to DNA damage (PubMed:25861989). Interacts with IFIT5; the interaction synergizes the recruitment of IKK to MAP3K7 and enhances IKK phosphorylation (PubMed:26334375). Interacts with TRIM29; this interaction induces IKBKG/NEMO ubiquitination and proteolytic degradation (PubMed:27695001). Interacts with TRIM13; this interaction leads to IKBKG/NEMO ubiquitination (PubMed:25152375). Interacts with ARFIP2 (PubMed:26296658). Interacts with RIPK1 (By similarity). Interacts with (ubiquitinated) BCL10; interaction with polyubiquitinated BCL10 via both 'Lys-63'-linked and linear ubiquitin is required for TCR-induced NF-kappa-B activation (PubMed:18287044, PubMed:27777308). Interacts with MARCHF2; during the late stages of macrophage viral and bacterial infection; the interaction leads to ubiquitination and degradation of IKBKG/NEMO (PubMed:32935379)</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with Molluscum contagiosum virus protein MC005; this interaction inhibits NF-kappa-B activation</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with HTLV-1 Tax oncoprotein; the interaction activates IKBKG</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with Shigella flexneri ipah9.8; the interaction promotes TNIP1-dependent 'Lys-27'-linked polyubiquitination of IKBKG which perturbs NF-kappa-B activation during bacterial infection</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with SARS coronavirus-2/SARS-CoV-2 virus protein ORF9B (via N-terminus); the interaction inhibits polyubiquitination through 'Lys-63' and NF-kappa-B activation</lmp:Comment>
+    <lmp:Comment type="TISSUE SPECIFICITY">Heart, brain, placenta, lung, liver, skeletal muscle, kidney and pancreas</lmp:Comment>
+    <lmp:Comment type="DOMAIN">The leucine-zipper domain and the CCHC NOA-type zinc-fingers constitute the UBAN region and are essential for polyubiquitin binding and for the activation of IRF3</lmp:Comment>
+    <lmp:Comment type="PTM">Phosphorylation at Ser-68 attenuates aminoterminal homodimerization</lmp:Comment>
+    <lmp:Comment type="PTM">Polyubiquitinated on Lys-285 via 'Lys-63'-linked ubiquitin; the ubiquitination is mediated downstream of NOD2 and RIPK2 and probably plays a role in signaling by facilitating interactions with ubiquitin domain-containing proteins and activates the NF-kappa-B pathway (PubMed:15620648, PubMed:17562858, PubMed:19136968). Polyubiquitinated on Lys-285 and Lys-399 through 'Lys-63'-linked ubiquitin; the ubiquitination is mediated by BCL10, MALT1 and TRAF6 and probably plays a role in signaling by facilitating interactions with ubiquitin domain-containing proteins and activates the NF-kappa-B pathway (PubMed:14695475, PubMed:17562858, PubMed:19136968). Monoubiquitinated on Lys-277 and Lys-309; promotes nuclear export (PubMed:14651848). Polyubiquitinated through 'Lys-27' by TRIM23; involved in antiviral innate and inflammatory responses (PubMed:20724660). Linear polyubiquitinated on Lys-111, Lys-143, Lys-226, Lys-246, Lys-264, Lys-277, Lys-285, Lys-292, Lys-302, Lys-309 and Lys-326; the head-to-tail polyubiquitination is mediated by the LUBAC complex and plays a key role in NF-kappa-B activation (PubMed:21455181). Deubiquitinated by USP10 in a TANK-dependent and -independent manner, leading to the negative regulation of NF-kappa-B signaling upon DNA damage (PubMed:25861989). Ubiquitinated at Lys-326 by MARCHF2 following bacterial and viral infection which leads to its degradation (PubMed:32935379). Polyubiquitinated via 'Lys-29'-linked ubiquitin; leading to lysosomal degradation (PubMed:21518757)</lmp:Comment>
+    <lmp:Comment type="PTM">Sumoylated on Lys-277 and Lys-309 with SUMO1; the modification results in phosphorylation of Ser-85 by ATM leading to a replacement of the sumoylation by mono-ubiquitination on these residues</lmp:Comment>
+    <lmp:Comment type="PTM">Neddylated by TRIM40, resulting in stabilization of NFKBIA and down-regulation of NF-kappa-B activity</lmp:Comment>
+    <lmp:Comment type="PTM">(Microbial infection) Cleaved by hepatitis A virus (HAV) protease 3C allowing the virus to disrupt the host innate immune signaling</lmp:Comment>
+    <lmp:Comment type="PTM">(Microbial infection) Deubiquitinated by Epstein-Barr virus BPLF1 on both 'Lys-48' and 'Lys-63'-linked ubiquitin chains; leading to NF-kappa-B signaling inhibition</lmp:Comment>
+    <lmp:Comment type="PTM">(Microbial infection) Polyubiquitinated on Lys-309 and Lys-321 via 'Lys-27'-linked ubiquitin by Shigella flexneri E3 ubiquitin-protein ligase ipah9.8, leading to its degradation by the proteasome</lmp:Comment>
+    <lmp:Comment type="PTM">(Microbial infection) Polyubiquitination through 'Lys-63' is interrupted by interaction with SARS coronavirus-2/SARS-CoV-2 virus protein ORF9B which inhibits the NF-kappa-B pathway</lmp:Comment>
+  </lmp:Semantics>
+  <lmp:KnowledgeGraph>
+    <lmp:CrossReference db="EMBL" id="AF062089">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAD12183.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="AF091453">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAD38081.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="AF074382">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAC36330.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="AJ271718">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">CAB93146.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="AF261086">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAF99679.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="AY114157">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAM44073.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="AK000593">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">-</lmp:Property>
+      <lmp:Property name="Status">NOT_ANNOTATED_CDS</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="BT019621">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAV38427.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="AF277315">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAL27012.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">Genomic_DNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="BC000299">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAH00299.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="BC012114">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAH12114.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="BC046922">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAH46922.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EMBL" id="BC050612">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">AAH50612.1</lmp:Property>
+      <lmp:Property name="Status">-</lmp:Property>
+      <lmp:Property name="MoleculeType">mRNA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CCDS" id="CCDS14757.1" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CCDS" id="CCDS48196.1" isoformId="Q9Y6K9-2">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CCDS" id="CCDS48197.1" isoformId="Q9Y6K9-3">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RefSeq" id="NP_001093326.2" isoformId="Q9Y6K9-2">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NucleotideSequenceId">NM_001099856.6</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RefSeq" id="NP_001093327.1" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NucleotideSequenceId">NM_001099857.5</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RefSeq" id="NP_001138727.1" isoformId="Q9Y6K9-3">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NucleotideSequenceId">NM_001145255.4</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RefSeq" id="NP_001308325.1" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NucleotideSequenceId">NM_001321396.3</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RefSeq" id="NP_001308326.1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NucleotideSequenceId">NM_001321397.1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RefSeq" id="NP_001364241.1" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NucleotideSequenceId">NM_001377312.1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RefSeq" id="NP_003630.1" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NucleotideSequenceId">NM_003639.4</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2JVX">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">NMR</lmp:Property>
+      <lmp:Property name="Resolution">-</lmp:Property>
+      <lmp:Property name="Chains">A=394-419</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="2JVY">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">NMR</lmp:Property>
+      <lmp:Property name="Resolution">-</lmp:Property>
+      <lmp:Property name="Chains">A=394-419</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3BRT">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.25 A</lmp:Property>
+      <lmp:Property name="Chains">B/D=44-111</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3BRV">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.20 A</lmp:Property>
+      <lmp:Property name="Chains">B/D=44-111</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3CL3">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">3.20 A</lmp:Property>
+      <lmp:Property name="Chains">D/E=150-272</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="3FX0">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">3.20 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=246-337</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="4BWN">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.27 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=258-344</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="5AAY">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">NMR</lmp:Property>
+      <lmp:Property name="Resolution">-</lmp:Property>
+      <lmp:Property name="Chains">A=392-419</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="5LDE">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">3.38 A</lmp:Property>
+      <lmp:Property name="Chains">R/S=230-249</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="6MI3">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.78 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=38-129</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="6MI4">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.50 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=38-129</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="6XX0">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.60 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=258-344</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="6YEK">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">3.20 A</lmp:Property>
+      <lmp:Property name="Chains">A/B=258-344</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="7T2U">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">2.10 A</lmp:Property>
+      <lmp:Property name="Chains">E/F=226-235</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="7TV4">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">4.20 A</lmp:Property>
+      <lmp:Property name="Chains">B/D=257-346</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="8U7C">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">1.44 A</lmp:Property>
+      <lmp:Property name="Chains">A/B/C/D=51-113</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDB" id="9AZJ">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="relation">HAS_STRUCTURE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Method">X-ray</lmp:Property>
+      <lmp:Property name="Resolution">3.32 A</lmp:Property>
+      <lmp:Property name="Chains">A/B/C/D=257-364</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2JVX">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="2JVY">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3BRT">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3BRV">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3CL3">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="3FX0">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="4BWN">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="5AAY">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="5LDE">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="6MI3">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="6MI4">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="6XX0">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="6YEK">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="7T2U">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="7TV4">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="8U7C">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PDBsum" id="9AZJ">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="AlphaFoldDB" id="Q9Y6K9">
+      <lmp:Property name="category">structure</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BMRB" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SMR" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BioGRID" id="114089">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Interactions">463</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ComplexPortal" id="CPX-3269">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">IkappaB kinase complex</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CORUM" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DIP" id="DIP-27528N">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunCoup" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Number of interactors">2292</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MINT" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="STRING" id="9606.ENSP00000483825">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BindingDB" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ChEMBL" id="CHEMBL4967">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB04998">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">AGRO100</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DrugBank" id="DB05289">
+      <lmp:Property name="category">chemistry</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GenericName">Tarenflurbil</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MoonDB" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Type">Predicted</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GlyGen" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="glycosylation">1 site, 1 O-linked glycan (1 site)</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="iPTMnet" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PhosphoSitePlus" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BioMuta" id="IKBKG">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DMDM" id="6685695">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CPTAC" id="CPTAC-1044">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CPTAC" id="CPTAC-806">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="jPOST" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MassIVE" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PaxDb" id="9606-ENSP00000483825">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PeptideAtlas" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ProteomicsDB" id="86716" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ProteomicsDB" id="86717" isoformId="Q9Y6K9-2">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ProteomicsDB" id="86718" isoformId="Q9Y6K9-3">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pumba" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Antibodypedia" id="73338">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="antibodies">1266 antibodies from 48 providers</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DNASU" id="8517">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Ensembl" id="ENST00000422680.6" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000390368.3</lmp:Property>
+      <lmp:Property name="GeneId">ENSG00000269335.8</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Ensembl" id="ENST00000440286.6" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000394934.2</lmp:Property>
+      <lmp:Property name="GeneId">ENSG00000269335.8</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Ensembl" id="ENST00000445622.6" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000395205.2</lmp:Property>
+      <lmp:Property name="GeneId">ENSG00000269335.8</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Ensembl" id="ENST00000594239.6" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000471166.1</lmp:Property>
+      <lmp:Property name="GeneId">ENSG00000269335.8</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Ensembl" id="ENST00000611071.4" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000479662.1</lmp:Property>
+      <lmp:Property name="GeneId">ENSG00000269335.8</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Ensembl" id="ENST00000611176.4" isoformId="Q9Y6K9-3">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000478616.1</lmp:Property>
+      <lmp:Property name="GeneId">ENSG00000269335.8</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Ensembl" id="ENST00000618670.4" isoformId="Q9Y6K9-2">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000483825.1</lmp:Property>
+      <lmp:Property name="GeneId">ENSG00000269335.8</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneID" id="8517">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="KEGG" id="hsa:8517">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MANE-Select" id="ENST00000594239.6">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ProteinId">ENSP00000471166.1</lmp:Property>
+      <lmp:Property name="RefSeqNucleotideId">NM_001099857.5</lmp:Property>
+      <lmp:Property name="RefSeqProteinId">NP_001093327.1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="UCSC" id="uc033fbu.1" isoformId="Q9Y6K9-1">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="OrganismName">human</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="AGR" id="HGNC:5961">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ClinPGx" id="PA29777">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CTD" id="8517">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DisGeNET" id="8517">
+      <lmp:Property name="category">disease</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneCards" id="IKBKG">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneReviews" id="IKBKG">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="HGNC" id="HGNC:5961">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GeneName">IKBKG</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="HPA" id="ENSG00000269335">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ExpressionPatterns">Low tissue specificity</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MalaCards" id="IKBKG">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MIM" id="300248">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Type">gene</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MIM" id="300291">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Type">phenotype</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MIM" id="300636">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Type">phenotype</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MIM" id="301081">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Type">phenotype</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="MIM" id="308300">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Type">phenotype</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="OpenTargets" id="ENSG00000269335">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Orphanet" id="98813">
+      <lmp:Property name="category">disease</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Disease">Hypohidrotic ectodermal dysplasia with immunodeficiency</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Orphanet" id="69088">
+      <lmp:Property name="category">disease</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Disease">Hypohidrotic ectodermal dysplasia-immunodeficiency-osteopetrosis-lymphedema syndrome</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Orphanet" id="464">
+      <lmp:Property name="category">disease</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Disease">Incontinentia pigmenti</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Orphanet" id="699605">
+      <lmp:Property name="category">disease</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Disease">NEMO deleted exon 5 autoinflammatory syndrome</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="VEuPathDB" id="HostDB:ENSG00000269335">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="eggNOG" id="ENOG502R4ZD">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ToxonomicScope">Eukaryota</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneTree" id="ENSGT00530000063808">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InParanoid" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="OMA" id="VAMRKNF">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Fingerprint">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="OrthoDB" id="6343844at2759">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PAN-GO" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Number of GO annotations">5 GO annotations based on evolutionary models</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PhylomeDB" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PathwayCommons" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-1169091">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Activation of NF-kappaB in B cells</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-1236974">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">ER-Phagosome pathway</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-168638">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">NOD1/2 Signaling Pathway</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-168927">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">TICAM1, RIP1-mediated IKK complex recruitment</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-1810476">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">RIP-mediated NFkB activation via ZBP1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-202424">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Downstream TCR signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-2871837">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">FCERI mediated NF-kB activation</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-445989">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">TAK1-dependent IKK and NF-kappa-B activation</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-450302">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">activated TAK1 mediates p38 MAPK activation</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-450321">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">JNK (c-Jun kinases) phosphorylation and activation mediated by activated human TAK1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-4755510">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">SUMOylation of immune response proteins</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-5357905">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Regulation of TNFR1 signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-5357956">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">TNFR1-induced NF-kappa-B signaling pathway</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-5602636">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">IKBKB deficiency causes SCID</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-5603027">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">IKBKG deficiency causes anhidrotic ectodermal dysplasia with immunodeficiency (EDA-ID) (via TLR)</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-5603029">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">IkBA variant leads to EDA-ID</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-5607764">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">CLEC7A (Dectin-1) signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-5684264">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">MAP3K8 (TPL2)-dependent MAPK1/3 activation</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-5689880">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Ub-specific processing proteases</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-5689896">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Ovarian tumor domain proteases</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-9020702">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Interleukin-1 signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-933542">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">TRAF6 mediated NF-kB activation</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-933543">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">NF-kB activation through FADD/RIP-1 pathway mediated by caspase-8 and -10</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-937039">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">IRAK1 recruits IKK complex</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-937041">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">IKK complex recruitment mediated by RIP1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-9705671">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">SARS-CoV-2 activates/modulates innate and adaptive immune responses</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-975144">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">IRAK1 recruits IKK complex upon TLR7/8 or 9 stimulation</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-9758274">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Regulation of NF-kappa B signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-9833482">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">PKR-mediated signaling</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-9860276">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">SLC15A4:TASL-dependent IRF5 activation</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-9860927">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Turbulent (oscillatory, disturbed) flow shear stress activates signaling by PIEZO1 and integrins in endothelial cells</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Reactome" id="R-HSA-9909505">
+      <lmp:Property name="category">pathway</lmp:Property>
+      <lmp:Property name="relation">HAS_KNOWLEDGE</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="PathwayName">Modulation of host responses by IFN-stimulated genes</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SABIO-RK" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SignaLink" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="SIGNOR" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Agora" id="ENSG00000269335">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="NominatedTarget">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="BioGRID-ORCS" id="8517">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="hits">75 hits in 782 CRISPR screens</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="CD-CODE" id="8C2F96ED">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Centrosome</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ChiTaRS" id="IKBKG">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="OrganismName">human</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="EvolutionaryTrace" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GeneWiki" id="IKBKG">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GenomeRNAi" id="8517">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pharos" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="DevelopmentLevel">Tbio</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PRO" id="PR:Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Proteomes" id="UP000005640">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Component">Chromosome X</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="RNAct" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="moleculeType">protein</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Bgee" id="ENSG00000269335">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ExpressionPatterns">Expressed in granulocyte and 95 other cell types or tissues</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="ExpressionAtlas" id="Q9Y6K9">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="ExpressionPatterns">baseline and differential</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005737">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:cytoplasm</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005829">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:cytosol</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:HPA</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0008385">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:IkappaB kinase complex</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:MGI</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0072686">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:mitotic spindle</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005654">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:nucleoplasm</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:Reactome</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0005634">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:nucleus</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0032991">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:protein-containing complex</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0000922">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:spindle pole</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0000151">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">C:ubiquitin ligase complex</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:ParkinsonsUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0042802">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:identical protein binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:IntAct</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0070530">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:K63-linked polyubiquitin modification-dependent protein binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1990450">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:linear polyubiquitin binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0031593">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:polyubiquitin modification-dependent protein binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProt</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0019904">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:protein domain specific binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0046982">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:protein heterodimerization activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0042803">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:protein homodimerization activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0035591">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:signaling adaptor activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProt</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1990459">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:transferrin receptor binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:ARUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0031625">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:ubiquitin protein ligase binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IPI:ParkinsonsUK-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0008270">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">F:zinc ion binding</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:UniProtKB-KW</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0043276">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:anoikis</lmp:Property>
+      <lmp:Property name="GoEvidenceType">ISS:BHF-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006915">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:apoptotic process</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:ProtInc</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0001782">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:B cell homeostasis</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0007249">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:canonical NF-kappaB signal transduction</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:ComplexPortal</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0042742">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:defense response to bacterium</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProt</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006974">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:DNA damage response</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0051650">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:establishment of vesicle localization</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IMP:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006955">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:immune response</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:ProtInc</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0006954">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:inflammatory response</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0045087">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:innate immune response</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0043124">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:negative regulation of canonical NF-kappaB signal transduction</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:1902236">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:negative regulation of endoplasmic reticulum stress-induced intrinsic apoptotic signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0043123">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of canonical NF-kappaB signal transduction</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0010628">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of gene expression</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IEA:Ensembl</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0016239">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of macroautophagy</lmp:Property>
+      <lmp:Property name="GoEvidenceType">ISS:BHF-UCL</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0051092">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of NF-kappaB transcription factor activity</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0050862">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of T cell receptor signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0045944">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of transcription by RNA polymerase II</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:2000060">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:positive regulation of ubiquitin-dependent protein catabolic process</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:UniProt</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0065003">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:protein-containing complex assembly</lmp:Property>
+      <lmp:Property name="GoEvidenceType">IDA:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0009615">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:response to virus</lmp:Property>
+      <lmp:Property name="GoEvidenceType">TAS:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="GO" id="GO:0050852">
+      <lmp:Property name="category">function</lmp:Property>
+      <lmp:Property name="relation">HAS_FUNCTION</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="GoTerm">P:T cell receptor signaling pathway</lmp:Property>
+      <lmp:Property name="GoEvidenceType">NAS:UniProtKB</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="DisProt" id="DP02269">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunFam" id="1.20.5.390:FF:000002">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">NF-kappa-B essential modulator isoform X1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunFam" id="1.20.5.390:FF:000003">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">NF-kappa-B essential modulator isoform X1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="FunFam" id="1.20.5.990:FF:000003">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">NF-kappa-B essential modulator isoform X1</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Gene3D" id="1.20.5.390">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">L1 transposable element, trimerization domain</lmp:Property>
+      <lmp:Property name="MatchStatus">2</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Gene3D" id="1.20.5.990">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Nemo cc2-lz domain - 1d5 darpin complex</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="IDEAL" id="IID00745">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="Description">-</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR032419">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">CC2-LZ_dom</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR021063">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">NEMO_N</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR034735">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">NEMO_ZF</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="InterPro" id="IPR051301">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">Optineurin/NFkB_EssMod</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PANTHER" id="PTHR31553">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">NF-KAPPA-B ESSENTIAL MODULATOR</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PANTHER" id="PTHR31553:SF3">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">NF-KAPPA-B ESSENTIAL MODULATOR</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pfam" id="PF16516">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">CC2-LZ</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pfam" id="PF11577">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">NEMO</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="Pfam" id="PF18414">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">zf_C2H2_10</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:CrossReference db="PROSITE" id="PS51801">
+      <lmp:Property name="category">other</lmp:Property>
+      <lmp:Property name="source">uniprot</lmp:Property>
+      <lmp:Property name="EntryName">ZF_CCHC_NOA</lmp:Property>
+      <lmp:Property name="MatchStatus">1</lmp:Property>
+    </lmp:CrossReference>
+    <lmp:Reference number="1">
+      <lmp:Citation>Identification of a cell protein (FIP-3) as a modulator of NF-kappaB activity and as a target of an adenovirus inhibitor of tumor necrosis factor alpha-induced apoptosis.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">9927690</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1073/pnas.96.3.1042</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="2">
+      <lmp:Citation>Isolation of full-length cDNA and chromosomal localization of human NF-kappaB modulator NEMO to Xq28.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">10087442</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1007/bf02256442</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="3">
+      <lmp:Citation>IKK-gamma is an essential regulatory subunit of the IkappaB kinase complex.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">9751060</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/26261</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="4">
+      <lmp:Citation>Genomic rearrangement in NEMO impairs NF-kappaB activation and is a cause of incontinentia pigmenti.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">10839543</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/35013114</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="5">
+      <lmp:Citation>cDNA cloning by amplification of circularized first strand cDNAs reveals non-IRE-regulated iron-responsive mRNAs.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">10944468</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1006/bbrc.2000.3282</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="6">
+      <lmp:Citation>Ikbkg gene modulates the herpes virus susceptibility in mice.</lmp:Citation>
+    </lmp:Reference>
+    <lmp:Reference number="7">
+      <lmp:Citation>Complete sequencing and characterization of 21,243 full-length human cDNAs.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">14702039</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/ng1285</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="8">
+      <lmp:Citation>Cloning of human full-length CDSs in BD Creator(TM) system donor vector.</lmp:Citation>
+    </lmp:Reference>
+    <lmp:Reference number="9">
+      <lmp:Citation>The DNA sequence of the human X chromosome.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">15772651</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/nature03440</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="10">
+      <lmp:Citation>The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).</lmp:Citation>
+      <lmp:CitationXref name="PubMed">15489334</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1101/gr.2596504</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="11">
+      <lmp:Citation>IkappaB kinase (IKK)-associated protein 1, a common component of the heterogeneous IKK complex.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">9891086</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/mcb.19.2.1526</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="12">
+      <lmp:Citation>Role of adapter function in oncoprotein-mediated activation of NF-kappaB: human T-cell leukemia virus type I Tax interacts directly with IkappaB kinase gamma.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">10364167</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.274.25.17402</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="13">
+      <lmp:Citation>Activation of IKKalpha and IKKbeta through their fusion with HTLV-I tax protein.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11064457</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/sj.onc.1203894</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="14">
+      <lmp:Citation>Functional redundancy of the zinc fingers of A20 for inhibition of NF-kappaB activation and protein-protein interactions.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11389905</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/s0014-5793(01)02504-2</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="15">
+      <lmp:Citation>CSN3 interacts with IKKgamma and inhibits TNF- but not IL-1-induced NF-kappaB activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11418127</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/s0014-5793(01)02535-2</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="16">
+      <lmp:Citation>Role of ikkgamma/nemo in assembly of the IkappaB kinase complex.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11080499</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m008353200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="17">
+      <lmp:Citation>Association of the adaptor TANK with the I kappa B kinase (IKK) regulator NEMO connects IKK complexes with IKK epsilon and TBK1 kinases.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">12133833</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m205069200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="18">
+      <lmp:Citation>Regulation of SRC-3 (pCIP/ACTR/AIB-1/RAC-3/TRAM-1) coactivator activity by I kappa B kinase.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11971985</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/mcb.22.10.3549-3561.2002</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="19">
+      <lmp:Citation>Sequential modification of NEMO/IKKgamma by SUMO-1 and ubiquitin mediates NF-kappaB activation by genotoxic stress.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">14651848</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/s0092-8674(03)00895-x</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="20">
+      <lmp:Citation>In vivo identification of inducible phosphoacceptors in the IKKgamma/NEMO subunit of human IkappaB kinase.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">12657630</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m301705200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="21">
+      <lmp:Citation>Tetrameric oligomerization of IkappaB kinase gamma (IKKgamma) is obligatory for IKK complex activity and NF-kappaB activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">12612076</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/mcb.23.6.2029-2041.2003</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="22">
+      <lmp:Citation>The tumour suppressor CYLD negatively regulates NF-kappaB signalling by deubiquitination.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">12917691</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/nature01802</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="23">
+      <lmp:Citation>The Crohn's disease protein, NOD2, requires RIP2 in order to induce ubiquitinylation of a novel site on NEMO.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">15620648</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.cub.2004.12.032</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="24">
+      <lmp:Citation>ZNF216 is an A20-like and IkappaB kinase gamma-interacting inhibitor of NFkappaB activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">14754897</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m309491200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="25">
+      <lmp:Citation>PAN1/NALP2/PYPAF2, an inducible inflammatory mediator that regulates NF-kappaB and caspase-1 activation in macrophages.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">15456791</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m406741200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="26">
+      <lmp:Citation>The TRAF6 ubiquitin ligase and TAK1 kinase mediate IKK activation by BCL10 and MALT1 in T lymphocytes.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">15125833</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/s1097-2765(04)00236-9</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="27">
+      <lmp:Citation>Bcl10 activates the NF-kappaB pathway through ubiquitination of NEMO.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">14695475</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/nature02273</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="28">
+      <lmp:Citation>PIDD mediates NF-kappaB activation in response to DNA damage.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16360037</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.cell.2005.09.036</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="29">
+      <lmp:Citation>Sensing of Lys 63-linked polyubiquitination by NEMO is a key event in NF-kappaB activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16547522</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/ncb1384</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="30"/>
+    <lmp:Reference number="31">
+      <lmp:Citation>Molecular linkage between the kinase ATM and NF-kappaB signaling in response to genotoxic stimuli.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16497931</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1126/science.1121513</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="32">
+      <lmp:Citation>Site-specific Lys-63-linked tumor necrosis factor receptor-associated factor 6 auto-ubiquitination is a critical determinant of I kappa B kinase activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">17135271</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m609503200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="33">
+      <lmp:Citation>Coordinated regulation of Toll-like receptor and NOD2 signaling by K63-linked polyubiquitin chains.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">17562858</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/mcb.00270-07</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="34">
+      <lmp:Citation>Intermolecular disulfide bond formation in the NEMO dimer requires Cys54 and Cys347.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18164680</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.bbrc.2007.12.123</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="35">
+      <lmp:Citation>A critical role of RICK/RIP2 polyubiquitination in Nod-induced NF-kappaB activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18079694</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/sj.emboj.7601962</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="36">
+      <lmp:Citation>Phosphorylation of serine 68 in the IkappaB kinase (IKK)-binding domain of NEMO interferes with the structure of the IKK complex and tumor necrosis factor-alpha-induced NF-kappaB activity.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">17977820</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m708856200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="37">
+      <lmp:Citation>Kinase-selective enrichment enables quantitative phosphoproteomics of the kinome across the cell cycle.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18691976</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.molcel.2008.07.007</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="38">
+      <lmp:Citation>NEMO recognition of ubiquitinated Bcl10 is required for T cell receptor-mediated NF-kappaB activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18287044</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1073/pnas.0712313105</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="39">
+      <lmp:Citation>A quantitative atlas of mitotic phosphorylation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18669648</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1073/pnas.0805139105</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="40">
+      <lmp:Citation>The zinc finger of NEMO is a functional ubiquitin-binding domain.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">19033441</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m806655200</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="41">
+      <lmp:Citation>Key role of Ubc5 and lysine-63 polyubiquitination in viral activation of IRF3.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">19854139</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.molcel.2009.09.037</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="42">
+      <lmp:Citation>Involvement of linear polyubiquitylation of NEMO in NF-kappaB activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">19136968</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/ncb1821</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="43">
+      <lmp:Citation>DARPin-assisted crystallography of the CC2-LZ domain of NEMO reveals a coupling between dimerization and ubiquitin binding.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">19854204</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.jmb.2009.10.018</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="44">
+      <lmp:Citation>A bacterial E3 ubiquitin ligase IpaH9.8 targets NEMO/IKKgamma to dampen the host NF-kappaB-mediated inflammatory response.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">20010814</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/ncb2006</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="45">
+      <lmp:Citation>Polyubiquitin conjugation to NEMO by tripartite motif protein 23 (TRIM23) is critical in antiviral defense.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">20724660</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1073/pnas.1004621107</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="46">
+      <lmp:Citation>Quantitative phosphoproteomics reveals widespread full phosphorylation site occupancy during mitosis.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">20068231</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1126/scisignal.2000475</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="47">
+      <lmp:Citation>TRAF7 protein promotes Lys-29-linked polyubiquitination of IkappaB kinase (IKKgamma)/NF-kappaB essential modulator (NEMO) and p65/RelA protein and represses NF-kappaB activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21518757</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m110.215426</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="48">
+      <lmp:Citation>Initial characterization of the human central proteome.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21269460</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1186/1752-0509-5-17</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="49">
+      <lmp:Citation>TRIM40 promotes neddylation of IKKgamma and is downregulated in gastrointestinal cancers.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21474709</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1093/carcin/bgr068</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="50">
+      <lmp:Citation>Polyubiquitin binding to ABIN1 is required to prevent autoimmunity.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21606507</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1084/jem.20102177</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="51">
+      <lmp:Citation>Direct, noncatalytic mechanism of IKK inhibition by A20.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">22099304</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.molcel.2011.09.015</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="52">
+      <lmp:Citation>Linear ubiquitination prevents inflammation and regulates immune signalling.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21455173</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/nature09816</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="53">
+      <lmp:Citation>SHARPIN is a component of the NF-kappaB-activating linear ubiquitin chain assembly complex.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21455180</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/nature09815</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="54">
+      <lmp:Citation>SHARPIN forms a linear ubiquitin ligase complex regulating NF-kappaB activity and apoptosis.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">21455181</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/nature09814</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="55">
+      <lmp:Citation>NLRP10 enhances Shigella-induced pro-inflammatory responses.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">22672233</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1111/j.1462-5822.2012.01822.x</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="56">
+      <lmp:Citation>IKKepsilon-mediated tumorigenesis requires K63-linked polyubiquitination by a cIAP1/cIAP2/TRAF2 E3 ubiquitin ligase complex.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">23453969</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.celrep.2013.01.031</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="57">
+      <lmp:Citation>Identifying post-translational modifications of NEMO by tandem mass spectrometry after high affinity purification.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">24012789</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.pep.2013.08.020</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="58">
+      <lmp:Citation>An enzyme assisted RP-RPLC approach for in-depth analysis of human liver phosphoproteome.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">24275569</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.jprot.2013.11.014</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="59">
+      <lmp:Citation>Epstein-Barr virus large tegument protein BPLF1 contributes to innate immune evasion through interference with toll-like receptor signaling.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">24586164</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1371/journal.ppat.1003960</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="60">
+      <lmp:Citation>IFIT5 positively regulates NF-kappaB signaling through synergizing the recruitment of IkappaB kinase (IKK) to TGF-beta-activated kinase 1 (TAK1).</lmp:Citation>
+      <lmp:CitationXref name="PubMed">26334375</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.cellsig.2015.08.018</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="61">
+      <lmp:Citation>TRAF family member-associated NF-kappaB activator (TANK) inhibits genotoxic nuclear factor kappaB activation by facilitating deubiquitinase USP10-dependent deubiquitination of TRAF6 ligase.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">25861989</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m115.643767</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="62">
+      <lmp:Citation>Dimer of arfaptin 2 regulates NF-kappaB signaling by interacting with IKKbeta/NEMO and inhibiting IKKbeta kinase activity.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">26296658</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.cellsig.2015.08.012</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="63">
+      <lmp:Citation>Molecular determinants of scaffold-induced linear ubiquitinylation of B Cell Lymphoma/Leukemia 10 (Bcl10) during T cell receptor and oncogenic caspase recruitment domain-containing protein 11 (CARD11) signaling.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">27777308</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1074/jbc.m116.754028</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="64">
+      <lmp:Citation>Molluscum contagiosum virus protein MC005 inhibits NF-kappaB activation by targeting NEMO-regulated IkappaB kinase activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">28490597</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/jvi.00545-17</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="65">
+      <lmp:Citation>Negative regulation of NEMO signaling by the ubiquitin E3 ligase MARCH2.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">32935379</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.15252/embj.2020105139</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="66">
+      <lmp:Citation>SARS-CoV-2 ORF9b inhibits RIG-I-MAVS antiviral signaling by interrupting K63-linked ubiquitination of NEMO.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">33567255</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.celrep.2021.108761</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="67">
+      <lmp:Citation>Solution structure of NEMO zinc finger and impact of an anhidrotic ectodermal dysplasia with immunodeficiency-related point mutation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18313693</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.jmb.2008.01.048</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="68">
+      <lmp:Citation>Structure of a NEMO/IKK-associating domain reveals architecture of the interaction site.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">18462684</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.str.2008.02.012</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="69">
+      <lmp:Citation>Structural basis for recognition of diubiquitins by NEMO.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">19185524</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.molcel.2009.01.012</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="70">
+      <lmp:Citation>A novel X-linked disorder of immune deficiency and hypohidrotic ectodermal dysplasia is allelic to incontinentia pigmenti and due to mutations in IKK-gamma (NEMO).</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11047757</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1086/316914</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="71">
+      <lmp:Citation>A recurrent deletion in the ubiquitously expressed NEMO (IKK-gamma) gene accounts for the vast majority of incontinentia pigmenti mutations.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11590134</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1093/hmg/10.19.2171</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="72">
+      <lmp:Citation>X-linked anhidrotic ectodermal dysplasia with immunodeficiency is caused by impaired NF-kappa B signaling.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11242109</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/85837</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="73">
+      <lmp:Citation>Specific missense mutations in NEMO result in hyper-IgM syndrome with hypohydrotic ectodermal dysplasia.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">11224521</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/85277</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="74">
+      <lmp:Citation>Deficient natural killer cell cytotoxicity in patients with IKK-gamma/NEMO mutations.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">12045264</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1172/jci14858</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="75">
+      <lmp:Citation>Molecular analysis of the genetic defect in a large cohort of IP patients and identification of novel NEMO mutations interfering with NF-kappaB activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">15229184</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1093/hmg/ddh192</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="76">
+      <lmp:Citation>The presentation and natural history of immunodeficiency caused by nuclear factor kappaB essential modulator mutation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">15100680</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.jaci.2004.01.762</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="77">
+      <lmp:Citation>Human nuclear factor kappa B essential modulator mutation can result in immunodeficiency without ectodermal dysplasia.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">15356572</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.jaci.2004.06.052</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="78">
+      <lmp:Citation>TRIM13 regulates ubiquitination and turnover of NEMO to suppress TNF induced NF-kappaB activation.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">25152375</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/j.cellsig.2014.08.008</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="79">
+      <lmp:Citation>Hepatitis A virus 3C protease cleaves NEMO to impair induction of beta interferon.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">24920812</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1128/jvi.00869-14</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="80">
+      <lmp:Citation>Identification of a role for TRIM29 in the control of innate immunity in the respiratory tract.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">27695001</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1038/ni.3580</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="81">
+      <lmp:Citation>Distinct interferon signatures and cytokine patterns define additional systemic autoinflammatory diseases.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">31874111</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1172/jci129301</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="82">
+      <lmp:Citation>Genetically programmed alternative splicing of NEMO mediates an autoinflammatory disease phenotype.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">35289316</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1172/jci128808</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="83">
+      <lmp:Citation>X-linked susceptibility to mycobacteria is caused by mutations in NEMO impairing CD40-dependent IL-12 production.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16818673</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1084/jem.20060085</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="84">
+      <lmp:Citation>Identification of TRAF6-dependent NEMO polyubiquitination sites through analysis of a new NEMO mutation causing incontinentia pigmenti.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">17728323</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1093/hmg/ddm237</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="85">
+      <lmp:Citation>NEMO gene mutations in Chinese patients with incontinentia pigmenti.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">20434027</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1016/s0929-6646(10)60042-3</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="86">
+      <lmp:Citation>Insight into IKBKG/NEMO locus: report of new mutations and complex genomic rearrangements leading to incontinentia pigmenti disease.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">24339369</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1002/humu.22483</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Reference number="87">
+      <lmp:Citation>IRAK4 and NEMO mutations in otherwise healthy children with recurrent invasive pneumococcal disease.</lmp:Citation>
+      <lmp:CitationXref name="PubMed">16950813</lmp:CitationXref>
+      <lmp:CitationXref name="DOI">10.1136/jmg.2006.044446</lmp:CitationXref>
+    </lmp:Reference>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2JVX" source="budo:NEMO_HUMAN_v2" target="PDB:2JVX"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="2JVY" source="budo:NEMO_HUMAN_v2" target="PDB:2JVY"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3BRT" source="budo:NEMO_HUMAN_v2" target="PDB:3BRT"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3BRV" source="budo:NEMO_HUMAN_v2" target="PDB:3BRV"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3CL3" source="budo:NEMO_HUMAN_v2" target="PDB:3CL3"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="3FX0" source="budo:NEMO_HUMAN_v2" target="PDB:3FX0"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="4BWN" source="budo:NEMO_HUMAN_v2" target="PDB:4BWN"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="5AAY" source="budo:NEMO_HUMAN_v2" target="PDB:5AAY"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="5LDE" source="budo:NEMO_HUMAN_v2" target="PDB:5LDE"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="6MI3" source="budo:NEMO_HUMAN_v2" target="PDB:6MI3"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="6MI4" source="budo:NEMO_HUMAN_v2" target="PDB:6MI4"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="6XX0" source="budo:NEMO_HUMAN_v2" target="PDB:6XX0"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="6YEK" source="budo:NEMO_HUMAN_v2" target="PDB:6YEK"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="7T2U" source="budo:NEMO_HUMAN_v2" target="PDB:7T2U"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="7TV4" source="budo:NEMO_HUMAN_v2" target="PDB:7TV4"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="8U7C" source="budo:NEMO_HUMAN_v2" target="PDB:8U7C"/>
+    <lmp:Edge type="HAS_STRUCTURE" db="PDB" id="9AZJ" source="budo:NEMO_HUMAN_v2" target="PDB:9AZJ"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="ChEMBL" id="CHEMBL4967" source="budo:NEMO_HUMAN_v2" target="ChEMBL:CHEMBL4967"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB04998" source="budo:NEMO_HUMAN_v2" target="DrugBank:DB04998"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="DrugBank" id="DB05289" source="budo:NEMO_HUMAN_v2" target="DrugBank:DB05289"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="KEGG" id="hsa:8517" source="budo:NEMO_HUMAN_v2" target="KEGG:hsa:8517"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-1169091" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-1169091"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-1236974" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-1236974"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-168638" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-168638"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-168927" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-168927"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-1810476" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-1810476"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-202424" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-202424"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-2871837" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-2871837"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-445989" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-445989"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-450302" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-450302"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-450321" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-450321"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-4755510" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-4755510"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-5357905" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-5357905"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-5357956" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-5357956"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-5602636" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-5602636"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-5603027" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-5603027"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-5603029" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-5603029"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-5607764" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-5607764"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-5684264" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-5684264"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-5689880" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-5689880"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-5689896" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-5689896"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-9020702" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-9020702"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-933542" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-933542"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-933543" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-933543"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-937039" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-937039"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-937041" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-937041"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-9705671" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-9705671"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-975144" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-975144"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-9758274" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-9758274"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-9833482" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-9833482"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-9860276" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-9860276"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-9860927" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-9860927"/>
+    <lmp:Edge type="HAS_KNOWLEDGE" db="Reactome" id="R-HSA-9909505" source="budo:NEMO_HUMAN_v2" target="Reactome:R-HSA-9909505"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005737" source="budo:NEMO_HUMAN_v2" target="GO:GO:0005737"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005829" source="budo:NEMO_HUMAN_v2" target="GO:GO:0005829"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0008385" source="budo:NEMO_HUMAN_v2" target="GO:GO:0008385"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0072686" source="budo:NEMO_HUMAN_v2" target="GO:GO:0072686"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005654" source="budo:NEMO_HUMAN_v2" target="GO:GO:0005654"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0005634" source="budo:NEMO_HUMAN_v2" target="GO:GO:0005634"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0032991" source="budo:NEMO_HUMAN_v2" target="GO:GO:0032991"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0000922" source="budo:NEMO_HUMAN_v2" target="GO:GO:0000922"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0000151" source="budo:NEMO_HUMAN_v2" target="GO:GO:0000151"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0042802" source="budo:NEMO_HUMAN_v2" target="GO:GO:0042802"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0070530" source="budo:NEMO_HUMAN_v2" target="GO:GO:0070530"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1990450" source="budo:NEMO_HUMAN_v2" target="GO:GO:1990450"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0031593" source="budo:NEMO_HUMAN_v2" target="GO:GO:0031593"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0019904" source="budo:NEMO_HUMAN_v2" target="GO:GO:0019904"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0046982" source="budo:NEMO_HUMAN_v2" target="GO:GO:0046982"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0042803" source="budo:NEMO_HUMAN_v2" target="GO:GO:0042803"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0035591" source="budo:NEMO_HUMAN_v2" target="GO:GO:0035591"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1990459" source="budo:NEMO_HUMAN_v2" target="GO:GO:1990459"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0031625" source="budo:NEMO_HUMAN_v2" target="GO:GO:0031625"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0008270" source="budo:NEMO_HUMAN_v2" target="GO:GO:0008270"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0043276" source="budo:NEMO_HUMAN_v2" target="GO:GO:0043276"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006915" source="budo:NEMO_HUMAN_v2" target="GO:GO:0006915"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0001782" source="budo:NEMO_HUMAN_v2" target="GO:GO:0001782"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0007249" source="budo:NEMO_HUMAN_v2" target="GO:GO:0007249"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0042742" source="budo:NEMO_HUMAN_v2" target="GO:GO:0042742"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006974" source="budo:NEMO_HUMAN_v2" target="GO:GO:0006974"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0051650" source="budo:NEMO_HUMAN_v2" target="GO:GO:0051650"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006955" source="budo:NEMO_HUMAN_v2" target="GO:GO:0006955"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0006954" source="budo:NEMO_HUMAN_v2" target="GO:GO:0006954"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0045087" source="budo:NEMO_HUMAN_v2" target="GO:GO:0045087"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0043124" source="budo:NEMO_HUMAN_v2" target="GO:GO:0043124"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:1902236" source="budo:NEMO_HUMAN_v2" target="GO:GO:1902236"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0043123" source="budo:NEMO_HUMAN_v2" target="GO:GO:0043123"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0010628" source="budo:NEMO_HUMAN_v2" target="GO:GO:0010628"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0016239" source="budo:NEMO_HUMAN_v2" target="GO:GO:0016239"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0051092" source="budo:NEMO_HUMAN_v2" target="GO:GO:0051092"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0050862" source="budo:NEMO_HUMAN_v2" target="GO:GO:0050862"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0045944" source="budo:NEMO_HUMAN_v2" target="GO:GO:0045944"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:2000060" source="budo:NEMO_HUMAN_v2" target="GO:GO:2000060"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0065003" source="budo:NEMO_HUMAN_v2" target="GO:GO:0065003"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0009615" source="budo:NEMO_HUMAN_v2" target="GO:GO:0009615"/>
+    <lmp:Edge type="HAS_FUNCTION" db="GO" id="GO:0050852" source="budo:NEMO_HUMAN_v2" target="GO:GO:0050852"/>
+  </lmp:KnowledgeGraph>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>2</lmp:SequenceVersion>
+      <lmp:EntryVersion>250</lmp:EntryVersion>
+      <lmp:FirstPublicDate>2000-05-30</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>2000-05-30</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>llm-context</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:39:11.041937+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "Q9Y6K9", "xref_total": 235, "xref_db_counts": {"GO": 42, "Reactome": 32, "PDB": 17, "PDBsum": 17, "EMBL": 13, "RefSeq": 7, "Ensembl": 7, "MIM": 5, "Orphanet": 4, "InterPro": 4, "CCDS": 3, "ProteomicsDB": 3, "FunFam": 3, "Pfam": 3, "DrugBank": 2, "CPTAC": 2, "Gene3D": 2, "PANTHER": 2, "AlphaFoldDB": 1, "BMRB": 1, "SMR": 1, "BioGRID": 1, "ComplexPortal": 1, "CORUM": 1, "DIP": 1}, "xref_examples": {"EMBL": ["AF062089", "AF091453", "AF074382", "AJ271718", "AF261086", "AY114157", "AK000593", "BT019621"], "CCDS": ["CCDS14757.1", "CCDS48196.1", "CCDS48197.1"], "RefSeq": ["NP_001093326.2", "NP_001093327.1", "NP_001138727.1", "NP_001308325.1", "NP_001308326.1", "NP_001364241.1", "NP_003630.1"], "PDB": ["2JVX", "2JVY", "3BRT", "3BRV", "3CL3", "3FX0", "4BWN", "5AAY"], "PDBsum": ["2JVX", "2JVY", "3BRT", "3BRV", "3CL3", "3FX0", "4BWN", "5AAY"], "AlphaFoldDB": ["Q9Y6K9"], "BMRB": ["Q9Y6K9"], "SMR": ["Q9Y6K9"], "BioGRID": ["114089"], "ComplexPortal": ["CPX-3269"], "CORUM": ["Q9Y6K9"], "DIP": ["DIP-27528N"], "FunCoup": ["Q9Y6K9"], "MINT": ["Q9Y6K9"], "STRING": ["9606.ENSP00000483825"], "BindingDB": ["Q9Y6K9"], "ChEMBL": ["CHEMBL4967"], "DrugBank": ["DB04998", "DB05289"], "MoonDB": ["Q9Y6K9"], "GlyGen": ["Q9Y6K9"], "iPTMnet": ["Q9Y6K9"], "PhosphoSitePlus": ["Q9Y6K9"], "BioMuta": ["IKBKG"], "DMDM": ["6685695"], "CPTAC": ["CPTAC-1044", "CPTAC-806"], "jPOST": ["Q9Y6K9"], "MassIVE": ["Q9Y6K9"], "PaxDb": ["9606-ENSP00000483825"], "PeptideAtlas": ["Q9Y6K9"], "ProteomicsDB": ["86716", "86717", "86718"], "Pumba": ["Q9Y6K9"], "Antibodypedia": ["73338"], "DNASU": ["8517"], "Ensembl": ["ENST00000422680.6", "ENST00000440286.6", "ENST00000445622.6", "ENST00000594239.6", "ENST00000611071.4", "ENST00000611176.4", "ENST00000618670.4"], "GeneID": ["8517"], "KEGG": ["hsa:8517"], "MANE-Select": ["ENST00000594239.6"], "UCSC": ["uc033fbu.1"], "AGR": ["HGNC:5961"], "ClinPGx": ["PA29777"], "CTD": ["8517"], "DisGeNET": ["8517"], "GeneCards": ["IKBKG"], "GeneReviews": ["IKBKG"], "HGNC": ["HGNC:5961"], "HPA": ["ENSG00000269335"], "MalaCards": ["IKBKG"], "MIM": ["300248", "300291", "300636", "301081", "308300"], "OpenTargets": ["ENSG00000269335"], "Orphanet": ["98813", "69088", "464", "699605"], "VEuPathDB": ["HostDB:ENSG00000269335"], "eggNOG": ["ENOG502R4ZD"], "GeneTree": ["ENSGT00530000063808"], "InParanoid": ["Q9Y6K9"], "OMA": ["VAMRKNF"], "OrthoDB": ["6343844at2759"], "PAN-GO": ["Q9Y6K9"], "PhylomeDB": ["Q9Y6K9"], "PathwayCommons": ["Q9Y6K9"], "Reactome": ["R-HSA-1169091", "R-HSA-1236974", "R-HSA-168638", "R-HSA-168927", "R-HSA-1810476", "R-HSA-202424", "R-HSA-2871837", "R-HSA-445989"], "SABIO-RK": ["Q9Y6K9"], "SignaLink": ["Q9Y6K9"], "SIGNOR": ["Q9Y6K9"], "Agora": ["ENSG00000269335"], "BioGRID-ORCS": ["8517"], "CD-CODE": ["8C2F96ED"], "ChiTaRS": ["IKBKG"], "EvolutionaryTrace": ["Q9Y6K9"], "GeneWiki": ["IKBKG"], "GenomeRNAi": ["8517"], "Pharos": ["Q9Y6K9"], "PRO": ["PR:Q9Y6K9"], "Proteomes": ["UP000005640"], "RNAct": ["Q9Y6K9"], "Bgee": ["ENSG00000269335"], "ExpressionAtlas": ["Q9Y6K9"], "GO": ["GO:0005737", "GO:0005829", "GO:0008385", "GO:0072686", "GO:0005654", "GO:0005634", "GO:0032991", "GO:0000922"], "DisProt": ["DP02269"], "FunFam": ["1.20.5.390:FF:000002", "1.20.5.390:FF:000003", "1.20.5.990:FF:000003"], "Gene3D": ["1.20.5.390", "1.20.5.990"], "IDEAL": ["IID00745"], "InterPro": ["IPR032419", "IPR021063", "IPR034735", "IPR051301"], "PANTHER": ["PTHR31553", "PTHR31553:SF3"], "Pfam": ["PF16516", "PF11577", "PF18414"], "PROSITE": ["PS51801"]}, "generated_at": "2026-02-25T00:39:11.042141"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>

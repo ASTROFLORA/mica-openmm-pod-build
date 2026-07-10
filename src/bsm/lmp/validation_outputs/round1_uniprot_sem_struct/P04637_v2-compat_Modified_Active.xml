@@ -1,0 +1,243 @@
+<?xml version="1.0" ?>
+<lmp:LMP xmlns:lmp="http://ai-university.edu/lmp/v4.0" version="4.0" preset="v2-compat">
+  <lmp:Identity>
+    <lmp:BudoID>budo:P53_HUMAN_v4</lmp:BudoID>
+    <lmp:PrimaryAccession>P04637</lmp:PrimaryAccession>
+    <lmp:UniProtKBId>P53_HUMAN</lmp:UniProtKBId>
+    <lmp:EntryType>UniProtKB reviewed (Swiss-Prot)</lmp:EntryType>
+    <lmp:ProteinExistence>1: Evidence at protein level</lmp:ProteinExistence>
+    <lmp:Organism id="9606">Homo sapiens</lmp:Organism>
+    <lmp:Lineages>
+      <lmp:Lineage>Eukaryota</lmp:Lineage>
+      <lmp:Lineage>Metazoa</lmp:Lineage>
+      <lmp:Lineage>Chordata</lmp:Lineage>
+      <lmp:Lineage>Craniata</lmp:Lineage>
+      <lmp:Lineage>Vertebrata</lmp:Lineage>
+      <lmp:Lineage>Euteleostomi</lmp:Lineage>
+      <lmp:Lineage>Mammalia</lmp:Lineage>
+      <lmp:Lineage>Eutheria</lmp:Lineage>
+      <lmp:Lineage>Euarchontoglires</lmp:Lineage>
+      <lmp:Lineage>Primates</lmp:Lineage>
+      <lmp:Lineage>Haplorrhini</lmp:Lineage>
+      <lmp:Lineage>Catarrhini</lmp:Lineage>
+      <lmp:Lineage>Hominidae</lmp:Lineage>
+      <lmp:Lineage>Homo</lmp:Lineage>
+    </lmp:Lineages>
+    <lmp:SecondaryAccessions>
+      <lmp:Value>Q15086</lmp:Value>
+      <lmp:Value>Q15087</lmp:Value>
+      <lmp:Value>Q15088</lmp:Value>
+      <lmp:Value>Q16535</lmp:Value>
+      <lmp:Value>Q16807</lmp:Value>
+      <lmp:Value>Q16808</lmp:Value>
+      <lmp:Value>Q16809</lmp:Value>
+      <lmp:Value>Q16810</lmp:Value>
+      <lmp:Value>Q16811</lmp:Value>
+      <lmp:Value>Q16848</lmp:Value>
+      <lmp:Value>Q2XN98</lmp:Value>
+      <lmp:Value>Q3LRW1</lmp:Value>
+      <lmp:Value>Q3LRW2</lmp:Value>
+      <lmp:Value>Q3LRW3</lmp:Value>
+      <lmp:Value>Q3LRW4</lmp:Value>
+      <lmp:Value>Q3LRW5</lmp:Value>
+      <lmp:Value>Q86UG1</lmp:Value>
+      <lmp:Value>Q8J016</lmp:Value>
+      <lmp:Value>Q99659</lmp:Value>
+      <lmp:Value>Q9BTM4</lmp:Value>
+      <lmp:Value>Q9HAQ8</lmp:Value>
+      <lmp:Value>Q9NP68</lmp:Value>
+      <lmp:Value>Q9NPJ2</lmp:Value>
+      <lmp:Value>Q9NZD0</lmp:Value>
+      <lmp:Value>Q9UBI2</lmp:Value>
+      <lmp:Value>Q9UQ61</lmp:Value>
+    </lmp:SecondaryAccessions>
+  </lmp:Identity>
+  <lmp:Semantics>
+    <lmp:ProteinName>Cellular tumor antigen p53</lmp:ProteinName>
+    <lmp:Genes>
+      <lmp:Value>TP53</lmp:Value>
+    </lmp:Genes>
+    <lmp:NeSyGrammar version="2.0" length="1440">[DOM:Transcription activation (acidic)]ME[/DOM][DOM:p53 tumour suppressor family (InterPro)]EPQ[/DOM][DOM:p53, transactivation domain (InterPro)]SDPS{P}VEPPLS{P}Q[MOT:TADI]ET{P}FS{P}DLWK{Ub}L[/MOT]LPENN[/DOM][DOM:p53 tumour suppressor family (InterPro)]VLS{P}P[/DOM][DOM:Cellular tumor antigen p53, transactivation domain 2 (InterPro)]LPS{P}QAMDDLMLS{P}P[MOT:TADII]DDIEQWFT{P}E[/MOT]DPG[/DOM][DOM:p53 tumour suppressor family (InterPro)]PDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLS[/DOM][DOM:p53/RUNT-type transcription factor, DNA-binding domain superfamily (InterPro)]SSVPSQK[BIND:DNA:DNA-BINDING|PMID:16793544,18996393,20364130]T[/BIND]YQGSYGFRLGFLHSGTAK{Ac}SVTCTYSPALNKMFCQLAK{Mod}TCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHERCS{P}DSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNY[/DOM][DOM:p53, central conserved site (InterPro)]MCNSSCMGGMNRR[/DOM][DOM:p53/RUNT-type transcription factor, DNA-binding domain superfamily (InterPro)]PILTIITLEDSSGNLLGRNS{P}FEVRVCACPGRDRRT{P}EEENLRK{Ub}K{Ub}GE[/DOM][DOM:p53 tumour suppressor family (InterPro)]PHHELPPGST[MOT:NLS]K{Ac}RALPNNTSSS{P}PQP[/DOM][DOM:p53-like tetramerisation domain superfamily (InterPro)]KKK{Ac}[/MOT]PLDGEYFTLQIR{Me}GR{Me}ER{Me}F[MOT:NES]EMFRELNEALEL[/MOT]K{Ub}DAQAGK{Ub}EPG[/DOM][DOM:p53 tumour suppressor family (InterPro)]GSRAHSSHL[/DOM][DOM:Basic residues][MOT:[KR]-[STA]-K motif]K{Me}SK{Me}[/MOT]K{Me}GQSTSRHK{Ac}K{Me}LM[/DOM][DOM:Interaction with MORN3]FK{SUMO}TEGPDS{P}D[/DOM]</lmp:NeSyGrammar>
+    <lmp:Comment type="FUNCTION">Multifunctional transcription factor that induces cell cycle arrest, DNA repair or apoptosis upon binding to its target DNA sequence (PubMed:11025664, PubMed:12524540, PubMed:12810724, PubMed:15186775, PubMed:15340061, PubMed:17317671, PubMed:17349958, PubMed:19556538, PubMed:20673990, PubMed:20959462, PubMed:22726440, PubMed:24051492, PubMed:24652652, PubMed:35618207, PubMed:36634798, PubMed:38653238, PubMed:9840937). Acts as a tumor suppressor in many tumor types; induces growth arrest or apoptosis depending on the physiological circumstances and cell type (PubMed:11025664, PubMed:12524540, PubMed:12810724, PubMed:15186775, PubMed:15340061, PubMed:17189187, PubMed:17317671, PubMed:17349958, PubMed:19556538, PubMed:20673990, PubMed:20959462, PubMed:22726440, PubMed:24051492, PubMed:24652652, PubMed:38653238, PubMed:9840937). Negatively regulates cell division by controlling expression of a set of genes required for this process (PubMed:11025664, PubMed:12524540, PubMed:12810724, PubMed:15186775, PubMed:15340061, PubMed:17317671, PubMed:17349958, PubMed:19556538, PubMed:20673990, PubMed:20959462, PubMed:22726440, PubMed:24051492, PubMed:24652652, PubMed:9840937). One of the activated genes is an inhibitor of cyclin-dependent kinases. Apoptosis induction seems to be mediated either by stimulation of BAX and FAS antigen expression, or by repression of Bcl-2 expression (PubMed:12524540, PubMed:17189187). Its pro-apoptotic activity is activated via its interaction with PPP1R13B/ASPP1 or TP53BP2/ASPP2 (PubMed:12524540). However, this activity is inhibited when the interaction with PPP1R13B/ASPP1 or TP53BP2/ASPP2 is displaced by PPP1R13L/iASPP (PubMed:12524540). In cooperation with mitochondrial PPIF is involved in activating oxidative stress-induced necrosis; the function is largely independent of transcription. Induces the transcription of long intergenic non-coding RNA p21 (lincRNA-p21) and lincRNA-Mkln1. LincRNA-p21 participates in TP53-dependent transcriptional repression leading to apoptosis and seems to have an effect on cell-cycle regulation. Implicated in Notch signaling cross-over. Prevents CDK7 kinase activity when associated to CAK complex in response to DNA damage, thus stopping cell cycle progression. Isoform 2 enhances the transactivation activity of isoform 1 from some but not all TP53-inducible promoters. Isoform 4 suppresses transactivation activity and impairs growth suppression mediated by isoform 1. Isoform 7 inhibits isoform 1-mediated apoptosis. Regulates the circadian clock by repressing CLOCK-BMAL1-mediated transcriptional activation of PER2 (PubMed:24051492)</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">Forms homodimers and homotetramers (PubMed:19011621). Binds DNA as a homotetramer (PubMed:36108750). Interacts with AXIN1. Probably part of a complex consisting of TP53, HIPK2 and AXIN1 (By similarity). Interacts with histone acetyltransferases EP300 and methyltransferases HRMT1L2 and CARM1, and recruits them to promoters. Interacts (via C-terminus) with TAF1; when TAF1 is part of the TFIID complex. Interacts with ING4; this interaction may be indirect. Found in a complex with CABLES1 and TP73. Interacts with HIPK1, HIPK2, and TP53INP1. Interacts with WWOX. May interact with HCV core protein. Interacts with USP7 and SYVN1. Interacts with HSP90AB1. Interacts with CHD8; leading to recruit histone H1 and prevent transactivation activity (By similarity). Interacts with ARMC10, CDKN2AIP, NUAK1, STK11/LKB1, UHRF2 and E4F1. Interacts with YWHAZ; the interaction enhances TP53 transcriptional activity. Phosphorylation of YWHAZ on 'Ser-58' inhibits this interaction. Interacts (via DNA-binding domain) with MAML1 (via N-terminus). Interacts with MKRN1. Interacts with PML (via C-terminus). Interacts with MDM2; leading to ubiquitination and proteasomal degradation of TP53. Directly interacts with FBXO42; leading to ubiquitination and degradation of TP53. Interacts (phosphorylated at Ser-15 by ATM) with the phosphatase PP2A-PPP2R5C holoenzyme; regulates stress-induced TP53-dependent inhibition of cell proliferation. Interacts with PPP2R2A. Interacts with AURKA, DAXX, BRD7 and TRIM24. Interacts (when monomethylated at Lys-382) with L3MBTL1. Isoform 1 interacts with isoform 2 and with isoform 4. Interacts with GRK5. Binds to the CAK complex (CDK7, cyclin H and MAT1) in response to DNA damage. Interacts with CDK5 in neurons. Interacts with AURKB, SETD2, UHRF2 and NOC2L. Interacts (via N-terminus) with PTK2/FAK1; this promotes ubiquitination by MDM2. Interacts with PTK2B/PYK2; this promotes ubiquitination by MDM2. Interacts with PRKCG. Interacts with PPIF; the association implicates preferentially tetrameric TP53, is induced by oxidative stress and is impaired by cyclosporin A (CsA). Interacts with SNAI1; the interaction induces SNAI1 degradation via MDM2-mediated ubiquitination and inhibits SNAI1-induced cell invasion. Interacts with UBC9. Interacts with ZNF385B; the interaction is direct. Interacts (via DNA-binding domain) with ZNF385A; the interaction is direct and enhances p53/TP53 transactivation functions on cell-cycle arrest target genes, resulting in growth arrest. Interacts with ANKRD2. Interacts with RFFL and RNF34; involved in p53/TP53 ubiquitination. Interacts with MTA1 and COP1. Interacts with CCAR2 (via N-terminus). Interacts with MORC3 (PubMed:17332504). Interacts (via C-terminus) with POU4F2 isoform 1 (via C-terminus) (PubMed:17145718). Interacts (via oligomerization region) with NOP53; the interaction is direct and may prevent the MDM2-mediated proteasomal degradation of TP53 (PubMed:22522597). Interacts with AFG1L; mediates mitochondrial translocation of TP53 (PubMed:27323408). Interacts with UBD (PubMed:25422469). Interacts with TAF6 isoform 1 and isoform 4 (PubMed:20096117). Interacts with C10orf90/FATS; the interaction inhibits binding of TP53 and MDM2 (By similarity). Interacts with NUPR1; interaction is stress-dependent (PubMed:18690848). Forms a complex with EP300 and NUPR1; this complex binds CDKN1A promoter leading to transcriptional induction of CDKN1A (PubMed:18690848). Interacts with PRMT5 in response to DNA damage; the interaction is TTC5/STRAP dependent (PubMed:19011621). Interacts with PPP1R13L (via SH3 domain and ANK repeats); the interaction inhibits pro-apoptotic activity of p53/TP53 (PubMed:12524540). Interacts with PPP1R13B/ASPP1 and TP53BP2/ASPP2; the interactions promotes pro-apoptotic activity (PubMed:12524540). When phosphorylated at Ser-15, interacts with DDX3X and gamma-tubulin (PubMed:28842590). Interacts with KAT7/HBO1; leading to inhibit histone acetyltransferase activity of KAT7/HBO1 (PubMed:17954561). Interacts (via N-terminus) with E3 ubiquitin-protein ligase MUL1; the interaction results in ubiquitination of cytoplasmic TP53 at Lys-24 and subsequent proteasomal degradation (PubMed:21597459). Interacts with S100A4; this interaction promotes TP53 degradation (PubMed:23752197, PubMed:32442400). Interacts with BANP (By similarity). Interacts with TTC5/STRAP; the interaction may result in increased mitochondrial-dependent apoptosis (PubMed:25168243). Interacts with NQO1; this interaction is NADH-dependent, stabilizes TP53 in response to oxidative stress and protects it from ubiquitin-independent degradation by the 20S proteasome (PubMed:15687255). Interacts with DAZAP2 at TP53 target gene promoters; the interaction is triggered by DNA damage and leads to modulation of the expression of a subset of TP53 target genes, reducing DNA damage-induced cell death by limiting the expression of cell death-mediating TP53 target genes (PubMed:33591310). Interacts (via N-terminus) with ZNF768 (via zinc-finger domains); interaction might be facilitated by TP53 oligomerization state (PubMed:34404770). Forms a ternary complex with ALDOB and G6PD; this interaction is direct. ALDOB stabilizes the complex inhibiting G6PD activity and keeping oxidative pentose phosphate metabolism in check. Interacts with MORN3; the interactions mediate post-transcriptional modifications of TP53 by MDM2 and SIRT1 (PubMed:29681526). Interacts with HSPA9/MOT-2; the interaction promotes the degradation of TP53 (PubMed:24625977). Interacts with FBXO22; this interaction promotes TP53 proteasomal degradation (PubMed:26868148)</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with cancer-associated/HPV E6 viral proteins leading to ubiquitination and degradation of TP53 giving a possible model for cell growth regulation. This complex formation requires an additional factor, E6-AP, which stably associates with TP53 in the presence of E6</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with human cytomegalovirus/HHV-5 protein UL123</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts (via N-terminus) with human adenovirus 5 E1B-55K protein; this interaction leads to the inhibition of TP53 function and/or its degradation</lmp:Comment>
+    <lmp:Comment type="SUBUNIT">(Microbial infection) Interacts with Kaposi's sarcoma-associated herpesvirus/HHV-8 protein ORF45; this interaction results in the cytoplasmic localization of TP53 thereby decreasing its transcriptional activity</lmp:Comment>
+    <lmp:Comment type="TISSUE SPECIFICITY">Ubiquitous. Isoforms are expressed in a wide range of normal tissues but in a tissue-dependent manner. Isoform 2 is expressed in most normal tissues but is not detected in brain, lung, prostate, muscle, fetal brain, spinal cord and fetal liver. Isoform 3 is expressed in most normal tissues but is not detected in lung, spleen, testis, fetal brain, spinal cord and fetal liver. Isoform 7 is expressed in most normal tissues but is not detected in prostate, uterus, skeletal muscle and breast. Isoform 8 is detected only in colon, bone marrow, testis, fetal brain and intestine. Isoform 9 is expressed in most normal tissues but is not detected in brain, heart, lung, fetal liver, salivary gland, breast or intestine</lmp:Comment>
+    <lmp:Comment type="INDUCTION">Up-regulated in response to DNA damage. Isoform 2 is not induced in tumor cells in response to stress</lmp:Comment>
+    <lmp:Comment type="DOMAIN">The N-terminal and C-terminal disordered regions undergo liquid-liquid phase separation (LLPS) following homotetramerization and activation (PubMed:31953488, PubMed:35618207, PubMed:36108750, PubMed:36634798, PubMed:38653238). Post-translational modifications, such as phosphorylation or lactylation affect the ability to undergo LLPS (PubMed:31953488, PubMed:35618207, PubMed:36634798, PubMed:38653238)</lmp:Comment>
+    <lmp:Comment type="DOMAIN">The nuclear export signal acts as a transcriptional repression domain. The TADI and TADII motifs (residues 17 to 25 and 48 to 56) correspond both to 9aaTAD motifs which are transactivation domains present in a large number of yeast and animal transcription factors</lmp:Comment>
+    <lmp:Comment type="PTM">Acetylation of Lys-382 by CREBBP enhances transcriptional activity (PubMed:10656795, PubMed:15448695, PubMed:20228809, PubMed:23431171). Acetylation of Lys-382 by EP300 (PubMed:10656795, PubMed:15448695, PubMed:20228809, PubMed:23431171). Deacetylation of Lys-382 by SIRT1 impairs its ability to induce proapoptotic program and modulate cell senescence (PubMed:10656795, PubMed:15448695, PubMed:20228809, PubMed:23431171). Deacetylation by SIRT2 impairs its ability to induce transcription activation in a AKT-dependent manner (PubMed:10656795, PubMed:15448695, PubMed:20228809, PubMed:23431171, PubMed:29681526). Acetylation at Lys-381 increases stability (PubMed:29474172). Deacetylation at Lys-381 by SIRT6 decreases its stability, thereby regulating cell senescence (PubMed:29474172). Acetylated at Lys-120 by KAT5, KAT6A and KAT8; regulating its ability to induce proapoptotic program (PubMed:17189187, PubMed:19854137, PubMed:23431171)</lmp:Comment>
+    <lmp:Comment type="PTM">Lactylation by AARS1 prevents ability to undergo liquid-liquid phase separation (LLPS), thereby inhibiting transcription factor activity</lmp:Comment>
+    <lmp:Comment type="PTM">Phosphorylation on Ser residues mediates transcriptional activation. Phosphorylated by HIPK1 (By similarity). Phosphorylation at Ser-9 by HIPK4 increases repression activity on BIRC5 promoter. Phosphorylated on Thr-18 by VRK1, which may prevent the interaction with MDM2 (PubMed:10951572, PubMed:31527692). Phosphorylated on Ser-20 by CHEK2 in response to DNA damage, which prevents ubiquitination by MDM2. Phosphorylated on Ser-20 by PLK3 in response to reactive oxygen species (ROS), promoting p53/TP53-mediated apoptosis. Phosphorylated on Thr-55 by TAF1, which promotes MDM2-mediated degradation. Phosphorylated on Ser-33 by CDK7 in a CAK complex in response to DNA damage. Phosphorylated on Ser-46 by HIPK2 upon UV irradiation. Phosphorylation on Ser-46 is required for acetylation by CREBBP. Phosphorylated on Ser-392 following UV but not gamma irradiation. Phosphorylated by NUAK1 at Ser-15 and Ser-392; was initially thought to be mediated by STK11/LKB1 but it was later shown that it is indirect and that STK11/LKB1-dependent phosphorylation is probably mediated by downstream NUAK1 (PubMed:21317932). It is unclear whether AMP directly mediates phosphorylation at Ser-15. Phosphorylated on Thr-18 by isoform 1 and isoform 2 of VRK2. Phosphorylation on Thr-18 by isoform 2 of VRK2 results in a reduction in ubiquitination by MDM2 and an increase in acetylation by EP300. Stabilized by CDK5-mediated phosphorylation in response to genotoxic and oxidative stresses at Ser-15, Ser-33 and Ser-46, leading to accumulation of p53/TP53, particularly in the nucleus, thus inducing the transactivation of p53/TP53 target genes. Phosphorylated by DYRK2 at Ser-46 in response to genotoxic stress. Phosphorylated at Ser-315 and Ser-392 by CDK2 in response to DNA-damage. Phosphorylation at Ser-15 is required for interaction with DDX3X and gamma-tubulin (PubMed:28842590). Phosphorylation at Ser-392 regulates its ability to undergo liquid-liquid phase separation by increasing fluidity of TP53/p53 condensates (PubMed:35618207)</lmp:Comment>
+    <lmp:Comment type="PTM">Dephosphorylated by PP2A-PPP2R5C holoenzyme at Thr-55. SV40 small T antigen inhibits the dephosphorylation by the AC form of PP2A</lmp:Comment>
+    <lmp:Comment type="PTM">May be O-glycosylated in the C-terminal basic region. Studied in EB-1 cell line</lmp:Comment>
+    <lmp:Comment type="PTM">Ubiquitinated by MDM2 and SYVN1, which leads to proteasomal degradation (PubMed:10722742, PubMed:12810724, PubMed:15340061, PubMed:17170702, PubMed:19880522, PubMed:29681526). Ubiquitinated by RFWD3, which works in cooperation with MDM2 and may catalyze the formation of short polyubiquitin chains on p53/TP53 that are not targeted to the proteasome (PubMed:10722742, PubMed:12810724, PubMed:20173098). Ubiquitinated by MKRN1 at Lys-291 and Lys-292, which leads to proteasomal degradation (PubMed:19536131). Deubiquitinated by USP10, leading to its stabilization (PubMed:20096447). Ubiquitinated by TRIM24, RFFL, RNF34 and RNF125, which leads to proteasomal degradation (PubMed:19556538). Ubiquitination by TOPORS induces degradation (PubMed:19473992). Deubiquitination by USP7, leading to stabilization (PubMed:15053880). Isoform 4 is monoubiquitinated in an MDM2-independent manner (PubMed:15340061). Ubiquitinated by COP1, which leads to proteasomal degradation (PubMed:19837670). Ubiquitination and subsequent proteasomal degradation is negatively regulated by CCAR2 (PubMed:25732823). Polyubiquitinated by C10orf90/FATS, polyubiquitination is 'Lys-48'-linkage independent and non-proteolytic, leading to TP53 stabilization (By similarity). Polyubiquitinated by MUL1 at Lys-24 which leads to proteasomal degradation (PubMed:21597459). Deubiquitinated by USP3, leading to stabilization (PubMed:28807825). Ubiquitinated by MSL2, promoting its cytoplasmic localization (PubMed:19033443). Also ubiquitinated by the SCF(FBXO22)-KDMA4A complex; leading to proteasomal degradation (PubMed:26868148)</lmp:Comment>
+    <lmp:Comment type="PTM">Monomethylated at Lys-372 by SETD7, leading to stabilization and increased transcriptional activation (PubMed:15525938, PubMed:16415881). Monomethylated at Lys-370 by SMYD2, leading to decreased DNA-binding activity and subsequent transcriptional regulation activity (PubMed:17108971). Lys-372 monomethylation prevents interaction with SMYD2 and subsequent monomethylation at Lys-370 (PubMed:17108971). Dimethylated at Lys-373 by EHMT1 and EHMT2 (PubMed:20118233). Monomethylated at Lys-382 by KMT5A, promoting interaction with L3MBTL1 and leading to repress transcriptional activity (PubMed:17707234). Dimethylation at Lys-370 and Lys-382 diminishes p53 ubiquitination, through stabilizing association with the methyl reader PHF20 (PubMed:22864287). Demethylation of dimethylated Lys-370 by KDM1A prevents interaction with TP53BP1 and represses TP53-mediated transcriptional activation (PubMed:17805299). Monomethylated at Arg-333 and dimethylated at Arg-335 and Arg-337 by PRMT5; methylation is increased after DNA damage and might possibly affect TP53 target gene specificity (PubMed:19011621)</lmp:Comment>
+    <lmp:Comment type="PTM">Sumoylated with SUMO1. Sumoylated at Lys-386 by UBC9</lmp:Comment>
+    <lmp:Comment type="MISCELLANEOUS">Expressed in quiescent lymphocytes. Seems to be non-functional. May be produced at very low levels due to a premature stop codon in the mRNA, leading to nonsense-mediated mRNA decay</lmp:Comment>
+    <lmp:Comment type="MISCELLANEOUS">Expressed in quiescent lymphocytes. Seems to be non-functional. May be produced at very low levels due to a premature stop codon in the mRNA, leading to nonsense-mediated mRNA decay</lmp:Comment>
+    <lmp:Comment type="MISCELLANEOUS">Produced by alternative promoter usage</lmp:Comment>
+    <lmp:Comment type="MISCELLANEOUS">Produced by alternative promoter usage and alternative splicing</lmp:Comment>
+    <lmp:Comment type="MISCELLANEOUS">Produced by alternative promoter usage and alternative splicing</lmp:Comment>
+    <lmp:Comment type="SIMILARITY">Belongs to the p53 family</lmp:Comment>
+    <lmp:Comment type="CAUTION">Interaction with BANP was reported to enhance phosphorylation on Ser-15 upon ultraviolet irradiation (PubMed:15701641). However, the publication has been retracted due to image duplication and manipulation. Interaction with BANP has been confirmed in mouse studies (By similarity). Phosphorylation at Ser-15 has been confirmed by other studies (PubMed:10570149, PubMed:11554766, PubMed:15866171, PubMed:16219768, PubMed:17317671, PubMed:17954561, PubMed:20959462, PubMed:25772236). Its nuclear and cytoplasmic localization has been confirmed by other studies (PubMed:15340061, PubMed:17170702, PubMed:17591690, PubMed:18206965, PubMed:19011621, PubMed:21597459, PubMed:22726440)</lmp:Comment>
+  </lmp:Semantics>
+  <lmp:Geometry>
+    <lmp:Sequence length="393">MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHERCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNTSSSPQPKKKPLDGEYFTLQIRGRERFEMFRELNEALELKDAQAGKEPGGSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD</lmp:Sequence>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=A res_start=84 res_end=87 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=A res_start=185 res_end=194 len=10"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=17 res_end=19 len=3 strand_id=2"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=31 res_end=34 len=4 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=39 res_end=42 len=4 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=48 res_end=53 len=6 strand_id=2"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=63 res_end=70 len=8 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=102 res_end=105 len=4 strand_id=2"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=111 res_end=114 len=4 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=121 res_end=126 len=6 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=137 res_end=143 len=7 strand_id=2"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=158 res_end=165 len=8 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=A res_start=171 res_end=181 len=11 strand_id=1"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=B res_start=74 res_end=77 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=B res_start=84 res_end=88 len=5"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=B res_start=185 res_end=194 len=10"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=17 res_end=19 len=3 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=31 res_end=34 len=4 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=39 res_end=42 len=4 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=48 res_end=53 len=6 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=63 res_end=70 len=8 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=102 res_end=105 len=4 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=111 res_end=114 len=4 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=121 res_end=126 len=6 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=137 res_end=143 len=7 strand_id=4"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=158 res_end=165 len=8 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=B res_start=171 res_end=181 len=11 strand_id=3"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=C res_start=73 res_end=76 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=C res_start=84 res_end=87 len=4"/>
+    <lmp:Feature type="secondary_structure:helix" description="pdb=1TSR chain=C res_start=185 res_end=192 len=8"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=17 res_end=19 len=3 strand_id=6"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=32 res_end=34 len=3 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=39 res_end=43 len=5 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=48 res_end=53 len=6 strand_id=6"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=63 res_end=70 len=8 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=102 res_end=104 len=3 strand_id=6"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=111 res_end=114 len=4 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=121 res_end=126 len=6 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=137 res_end=143 len=7 strand_id=6"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=158 res_end=165 len=8 strand_id=5"/>
+    <lmp:Feature type="secondary_structure:strand" description="pdb=1TSR chain=C res_start=171 res_end=182 len=12 strand_id=5"/>
+    <lmp:Feature type="pdb:cell" description="pdb=1TSR a=117.5 b=67.9 c=108.8 alpha=90.0 beta=105.5 gamma=90.0"/>
+    <lmp:Feature type="pdb:resolution" description="pdb=1TSR resolution=2.2"/>
+    <lmp:Feature type="pdb:citation" description="pdb=1TSR pmid=8023157 title=Crystal structure of a p53 tumor suppressor-DNA complex: understanding tumorigenic mutations."/>
+    <lmp:Feature type="geometry:com" description="pdb=1TSR chain=A x=72.869 y=28.827 z=56.714"/>
+    <lmp:Feature type="geometry:rg" description="pdb=1TSR chain=A rg=16.247"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=1TSR chain=A min=[50.574, 5.071, 36.64] max=[96.058, 52.087, 81.485]"/>
+    <lmp:Feature type="geometry:com" description="pdb=1TSR chain=B x=67.753 y=12.706 z=88.586"/>
+    <lmp:Feature type="geometry:rg" description="pdb=1TSR chain=B rg=16.233"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=1TSR chain=B min=[46.52, -9.59, 61.606] max=[94.37, 37.119, 108.078]"/>
+    <lmp:Feature type="geometry:com" description="pdb=1TSR chain=C x=38.183 y=-4.932 z=88.212"/>
+    <lmp:Feature type="geometry:rg" description="pdb=1TSR chain=C rg=16.2"/>
+    <lmp:Feature type="geometry:bbox" description="pdb=1TSR chain=C min=[16.809, -26.682, 62.954] max=[62.102, 18.877, 108.43]"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=1TSR chain_a=A chain_b=B com_distance=36.082"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=1TSR chain_a=A chain_b=C com_distance=57.749"/>
+    <lmp:Feature type="geometry:chain_distance" description="pdb=1TSR chain_a=B chain_b=C com_distance=34.433"/>
+    <lmp:Chain id="A" sequence="[DOM:Transcription activation (acidic)]ME[/DOM][DOM:p53 tumour suppressor family (InterPro)]EPQ[/DOM][DOM:p53, transactivation domain (InterPro)]SDPS{P}VEPPLS{P}Q[MOT:TADI]ET{P}FS{P}DLWK{Ub}L[/MOT]LPENN[/DOM][DOM:p53 tumour suppressor family (InterPro)]VLS{P}P[/DOM][DOM:Cellular tumor antigen p53, transactivation domain 2 (InterPro)]LPS{P}QAMDDLMLS{P}P[MOT:TADII]DDIEQWFT{P}E[/MOT]DPG[/DOM][DOM:p53 tumour suppressor family (InterPro)]PDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLS[/DOM][DOM:p53/RUNT-type transcription factor, DNA-binding domain superfamily (InterPro)]SSVPSQK[BIND:DNA:DNA-BINDING|PMID:16793544,18996393,20364130]T[/BIND]YQGSYGFRLGFLHSGTAK{Ac}SVTCTYSPALNKMFCQLAK{Mod}TCPVQLWVDSTPPPGTRVRAMAIYKQSQHMTEVVRRCPHHERCS{P}DSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVVPYEPPEVGSDCTTIHYNY[/DOM][DOM:p53, central conserved site (InterPro)]MCNSSCMGGMNRR[/DOM][DOM:p53/RUNT-type transcription factor, DNA-binding domain superfamily (InterPro)]PILTIITLEDSSGNLLGRNS{P}FEVRVCACPGRDRRT{P}EEENLRK{Ub}K{Ub}GE[/DOM][DOM:p53 tumour suppressor family (InterPro)]PHHELPPGST[MOT:NLS]K{Ac}RALPNNTSSS{P}PQP[/DOM][DOM:p53-like tetramerisation domain superfamily (InterPro)]KKK{Ac}[/MOT]PLDGEYFTLQIR{Me}GR{Me}ER{Me}F[MOT:NES]EMFRELNEALEL[/MOT]K{Ub}DAQAGK{Ub}EPG[/DOM][DOM:p53 tumour suppressor family (InterPro)]GSRAHSSHL[/DOM][DOM:Basic residues][MOT:[KR]-[STA]-K motif]K{Me}SK{Me}[/MOT]K{Me}GQSTSRHK{Ac}K{Me}LM[/DOM][DOM:Interaction with MORN3]FK{SUMO}TEGPDS{P}D[/DOM]" state="Modified_Active">
+      <lmp:Domain name="Interaction with CCAR2" type="region" start="1" end="320"/>
+      <lmp:Domain name="Interaction with HRMT1L2" type="region" start="1" end="83"/>
+      <lmp:Domain name="Transcription activation (acidic)" type="region" start="1" end="44"/>
+      <lmp:Domain name="Disordered" type="region" start="50" end="96"/>
+      <lmp:Domain name="Interaction with WWOX" type="region" start="66" end="110"/>
+      <lmp:Domain name="Interaction with HIPK1" type="region" start="100" end="370"/>
+      <lmp:Domain name="Required for interaction with ZNF385A" type="region" start="100" end="300"/>
+      <lmp:Domain name="Required for interaction with FBXO42" type="region" start="113" end="236"/>
+      <lmp:Domain name="Interaction with AXIN1" type="region" start="116" end="292"/>
+      <lmp:Domain name="Interaction with the 53BP2 SH3 domain" type="region" start="241" end="248"/>
+      <lmp:Domain name="Interaction with E4F1" type="region" start="256" end="294"/>
+      <lmp:Domain name="Interaction with DNA" type="region" start="273" end="280"/>
+      <lmp:Domain name="Disordered" type="region" start="282" end="325"/>
+      <lmp:Domain name="Interaction with CARM1" type="region" start="300" end="393"/>
+      <lmp:Domain name="Interaction with HIPK2" type="region" start="319" end="360"/>
+      <lmp:Domain name="Oligomerization" type="region" start="325" end="356"/>
+      <lmp:Domain name="Disordered" type="region" start="351" end="393"/>
+      <lmp:Domain name="Interaction with USP7" type="region" start="359" end="363"/>
+      <lmp:Domain name="Basic (repression of DNA-binding)" type="region" start="368" end="387"/>
+      <lmp:Domain name="Interaction with MORN3" type="region" start="374" end="393"/>
+      <lmp:Domain name="Pro residues" type="compositional bias" start="69" end="90"/>
+      <lmp:Domain name="Basic and acidic residues" type="compositional bias" start="282" end="299"/>
+      <lmp:Domain name="Basic residues" type="compositional bias" start="365" end="384"/>
+      <lmp:Domain name="p53 tumour suppressor family (InterPro)" type="family" start="3" end="369" interpro_id="IPR002117"/>
+      <lmp:Domain name="p53-like transcription factor, DNA-binding domain superfamily (InterPro)" type="homologous_superfamily" start="97" end="287" interpro_id="IPR008967"/>
+      <lmp:Domain name="p53, tetramerisation domain (InterPro)" type="domain" start="319" end="357" interpro_id="IPR010991"/>
+      <lmp:Domain name="p53, DNA-binding domain (InterPro)" type="domain" start="100" end="288" interpro_id="IPR011615"/>
+      <lmp:Domain name="p53/RUNT-type transcription factor, DNA-binding domain superfamily (InterPro)" type="homologous_superfamily" start="95" end="294" interpro_id="IPR012346"/>
+      <lmp:Domain name="p53, transactivation domain (InterPro)" type="domain" start="6" end="30" interpro_id="IPR013872"/>
+      <lmp:Domain name="p53-like tetramerisation domain superfamily (InterPro)" type="homologous_superfamily" start="319" end="360" interpro_id="IPR036674"/>
+      <lmp:Domain name="Cellular tumor antigen p53, transactivation domain 2 (InterPro)" type="domain" start="35" end="59" interpro_id="IPR040926"/>
+      <lmp:Domain name="p53, central conserved site (InterPro)" type="conserved_site" start="237" end="249" interpro_id="IPR057064"/>
+      <lmp:Domain name="GlobalFeatures" type="global" start="1" end="393">
+        <lmp:Motif name="TADI" start="17" end="25" type="motif"/>
+        <lmp:Motif name="TADII" start="48" end="56" type="motif"/>
+        <lmp:Motif name="NLS" start="305" end="321" type="motif"/>
+        <lmp:Motif name="NES" start="339" end="350" type="motif"/>
+        <lmp:Motif name="[KR]-[STA]-K motif" start="370" end="372" type="motif"/>
+        <lmp:PTM id="ptm_9" type="phosphorylation" residue="S" position="9" status="present"/>
+        <lmp:PTM id="ptm_15" type="phosphorylation" residue="S" position="15" status="present"/>
+        <lmp:PTM id="ptm_18" type="phosphorylation" residue="T" position="18" status="present"/>
+        <lmp:PTM id="ptm_20" type="phosphorylation" residue="S" position="20" status="present"/>
+        <lmp:PTM id="ptm_33" type="phosphorylation" residue="S" position="33" status="present"/>
+        <lmp:PTM id="ptm_37" type="phosphorylation" residue="S" position="37" status="present"/>
+        <lmp:PTM id="ptm_46" type="phosphorylation" residue="S" position="46" status="present"/>
+        <lmp:PTM id="ptm_55" type="phosphorylation" residue="T" position="55" status="present"/>
+        <lmp:PTM id="ptm_120" type="acetylation" residue="K" position="120" status="present"/>
+        <lmp:PTM id="ptm_139" type="other" residue="K" position="139" status="present"/>
+        <lmp:PTM id="ptm_183" type="phosphorylation" residue="S" position="183" status="present"/>
+        <lmp:PTM id="ptm_269" type="phosphorylation" residue="S" position="269" status="present"/>
+        <lmp:PTM id="ptm_284" type="phosphorylation" residue="T" position="284" status="present"/>
+        <lmp:PTM id="ptm_305" type="acetylation" residue="K" position="305" status="present"/>
+        <lmp:PTM id="ptm_315" type="phosphorylation" residue="S" position="315" status="present"/>
+        <lmp:PTM id="ptm_321" type="acetylation" residue="K" position="321" status="present"/>
+        <lmp:PTM id="ptm_333" type="methylation" residue="R" position="333" status="present"/>
+        <lmp:PTM id="ptm_335" type="methylation" residue="R" position="335" status="present"/>
+        <lmp:PTM id="ptm_337" type="methylation" residue="R" position="337" status="present"/>
+        <lmp:PTM id="ptm_370" type="methylation" residue="K" position="370" status="present"/>
+        <lmp:PTM id="ptm_372" type="methylation" residue="K" position="372" status="present"/>
+        <lmp:PTM id="ptm_373" type="methylation" residue="K" position="373" status="present"/>
+        <lmp:PTM id="ptm_381" type="acetylation" residue="K" position="381" status="present"/>
+        <lmp:PTM id="ptm_382" type="methylation" residue="K" position="382" status="present"/>
+        <lmp:PTM id="ptm_392" type="phosphorylation" residue="S" position="392" status="present"/>
+        <lmp:PTM id="ptm_24" type="ubiquitination" residue="K" position="24" status="present"/>
+        <lmp:PTM id="ptm_291" type="ubiquitination" residue="K" position="291" status="present"/>
+        <lmp:PTM id="ptm_292" type="ubiquitination" residue="K" position="292" status="present"/>
+        <lmp:PTM id="ptm_351" type="ubiquitination" residue="K" position="351" status="present"/>
+        <lmp:PTM id="ptm_357" type="ubiquitination" residue="K" position="357" status="present"/>
+        <lmp:PTM id="ptm_386" type="sumoylation" residue="K" position="386" status="present"/>
+        <lmp:BindingSite type="DNA-binding" residues="102">
+          <lmp:Ligand name="DNA" type="substrate" effect="catalysis" id="lig_DNA"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="ZN(2+)-binding" residues="176,179,238,242">
+          <lmp:Ligand name="ZN(2+)" type="substrate" effect="catalysis" id="lig_ZN_2"/>
+        </lmp:BindingSite>
+        <lmp:BindingSite type="PDB:1TSR:ligands" residues="1">
+          <lmp:Ligand name="ZN" type="substrate" effect="catalysis" id="lig_1TSR_ZN" smiles="[Zn+2]"/>
+        </lmp:BindingSite>
+      </lmp:Domain>
+    </lmp:Chain>
+  </lmp:Geometry>
+  <lmp:Provenance>
+    <lmp:EntryAudit>
+      <lmp:SequenceVersion>4</lmp:SequenceVersion>
+      <lmp:EntryVersion>313</lmp:EntryVersion>
+      <lmp:FirstPublicDate>1987-08-13</lmp:FirstPublicDate>
+      <lmp:LastAnnotationUpdateDate>2026-01-28</lmp:LastAnnotationUpdateDate>
+      <lmp:LastSequenceUpdateDate>2009-11-24</lmp:LastSequenceUpdateDate>
+    </lmp:EntryAudit>
+    <lmp:GenerationInfo>
+      <lmp:Generator>src.bsm.lmp.generator_v4:LMPGenerator</lmp:Generator>
+      <lmp:GeneratorVersion>2026-01-22</lmp:GeneratorVersion>
+      <lmp:Preset>v2-compat</lmp:Preset>
+      <lmp:Timestamp>2026-02-25T00:36:24.414342+00:00</lmp:Timestamp>
+    </lmp:GenerationInfo>
+    <lmp:InternalLine type="xref_snapshot">{"primaryAccession": "P04637", "xref_total": 1110, "xref_db_counts": {"PDB": 286, "PDBsum": 286, "GO": 173, "EMBL": 85, "Reactome": 45, "RefSeq": 25, "Orphanet": 20, "EMDB": 19, "Ensembl": 17, "DrugBank": 16, "CCDS": 9, "ProteomicsDB": 9, "MIM": 9, "InterPro": 9, "CD-CODE": 6, "Pfam": 4, "ComplexPortal": 3, "CPTAC": 3, "Gene3D": 3, "FunFam": 2, "PANTHER": 2, "SUPFAM": 2, "PIR": 1, "AlphaFoldDB": 1, "BMRB": 1}, "xref_examples": {"EMBL": ["X02469", "M13121", "M13112", "M13113", "M13114", "M13115", "M13116", "M13117"], "CCDS": ["CCDS11118.1", "CCDS45605.1", "CCDS45606.1", "CCDS73966.1", "CCDS73967.1", "CCDS73968.1", "CCDS73969.1", "CCDS73970.1"], "PIR": ["A25224"], "RefSeq": ["NP_000537.3", "NP_001119584.1", "NP_001119585.1", "NP_001119586.1", "NP_001119587.1", "NP_001119588.1", "NP_001119589.1", "NP_001119590.1"], "PDB": ["1A1U", "1AIE", "1C26", "1DT7", "1GZH", "1H26", "1HS5", "1JSP"], "PDBsum": ["1A1U", "1AIE", "1C26", "1DT7", "1GZH", "1H26", "1HS5", "1JSP"], "AlphaFoldDB": ["P04637"], "BMRB": ["P04637"], "EMDB": ["EMD-0378", "EMD-17265", "EMD-17266", "EMD-18809", "EMD-18810", "EMD-22294", "EMD-22827", "EMD-29941"], "SMR": ["P04637"], "BioGRID": ["113010"], "ComplexPortal": ["CPX-6093", "CPX-663", "CPX-759"], "CORUM": ["P04637"], "DIP": ["DIP-368N"], "ELM": ["P04637"], "FunCoup": ["P04637"], "IntAct": ["P04637"], "MINT": ["P04637"], "STRING": ["9606.ENSP00000269305"], "BindingDB": ["P04637"], "ChEMBL": ["CHEMBL4096"], "DrugBank": ["DB08363", "DB13010", "DB00945", "DB17549", "DB05404", "DB17507", "DB11684", "DB17039"], "MoonDB": ["P04637"], "TCDB": ["1.C.110.1.1"], "GlyCosmos": ["P04637"], "GlyGen": ["P04637"], "iPTMnet": ["P04637"], "MetOSite": ["P04637"], "PhosphoSitePlus": ["P04637"], "SwissPalm": ["P04637"], "BioMuta": ["TP53"], "DMDM": ["269849759"], "CPTAC": ["CPTAC-5895", "CPTAC-5896", "CPTAC-951"], "jPOST": ["P04637"], "MassIVE": ["P04637"], "PaxDb": ["9606-ENSP00000269305"], "PeptideAtlas": ["P04637"], "ProteomicsDB": ["51728", "51729", "51730", "51731", "51732", "51733", "51734", "51735"], "Pumba": ["P04637"], "ABCD": ["P04637"], "Antibodypedia": ["3525"], "CPTC": ["P04637"], "DNASU": ["7157"], "Ensembl": ["ENST00000269305.9", "ENST00000420246.6", "ENST00000445888.6", "ENST00000455263.6", "ENST00000503591.2", "ENST00000504290.5", "ENST00000504937.5", "ENST00000508793.6"], "GeneID": ["7157"], "KEGG": ["hsa:7157"], "MANE-Select": ["ENST00000269305.9"], "UCSC": ["uc002gij.4"], "AGR": ["HGNC:11998"], "CIViC": ["7157"], "ClinPGx": ["PA36679"], "CTD": ["7157"], "DisGeNET": ["7157"], "GeneCards": ["TP53"], "GeneReviews": ["TP53"], "HGNC": ["HGNC:11998"], "HPA": ["ENSG00000141510"], "MalaCards": ["TP53"], "MIM": ["133239", "151623", "191170", "202300", "211980", "260500", "275355", "614740"], "OpenTargets": ["ENSG00000141510"], "Orphanet": ["1501", "210159", "99756", "67038", "585909", "667662", "251899", "96253"], "VEuPathDB": ["HostDB:ENSG00000141510"], "eggNOG": ["ENOG502QVY3"], "GeneTree": ["ENSGT00950000183153"], "InParanoid": ["P04637"], "OMA": ["HKKGEPC"], "OrthoDB": ["5915660at2759"], "PAN-GO": ["P04637"], "PhylomeDB": ["P04637"], "PathwayCommons": ["P04637"], "Reactome": ["R-HSA-111448", "R-HSA-139915", "R-HSA-1912408", "R-HSA-2559580", "R-HSA-2559584", "R-HSA-2559585", "R-HSA-2559586", "R-HSA-3232118"], "SABIO-RK": ["P04637"], "SignaLink": ["P04637"], "SIGNOR": ["P04637"], "Agora": ["ENSG00000141510"], "BioGRID-ORCS": ["7157"], "CD-CODE": ["1A18FFC4", "8C2F96ED", "91857CE7", "A1A97FAB", "B5B9A610", "E11B6BAB"], "ChiTaRS": ["TP53"], "EvolutionaryTrace": ["P04637"], "GeneWiki": ["P53"], "GenomeRNAi": ["7157"], "Pharos": ["P04637"], "PRO": ["PR:P04637"], "Proteomes": ["UP000005640"], "RNAct": ["P04637"], "Bgee": ["ENSG00000141510"], "ExpressionAtlas": ["P04637"], "GO": ["GO:0005813", "GO:0000785", "GO:0005737", "GO:0005829", "GO:0005783", "GO:0043073", "GO:0005759", "GO:0005739"], "CDD": ["cd08367"], "DisProt": ["DP00086"], "FunFam": ["2.60.40.720:FF:000003", "4.10.170.10:FF:000003"], "Gene3D": ["2.60.40.720", "6.10.50.20", "4.10.170.10"], "IDEAL": ["IID00015"], "InterPro": ["IPR008967", "IPR012346", "IPR057064", "IPR011615", "IPR040926", "IPR036674", "IPR010991", "IPR013872"], "PANTHER": ["PTHR11447", "PTHR11447:SF6"], "Pfam": ["PF00870", "PF08563", "PF07710", "PF18521"], "PRINTS": ["PR00386"], "SUPFAM": ["SSF47719", "SSF49417"], "PROSITE": ["PS00348"]}, "generated_at": "2026-02-25T00:36:24.415234"}</lmp:InternalLine>
+  </lmp:Provenance>
+</lmp:LMP>
