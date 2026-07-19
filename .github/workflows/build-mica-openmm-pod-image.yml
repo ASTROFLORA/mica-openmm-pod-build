@@ -7,16 +7,17 @@ on:
 
 env:
   IMAGE_REPOSITORY: ghcr.io/astroflora/mica-openmm-pod
-  MICA_COMMIT: 8be6355c483528c775bf756247f839a184210b62
+  MICA_COMMIT: 81a817c23e3579dbd40f4979ded43a969f7875ad
 
 permissions:
   contents: read
   packages: write
+  id-token: write
 
 jobs:
   smoke-test:
-    runs-on: ubuntu-latest
-    timeout-minutes: 45
+    runs-on: blacksmith-4vcpu-ubuntu-2204
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,11 +34,11 @@ jobs:
           echo "Disk after cleanup"
           df -h
 
-      - name: Build image (with embedded container smoke)
+      - name: Build image (smoke)
         run: |
           docker build \
             --build-arg MICA_COMMIT=${{ env.MICA_COMMIT }} \
-            -t mica-openmm-pod:smoke-v1 \
+            -t mica-openmm-pod:smoke-v2 \
             -f Dockerfile \
             .
 
@@ -45,6 +46,45 @@ jobs:
         run: |
           docker images | grep mica-openmm-pod
           echo "Build OK"
+
+      - name: Extract container_smoke_v2 receipt from image
+        run: |
+          mkdir -p artifacts
+          CID=$(docker create mica-openmm-pod:smoke-v2)
+          if docker cp ${CID}:/tmp/container_smoke_v2.json artifacts/container_smoke_v2.json 2>/dev/null; then
+            echo "Receipt extracted from image"
+            cat artifacts/container_smoke_v2.json
+          else
+            echo "WARN: /tmp/container_smoke_v2.json not found in image (smoke gate may not have written it)"
+          fi
+          docker rm ${CID} >/dev/null 2>&1 || true
+
+      - name: Upload container_smoke_v2 receipt artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: container_smoke_v2
+          path: artifacts/container_smoke_v2.json
+          if-no-files-found: warn
+
+  build-and-push:
+    needs: smoke-test
+    runs-on: blacksmith-4vcpu-ubuntu-2204
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Free runner disk
+        run: |
+          echo "Disk before cleanup"
+          df -h
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android /opt/hostedtoolcache/CodeQL || true
+          docker system prune -af || true
+          echo "Disk after cleanup"
+          df -h
 
       - name: Log in to GHCR
         if: github.event_name == 'push'
@@ -54,30 +94,81 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Tag and push image
+      - name: Build image + push (provenance + SBOM, single-arch)
         if: github.event_name == 'push'
         run: |
-          IMAGE_TAG="sha-${{ github.sha }}"
-          docker tag mica-openmm-pod:smoke-v1 ${IMAGE_REPOSITORY}:${IMAGE_TAG}
-          docker push ${IMAGE_REPOSITORY}:${IMAGE_TAG}
-          echo "Pushed: ${IMAGE_REPOSITORY}:${IMAGE_TAG}"
+          # buildx-only pattern. --provenance + --sbom require the
+          # buildkit (docker-container) driver. We use --push so the
+          # attestation manifest list goes straight to the registry
+          # instead of trying to --load it into the local daemon
+          # (which fails with "docker exporter does not currently
+          # support exporting manifest lists"). --platform pins
+          # single-arch so we don't get a multi-arch image either.
+          docker buildx build \
+            --platform linux/amd64 \
+            --build-arg MICA_COMMIT=${{ env.MICA_COMMIT }} \
+            --provenance=true \
+            --sbom=true \
+            -t ${IMAGE_REPOSITORY}:sha-${{ github.sha }} \
+            -t ${IMAGE_REPOSITORY}:smoke-v2 \
+            -f Dockerfile \
+            --push \
+            .
 
-      - name: Emit container_smoke_v1 receipt
+      - name: Install cosign
+        uses: sigstore/cosign-installer@v3.5.0
+
+      - name: Capture image digest
+        id: digest
+        run: |
+          # Prefer RepoDigests from local image (works after push); fall back to buildx imagetools.
+          DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ${IMAGE_REPOSITORY}:smoke-v2 2>/dev/null | sed 's|.*@||')
+          if [ -z "$DIGEST" ] || [ "$DIGEST" = "${IMAGE_REPOSITORY}:" ]; then
+            DIGEST=$(docker buildx imagetools inspect ${IMAGE_REPOSITORY}:smoke-v2 2>&1 | grep -oE 'sha256:[a-f0-9]{64}' | head -1)
+          fi
+          if [ -z "$DIGEST" ]; then
+            echo "ERROR: could not capture image digest" >&2
+            exit 1
+          fi
+          echo "digest=${DIGEST}" >> "$GITHUB_OUTPUT"
+          echo "Captured digest: ${DIGEST}"
+
+      - name: Sign image with cosign (keyless)
+        if: github.event_name == 'push'
+        env:
+          COSIGN_EXPERIMENTAL: "1"
+        run: |
+          cosign sign --yes "${IMAGE_REPOSITORY}@${{ steps.digest.outputs.digest }}"
+
+      - name: Emit image-proof.json
         if: always()
         run: |
-          mkdir -p /tmp/receipts
-          cat > /tmp/receipts/container_smoke_v1.json <<EOF
+          mkdir -p artifacts
+          cat > artifacts/image-proof.json <<EOF
           {
             "schema_version": "image_dependency_proof_v1",
-            "slice_id": "TOPOLOGY-KERNEL-DOCKERIMAGE-FIX-001",
-            "validation_mode": "container_smoke_v1",
+            "slice_id": "CG_NATIVE_RUN-INSTRUCCION-11-mirror",
+            "validation_mode": "container_smoke_v2",
             "image_repository": "${IMAGE_REPOSITORY}",
-            "image_tag": "smoke-v1",
+            "image_tag": "smoke-v2",
+            "image_digest": "${DIGEST:-${{ steps.digest.outputs.digest }}}",
             "mica_commit": "${MICA_COMMIT}",
-            "build_status": "${{ job.status }}",
-            "build_attempt": "${{ github.run_attempt }}",
+            "attestations": {
+              "provenance": "oci://${IMAGE_REPOSITORY}:sha-${{ github.sha }}-provenance",
+              "sbom": "oci://${IMAGE_REPOSITORY}:sha-${{ github.sha }}-sbom"
+            },
+            "cosign_signature": "oci://${IMAGE_REPOSITORY}:sha-${{ github.sha }}-sig",
             "github_run_id": "${{ github.run_id }}",
-            "produced_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            "github_run_attempt": "${{ github.run_attempt }}",
+            "produced_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "build_status": "${{ job.status }}"
           }
           EOF
-          cat /tmp/receipts/container_smoke_v1.json
+          cat artifacts/image-proof.json
+
+      - name: Upload image-proof.json artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: image-proof
+          path: artifacts/image-proof.json
+          if-no-files-found: warn

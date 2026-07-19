@@ -1194,6 +1194,190 @@ def _run_complex_stability_job(
     }
 
 
+def _run_cg_martini_job(
+    *,
+    client: storage.Client,
+    bucket: str,
+    cg_top_object: str,
+    cg_gro_object: str,
+    output_prefix: str,
+    workspace: Path,
+    max_steps: int,
+    benchmark_steps: int,
+    report_freq: int,
+    saving_interval_seconds: int,
+) -> dict[str, Any]:
+    """
+    CG/Martini runtime job (CG_NATIVE_RUN INSTRUCCION 11).
+
+    Loads a pre-built Martini 3 topology (.top) + solvated coords (.gro) from
+    GCS, materializes an ``openmm.System`` via ``martini_openmm.MartiniTopFile``,
+    runs CG-native MD at the 20 fs timestep (NOT 2 fs AA), uploads prod.dcd /
+    prod.log / prod.chk / final_state.pdb.
+
+    This function does NOT do AA->CG mapping; that lives upstream in
+    ``src/mica/sim/cg_martini/Martinize2Adapter``. The runtime provider
+    (INSTRUCCION 12) is responsible for emitting the .top + .gro pair and
+    staging them at CG_TOP_GCS_OBJECT / CG_GRO_GCS_OBJECT. This worker is the
+    dumb muscle that consumes them.
+
+    The 20 fs timestep is the standard Martini 3 production dt (Martini 2
+    uses 20-40 fs). Using 2 fs here would alias CG forces and explode.
+    """
+    import martini_openmm
+    import openmm
+    import openmm.unit as _unit
+    from openmm import LangevinIntegrator, MonteCarloBarostat, Platform
+    from openmm.app import DCDReporter, GromacsGroFile, PDBFile, Simulation, StateDataReporter
+
+    if not cg_top_object.strip() or not cg_gro_object.strip():
+        raise RuntimeError(
+            "cg_martini worker mode requires CG_TOP_GCS_OBJECT and CG_GRO_GCS_OBJECT env vars "
+            "(prebuilt Martini 3 topology + solvated coords). See cg_system_builder.py."
+        )
+
+    cg_topology_dir = workspace / "cg_topology"
+    cg_topology_dir.mkdir(parents=True, exist_ok=True)
+    local_top = cg_topology_dir / "system.top"
+    local_gro = cg_topology_dir / "solvated.gro"
+    local_dcd = cg_topology_dir / "prod.dcd"
+    local_log = cg_topology_dir / "prod.log"
+    local_chk = cg_topology_dir / "prod.chk"
+    local_final_pdb = cg_topology_dir / "final_state.pdb"
+
+    _download_required(client, bucket, cg_top_object, local_top)
+    _download_required(client, bucket, cg_gro_object, local_gro)
+
+    # CG runtime parameters — defaults match the canonical Martini 3 setup.
+    cg_timestep_fs = float(os.getenv("MICA_CG_TIMESTEP_FS", "20").strip() or "20")
+    cg_epsilon_r = float(os.getenv("MICA_CG_EPSILON_R", "15").strip() or "15")
+    cg_temperature_K = float(os.getenv("MICA_CG_TEMPERATURE_K", "310").strip() or "310")
+    cg_pressure_bar = float(os.getenv("MICA_CG_PRESSURE_BAR", "1").strip() or "1")
+    cg_is_npt = os.getenv("MICA_CG_NPT", "1").strip().lower() not in ("", "0", "false", "no")
+    cg_friction_ps = float(os.getenv("MICA_CG_FRICTION_PS", "10").strip() or "10")
+    cg_nonbonded_cutoff_nm = float(os.getenv("MICA_CG_NONBONDED_CUTOFF_NM", "1.1").strip() or "1.1")
+
+    started_at = _utc_now_iso()
+
+    conf = GromacsGroFile(str(local_gro))
+    box_vectors = conf.getPeriodicBoxVectors()
+
+    top = martini_openmm.MartiniTopFile(
+        str(local_top),
+        periodicBoxVectors=box_vectors,
+        epsilon_r=cg_epsilon_r,
+    )
+    system = top.create_system(nonbonded_cutoff=cg_nonbonded_cutoff_nm * _unit.nanometer)
+    if cg_is_npt:
+        system.addForce(
+            MonteCarloBarostat(cg_pressure_bar * _unit.bar, cg_temperature_K * _unit.kelvin, 100)
+        )
+
+    # CG timestep = 20 fs (NOT 2 fs AA). This is the hard invariant.
+    integrator = LangevinIntegrator(
+        cg_temperature_K * _unit.kelvin,
+        cg_friction_ps / _unit.picosecond,
+        cg_timestep_fs * _unit.femtoseconds,
+    )
+
+    # Platform preference: CUDA > OpenCL > CPU > Reference. We probe each
+    # name because not every image ships all four (CPU-only workers are common
+    # for the cg_martini smoke lane).
+    platform_name = ""
+    platform_obj = None
+    for candidate in ("CUDA", "OpenCL", "CPU", "Reference"):
+        try:
+            platform_obj = Platform.getPlatformByName(candidate)
+            platform_name = candidate
+            break
+        except Exception:
+            continue
+    if platform_obj is None:
+        raise RuntimeError("No OpenMM platform available for cg_martini job")
+
+    simulation = Simulation(top.topology, system, integrator, platform_obj)
+    simulation.context.setPositions(conf.getPositions())
+    simulation.context.computeVirtualSites()
+
+    state0 = simulation.context.getState(getEnergy=True)
+    energy_initial_kjmol = float(
+        state0.getPotentialEnergy().value_in_unit(_unit.kilojoule_per_mole)
+    )
+
+    simulation.minimizeEnergy(maxIterations=100)
+
+    simulation.reporters.append(DCDReporter(str(local_dcd), max(1, report_freq)))
+    simulation.reporters.append(
+        StateDataReporter(
+            str(local_log),
+            max(1, report_freq),
+            step=True,
+            time=True,
+            potentialEnergy=True,
+            kineticEnergy=True,
+            totalEnergy=True,
+            temperature=True,
+            volume=True,
+        )
+    )
+
+    steps_done = 0
+    wall_started = time.time()
+    next_checkpoint_at = wall_started + max(int(saving_interval_seconds), 1)
+    while steps_done < max_steps:
+        run_steps = min(max(int(benchmark_steps), 1), max_steps - steps_done)
+        simulation.step(run_steps)
+        steps_done = int(simulation.context.getState().getStepCount())
+        now = time.time()
+        if now >= next_checkpoint_at or steps_done >= max_steps:
+            with open(local_chk, "wb") as handle:
+                handle.write(simulation.context.createCheckpoint())
+            next_checkpoint_at = now + max(int(saving_interval_seconds), 1)
+    wall_elapsed_s = max(time.time() - wall_started, 1e-6)
+
+    state_final = simulation.context.getState(getEnergy=True, getPositions=True)
+    energy_final_kjmol = float(
+        state_final.getPotentialEnergy().value_in_unit(_unit.kilojoule_per_mole)
+    )
+    with open(str(local_final_pdb), "w", encoding="utf-8") as handle:
+        PDBFile.writeFile(
+            simulation.topology,
+            state_final.getPositions(asNumpy=True),
+            handle,
+        )
+
+    cg_output_prefix = f"{output_prefix}/cg_martini"
+    uploaded_outputs: dict[str, str] = {}
+    for local_path in (local_dcd, local_log, local_chk, local_final_pdb):
+        object_name = f"{cg_output_prefix}/{local_path.name}"
+        _upload_file(client, bucket, local_path, object_name)
+        uploaded_outputs[local_path.name] = object_name
+
+    history = {
+        "status": "completed",
+        "mode": "cg_martini",
+        "worker_mode": "cg_martini",
+        "started_at": started_at,
+        "completed_at": _utc_now_iso(),
+        "system_particle_count": int(system.getNumParticles()),
+        "n_steps_run": int(steps_done),
+        "wall_time_s": round(wall_elapsed_s, 6),
+        "energy_initial_kjmol": round(energy_initial_kjmol, 6),
+        "energy_final_kjmol": round(energy_final_kjmol, 6),
+        "platform": platform_name,
+        "timestep_fs": float(cg_timestep_fs),
+        "temperature_K": float(cg_temperature_K),
+        "pressure_bar": float(cg_pressure_bar) if cg_is_npt else 0.0,
+        "is_npt": bool(cg_is_npt),
+        "epsilon_r": float(cg_epsilon_r),
+        "nonbonded_cutoff_nm": float(cg_nonbonded_cutoff_nm),
+        "cg_top_input_object": cg_top_object,
+        "cg_gro_input_object": cg_gro_object,
+        "outputs": uploaded_outputs,
+    }
+    return history
+
+
 def main() -> None:
     client = None
     bucket = ""
@@ -1212,7 +1396,6 @@ def main() -> None:
         bucket = _require_env("GCS_BUCKET")
         prefix = os.getenv("GCS_PREFIX", "").strip().strip("/")
         pdb_bucket = os.getenv("PDB_GCS_BUCKET", bucket).strip() or bucket
-        pdb_object = _require_env("PDB_GCS_OBJECT")
         checkpoint_object = _safe_object_name(_require_env("CHECKPOINT_OBJECT"), bucket)
         output_prefix = _safe_object_name(_require_env("OUTPUT_GCS_PREFIX"), bucket).strip().rstrip("/")
         marker_object = _safe_object_name(_require_env("COMPLETED_MARKER_OBJECT"), bucket)
@@ -1223,11 +1406,24 @@ def main() -> None:
         workspace.mkdir(parents=True, exist_ok=True)
         client = storage.Client()
         worker_mode = _detect_worker_mode()
+        # CG_NATIVE_RUN INSTRUCCION 11 — cg_martini mode does NOT consume a PDB.
+        # Its inputs come from CG_TOP_GCS_OBJECT + CG_GRO_GCS_OBJECT. For all
+        # other modes the AA PDB is required, so we keep the hard fail-fast.
+        pdb_object = "" if worker_mode == "cg_martini" else _require_env("PDB_GCS_OBJECT")
         bootstrap_manifest = _emit_bootstrap_artifacts(client=client, bucket_name=bucket, root_prefix=prefix, worker_mode=worker_mode)
         if worker_mode == "paper_dodecaedrica":
             history = _run_paper_dodecaedrica_job(client=client, bucket=bucket, pdb_bucket=pdb_bucket, pdb_object=pdb_object, checkpoint_object=checkpoint_object, output_prefix=output_prefix, workspace=workspace)
         elif worker_mode == "complex_stability":
             history = _run_complex_stability_job(client=client, bucket=bucket, pdb_bucket=pdb_bucket, pdb_object=pdb_object, checkpoint_object=checkpoint_object, output_prefix=output_prefix, workspace=workspace)
+        elif worker_mode == "cg_martini":
+            history = _run_cg_martini_job(
+                client=client, bucket=bucket,
+                cg_top_object=os.environ.get("CG_TOP_GCS_OBJECT", ""),
+                cg_gro_object=os.environ.get("CG_GRO_GCS_OBJECT", ""),
+                output_prefix=output_prefix, workspace=workspace,
+                max_steps=max_steps, benchmark_steps=benchmark_steps,
+                report_freq=report_freq, saving_interval_seconds=saving_interval_seconds,
+            )
         else:
             history = _run_simple_protein_only_job(client=client, bucket=bucket, pdb_bucket=pdb_bucket, pdb_object=pdb_object, checkpoint_object=checkpoint_object, output_prefix=output_prefix, workspace=workspace, max_steps=max_steps, benchmark_steps=benchmark_steps, report_freq=report_freq, saving_interval_seconds=saving_interval_seconds)
         history["prefix"] = prefix
@@ -1250,4 +1446,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
