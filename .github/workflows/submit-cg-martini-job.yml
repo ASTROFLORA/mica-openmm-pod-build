@@ -88,7 +88,7 @@ jobs:
           cache-dependency-path: |
             scripts/prepare_cg_system.py
 
-      - name: Install Python deps (martini_openmm + vermouth)
+      - name: Install Python deps (martini_openmm + vermouth + insane)
         run: |
           set -e
           python -m pip install --upgrade pip
@@ -99,7 +99,8 @@ jobs:
             "mdtraj>=1.9.9" \
             "pydantic>=2.5" \
             "martini_openmm @ git+https://github.com/maccallumlab/martini_openmm.git@216e62b26c4ee6cea7ed21e20ec84fffe97a101c" \
-            "vermouth @ git+https://github.com/marrink-lab/vermouth-martinize.git"
+            "vermouth @ git+https://github.com/marrink-lab/vermouth-martinize.git" \
+            "insane==1.2.0"
 
       - name: Free runner disk
         run: |

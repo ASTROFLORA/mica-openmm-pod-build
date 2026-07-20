@@ -66,7 +66,8 @@ def main() -> int:
     if mart_receipt.status != "completed":
         # Surface the actual martinize2 stderr (captured by the adapter's
         # subprocess.run(capture_output=True)) so GHA logs explain the failure.
-        errs = (mart_receipt.payload or {}).get("validation_errors", []) or []
+        mart_payload = mart_receipt.payload if isinstance(mart_receipt.payload, dict) else (mart_receipt.payload.model_dump() if hasattr(mart_receipt.payload, "model_dump") else {})
+        errs = (mart_payload or {}).get("validation_errors", []) or []
         print(f"FATAL: martinize2 status={mart_receipt.status}", file=sys.stderr)
         for e in errs:
             print(f"  martinize2_err: {e}", file=sys.stderr)
@@ -74,9 +75,10 @@ def main() -> int:
         Path("/tmp/cg_system_diag.txt").write_text("\n".join(errs))
         return 4
     info["martinize2_elapsed_s"] = round(t1 - t0, 1)
-    info["n_protein_beads"] = mart_receipt.payload.get("bead_count_output", 0)
-    cg_gro = mart_receipt.payload.get("output_cg_gro_ref", "")
-    itp_csv = mart_receipt.payload.get("output_cg_itp_ref", "")
+    mart_payload = mart_receipt.payload if isinstance(mart_receipt.payload, dict) else (mart_receipt.payload.model_dump() if hasattr(mart_receipt.payload, "model_dump") else {})
+    info["n_protein_beads"] = mart_payload.get("bead_count_output", 0)
+    cg_gro = mart_payload.get("output_cg_gro_ref", "")
+    itp_csv = mart_payload.get("output_cg_itp_ref", "")
     itp_refs = [p.strip() for p in itp_csv.split(",") if p.strip()]
     info["n_molecule_itps"] = len(itp_refs)
     print(f"martinize2 OK: {info['n_protein_beads']} beads, {len(itp_refs)} molecule_*.itp")
@@ -100,14 +102,25 @@ def main() -> int:
         center_protein=True,
     )
     t1 = time.perf_counter()
-    membrane_gro = Path(ins_receipt.payload.outputs.get("gro_ref", ""))
+    # ins_receipt.payload is a dict (Pydantic model_dump via ReceiptCore); use
+    # bracket access. The user's verbatim used attribute access (.outputs.get),
+    # but ReceiptCore.payload is `Any` -- and INSANEAdapter._build_receipt calls
+    # payload.model_dump() so dict semantics apply here.
+    ins_payload = ins_receipt.payload if isinstance(ins_receipt.payload, dict) else ins_receipt.payload.model_dump()
+    ins_outputs = ins_payload.get("outputs", {}) or {}
+    ins_counts = ins_payload.get("counts", {}) or {}
+    membrane_gro = Path(ins_outputs.get("gro_ref", ""))
     if not membrane_gro.exists():
         Path("/tmp/cg_system_status.txt").write_text("FAILED: insane_no_membrane_gro")
+        Path("/tmp/cg_system_diag.txt").write_text(
+            "insane did not produce membrane.gro. ins_payload=" + repr(ins_payload)[:2000]
+        )
         return 5
     info["insane_elapsed_s"] = round(t1 - t0, 1)
-    info["n_lipids"] = ins_receipt.payload.counts.get("lipid_count", 0)
-    info["n_waters"] = ins_receipt.payload.counts.get("water_count", 0)
-    info["n_ions"] = ins_receipt.payload.counts.get("na_count", 0) + ins_receipt.payload.counts.get("cl_count", 0)
+    info["n_lipids"] = ins_counts.get("lipid_count", 0)
+    info["n_waters"] = ins_counts.get("water_count", 0)
+    info["n_ions"] = ins_counts.get("na_count", 0) + ins_counts.get("cl_count", 0)
+    info["insane_top_ref"] = ins_outputs.get("top_ref", "")
     print(f"INSANE OK: {info['n_lipids']} lipids, {info['n_waters']} waters, {info['n_ions']} ions")
 
     # 3. cg_system_builder consolidates
@@ -129,8 +142,8 @@ def main() -> int:
         martinize2_output_cg_gro_ref=cg_gro,
         martinize2_output_itp_refs=itp_refs,
         insane_output_gro_ref=str(membrane_gro),
-        insane_output_top_ref=ins_receipt.payload.outputs.get("top_ref", ""),
-        insane_counts=dict(ins_receipt.payload.counts or {}),
+        insane_output_top_ref=ins_outputs.get("top_ref", ""),
+        insane_counts=dict(ins_counts),
         output_dir=str(work / "03_system"),
         source_target_id="clcn7_instr12",
     )
