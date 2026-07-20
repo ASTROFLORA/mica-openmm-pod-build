@@ -370,3 +370,11 @@ jobs:
           name: cg_system_info
           path: /tmp/cg_system_info.json
           if-no-files-found: warn
+
+      - name: Upload /tmp/cg_system_diag.txt (diagnostic, when present)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cg_system_diag
+          path: /tmp/cg_system_diag.txt
+          if-no-files-found: ignore

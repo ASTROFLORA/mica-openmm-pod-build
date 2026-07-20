@@ -64,7 +64,14 @@ def main() -> int:
     )
     t1 = time.perf_counter()
     if mart_receipt.status != "completed":
+        # Surface the actual martinize2 stderr (captured by the adapter's
+        # subprocess.run(capture_output=True)) so GHA logs explain the failure.
+        errs = (mart_receipt.payload or {}).get("validation_errors", []) or []
+        print(f"FATAL: martinize2 status={mart_receipt.status}", file=sys.stderr)
+        for e in errs:
+            print(f"  martinize2_err: {e}", file=sys.stderr)
         Path("/tmp/cg_system_status.txt").write_text(f"FAILED: martinize2 status={mart_receipt.status}")
+        Path("/tmp/cg_system_diag.txt").write_text("\n".join(errs))
         return 4
     info["martinize2_elapsed_s"] = round(t1 - t0, 1)
     info["n_protein_beads"] = mart_receipt.payload.get("bead_count_output", 0)
@@ -131,9 +138,14 @@ def main() -> int:
     payload = build_cg_system_bundle(req)
     t1 = time.perf_counter()
     if payload.implementation_status != "real_compile":
+        blockers = payload.blockers or []
+        print(f"FATAL: cg_system_builder status={payload.implementation_status}", file=sys.stderr)
+        for b in blockers:
+            print(f"  cg_blocker: {b}", file=sys.stderr)
         Path("/tmp/cg_system_status.txt").write_text(
             f"FAILED: cg_system_builder status={payload.implementation_status}"
         )
+        Path("/tmp/cg_system_diag.txt").write_text("\n".join(blockers))
         return 6
     info["cg_system_builder_elapsed_s"] = round(t1 - t0, 1)
     info["system_top_local"] = str(payload.system_top_path)
