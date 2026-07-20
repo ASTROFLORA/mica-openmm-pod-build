@@ -1,0 +1,330 @@
+name: submit-cg-martini-job
+
+# INSTRUCCION 12 of CG_NATIVE_RUN: real CG/Martini submission through
+# GitHub Actions on the ASTROFLORA mirror. Pulls the canonical image,
+# validates the CG runtime, builds system.top + solvated.gro for the
+# CLCN7 PDB via Martinize2 + INSANE + cg_system_builder, and either
+# dispatches the real provider job (if GCP SA secret is set) or emits
+# a submission_receipt_v1.json with gap_closed=GAP-CG-006-partial.
+
+on:
+  workflow_dispatch:
+    inputs:
+      image_digest:
+        description: "Pinned image digest to pull (sha256:...)."
+        required: false
+        default: "sha256:5c0e14d3e820ec37159e7916c986189e5345287cafb1a36bccd7d6899cdc9982"
+        type: string
+      clcn7_pdb:
+        description: "Path (in repo) to the CLCN7 PDB used as input."
+        required: false
+        default: "clcn7_test_input/clcn7.pdb"
+        type: string
+      max_protein_beads:
+        description: "Sanity ceiling for protein beads (fail if exceeded)."
+        required: false
+        default: "5000"
+        type: string
+      max_system_atoms:
+        description: "Sanity ceiling for total CG system atoms (fail if exceeded)."
+        required: false
+        default: "20000000"
+        type: string
+
+env:
+  IMAGE_REPOSITORY: ghcr.io/astroflora/mica-openmm-pod
+  # canonical image proven published at HEAD 56ea2071
+  DEFAULT_IMAGE_DIGEST: "sha256:5c0e14d3e820ec37159e7916c986189e5345287cafb1a36bccd7d6899cdc9982"
+  RECEIPT_OUT: analysis/runtime_receipts/cg_martini_submission_v1.json
+
+permissions:
+  contents: read
+  packages: read
+  id-token: write
+
+jobs:
+  submit-cg-martini:
+    runs-on: blacksmith-4vcpu-ubuntu-2204
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve inputs
+        id: resolve
+        env:
+          IMAGE_DIGEST: ${{ inputs.image_digest }}
+        run: |
+          set -e
+          DIGEST="${IMAGE_DIGEST:-$DEFAULT_IMAGE_DIGEST}"
+          if [[ "${DIGEST}" != sha256:* ]]; then
+            DIGEST="sha256:${DIGEST}"
+          fi
+          echo "digest=${DIGEST}" >> "$GITHUB_OUTPUT"
+          echo "image_ref=${IMAGE_REPOSITORY}@${DIGEST}" >> "$GITHUB_OUTPUT"
+          echo "image_pull_target=${IMAGE_REPOSITORY}:instr12-${GITHUB_SHA::12}" >> "$GITHUB_OUTPUT"
+          echo "Resolved image: ${IMAGE_REPOSITORY}@${DIGEST}"
+
+      - name: Verify CLCN7 PDB is committed to the mirror
+        run: |
+          set -e
+          PDB="${{ inputs.clcn7_pdb }}"
+          if [[ ! -f "${PDB}" ]]; then
+            echo "FATAL: CLCN7 PDB not present at ${PDB}"
+            echo "Expected the workflow to be dispatched against a commit that adds clcn7_test_input/clcn7.pdb"
+            exit 10
+          fi
+          PDB_BYTES=$(wc -c < "${PDB}")
+          echo "PDB OK: ${PDB} (${PDB_BYTES} bytes)"
+          if [[ "${PDB_BYTES}" -lt 1000000 ]]; then
+            echo "WARN: PDB is suspiciously small (<1MB). Expected ~2.5MB for CLCN7 7JM7."
+          fi
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: |
+            scripts/prepare_cg_system.py
+
+      - name: Install Python deps (martini_openmm + vermouth)
+        run: |
+          set -e
+          python -m pip install --upgrade pip
+          python -m pip install --no-cache-dir \
+            "openmm>=8.1" \
+            "biopython>=1.81" \
+            "numpy>=1.26" \
+            "mdtraj>=1.9.9" \
+            "pydantic>=2.5" \
+            "martini_openmm @ git+https://github.com/maccallumlab/martini_openmm.git@216e62b26c4ee6cea7ed21e20ec84fffe97a101c" \
+            "vermouth @ git+https://github.com/marrink-lab/vermouth-martinize.git"
+
+      - name: Free runner disk
+        run: |
+          echo "Disk before cleanup"
+          df -h
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android /opt/hostedtoolcache/CodeQL || true
+          docker system prune -af || true
+          echo "Disk after cleanup"
+          df -h
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull canonical image (digest-pinned)
+        run: |
+          set -e
+          docker pull "${{ steps.resolve.outputs.image_ref }}"
+          docker tag "${{ steps.resolve.outputs.image_ref }}" "${{ steps.resolve.outputs.image_pull_target }}"
+          docker images | grep -E "mica-openmm-pod|astroflora/mica-openmm-pod" || true
+
+      - name: Validate pulled image has CG runtime available
+        run: |
+          set -e
+          # Hard guard: the pulled image must have martini_openmm.MartiniTopFile,
+          # vermouth (with __version__), and openmm.app.GromacsGroFile available
+          # in its entrypoint python. If any of these fail, the canonical image
+          # is broken for the cg_martini lane and the workflow fails closed.
+          docker run --rm \
+            --entrypoint /opt/conda/bin/python \
+            "${{ steps.resolve.outputs.image_ref }}" \
+            -c "import martini_openmm, vermouth; from openmm.app import GromacsGroFile; print('cg_runtime_image_alive', martini_openmm.MartiniTopFile, vermouth.__version__)"
+          echo "CG runtime probe OK"
+
+      - name: Detect GCP secret presence
+        id: detect_gcp
+        env:
+          GCP_SA_KEY_BASE64: ${{ secrets.GCP_SA_KEY_BASE64 }}
+          GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}
+        run: |
+          set -e
+          if [[ -n "${GCP_SA_KEY_BASE64:-}" ]] || [[ -n "${GOOGLE_APPLICATION_CREDENTIALS_JSON:-}" ]]; then
+            echo "has_gcp=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_gcp=false" >> "$GITHUB_OUTPUT"
+          fi
+          # Mask the secret material in logs if present (security hygiene).
+          echo "GCP secret presence detected: $(grep has_gcp "$GITHUB_OUTPUT" | tail -1 | cut -d= -f2)"
+
+      - name: Run prepare_cg_system.py (Martinize2 + INSANE + cg_system_builder)
+        env:
+          CLCN7_PDB: ${{ inputs.clcn7_pdb }}
+        run: |
+          set -e
+          mkdir -p analysis/runtime_receipts
+          # Prepare script writes /tmp/cg_system_info.json + /tmp/cg_system_status.txt
+          python scripts/prepare_cg_system.py
+          STATUS="$(cat /tmp/cg_system_status.txt)"
+          if [[ "${STATUS}" != "PASSED" ]]; then
+            echo "FATAL: prepare_cg_system.py did not PASSED (status=${STATUS})"
+            exit 20
+          fi
+          echo "--- /tmp/cg_system_info.json ---"
+          cat /tmp/cg_system_info.json
+
+      - name: Sanity-check CG system counts
+        env:
+          MAX_BEADS: ${{ inputs.max_protein_beads }}
+          MAX_ATOMS: ${{ inputs.max_system_atoms }}
+        run: |
+          set -e
+          python - <<'PYEOF'
+          import json, os, sys
+          info = json.loads(open("/tmp/cg_system_info.json").read())
+          max_beads = int(os.environ.get("MAX_BEADS", "5000"))
+          max_atoms = int(os.environ.get("MAX_ATOMS", "20000000"))
+          beads = int(info.get("n_protein_beads", 0))
+          atoms = int(info.get("n_atoms", 0))
+          lipids = int(info.get("n_lipids", 0))
+          waters = int(info.get("n_waters", 0))
+          impl = info.get("implementation_status", "")
+          compat = info.get("openmm_compat_status", "")
+          blockers = info.get("openmm_compat_blockers", []) or []
+          print(f"sanity: beads={beads} atoms={atoms} lipids={lipids} waters={waters} status={impl} compat={compat}")
+          if impl != "real_compile":
+              print(f"FATAL: implementation_status != real_compile ({impl})")
+              sys.exit(30)
+          if beads <= 0 or atoms <= 0:
+              print("FATAL: zero beads or atoms")
+              sys.exit(31)
+          if beads > max_beads:
+              print(f"FATAL: n_protein_beads {beads} > ceiling {max_beads}")
+              sys.exit(32)
+          if atoms > max_atoms:
+              print(f"FATAL: n_atoms {atoms} > ceiling {max_atoms}")
+              sys.exit(33)
+          if compat and compat not in ("ok", "passed") and blockers:
+              # fail-closed if the openmm probe returned blocked/error with concrete blockers
+              print(f"FATAL: openmm_compat blockers: {blockers}")
+              sys.exit(34)
+          PYEOF
+
+      - name: Conditional real provider dispatch (only when GCP secret present)
+        id: real_submit
+        if: steps.detect_gcp.outputs.has_gcp == 'true'
+        run: |
+          set -e
+          IMAGE_REF="${{ steps.resolve.outputs.image_ref }}"
+          echo "Real dispatch path: GCP secret present, but provider bucket/objects not yet wired in INSTRUCCION 12."
+          echo "Marking real_submit_dispatched=false (gap remains; receipt will reflect that)."
+          echo "real_submit_dispatched=false" >> "$GITHUB_OUTPUT"
+
+      - name: Emit submission_receipt_v1.json
+        env:
+          IMAGE_REF: ${{ steps.resolve.outputs.image_ref }}
+          COMMIT_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          ACTOR: ${{ github.actor }}
+          PDB_PATH: ${{ inputs.clcn7_pdb }}
+          HAS_GCP: ${{ steps.detect_gcp.outputs.has_gcp }}
+          RECEIPT_OUT: ${{ env.RECEIPT_OUT }}
+        run: |
+          set -e
+          mkdir -p analysis/runtime_receipts
+          python - <<'PYEOF'
+          import json, os, time
+          from pathlib import Path
+
+          info_path = Path("/tmp/cg_system_info.json")
+          status_path = Path("/tmp/cg_system_status.txt")
+          status = status_path.read_text().strip() if status_path.exists() else "UNKNOWN"
+          info = json.loads(info_path.read_text()) if info_path.exists() else {}
+          has_gcp = os.environ.get("HAS_GCP", "false") == "true"
+
+          if has_gcp:
+              execution_status = "image_pulled_runtime_validated_gcp_secret_present_no_provider_dispatch_wired"
+              gap_closed = ["GAP-CG-006-partial"]
+              verdict = (
+                  "GCP SA secret detected, but no provider bucket/object wiring exists "
+                  "in this workflow yet. The image + CG runtime were validated, the CG "
+                  "system was built and met sanity ceilings, but no real provider dispatch "
+                  "fired. GAP-CG-006 is partially closed; a follow-up commit must wire "
+                  "the dispatch (CG_TOP_GCS_OBJECT / CG_GRO_GCS_OBJECT env, real GCS "
+                  "bucket, real worker invocation) for full closure."
+              )
+          else:
+              execution_status = "image_pulled_runtime_validated_no_gcp_secret"
+              gap_closed = ["GAP-CG-006-partial"]
+              verdict = (
+                  "No GCP SA secret configured on this repo. The canonical image was "
+                  "pulled (digest-pinned) and its CG runtime was validated. The CG system "
+                  "was built via Martinize2 + INSANE + cg_system_builder and met sanity "
+                  "ceilings. No real provider dispatch fired (cannot without GCP creds). "
+                  "GAP-CG-006 is partially closed."
+              )
+
+          receipt = {
+              "schema_version": "submission_receipt_v1",
+              "slice_id": "CG_NATIVE_RUN-INSTRUCCION-12",
+              "produced_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+              "github_run_id": os.environ["RUN_ID"],
+              "github_run_attempt": os.environ["RUN_ATTEMPT"],
+              "github_commit_sha": os.environ["COMMIT_SHA"],
+              "github_actor": os.environ["ACTOR"],
+              "image_repository": "ghcr.io/astroflora/mica-openmm-pod",
+              "image_ref": os.environ["IMAGE_REF"],
+              "image_pull_status": "ok",
+              "image_runtime_probe": "cg_runtime_image_alive",
+              "prep_input_pdb": os.environ["PDB_PATH"],
+              "prepare_status": status,
+              "prepare_info": info,
+              "execution_status": execution_status,
+              "gap_closed": gap_closed,
+              "verdict": verdict,
+              "consumes": {
+                  "mirror_head_at_design_time": "56ea2071",
+                  "cg_lane_modules": [
+                      "src/mica/sim/cg_martini/martinize2_adapter.py",
+                      "src/mica/sim/cg_martini/insane_adapter.py",
+                      "src/mica/sim/cg_martini/cg_system_builder.py",
+                  ],
+                  "worker_dispatch_target": "workers/salad/gcs_openmm_srcg/main_gcs.py:_run_cg_martini_job",
+                  "required_env_for_real_dispatch": [
+                      "GOOGLE_APPLICATION_CREDENTIALS_JSON (or GCP_SA_KEY_BASE64)",
+                      "CG_TOP_GCS_OBJECT",
+                      "CG_GRO_GCS_OBJECT",
+                      "MICA_WORKER_MODE=cg_martini",
+                  ],
+              },
+              "receipt_ref": "urn:mica:sim:cg_martini_submission:v1",
+              "lane": "CG_NATIVE_RUN",
+              "pr_ref": "PR-CG-012",
+          }
+
+          out_path = Path(os.environ["RECEIPT_OUT"])
+          out_path.parent.mkdir(parents=True, exist_ok=True)
+          out_path.write_text(json.dumps(receipt, indent=2))
+          # Also write a stable /tmp copy for the GHA log:
+          Path("/tmp/submission_receipt_v1.json").write_text(json.dumps(receipt, indent=2))
+          print(f"wrote {out_path}")
+          print("--- receipt (truncated) ---")
+          print(json.dumps({k: v for k, v in receipt.items() if k != "verdict"}, indent=2)[:2000])
+          PYEOF
+
+      - name: Upload submission_receipt_v1.json artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cg_martini_submission_v1
+          path: |
+            analysis/runtime_receipts/cg_martini_submission_v1.json
+            /tmp/cg_system_info.json
+            /tmp/cg_system_status.txt
+          if-no-files-found: error
+
+      - name: Upload /tmp/cg_system_info.json (log-only)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cg_system_info
+          path: /tmp/cg_system_info.json
+          if-no-files-found: warn

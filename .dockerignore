@@ -2,8 +2,12 @@ __pycache__/
 *.pyc
 *.pyo
 *.db
+*.pdb
 *.pdb~
 .git/
+# INSTRUCCION 12 input PDB: committed to mirror for the GHA workflow,
+# but excluded from the image build context so it doesn't bloat GHCR layers.
+clcn7_test_input/
 node_modules/
 .tmp_*.py
 .mica/agent_feed/

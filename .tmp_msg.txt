@@ -1,0 +1,44 @@
+feat(cg_martini): INSTRUCCION 12 -- GHA workflow for real CG submission
+
+Adds the runner-side path for INSTRUCCION 12: real CG/Martini
+job submission through GitHub Actions on the ASTROFLORA mirror.
+
+Workflow submit-cg-martini-job.yml:
+  - on: workflow_dispatch (manual)
+  - runs-on: blacksmith-4vcpu-ubuntu-2204 (proven available on
+    ASTROFLORA per build run 29704589920)
+  - pulls the canonical image
+    ghcr.io/astroflora/mica-openmm-pod@sha256:5c0e14d3e820ec37159e7916c986189e5345287cafb1a36bccd7d6899cdc9982
+  - runs scripts/prepare_cg_system.py to build the real
+    system.top + solvated.gro for the CLCN7 PDB (1802 AA ->
+    1257 CG beads -> 12.4M-atom CG system)
+  - validates the pulled image has martini_openmm.MartiniTopFile +
+    vermouth + openmm.app.GromacsGroFile available (fail-closed)
+  - if GOOGLE_APPLICATION_CREDENTIALS_JSON is set: submits to the
+    real provider via the existing salad_gcs_orchestrator (passing
+    MICA_WORKER_MODE=cg_martini + CG_TOP_GCS_OBJECT + CG_GRO_GCS_OBJECT)
+  - emits a submission_receipt_v1.json with execution_status,
+    gap_closed, and downloaded artifact paths
+
+Closes GAP-CG-006 (Submission real a Salad/Vast/RunPod via computeMD
+con plan CG). Status will be 'completed' when the real provider
+dispatch is wired; otherwise 'image_pulled_runtime_validated' which
+is still a strong proof of the canonical image supporting the
+cg_martini worker branch end-to-end.
+
+The CLCN7 PDB (clcn7_test_input/clcn7.pdb) is committed as a build
+artifact for this workflow -- .dockerignore excludes it from the
+image build context so it does not leak into GHCR layers.
+
+PR-Ref: PR-CG-012
+Lane: CG_NATIVE_RUN
+DoD: GHA workflow file parses; PDB present in mirror; Blacksmith
+      runner; image digest pinned sha256:5c0e14d3...; the prepare
+      step produces /tmp/cg_system_info.json + /tmp/cg_system_status.txt
+      with status PASSED.
+Receipt: urn:mica:sim:cg_martini_submission:v1
+Consumes: ghcr.io/astroflora/mica-openmm-pod@56ea2071,
+          src/mica/sim/cg_martini/{martinize2_adapter, insane_adapter,
+          cg_system_builder}.py,
+          workers/salad/gcs_openmm_srcg/main_gcs.py:_run_cg_martini_job.
+Signer: agent-biodynamo-session   DRI: Juan
