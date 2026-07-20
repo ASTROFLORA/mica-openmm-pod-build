@@ -186,7 +186,11 @@ jobs:
 
       - name: Run prepare_cg_system.py (Martinize2 + INSANE + cg_system_builder)
         env:
-          CLCN7_PDB: ${{ inputs.clcn7_pdb }}
+          # Pass ABSOLUTE path to PDB: martinize2 runs with cwd=<tempdir>,
+          # so a relative path resolves to <tempdir>/clcn7_test_input/... which
+          # does not exist. Absolute path lets it find the file via the
+          # Martinize2Adapter's subprocess.run invocation.
+          CLCN7_PDB: ${{ github.workspace }}/${{ inputs.clcn7_pdb }}
           PYTHONUNBUFFERED: "1"
         run: |
           set -e
