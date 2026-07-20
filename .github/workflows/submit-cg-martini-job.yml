@@ -140,6 +140,35 @@ jobs:
             -c "import martini_openmm, vermouth; from openmm.app import GromacsGroFile; print('cg_runtime_image_alive', martini_openmm.MartiniTopFile, vermouth.__version__)"
           echo "CG runtime probe OK"
 
+      - name: Extract martinize2 binary from canonical image
+        run: |
+          set -e
+          # Martinize2 is only inside the image at /opt/conda/bin/martinize2.
+          # Extract it so the prepare script (which runs on the runner, not
+          # inside the image) can use it via MICA_MARTINIZE2_BINARY env var.
+          mkdir -p /tmp/cg_bin
+          CID=$(docker create "${{ steps.resolve.outputs.image_ref }}" --true)
+          docker cp "${CID}:/opt/conda/bin/martinize2" /tmp/cg_bin/martinize2 || {
+            echo "FATAL: martinize2 not present in canonical image"
+            docker rm "${CID}" >/dev/null 2>&1 || true
+            exit 50
+          }
+          docker rm "${CID}" >/dev/null 2>&1 || true
+          chmod +x /tmp/cg_bin/martinize2
+          file /tmp/cg_bin/martinize2
+          # Some martinize2 installs are .py scripts without a shebang. If the
+          # extracted file is a .py (no shebang), wrap it so subprocess can run
+          # it directly. The Martinize2Adapter's _probe_martinize2 also handles
+          # .py fallbacks; we just make the runner's PATH easy.
+          if head -c 2 /tmp/cg_bin/martinize2 | grep -q '#!'; then
+            echo "martinize2 has shebang: $(head -1 /tmp/cg_bin/martinize2)"
+          else
+            echo "WARN: martinize2 has no shebang; Martinize2Adapter will fall back to python <script>"
+          fi
+          ln -sf /tmp/cg_bin/martinize2 /usr/local/bin/martinize2
+          martinize2 --version || python /tmp/cg_bin/martinize2 --version || true
+          echo "martinize2 ready: $(which martinize2 || echo /tmp/cg_bin/martinize2)"
+
       - name: Detect GCP secret presence
         id: detect_gcp
         env:
@@ -158,14 +187,21 @@ jobs:
       - name: Run prepare_cg_system.py (Martinize2 + INSANE + cg_system_builder)
         env:
           CLCN7_PDB: ${{ inputs.clcn7_pdb }}
+          PYTHONUNBUFFERED: "1"
         run: |
           set -e
           mkdir -p analysis/runtime_receipts
           # Prepare script writes /tmp/cg_system_info.json + /tmp/cg_system_status.txt
-          python scripts/prepare_cg_system.py
-          STATUS="$(cat /tmp/cg_system_status.txt)"
+          # -u (unbuffered) + tee ensures all Python output reaches GHA logs
+          # even if the script exits with non-zero (buffering would otherwise
+          # swallow the diagnostic lines).
+          python -u scripts/prepare_cg_system.py 2>&1 | tee /tmp/prepare_cg_system.log
+          STATUS="$(cat /tmp/cg_system_status.txt || echo UNKNOWN)"
+          echo "--- /tmp/cg_system_status.txt: ${STATUS} ---"
           if [[ "${STATUS}" != "PASSED" ]]; then
             echo "FATAL: prepare_cg_system.py did not PASSED (status=${STATUS})"
+            echo "--- last 80 lines of /tmp/prepare_cg_system.log ---"
+            tail -80 /tmp/prepare_cg_system.log || true
             exit 20
           fi
           echo "--- /tmp/cg_system_info.json ---"
