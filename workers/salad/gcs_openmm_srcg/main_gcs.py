@@ -1630,14 +1630,23 @@ def _run_cg_martini_from_pdb_job(
         build_timings["insane_seconds"] = round(time.time() - t0, 6)
         build_receipts["insane_status"] = insane_receipt.status
         insane_payload = insane_receipt.payload
-        insane_outputs = insane_payload.outputs if hasattr(insane_payload, "outputs") else {}
-        insane_gro_ref = insane_outputs.get("gro_ref", "")
-        insane_top_ref = insane_outputs.get("top_ref", "")
-        insane_counts = dict(insane_payload.counts or {}) if hasattr(insane_payload, "counts") else {}
+        # INSTRUCCION 33 (2026-07-21): same dict-vs-model bug as martinize2.
+        # insane_receipt.payload is a dict (from .model_dump() in
+        # _build_receipt). hasattr(dict, 'outputs') returns False.
+        if isinstance(insane_payload, dict):
+            insane_outputs = insane_payload.get("outputs", {}) or {}
+            insane_counts = dict(insane_payload.get("counts", {}) or {})
+            insane_ve = insane_payload.get("validation_errors", [])
+        else:
+            insane_outputs = getattr(insane_payload, "outputs", {}) or {}
+            insane_counts = dict(getattr(insane_payload, "counts", {}) or {})
+            insane_ve = getattr(insane_payload, "validation_errors", [])
+        insane_gro_ref = insane_outputs.get("gro_ref", "") if isinstance(insane_outputs, dict) else getattr(insane_outputs, "gro_ref", "")
+        insane_top_ref = insane_outputs.get("top_ref", "") if isinstance(insane_outputs, dict) else getattr(insane_outputs, "top_ref", "")
         if not insane_gro_ref or not Path(insane_gro_ref).is_file():
             raise RuntimeError(
                 f"INSANEAdapter.build did not produce membrane.gro: {insane_gro_ref!r}. "
-                f"Receipt status={insane_receipt.status}, errors={getattr(insane_payload, 'validation_errors', [])}"
+                f"Receipt status={insane_receipt.status}, errors={insane_ve}"
             )
 
     # ── Phase 3: build_cg_system_bundle ─────────────────────────────
