@@ -1527,8 +1527,17 @@ def _run_cg_martini_from_pdb_job(
     build_timings["martinize2_seconds"] = round(time.time() - t0, 6)
     build_receipts["martinize2_status"] = martinize_receipt.status
     martinize_payload = martinize_receipt.payload
-    protein_gro_ref = martinize_payload.output_cg_gro_ref if hasattr(martinize_payload, "output_cg_gro_ref") else ""
-    itp_refs_csv = martinize_payload.output_cg_itp_ref if hasattr(martinize_payload, "output_cg_itp_ref") else ""
+    # INSTRUCCION 32 (2026-07-21): receipt.payload is a DICT (via
+    # payload.model_dump() in Martinize2Adapter._build_receipt), NOT the
+    # Pydantic Martinize2Payload model. So `hasattr(dict, "key")` returns
+    # False for arbitrary keys, which silently masked the v13/v14 failure
+    # for two iterations. Use dict-aware access here.
+    if isinstance(martinize_payload, dict):
+        protein_gro_ref = martinize_payload.get("output_cg_gro_ref", "") or ""
+        itp_refs_csv = martinize_payload.get("output_cg_itp_ref", "") or ""
+    else:
+        protein_gro_ref = getattr(martinize_payload, "output_cg_gro_ref", "") or ""
+        itp_refs_csv = getattr(martinize_payload, "output_cg_itp_ref", "") or ""
     if not protein_gro_ref or not Path(protein_gro_ref).is_file():
         # INSTRUCCION 29 (2026-07-21): persist martinize2 stdout/stderr to the
         # job's GCS prefix so we get forensic visibility into silent failures
@@ -1541,7 +1550,11 @@ def _run_cg_martini_from_pdb_job(
             _log = _logging.getLogger(__name__)
             martinize2_log = {
                 "status": martinize_receipt.status,
-                "errors": getattr(martinize_payload, 'validation_errors', []),
+                "errors": (
+                    martinize_payload.get('validation_errors', [])
+                    if isinstance(martinize_payload, dict)
+                    else getattr(martinize_payload, 'validation_errors', [])
+                ),
                 "stdout_tail": getattr(martinize_adapter, "_last_stdout", "")[-2000:],
                 "stderr_tail": getattr(martinize_adapter, "_last_stderr", "")[-2000:],
                 "expected_coord": str(martinize_out / f"{Path(local_pdb).stem}_cg.pdb"),
@@ -1577,9 +1590,14 @@ def _run_cg_martini_from_pdb_job(
                 _log.error("Failed to upload martinize2 debug logs to GCS: %s", e_log)
             except Exception:
                 print(f"[martinize2-debug] GCS upload FAILED: {e_log!r}")
+        # Resolve validation_errors from dict-or-model payload (INSTRUCCION 32).
+        if isinstance(martinize_payload, dict):
+            _ve = martinize_payload.get("validation_errors", [])
+        else:
+            _ve = getattr(martinize_payload, "validation_errors", [])
         raise RuntimeError(
             f"Martinize2Adapter did not produce protein CG .gro: {protein_gro_ref!r}. "
-            f"Receipt status={martinize_receipt.status}, errors={getattr(martinize_payload, 'validation_errors', [])}. "
+            f"Receipt status={martinize_receipt.status}, errors={_ve}. "
             f"See output/martinize2_debug.json and martinize2_stdout.txt/stderr.txt in GCS."
         )
     molecule_itp_refs = [p.strip() for p in (itp_refs_csv or "").split(",") if p.strip()]
