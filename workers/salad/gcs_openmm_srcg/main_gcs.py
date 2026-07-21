@@ -1548,6 +1548,18 @@ def _run_cg_martini_from_pdb_job(
                 "expected_top": str(martinize_out / f"{Path(local_pdb).stem}_cg.top"),
                 "expected_gro": str(martinize_out / f"{Path(local_pdb).stem}_cg.gro"),
                 "output_dir_listing": sorted(p.name for p in martinize_out.iterdir()) if martinize_out.exists() else [],
+                # INSTRUCCION 31 (2026-07-21): persist the _pdb_to_gro
+                # decision tree so we can tell which path (mdtraj vs legacy)
+                # failed in future dispatches.
+                "pdb_to_gro_decision": getattr(martinize_adapter, "_last_pdb_to_gro_decision", None),
+                # Also dump the actual file sizes of martinize2 outputs --
+                # if input_cg.gro shows up at size 0 we know mdtraj wrote
+                # an empty file and the legacy fallback didn't kick in.
+                "file_sizes": {
+                    p.name: p.stat().st_size
+                    for p in martinize_out.iterdir()
+                    if p.is_file()
+                } if martinize_out.exists() else {},
             }
             real_bucket = client.bucket(bucket)
             real_bucket.blob(f"{output_prefix}/output/martinize2_debug.json").upload_from_string(

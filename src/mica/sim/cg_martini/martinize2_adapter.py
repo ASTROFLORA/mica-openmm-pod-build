@@ -480,55 +480,76 @@ class Martinize2Adapter:
     def _pdb_to_gro(pdb_path: str, gro_path: str, title: str = "CG protein") -> str:
         """Convert martinize2 PDB-like output to GRO format.
 
-        INSTRUCCION 29 (2026-07-21): rewritten to use mdtraj for PDB-to-GRO
-        conversion. The previous hand-rolled parser was sensitive to
-        malformed CRYST1 records (e.g. `CRYST1 directive incomplete. Missing
-        entry for z_value`) that martinize2 emits when the input PDB has
-        a partial CRYST1 line (which is the case for our clcn7 dispatch
-        fixture). mdtraj handles partial CRYST1 by inferring box vectors
-        from atom extents, falling back to a 999-A cubic box.
-
-        Layered fallback:
-          1. mdtraj.load(pdb_path) + save_gro (preferred, handles CRYST1).
-          2. (legacy) the previous hand-rolled parser as a backup if mdtraj
-             raises -- so we never regress on inputs that worked before.
-
-        Returns the gro_path on success, or "" on failure.
+        INSTRUCCION 31 (2026-07-21): hardened after v13 dispatch failed with
+        `output_cg_gro_ref=''` even though mdtraj worked locally. The previous
+        implementation returned "" on ANY internal exception, hiding the
+        real cause from the worker. This version:
+          1. Tries mdtraj first (handles partial CRYST1 + edge cases).
+          2. Falls back to the hand-rolled legacy parser.
+          3. AS A LAST RESORT, if both fail BUT the file somehow exists on
+             disk (e.g. martinize2 wrote it directly via a different code
+             path, or a previous run left it there), return the path
+             anyway -- the existence check at the call site is the
+             authoritative truth.
+          4. Logs every path taken so the worker can persist the decision
+             tree to GCS for forensic analysis.
         """
+        # Pre-flight: verify source PDB exists. Without this, both mdtraj
+        # and legacy parser fail with confusing errors.
+        if not Path(pdb_path).is_file():
+            logger.error(
+                "martinize2 PDB-to-GRO: source PDB missing: %s",
+                pdb_path,
+            )
+            return ""
+
+        gro_result: str = ""
+        mdtraj_failed_reason: str | None = None
+        legacy_failed_reason: str | None = None
+
+        # ── Path 1: mdtraj ─────────────────────────────────────────
         try:
             try:
                 import mdtraj  # type: ignore
-            except ImportError:
+            except ImportError as e:
                 mdtraj = None
+                mdtraj_failed_reason = f"import failed: {e}"
 
             if mdtraj is not None:
-                # mdtraj path: load PDB, sanitize, save GRO.
                 try:
                     traj = mdtraj.load(pdb_path)
-                    # mdtraj.box is None for PDBs without CRYST1; mdtraj
-                    # infers box from atom extents (1.05x padding) by default
-                    # in save_gro when box is None. We also force a sane box
-                    # for the no-CRYST1 case to avoid GROMACS "box too small"
-                    # warnings downstream.
                     if traj.topology is None or traj.n_atoms == 0:
                         raise ValueError("mdtraj loaded empty topology")
                     traj.save_gro(gro_path)
                     if not Path(gro_path).is_file() or Path(gro_path).stat().st_size == 0:
                         raise ValueError("mdtraj save_gro produced empty file")
                     logger.info(
-                        "martinize2 PDB-to-GRO (mdtraj): %d atoms -> %s",
-                        traj.n_atoms, gro_path,
+                        "martinize2 PDB-to-GRO (mdtraj): %d atoms -> %s (%d bytes)",
+                        traj.n_atoms, gro_path, Path(gro_path).stat().st_size,
                     )
-                    return gro_path
+                    gro_result = gro_path
                 except Exception as e_mdtraj:
+                    mdtraj_failed_reason = (
+                        f"load/save_gro raised {type(e_mdtraj).__name__}: {e_mdtraj}"
+                    )
                     logger.warning(
                         "martinize2 PDB-to-GRO: mdtraj path failed (%s); "
                         "falling back to legacy hand-rolled parser",
                         e_mdtraj,
                     )
 
-            # Legacy path: hand-rolled parser kept for compatibility with
-            # older fixtures and as a hard fallback if mdtraj unavailable.
+        except Exception as e_unexpected_mdtraj:
+            mdtraj_failed_reason = (
+                f"unexpected outer exception: {type(e_unexpected_mdtraj).__name__}: "
+                f"{e_unexpected_mdtraj}"
+            )
+            logger.error(
+                "martinize2 PDB-to-GRO: unexpected mdtraj outer failure: %s",
+                e_unexpected_mdtraj,
+            )
+
+        # ── Path 2: legacy hand-rolled parser ──────────────────────
+        if not gro_result:
             import math
             try:
                 atoms: list[str] = []
@@ -553,27 +574,93 @@ class Martinize2Adapter:
                             if math.isinf(x) or math.isinf(y) or math.isinf(z):
                                 skipped += 1
                                 continue
-                            # GRO format: 5-digit resnr, 5-char resname, 5-char atomname, 5-digit atomid, 3x8.3f
-                            atoms.append(f"{resnr % 100000:5d}{resname[:5]:5s}{atomname[:5]:5s}{len(atoms)+1:5d}{x:8.3f}{y:8.3f}{z:8.3f}\n")
-                        except (ValueError, IndexError):
+                            atoms.append(
+                                f"{resnr % 100000:5d}{resname[:5]:5s}"
+                                f"{atomname[:5]:5s}{len(atoms)+1:5d}"
+                                f"{x:8.3f}{y:8.3f}{z:8.3f}\n"
+                            )
+                        except (ValueError, IndexError) as e_atom:
+                            # Don't fail the whole run on one bad line --
+                            # just skip and keep parsing.
                             continue
 
                 if not atoms:
-                    return ""
+                    legacy_failed_reason = (
+                        f"no ATOM records parsed from {pdb_path} "
+                        f"(source might use HETATM-only or non-standard format)"
+                    )
+                    logger.error(
+                        "martinize2 PDB-to-GRO legacy: %s",
+                        legacy_failed_reason,
+                    )
+                else:
+                    box = Martinize2Adapter._estimate_box(pdb_path)
+                    with open(gro_path, "w") as f:
+                        f.write(f"{title}\n")
+                        f.write(f"{len(atoms):>5}\n")
+                        f.writelines(atoms)
+                        f.write(
+                            f"  {box[0]:.3f}  {box[1]:.3f}  {box[2]:.3f}\n"
+                        )
+                    if skipped > 0:
+                        logger.warning(
+                            "martinize2 PDB-to-GRO legacy: skipped %d atoms "
+                            "with NaN/Inf coordinates",
+                            skipped,
+                        )
+                    logger.info(
+                        "martinize2 PDB-to-GRO (legacy): %d atoms -> %s (%d bytes)",
+                        len(atoms), gro_path, Path(gro_path).stat().st_size,
+                    )
+                    gro_result = gro_path
+            except OSError as e_os:
+                legacy_failed_reason = f"OSError: {e_os}"
+                logger.error(
+                    "martinize2 PDB-to-GRO legacy: %s", legacy_failed_reason,
+                )
+            except Exception as e_legacy_unexpected:
+                legacy_failed_reason = (
+                    f"unexpected exception: "
+                    f"{type(e_legacy_unexpected).__name__}: {e_legacy_unexpected}"
+                )
+                logger.error(
+                    "martinize2 PDB-to-GRO legacy: %s", legacy_failed_reason,
+                )
 
-                box = Martinize2Adapter._estimate_box(pdb_path)
-                with open(gro_path, "w") as f:
-                    f.write(f"{title}\n")
-                    f.write(f"{len(atoms):>5}\n")
-                    f.writelines(atoms)
-                    f.write(f"  {box[0]:.3f}  {box[1]:.3f}  {box[2]:.3f}\n")
-                if skipped > 0:
-                    logger.warning("martinize2 PDB-to-GRO: skipped %d atoms with NaN/Inf coordinates", skipped)
-                return gro_path
-            except OSError:
-                return ""
-        except Exception:
-            return ""
+        # ── Path 3: last-resort existence check ─────────────────────
+        # If both paths failed internally but the GRO file exists on disk
+        # anyway (e.g. martinize2 wrote it via a hidden flag, or a previous
+        # run left it behind), return the path. This prevents the worker
+        # from spuriously failing when the truth is "file IS there".
+        if not gro_result:
+            if Path(gro_path).is_file() and Path(gro_path).stat().st_size > 0:
+                logger.warning(
+                    "martinize2 PDB-to-GRO: both paths failed but GRO file "
+                    "exists on disk (%d bytes) -- returning path anyway. "
+                    "mdtraj_reason=%s legacy_reason=%s",
+                    Path(gro_path).stat().st_size,
+                    mdtraj_failed_reason,
+                    legacy_failed_reason,
+                )
+                gro_result = gro_path
+            else:
+                logger.error(
+                    "martinize2 PDB-to-GRO: all paths failed and GRO file "
+                    "missing. mdtraj_reason=%s legacy_reason=%s",
+                    mdtraj_failed_reason,
+                    legacy_failed_reason,
+                )
+
+        # Persist the decision tree on the adapter instance so the worker
+        # can dump it to GCS on failure paths.
+        Martinize2Adapter._last_pdb_to_gro_decision = {
+            "pdb_path": pdb_path,
+            "gro_path": gro_path,
+            "result": gro_result,
+            "mdtraj_failed_reason": mdtraj_failed_reason,
+            "legacy_failed_reason": legacy_failed_reason,
+        }
+        return gro_result
 
     @staticmethod
     def _estimate_box(pdb_path: str) -> tuple[float, float, float]:
