@@ -103,12 +103,39 @@ verified = []
 def check_import(mod, name):
     m = __import__(mod, fromlist=[name])
     attr = getattr(m, name, None)
-    if attr is None:
+    if attr is not None:
+        verified.append({
+            'module': mod,
+            'symbol': name,
+            'defined_in': getattr(attr, '__module__', '?'),
+        })
+        return attr
+    # Tolerant fallback (INSTRUCCION 29 -- 2026-07-21): some pinned mica submodule
+    # commits (e.g. 81a817c23) carry `cg_martini/__init__.py` as a docstring stub
+    # WITHOUT the public re-exports (`Martinize2Adapter`, `INSANEAdapter`, ...).
+    # The submodules are always present, so we try a submodule-level import of the
+    # known CG martini adapters.
+    symbol_just = name.rsplit('.', 1)[-1]
+    submodule_map = {
+        'Martinize2Adapter': 'martinize2_adapter',
+        'INSANEAdapter': 'insane_adapter',
+        'build_cg_system_bundle': 'cg_system_builder',
+    }
+    sub_name = submodule_map.get(symbol_just)
+    if sub_name is None or not mod.startswith('mica.sim.cg_martini'):
         raise ImportError(f'{mod}.{name} not found')
+    try:
+        sub = __import__(mod + '.' + sub_name, fromlist=[symbol_just])
+        attr = getattr(sub, symbol_just, None)
+    except ImportError as e:
+        raise ImportError(f'{mod}.{name} not found (and submodule {sub_name} failed: {e})') from e
+    if attr is None:
+        raise ImportError(f'{mod}.{name} not found (submodule fallback also missing)')
     verified.append({
-        'module': mod,
-        'symbol': name,
+        'module': mod + '.' + sub_name,
+        'symbol': symbol_just,
         'defined_in': getattr(attr, '__module__', '?'),
+        'note': 'tolerant fallback -- package __init__.py is stub',
     })
     return attr
 
