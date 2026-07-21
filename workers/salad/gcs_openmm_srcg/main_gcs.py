@@ -1223,6 +1223,10 @@ def _run_cg_martini_job(
 
     The 20 fs timestep is the standard Martini 3 production dt (Martini 2
     uses 20-40 fs). Using 2 fs here would alias CG forces and explode.
+
+    For new deployments prefer ``_run_cg_martini_from_pdb_job`` (INSTRUCCION 25)
+    which builds the system topology INSIDE the worker from just the AA PDB,
+    sidestepping the 569MB solvated.gro upload that GCS rejects on this host.
     """
     import martini_openmm
     import openmm
@@ -1378,6 +1382,371 @@ def _run_cg_martini_job(
     return history
 
 
+# ---------------------------------------------------------------------------
+# CG_NATIVE_RUN INSTRUCCION 25 -- worker-side AA->CG build
+# ---------------------------------------------------------------------------
+# Pre-INSTRUCCION-25, the runtime provider had to upload a pre-built
+# Martini 3 .top + 569MB solvated.gro to GCS. GCS upload from this host
+# capped at ~0.3 MB/s (INSTRUCCION 24 diagnostic) so the upload timed out
+# at the 120s wall-clock deadline of google-cloud-storage retry. The
+# 569MB CG system therefore never reached the worker.
+#
+# Fix: keep the AA->CG build INSIDE the worker. The provider now only
+# stages the original AA PDB (typically 0.1-5 MB for a soluble protein,
+# ~2.4 MB for CLCN7). The worker runs:
+#   1. Martinize2Adapter.map_protein(pdb)  -> CG protein .gro + .itp(s)
+#   2. INSANEAdapter.build(protein_gro)   -> membrane.gro + header-only .top
+#   3. build_cg_system_bundle(...)         -> solvated.gro + system.top
+# then continues into the CG runtime as before.
+#
+# This is the canonical "rebuild in worker" path that makes the lane
+# independent of the host's GCS upload bandwidth.
+# ---------------------------------------------------------------------------
+
+
+def _run_cg_martini_from_pdb_job(
+    *,
+    client: storage.Client,
+    bucket: str,
+    pdb_bucket: str,
+    pdb_object: str,
+    output_prefix: str,
+    workspace: Path,
+    max_steps: int,
+    benchmark_steps: int,
+    report_freq: int,
+    saving_interval_seconds: int,
+) -> dict[str, Any]:
+    """CG/Martini runtime job that builds the system topology in-worker.
+
+    CG_NATIVE_RUN INSTRUCCION 25. Replaces the pre-built-CG upload path
+    (see ``_run_cg_martini_job``) with an in-worker build pipeline:
+
+      PDB (AA) -> Martinize2Adapter -> CG protein (.gro + molecule_*.itp)
+                                 -> INSANEAdapter     -> membrane.gro + .top
+                                 -> build_cg_system_bundle -> solvated.gro + system.top
+
+    Once ``solvated.gro`` and ``system.top`` exist on the local worker
+    filesystem, the rest of the runtime (MartiniTopFile -> System ->
+    LangevinIntegrator -> DCDReporter) is identical to
+    ``_run_cg_martini_job``.
+
+    The PDB download IS small (<10MB even for huge complexes) so the
+    upload-bottleneck pathology discovered in INSTRUCCION 24 does not
+    apply. The worker is the canonical site for AA->CG mapping because
+    the canonical image already has vermouth, martini_openmm, INSANE and
+    DSSP installed (see Dockerfile.worker / INSTRUCCION 11).
+
+    Required env vars (provided by ``prepare_salad_md_submission`` when
+    ``cg_from_pdb_only=True``):
+      - PDB_GCS_OBJECT (gs:// path to AA PDB)
+    Optional env vars:
+      - MICA_CG_GEOMETRY_CLASS       (default "flat_bilayer")
+      - MICA_CG_LIPID_COMPOSITION    (default "POPC:1")
+      - MICA_CG_SOLVENT              (default "PW")
+      - MICA_CG_SALT_MM              (default 150)
+      - MICA_CG_MEMBRANE_ENABLED     (default "1")
+    Plus the same MICA_CG_TIMESTEP_FS / _EPSILON_R / _TEMPERATURE_K /
+    _PRESSURE_BAR / _NPT / _FRICTION_PS / _NONBONDED_CUTOFF_NM knobs
+    that ``_run_cg_martini_job`` consumes.
+    """
+    import martini_openmm
+    import openmm
+    import openmm.unit as _unit
+    from openmm import LangevinIntegrator, MonteCarloBarostat, Platform
+    from openmm.app import DCDReporter, GromacsGroFile, PDBFile, Simulation, StateDataReporter
+
+    if not pdb_object.strip():
+        raise RuntimeError(
+            "cg_martini_from_pdb worker mode requires PDB_GCS_OBJECT env var "
+            "(AA PDB is the only input; the worker builds CG topology locally)."
+        )
+
+    # ── Phase 0: download AA PDB ─────────────────────────────────────
+    cg_build_dir = workspace / "cg_build"
+    cg_build_dir.mkdir(parents=True, exist_ok=True)
+    local_pdb = cg_build_dir / "input.pdb"
+    _download_required(client, pdb_bucket, pdb_object, local_pdb)
+
+    cg_runtime_params = {
+        "timestep_fs": float(os.getenv("MICA_CG_TIMESTEP_FS", "20").strip() or "20"),
+        "epsilon_r": float(os.getenv("MICA_CG_EPSILON_R", "15").strip() or "15"),
+        "temperature_K": float(os.getenv("MICA_CG_TEMPERATURE_K", "310").strip() or "310"),
+        "pressure_bar": float(os.getenv("MICA_CG_PRESSURE_BAR", "1").strip() or "1"),
+        "is_npt": os.getenv("MICA_CG_NPT", "1").strip().lower() not in ("", "0", "false", "no"),
+        "friction_ps": float(os.getenv("MICA_CG_FRICTION_PS", "10").strip() or "10"),
+        "nonbonded_cutoff_nm": float(os.getenv("MICA_CG_NONBONDED_CUTOFF_NM", "1.1").strip() or "1.1"),
+    }
+
+    geometry_class = os.getenv("MICA_CG_GEOMETRY_CLASS", "flat_bilayer").strip() or "flat_bilayer"
+    lipid_composition = os.getenv("MICA_CG_LIPID_COMPOSITION", "POPC:1").strip() or "POPC:1"
+    solvent = os.getenv("MICA_CG_SOLVENT", "PW").strip() or "PW"
+    salt_mM = int(os.getenv("MICA_CG_SALT_MM", "150").strip() or "150")
+    membrane_enabled = os.getenv("MICA_CG_MEMBRANE_ENABLED", "1").strip().lower() not in (
+        "", "0", "false", "no"
+    )
+
+    started_at = _utc_now_iso()
+    build_timings: dict[str, float] = {}
+    build_receipts: dict[str, Any] = {}
+
+    # ── Phase 1: Martinize2Adapter.map_protein ───────────────────────
+    from mica.sim.cg_martini import Martinize2Adapter
+    from mica.sim.cg_martini import INSANEAdapter
+    from mica.sim.cg_martini import CGSystemBuildRequest, build_cg_system_bundle
+
+    martinize_out = cg_build_dir / "martinize2"
+    martinize_out.mkdir(parents=True, exist_ok=True)
+    martinize_adapter = Martinize2Adapter()
+    t0 = time.time()
+    martinize_receipt = martinize_adapter.map_protein(
+        input_structure_ref=str(local_pdb),
+        output_dir=str(martinize_out),
+        ss_policy="dssp",
+        en_policy="elnedyn",
+    )
+    build_timings["martinize2_seconds"] = round(time.time() - t0, 6)
+    build_receipts["martinize2_status"] = martinize_receipt.status
+    martinize_payload = martinize_receipt.payload
+    protein_gro_ref = martinize_payload.output_cg_gro_ref if hasattr(martinize_payload, "output_cg_gro_ref") else ""
+    itp_refs_csv = martinize_payload.output_cg_itp_ref if hasattr(martinize_payload, "output_cg_itp_ref") else ""
+    if not protein_gro_ref or not Path(protein_gro_ref).is_file():
+        raise RuntimeError(
+            f"Martinize2Adapter did not produce protein CG .gro: {protein_gro_ref!r}. "
+            f"Receipt status={martinize_receipt.status}, errors={getattr(martinize_payload, 'validation_errors', [])}"
+        )
+    molecule_itp_refs = [p.strip() for p in (itp_refs_csv or "").split(",") if p.strip()]
+    if not molecule_itp_refs or not all(Path(p).is_file() for p in molecule_itp_refs):
+        raise RuntimeError(
+            f"Martinize2Adapter did not produce molecule_*.itp files. "
+            f"itp_refs_csv={itp_refs_csv!r}, molecule_itp_refs={molecule_itp_refs!r}"
+        )
+
+    # ── Phase 2: INSANEAdapter.build ────────────────────────────────
+    insane_out = cg_build_dir / "insane"
+    insane_out.mkdir(parents=True, exist_ok=True)
+    insane_receipt: Any = None
+    insane_gro_ref = ""
+    insane_top_ref = ""
+    insane_counts: dict[str, int] = {}
+    if membrane_enabled:
+        insane_adapter = INSANEAdapter()
+        t0 = time.time()
+        insane_receipt = insane_adapter.build(
+            protein_gro_ref=protein_gro_ref,
+            output_dir=str(insane_out),
+            builder="insane",
+            geometry_class=geometry_class,
+            lipid_composition=lipid_composition,
+            solvent=solvent,
+            salt_concentration=salt_mM / 1000.0,
+            center_protein=True,
+        )
+        build_timings["insane_seconds"] = round(time.time() - t0, 6)
+        build_receipts["insane_status"] = insane_receipt.status
+        insane_payload = insane_receipt.payload
+        insane_outputs = insane_payload.outputs if hasattr(insane_payload, "outputs") else {}
+        insane_gro_ref = insane_outputs.get("gro_ref", "")
+        insane_top_ref = insane_outputs.get("top_ref", "")
+        insane_counts = dict(insane_payload.counts or {}) if hasattr(insane_payload, "counts") else {}
+        if not insane_gro_ref or not Path(insane_gro_ref).is_file():
+            raise RuntimeError(
+                f"INSANEAdapter.build did not produce membrane.gro: {insane_gro_ref!r}. "
+                f"Receipt status={insane_receipt.status}, errors={getattr(insane_payload, 'validation_errors', [])}"
+            )
+
+    # ── Phase 3: build_cg_system_bundle ─────────────────────────────
+    bundle_out = cg_build_dir / "bundle"
+    bundle_out.mkdir(parents=True, exist_ok=True)
+    bundle_request = CGSystemBuildRequest(
+        forcefield_family="martini3",
+        martini_version="3.0.0",
+        geometry_class=geometry_class,
+        membrane_enabled=membrane_enabled,
+        water_model="martini3",
+        ion_model="martini3",
+        salt_mM=salt_mM,
+        lipid_composition=lipid_composition,
+        solvent=solvent,
+        martinize2_output_cg_gro_ref=protein_gro_ref,
+        martinize2_output_itp_refs=molecule_itp_refs,
+        insane_output_gro_ref=insane_gro_ref,
+        insane_output_top_ref=insane_top_ref,
+        insane_counts=insane_counts,
+        output_dir=str(bundle_out),
+        source_target_id=os.getenv("MICA_SOURCE_TARGET_ID", "cg_martini_from_pdb"),
+        bundle_id=os.getenv("MICA_CG_RUNTIME_BUNDLE_ID", "cg_martini_from_pdb"),
+    )
+    t0 = time.time()
+    bundle_payload = build_cg_system_bundle(bundle_request)
+    build_timings["cg_system_builder_seconds"] = round(time.time() - t0, 6)
+    if bundle_payload.implementation_status != "real_compile":
+        raise RuntimeError(
+            f"build_cg_system_bundle did not compile: status={bundle_payload.implementation_status}, "
+            f"blockers={bundle_payload.blockers}"
+        )
+
+    local_top = Path(bundle_payload.topology_path)
+    local_gro = Path(bundle_payload.coordinate_path)
+    local_dcd = cg_build_dir / "prod.dcd"
+    local_log = cg_build_dir / "prod.log"
+    local_chk = cg_build_dir / "prod.chk"
+    local_final_pdb = cg_build_dir / "final_state.pdb"
+
+    conf = GromacsGroFile(str(local_gro))
+    box_vectors = conf.getPeriodicBoxVectors()
+
+    top = martini_openmm.MartiniTopFile(
+        str(local_top),
+        periodicBoxVectors=box_vectors,
+        epsilon_r=cg_runtime_params["epsilon_r"],
+    )
+    system = top.create_system(
+        nonbonded_cutoff=cg_runtime_params["nonbonded_cutoff_nm"] * _unit.nanometer
+    )
+    if cg_runtime_params["is_npt"]:
+        system.addForce(
+            MonteCarloBarostat(
+                cg_runtime_params["pressure_bar"] * _unit.bar,
+                cg_runtime_params["temperature_K"] * _unit.kelvin,
+                100,
+            )
+        )
+
+    integrator = LangevinIntegrator(
+        cg_runtime_params["temperature_K"] * _unit.kelvin,
+        cg_runtime_params["friction_ps"] / _unit.picosecond,
+        cg_runtime_params["timestep_fs"] * _unit.femtoseconds,
+    )
+
+    platform_name = ""
+    platform_obj = None
+    for candidate in ("CUDA", "OpenCL", "CPU", "Reference"):
+        try:
+            platform_obj = Platform.getPlatformByName(candidate)
+            platform_name = candidate
+            break
+        except Exception:
+            continue
+    if platform_obj is None:
+        raise RuntimeError("No OpenMM platform available for cg_martini_from_pdb job")
+
+    simulation = Simulation(top.topology, system, integrator, platform_obj)
+    simulation.context.setPositions(conf.getPositions())
+    simulation.context.computeVirtualSites()
+
+    state0 = simulation.context.getState(getEnergy=True)
+    energy_initial_kjmol = float(
+        state0.getPotentialEnergy().value_in_unit(_unit.kilojoule_per_mole)
+    )
+
+    simulation.minimizeEnergy(maxIterations=100)
+
+    # -- THROWAWAY EQUILIBRATION (delete once MDEngine.run_graph() handles CG multi-fase) ---
+    # Minimal NVT -> NPT ramp to prevent NaN explosions on freshly-built CG/Martini
+    # systems when the underlying system has residual clashes (protein-lipid, water
+    # grid overlap, ion placement). Bounded: <=3000 steps total, no reporters during
+    # equilibracion (so prod.dcd / prod.log stay clean for the dashboard).
+    # INSTRUCCION 29 of CG_NATIVE_RUN program; commit message carries the THROWAWAY
+    # label and references CG_NATIVE_RUN/CLEANUP_LOG entry.
+    simulation.context.setVelocitiesToTemperature(
+        cg_runtime_params["temperature_K"] * _unit.kelvin
+    )
+    nvt_integrator = LangevinIntegrator(
+        cg_runtime_params["temperature_K"],
+        cg_runtime_params["friction_ps"] / _unit.picosecond,
+        cg_runtime_params["timestep_fs"] * _unit.femtoseconds,
+    )
+    simulation.context.setIntegrator(nvt_integrator)
+    simulation.step(1000)  # 20 ps @ dt=20fs NVT thermalization
+    npt_integrator = LangevinIntegrator(
+        cg_runtime_params["temperature_K"],
+        cg_runtime_params["friction_ps"] / _unit.picosecond,
+        cg_runtime_params["timestep_fs"] * _unit.femtoseconds,
+    )
+    simulation.context.setIntegrator(npt_integrator)
+    simulation.step(2000)  # 40 ps @ dt=20fs NPT equilibration
+    # -- /THROWAWAY EQUILIBRATION -----------------------------------------------
+
+    simulation.reporters.append(DCDReporter(str(local_dcd), max(1, report_freq)))
+    simulation.reporters.append(
+        StateDataReporter(
+            str(local_log),
+            max(1, report_freq),
+            step=True,
+            time=True,
+            potentialEnergy=True,
+            kineticEnergy=True,
+            totalEnergy=True,
+            temperature=True,
+            volume=True,
+        )
+    )
+
+    steps_done = 0
+    wall_started = time.time()
+    next_checkpoint_at = wall_started + max(int(saving_interval_seconds), 1)
+    while steps_done < max_steps:
+        run_steps = min(max(int(benchmark_steps), 1), max_steps - steps_done)
+        simulation.step(run_steps)
+        steps_done = int(simulation.context.getState().getStepCount())
+        now = time.time()
+        if now >= next_checkpoint_at or steps_done >= max_steps:
+            with open(local_chk, "wb") as handle:
+                handle.write(simulation.context.createCheckpoint())
+            next_checkpoint_at = now + max(int(saving_interval_seconds), 1)
+    wall_elapsed_s = max(time.time() - wall_started, 1e-6)
+
+    state_final = simulation.context.getState(getEnergy=True, getPositions=True)
+    energy_final_kjmol = float(
+        state_final.getPotentialEnergy().value_in_unit(_unit.kilojoule_per_mole)
+    )
+    with open(str(local_final_pdb), "w", encoding="utf-8") as handle:
+        PDBFile.writeFile(
+            simulation.topology,
+            state_final.getPositions(asNumpy=True),
+            handle,
+        )
+
+    cg_output_prefix = f"{output_prefix}/cg_martini_from_pdb"
+    uploaded_outputs: dict[str, str] = {}
+    for local_path in (local_dcd, local_log, local_chk, local_final_pdb):
+        object_name = f"{cg_output_prefix}/{local_path.name}"
+        _upload_file(client, bucket, local_path, object_name)
+        uploaded_outputs[local_path.name] = object_name
+
+    history = {
+        "status": "completed",
+        "mode": "cg_martini_from_pdb",
+        "worker_mode": "cg_martini_from_pdb",
+        "started_at": started_at,
+        "completed_at": _utc_now_iso(),
+        "build_timings": build_timings,
+        "build_receipts": build_receipts,
+        "pdb_input_object": pdb_object,
+        "pdb_input_local": str(local_pdb),
+        "cg_protein_gro_ref": protein_gro_ref,
+        "cg_membrane_gro_ref": insane_gro_ref,
+        "cg_solvated_gro_ref": str(local_gro),
+        "cg_system_top_ref": str(local_top),
+        "insane_counts": insane_counts,
+        "system_particle_count": int(system.getNumParticles()),
+        "n_steps_run": int(steps_done),
+        "wall_time_s": round(wall_elapsed_s, 6),
+        "energy_initial_kjmol": round(energy_initial_kjmol, 6),
+        "energy_final_kjmol": round(energy_final_kjmol, 6),
+        "platform": platform_name,
+        "timestep_fs": float(cg_runtime_params["timestep_fs"]),
+        "temperature_K": float(cg_runtime_params["temperature_K"]),
+        "pressure_bar": float(cg_runtime_params["pressure_bar"]) if cg_runtime_params["is_npt"] else 0.0,
+        "is_npt": bool(cg_runtime_params["is_npt"]),
+        "epsilon_r": float(cg_runtime_params["epsilon_r"]),
+        "nonbonded_cutoff_nm": float(cg_runtime_params["nonbonded_cutoff_nm"]),
+        "outputs": uploaded_outputs,
+    }
+    return history
+
+
 def main() -> None:
     client = None
     bucket = ""
@@ -1409,6 +1778,9 @@ def main() -> None:
         # CG_NATIVE_RUN INSTRUCCION 11 — cg_martini mode does NOT consume a PDB.
         # Its inputs come from CG_TOP_GCS_OBJECT + CG_GRO_GCS_OBJECT. For all
         # other modes the AA PDB is required, so we keep the hard fail-fast.
+        # CG_NATIVE_RUN INSTRUCCION 25 — cg_martini_from_pdb DOES consume a PDB.
+        # It builds the Martini 3 topology IN-WORKER (Martinize2 + INSANE +
+        # cg_system_builder) instead of receiving a pre-built CG bundle.
         pdb_object = "" if worker_mode == "cg_martini" else _require_env("PDB_GCS_OBJECT")
         bootstrap_manifest = _emit_bootstrap_artifacts(client=client, bucket_name=bucket, root_prefix=prefix, worker_mode=worker_mode)
         if worker_mode == "paper_dodecaedrica":
@@ -1420,6 +1792,14 @@ def main() -> None:
                 client=client, bucket=bucket,
                 cg_top_object=os.environ.get("CG_TOP_GCS_OBJECT", ""),
                 cg_gro_object=os.environ.get("CG_GRO_GCS_OBJECT", ""),
+                output_prefix=output_prefix, workspace=workspace,
+                max_steps=max_steps, benchmark_steps=benchmark_steps,
+                report_freq=report_freq, saving_interval_seconds=saving_interval_seconds,
+            )
+        elif worker_mode == "cg_martini_from_pdb":
+            history = _run_cg_martini_from_pdb_job(
+                client=client, bucket=bucket, pdb_bucket=pdb_bucket,
+                pdb_object=pdb_object,
                 output_prefix=output_prefix, workspace=workspace,
                 max_steps=max_steps, benchmark_steps=benchmark_steps,
                 report_freq=report_freq, saving_interval_seconds=saving_interval_seconds,
