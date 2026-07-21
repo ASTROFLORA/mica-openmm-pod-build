@@ -1491,9 +1491,28 @@ def _run_cg_martini_from_pdb_job(
     build_receipts: dict[str, Any] = {}
 
     # ── Phase 1: Martinize2Adapter.map_protein ───────────────────────
-    from mica.sim.cg_martini import Martinize2Adapter
-    from mica.sim.cg_martini import INSANEAdapter
-    from mica.sim.cg_martini import CGSystemBuildRequest, build_cg_system_bundle
+    # INSTRUCCION 29 (2026-07-21): tolerant import. Some pinned mica submodule
+    # commits (e.g. 81a817c23 -- docs-only checkpoint before INSTRUCCION 13's
+    # re-export refactor) carry `cg_martini/__init__.py` as a docstring stub
+    # without the public re-exports added in 249875cb7. The submodules
+    # (`martinize2_adapter.py`, `insane_adapter.py`, `cg_system_builder.py`)
+    # are always present from f51fd29b6 onward, so we fall back to them
+    # when the package-level re-export is unavailable. Remove this fallback
+    # once the build repo's mica submodule pin is advanced past 249875cb7.
+    try:
+        from mica.sim.cg_martini import (  # noqa: F401  (re-exported surface)
+            Martinize2Adapter,  # noqa: F401
+            INSANEAdapter,  # noqa: F401
+            CGSystemBuildRequest,  # noqa: F401
+            build_cg_system_bundle,  # noqa: F401
+        )
+    except ImportError:  # pragma: no cover -- pre-INSTRUCCION 13 stub
+        from mica.sim.cg_martini.martinize2_adapter import Martinize2Adapter  # noqa: F401
+        from mica.sim.cg_martini.insane_adapter import INSANEAdapter  # noqa: F401
+        from mica.sim.cg_martini.cg_system_builder import (  # noqa: F401
+            CGSystemBuildRequest,  # noqa: F401
+            build_cg_system_bundle,  # noqa: F401
+        )
 
     martinize_out = cg_build_dir / "martinize2"
     martinize_out.mkdir(parents=True, exist_ok=True)
