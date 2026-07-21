@@ -520,6 +520,27 @@ class Martinize2Adapter:
                     traj = mdtraj.load(pdb_path)
                     if traj.topology is None or traj.n_atoms == 0:
                         raise ValueError("mdtraj loaded empty topology")
+                    # INSTRUCCION 35 (2026-07-21): sanitize NaN/Inf coords
+                    # before save_gro. v17 dispatch hit INSANE
+                    # 'cannot convert float NaN to integer' because
+                    # martinize2 emits incomplete sidechains with NaN
+                    # coords. mdtraj's save_gro is permissive and lets
+                    # NaN through, but INSANE (and martini_openmm
+                    # MartiniTopFile downstream) choke on it.
+                    import numpy as _np
+                    xyz = traj.xyz
+                    nan_mask = ~_np.isfinite(xyz)
+                    if nan_mask.any():
+                        bad_count = int(nan_mask.sum())
+                        # Replace NaN/Inf with 0.0 (better than dropping
+                        # the atom -- the topology still references it).
+                        xyz[nan_mask] = 0.0
+                        traj.xyz = xyz
+                        logger.warning(
+                            "martinize2 PDB-to-GRO (mdtraj): %d NaN/Inf "
+                            "coords sanitized to 0.0 before save_gro",
+                            bad_count,
+                        )
                     traj.save_gro(gro_path)
                     if not Path(gro_path).is_file() or Path(gro_path).stat().st_size == 0:
                         raise ValueError("mdtraj save_gro produced empty file")
