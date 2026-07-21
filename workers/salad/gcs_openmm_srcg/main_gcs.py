@@ -1533,8 +1533,12 @@ def _run_cg_martini_from_pdb_job(
         # INSTRUCCION 29 (2026-07-21): persist martinize2 stdout/stderr to the
         # job's GCS prefix so we get forensic visibility into silent failures
         # (e.g. martinize2 -maxwarn exit-ok with stderr complaints).
+        # NOTE: `bucket` arg here is the bucket name (str) -- we resolve via
+        # the existing `client` (storage.Client) which is in function scope.
         try:
             import json as _json
+            import logging as _logging
+            _log = _logging.getLogger(__name__)
             martinize2_log = {
                 "status": martinize_receipt.status,
                 "errors": getattr(martinize_payload, 'validation_errors', []),
@@ -1545,16 +1549,22 @@ def _run_cg_martini_from_pdb_job(
                 "expected_gro": str(martinize_out / f"{Path(local_pdb).stem}_cg.gro"),
                 "output_dir_listing": sorted(p.name for p in martinize_out.iterdir()) if martinize_out.exists() else [],
             }
-            blob = bucket.blob(f"{output_prefix}/output/martinize2_debug.json")
-            blob.upload_from_string(_json.dumps(martinize2_log, indent=2), "application/json")
-            bucket.blob(f"{output_prefix}/output/martinize2_stdout.txt").upload_from_string(
+            real_bucket = client.bucket(bucket)
+            real_bucket.blob(f"{output_prefix}/output/martinize2_debug.json").upload_from_string(
+                _json.dumps(martinize2_log, indent=2), "application/json"
+            )
+            real_bucket.blob(f"{output_prefix}/output/martinize2_stdout.txt").upload_from_string(
                 getattr(martinize_adapter, "_last_stdout", ""), "text/plain"
             )
-            bucket.blob(f"{output_prefix}/output/martinize2_stderr.txt").upload_from_string(
+            real_bucket.blob(f"{output_prefix}/output/martinize2_stderr.txt").upload_from_string(
                 getattr(martinize_adapter, "_last_stderr", ""), "text/plain"
             )
         except Exception as e_log:
-            logger.error("Failed to upload martinize2 debug logs to GCS: %s", e_log)
+            # No module-level logger in this scope; use a local one. If import fails, print.
+            try:
+                _log.error("Failed to upload martinize2 debug logs to GCS: %s", e_log)
+            except Exception:
+                print(f"[martinize2-debug] GCS upload FAILED: {e_log!r}")
         raise RuntimeError(
             f"Martinize2Adapter did not produce protein CG .gro: {protein_gro_ref!r}. "
             f"Receipt status={martinize_receipt.status}, errors={getattr(martinize_payload, 'validation_errors', [])}. "
