@@ -68,9 +68,18 @@ RUN npm install -g molstar@5.6.1 \
     && cif2bcif --help >/tmp/cif2bcif.help
 
 # Layer 4: MICA source from this repo's build context (embedded files).
+# INSTRUCCION 29 (2026-07-21): added mica/provenance/ so martinize2_adapter.py
+# (which imports `from mica.provenance.receipts import ...`) resolves at runtime.
+# Without this COPY, the worker imports the cg_martini submodule successfully
+# (lives inside mica/sim/) but martinize2_adapter at L33 raises ModuleNotFoundError
+# on the very first call. mica.scientific.topology_kernel.martini.martini_openmm_compatibility
+# is NOT strictly required -- it is wrapped in try/except ImportError inside
+# `cg_system_builder._validate_openmm_load` and degrades to `validation_unavailable`
+# when absent, so we don't ship that subtree to keep the image lean.
 WORKDIR /app
 COPY src/mica/md_preview/ /app/src/mica/md_preview/
 COPY src/mica/api_v1/ /app/src/mica/api_v1/
+COPY src/mica/provenance/ /app/src/mica/provenance/
 COPY src/mica/sim/cg_martini/ /app/src/mica/sim/cg_martini/
 COPY src/mica/sim/cg_martini/data/martini3/ /app/src/mica/sim/cg_martini/data/martini3/
 COPY workers/salad/gcs_openmm_srcg/main_gcs.py /app/main_gcs.py
@@ -133,6 +142,25 @@ verified.append({
     'symbol': '<module>',
     'defined_in': getattr(vermouth, '__file__', '?'),
 })
+
+# --- mica.* submodules that the CG runtime imports on the worker ---
+# INSTRUCCION 29 (2026-07-21): mica.provenance.receipts is imported by
+# martinize2_adapter.py at L33 and used by CG payloads. Without it, the worker
+# crashes at first call with ModuleNotFoundError.
+for mod, name in [
+    ('mica.provenance.receipts', 'ReceiptCore'),
+    ('mica.provenance.receipts', 'ReceiptHashes'),
+    ('mica.provenance.receipts', 'ReceiptRefs'),
+]:
+    check_import(mod, name)
+
+# --- end-to-end import of cg_martini adapters (catches missing COPYs early) ---
+for mod, name in [
+    ('mica.sim.cg_martini', 'Martinize2Adapter'),
+    ('mica.sim.cg_martini', 'INSANEAdapter'),
+    ('mica.sim.cg_martini', 'build_cg_system_bundle'),
+]:
+    check_import(mod, name)
 
 # --- CLI binaries on PATH (warn-only; Martinize2Adapter has martinize2.py fallback) ---
 warnings = []
