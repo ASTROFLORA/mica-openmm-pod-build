@@ -61,6 +61,7 @@ RUN pip install --no-cache-dir \
     "httpx>=0.26.0" \
     "google-cloud-storage>=2.16.0" \
     "python-dotenv>=1.0.0" \
+    "mdtraj>=1.9.9" \
     "martini_openmm @ git+https://github.com/maccallumlab/martini_openmm.git@216e62b26c4ee6cea7ed21e20ec84fffe97a101c"
 
 # Layer 3: molstar for BCIF (kept from v1 mirror).
@@ -170,6 +171,19 @@ verified.append({
     'defined_in': getattr(vermouth, '__file__', '?'),
 })
 
+# INSTRUCCION 30 (2026-07-21): mdtraj is now REQUIRED for the martinize2
+# PDB-to-GRO path -- the hand-rolled parser choked on partial CRYST1 records.
+# We hard-require it in the smoke gate (not warn-only) because the legacy
+# fallback is brittle and was the root cause of GAP-CG-009.
+import mdtraj  # noqa: E402
+if not hasattr(mdtraj, 'load') or not hasattr(mdtraj.load, '__call__'):
+    raise ImportError('mdtraj.load missing -- PDB-to-GRO path will fall back to broken hand-rolled parser')
+verified.append({
+    'module': 'mdtraj',
+    'symbol': 'load',
+    'defined_in': getattr(mdtraj.load, '__module__', '?'),
+})
+
 # --- mica.* submodules that the CG runtime imports on the worker ---
 # INSTRUCCION 29 (2026-07-21): mica.provenance.receipts is imported by
 # martinize2_adapter.py at L33 and used by CG payloads. Without it, the worker
@@ -228,9 +242,9 @@ receipt = {
     'validation_mode': os.environ.get('MICA_SMOKE_RECEIPT_MODE', 'container_smoke_v2'),
     'verified_count': len(verified),
     'verified_targets': verified,
-    'gap_closed': ['GAP-CG-002', 'GAP-CG-004', 'GAP-R3-CG-MARTINI'],
+    'gap_closed': ['GAP-CG-002', 'GAP-CG-004', 'GAP-R3-CG-MARTINI', 'GAP-CG-009'],
     'validation_status': 'PASSED',
-    'note': 'ASTROFLORA public mirror adds CG/Martini 3 smoke over md_preview baseline.',
+    'note': 'ASTROFLORA public mirror adds CG/Martini 3 smoke over md_preview baseline. INSTRUCCION 30: mdtraj now hard-required for martinize2 PDB-to-GRO (closes GAP-CG-009: silent _pdb_to_gro empty-output when CRYST1 missing).',
 }
 with open('/tmp/container_smoke_v2.json', 'w') as f:
     json.dump(receipt, f, indent=2)
