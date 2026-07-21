@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   smoke-test:
-    runs-on: ubuntu-22.04
+    runs-on: blacksmith-4vcpu-ubuntu-2204
     timeout-minutes: 30
     steps:
       - name: Checkout
@@ -68,7 +68,7 @@ jobs:
 
   build-and-push:
     needs: smoke-test
-    runs-on: ubuntu-22.04
+    runs-on: blacksmith-4vcpu-ubuntu-2204
     timeout-minutes: 60
     steps:
       - name: Checkout
