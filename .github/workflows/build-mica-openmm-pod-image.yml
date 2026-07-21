@@ -104,6 +104,13 @@ jobs:
           # (which fails with "docker exporter does not currently
           # support exporting manifest lists"). --platform pins
           # single-arch so we don't get a multi-arch image either.
+          #
+          # We also write the digest to /tmp/image.digest via the
+          # buildkit digestfile output so we can read it back after
+          # the push without relying on local docker inspect (the
+          # buildkit image isn't --load-ed into the local daemon,
+          # so 'docker inspect ${IMAGE_REPOSITORY}:smoke-v2' would
+          # not find it).
           docker buildx build \
             --platform linux/amd64 \
             --build-arg MICA_COMMIT=${{ env.MICA_COMMIT }} \
@@ -111,8 +118,8 @@ jobs:
             --sbom=true \
             -t ${IMAGE_REPOSITORY}:sha-${{ github.sha }} \
             -t ${IMAGE_REPOSITORY}:smoke-v2 \
+            --output "type=image,push=true,digestfile=/tmp/image.digest,name=${IMAGE_REPOSITORY},name-canonical=true" \
             -f Dockerfile \
-            --push \
             .
 
       - name: Install cosign
@@ -121,8 +128,17 @@ jobs:
       - name: Capture image digest
         id: digest
         run: |
-          # Prefer RepoDigests from local image (works after push); fall back to buildx imagetools.
-          DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ${IMAGE_REPOSITORY}:smoke-v2 2>/dev/null | sed 's|.*@||')
+          # Prefer the digestfile written by buildx during --push (works
+          # since v0.10). Fall back to docker inspect (works after --push
+          # when image was tagged + retained on the local daemon), then to
+          # buildx imagetools (always works).
+          DIGEST=""
+          if [ -f /tmp/image.digest ]; then
+            DIGEST=$(head -1 /tmp/image.digest | sed 's|.*:||')
+          fi
+          if [ -z "$DIGEST" ]; then
+            DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ${IMAGE_REPOSITORY}:smoke-v2 2>/dev/null | sed 's|.*@||')
+          fi
           if [ -z "$DIGEST" ] || [ "$DIGEST" = "${IMAGE_REPOSITORY}:" ]; then
             DIGEST=$(docker buildx imagetools inspect ${IMAGE_REPOSITORY}:smoke-v2 2>&1 | grep -oE 'sha256:[a-f0-9]{64}' | head -1)
           fi
