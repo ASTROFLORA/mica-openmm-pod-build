@@ -62,6 +62,7 @@ RUN pip install --no-cache-dir \
     "google-cloud-storage>=2.16.0" \
     "python-dotenv>=1.0.0" \
     "mdtraj>=1.9.9" \
+    "insane>=1.0.0" \
     "martini_openmm @ git+https://github.com/maccallumlab/martini_openmm.git@216e62b26c4ee6cea7ed21e20ec84fffe97a101c"
 
 # Layer 3: molstar for BCIF (kept from v1 mirror).
@@ -183,6 +184,23 @@ verified.append({
     'symbol': 'load',
     'defined_in': getattr(mdtraj.load, '__module__', '?'),
 })
+
+# INSTRUCCION 34 (2026-07-21): INSANE (Tieleman lab) is required for
+# INSANEAdapter.build (CG/Martini membrane solvation). v16 dispatch failed
+# at INSANEAdapter step with 'insane not importable' -- the package was
+# missing from the image. Pin and verify.
+try:
+    import insane  # noqa: E402
+    verified.append({
+        'module': 'insane',
+        'symbol': '<module>',
+        'defined_in': getattr(insane, '__file__', '?'),
+    })
+except ImportError as e:
+    raise ImportError(
+        f'insane not importable -- INSANEAdapter.build will return '
+        f'validation_errors=[insane not importable] and fail. {e}'
+    ) from e
 
 # --- mica.* submodules that the CG runtime imports on the worker ---
 # INSTRUCCION 29 (2026-07-21): mica.provenance.receipts is imported by
