@@ -1530,9 +1530,35 @@ def _run_cg_martini_from_pdb_job(
     protein_gro_ref = martinize_payload.output_cg_gro_ref if hasattr(martinize_payload, "output_cg_gro_ref") else ""
     itp_refs_csv = martinize_payload.output_cg_itp_ref if hasattr(martinize_payload, "output_cg_itp_ref") else ""
     if not protein_gro_ref or not Path(protein_gro_ref).is_file():
+        # INSTRUCCION 29 (2026-07-21): persist martinize2 stdout/stderr to the
+        # job's GCS prefix so we get forensic visibility into silent failures
+        # (e.g. martinize2 -maxwarn exit-ok with stderr complaints).
+        try:
+            import json as _json
+            martinize2_log = {
+                "status": martinize_receipt.status,
+                "errors": getattr(martinize_payload, 'validation_errors', []),
+                "stdout_tail": getattr(martinize_adapter, "_last_stdout", "")[-2000:],
+                "stderr_tail": getattr(martinize_adapter, "_last_stderr", "")[-2000:],
+                "expected_coord": str(martinize_out / f"{Path(local_pdb).stem}_cg.pdb"),
+                "expected_top": str(martinize_out / f"{Path(local_pdb).stem}_cg.top"),
+                "expected_gro": str(martinize_out / f"{Path(local_pdb).stem}_cg.gro"),
+                "output_dir_listing": sorted(p.name for p in martinize_out.iterdir()) if martinize_out.exists() else [],
+            }
+            blob = bucket.blob(f"{output_prefix}/output/martinize2_debug.json")
+            blob.upload_from_string(_json.dumps(martinize2_log, indent=2), "application/json")
+            bucket.blob(f"{output_prefix}/output/martinize2_stdout.txt").upload_from_string(
+                getattr(martinize_adapter, "_last_stdout", ""), "text/plain"
+            )
+            bucket.blob(f"{output_prefix}/output/martinize2_stderr.txt").upload_from_string(
+                getattr(martinize_adapter, "_last_stderr", ""), "text/plain"
+            )
+        except Exception as e_log:
+            logger.error("Failed to upload martinize2 debug logs to GCS: %s", e_log)
         raise RuntimeError(
             f"Martinize2Adapter did not produce protein CG .gro: {protein_gro_ref!r}. "
-            f"Receipt status={martinize_receipt.status}, errors={getattr(martinize_payload, 'validation_errors', [])}"
+            f"Receipt status={martinize_receipt.status}, errors={getattr(martinize_payload, 'validation_errors', [])}. "
+            f"See output/martinize2_debug.json and martinize2_stdout.txt/stderr.txt in GCS."
         )
     molecule_itp_refs = [p.strip() for p in (itp_refs_csv or "").split(",") if p.strip()]
     if not molecule_itp_refs or not all(Path(p).is_file() for p in molecule_itp_refs):
@@ -1672,14 +1698,14 @@ def _run_cg_martini_from_pdb_job(
         cg_runtime_params["temperature_K"] * _unit.kelvin
     )
     nvt_integrator = LangevinIntegrator(
-        cg_runtime_params["temperature_K"],
+        cg_runtime_params["temperature_K"] * _unit.kelvin,
         cg_runtime_params["friction_ps"] / _unit.picosecond,
         cg_runtime_params["timestep_fs"] * _unit.femtoseconds,
     )
     simulation.context.setIntegrator(nvt_integrator)
     simulation.step(1000)  # 20 ps @ dt=20fs NVT thermalization
     npt_integrator = LangevinIntegrator(
-        cg_runtime_params["temperature_K"],
+        cg_runtime_params["temperature_K"] * _unit.kelvin,
         cg_runtime_params["friction_ps"] / _unit.picosecond,
         cg_runtime_params["timestep_fs"] * _unit.femtoseconds,
     )

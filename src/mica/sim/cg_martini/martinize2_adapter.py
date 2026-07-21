@@ -310,8 +310,19 @@ class Martinize2Adapter:
             result = subprocess.run(
                 cmd, capture_output=True, text=True, timeout=300, cwd=str(out),
             )
+            # Always capture martinize2 stdout/stderr into the payload even on
+            # success so the worker can persist them on failure paths. This is
+            # INSTRUCCION 29 (2026-07-21): silent martinize2 success with no
+            # output was the v10 failure mode and we want forensic visibility.
+            self._last_stdout = result.stdout or ""
+            self._last_stderr = result.stderr or ""
             if result.returncode != 0:
-                errors.append(f"martinize2 exited with code {result.returncode}: {result.stderr[:5000]}")
+                errors.append(
+                    f"martinize2 exited with code {result.returncode}: "
+                    f"{result.stderr[:5000]}\n--- stdout ---\n{result.stdout[:2000]}"
+                )
+            elif result.stdout:
+                logger.info("martinize2 stdout tail: %s", result.stdout[-500:])
         except FileNotFoundError:
             errors.append(f"martinize2 binary not found: {self.martinize2_binary}")
         except subprocess.TimeoutExpired:
@@ -344,6 +355,21 @@ class Martinize2Adapter:
                     bead_count = self._count_pdb_atoms(str(output_coord_file))
 
         execution_status = "failed" if errors else "completed"
+
+        # INSTRUCCION 29 (2026-07-21): if martinize2 reported success but did
+        # NOT actually emit the coordinate file, downgrade status to failed
+        # and surface the captured stdout/stderr so the worker can persist it.
+        if (
+            execution_status == "completed"
+            and not output_coord_file.exists()
+        ):
+            stdout_tail = (self._last_stdout or "")[-2000:]
+            stderr_tail = (self._last_stderr or "")[-2000:]
+            errors.append(
+                f"martinize2 exit=0 but coord file missing: {output_coord_file}. "
+                f"cwd={out}. stdout_tail={stdout_tail!r} stderr_tail={stderr_tail!r}"
+            )
+            execution_status = "blocked_vendoring"
 
         payload = Martinize2Payload(
             martinize2_version=self.martinize2_version,
