@@ -820,6 +820,15 @@ def _emit_system_top(
         # POPC lines (one per leaflet). The martinize2 protein itps
         # are PREPENDED before INSANE's entries so the protein comes
         # first in the topology.
+        # GAP-CG-011 follow-up: INSANE emits residue names with their
+        # ionic suffix (NA+, CL-, PW for polarizable water), but the
+        # Martini 3 FF .itp files declare moleculetypes without those
+        # suffixes (NA, CL, W). Apply the canonical alias map so the
+        # [ molecules ] section references real moleculetype names.
+        _ALIAS_TO_MARTINI3: dict[str, str] = {
+            "NA+": "NA", "CL-": "CL", "PW": "W",
+            "NA": "NA", "CL": "CL", "W": "W",
+        }
         if insane_molecule_counts:
             for itp in molecule_itp_refs:
                 mol_name = Path(itp).stem  # molecule_0, molecule_1, ...
@@ -830,7 +839,10 @@ def _emit_system_top(
                 # above (one per martinize2 .itp).
                 if mol_name.upper() in ("PROTEIN", "NAME"):
                     continue
-                f.write(f"{mol_name}    {int(count)}\n")
+                # Translate INSANE's residue name to the canonical
+                # Martini 3 moleculetype name.
+                martini_name = _ALIAS_TO_MARTINI3.get(mol_name, mol_name)
+                f.write(f"{martini_name}    {int(count)}\n")
         else:
             # Legacy path (soluble / no membrane): use the
             # hardcoded per-component counts.
