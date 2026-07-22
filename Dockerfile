@@ -52,7 +52,7 @@ RUN mamba install -c conda-forge -y \
     python=3.11 \
     nodejs=22 \
     'cuda-version=12.6' \
-    openmm \
+    'openmm>=8.5.0' \
     pdbfixer \
     numpy \
     scipy \
