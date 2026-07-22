@@ -215,6 +215,71 @@ def _gro_atom_count(gro_path: Path) -> int:
     with open(gro_path) as f:
         f.readline()  # title
         n = f.readline().strip()
+
+
+def _sanitize_nan_in_gro(gro_path: Path) -> int:
+    """Replace NaN/Inf coordinates in a GRO file with 0.0 in-place.
+
+    GRO format is fixed-width:
+      line 0: title
+      line 1: atom count
+      lines 2..N+1: per-atom lines
+        cols 0-4  resnum (5)
+        cols 5-9  resname (5)
+        cols 10-14 atomname (5)
+        cols 15-19 atom index (5)
+        cols 20-27 x (8.3f)
+        cols 28-35 y (8.3f)
+        cols 36-43 z (8.3f)
+      line N+2: box vectors
+
+    We rewrite x/y/z only; everything else is preserved verbatim.
+
+    GAP-CG-009 RESIDUAL (2026-07-22): martinize2 emits NaN coords for
+    sidechains with no AA template. INSANE's membrane.gro inherits
+    those NaN. OpenMM LocalEnergyMinimizer refuses to start with NaN
+    in any particle position.
+
+    Returns the number of coords that were sanitized.
+    """
+    text = gro_path.read_text(encoding="utf-8", errors="replace")
+    lines = text.splitlines(keepends=False)
+    if len(lines) < 3:
+        return 0
+    try:
+        n_atoms = int(lines[1].strip())
+    except ValueError:
+        return 0
+    import math
+    sanitized = 0
+    new_lines = list(lines)
+    for i in range(2, 2 + n_atoms):
+        if i >= len(new_lines):
+            break
+        line = new_lines[i]
+        if len(line) < 44:
+            continue
+        try:
+            x = float(line[20:28])
+            y = float(line[28:36])
+            z = float(line[36:44])
+        except ValueError:
+            continue
+        new_x, new_y, new_z = x, y, z
+        if math.isnan(x) or math.isinf(x):
+            new_x = 0.0
+            sanitized += 1
+        if math.isnan(y) or math.isinf(y):
+            new_y = 0.0
+            sanitized += 1
+        if math.isnan(z) or math.isinf(z):
+            new_z = 0.0
+            sanitized += 1
+        if (new_x, new_y, new_z) != (x, y, z):
+            new_lines[i] = f"{line[:20]}{new_x:8.3f}{new_y:8.3f}{new_z:8.3f}{line[44:]}"
+    if sanitized > 0:
+        gro_path.write_text("\n".join(new_lines) + "\n", encoding="utf-8")
+    return sanitized
     return int(n) if n else 0
 
 
@@ -449,7 +514,26 @@ def _build_membrane_system(
     # solvated.gro is the INSANE membrane.gro (already has protein +
     # membrane + water + ions + box vectors).
     shutil.copyfile(insane_gro, payload.solvated_gro_path)
+    # GAP-CG-009 RESIDUAL fix (2026-07-22): INSANE emits NaN coords on
+    # some atoms (typically sidechains with no AA template in
+    # martinize2 -- e.g. protonation-state-dependent HIS, HEME cofactors,
+    # ligands). OpenMM's LocalEnergyMinimizer throws "Energy or force
+    # at minimization starting point is infinite or NaN" before any
+    # integration step. Sanitize NaN/Inf -> 0.0 in the GRO before
+    # MartiniTopFile loads it, just like INSTRUCCION 35 did for the
+    # protein GRO via mdtraj. Water/lipid ions already have valid coords.
     n_atoms = _gro_atom_count(payload.solvated_gro_path)
+    try:
+        sanitized = _sanitize_nan_in_gro(payload.solvated_gro_path)
+        payload.metadata["nan_sanitized_atoms"] = sanitized
+        if sanitized > 0:
+            payload.warnings.append(
+                f"nan_sanitized: replaced {sanitized} NaN/Inf coords with "
+                "0.0 in solvated.gro to keep OpenMM minimizer from "
+                "exploding (martinize2 emits NaN on incomplete sidechains)."
+            )
+    except Exception as _san_e:
+        payload.warnings.append(f"nan_sanitize_failed: {_san_e}")
     payload.charge_status = "ionized_membrane"
     payload.metadata["n_atoms"] = n_atoms
 
