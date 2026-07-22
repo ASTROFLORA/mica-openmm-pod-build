@@ -130,7 +130,13 @@ RUN pip install --no-cache-dir \
     "python-dotenv>=1.0.0" \
     "mdtraj>=1.9.9" \
     "insane>=1.0.0" \
-    "martini_openmm @ git+https://github.com/maccallumlab/martini_openmm.git@216e62b26c4ee6cea7ed21e20ec84fffe97a101c"
+    "martini_openmm @ git+https://github.com/maccallumlab/martini_openmm.git@216e62b26c4ee6cea7ed21e20ec84fffe97a101c" \
+    # INSTRUCCION 74f (2026-07-22, build #29942994943): the `insane`
+    # PyPI package's core.py does `import pkg_resources`, which has
+    # been deprecated and removed from being a default transitive
+    # dep of pip since 23.x. setuptools provides pkg_resources; pin
+    # it here so the smoke gate can actually import insane.
+    "setuptools>=68.0.0"
 
 # Layer 3: molstar for BCIF (kept from v1 mirror).
 RUN npm install -g molstar@5.6.1 \
