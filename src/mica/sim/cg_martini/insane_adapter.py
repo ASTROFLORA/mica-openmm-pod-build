@@ -294,6 +294,28 @@ class INSANEAdapter:
                 errors.append(f"centering failed: {e}")
         else:
             shutil.copyfile(protein_gro_ref, str(centered_gro))
+        # GAP-CG-009 RESIDUAL (2026-07-22): sanitize NaN/Inf coords in
+        # the centered protein.gro BEFORE INSANE reads it. INSANE itself
+        # dies on NaN (cannot convert float NaN to integer in its grid
+        # setup), so propagation is silent in the past -- the resulting
+        # membrane.gro carries NaN into the final Simulation() start
+        # positions, which trips OpenMM LocalEnergyMinimizer with
+        # "Energy or force at minimization starting point is infinite
+        # or NaN". We sanitize the input here AND in cg_system_builder
+        # for the output, defensively.
+        try:
+            from .cg_system_builder import _sanitize_nan_in_gro as _sanitize
+            _pre_san = _sanitize(centered_gro)
+            if _pre_san > 0:
+                payload_metadata_extra = {
+                    "insane_input_nan_sanitized": _pre_san,
+                }
+                errors.append(
+                    f"insane_input_nan_sanitized: replaced {_pre_san} "
+                    f"NaN/Inf coords in centered_protein.gro"
+                )
+        except Exception as _san_pre_e:
+            errors.append(f"insane_input_nan_sanitize_failed: {_san_pre_e}")
 
         # Step 2: Call insane
         gro_out = out / "membrane.gro"
