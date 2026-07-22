@@ -52,9 +52,6 @@ RUN mamba install -c conda-forge -y \
     python=3.11 \
     nodejs=22 \
     'cuda-version=12' \
-    'cuda-cudart=12' \
-    'cuda-nvrtc=12' \
-    'cuda-driver=12' \
     pdbfixer \
     numpy \
     scipy \
