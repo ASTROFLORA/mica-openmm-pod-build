@@ -246,17 +246,24 @@ verified.append({
 # INSTRUCCION 74b (2026-07-22): GPU-only policy -- CUDA plugin .so MUST
 # be present in the image. With the INSTRUCCION 74b stack, the openmm
 # install is via pip (PyPI `openmm==8.3.1` + `openmm-cuda-12==8.3.1`
-# wheels) under /opt/mica. The plugin ships as `libOpenMMCUDA.so`
-# inside the openmm-cuda-12 wheel's data/ folder, NOT in /opt/conda/.
-# We search BOTH /opt/mica and /opt/conda locations to be safe.
+# wheels) under /opt/mica.
+#
+# INSTRUCCION 74d (2026-07-22, build #29941089960): the openmm-cuda-12
+# wheel installs as `OpenMM.libs/lib/plugins/libOpenMMCUDA.so` (NOT
+# `openmm/lib/plugins/`). The exact prefix comes from the wheel's
+# RECORD data, where the top-level `OpenMM.libs/` directory is
+# installed as site-packages data. Search the real location.
 import openmm  # noqa: E402
 from pathlib import Path as _Path  # noqa: E402
 import glob as _glob  # noqa: E402
 _plugin_search = (
-    list(_glob.glob('/opt/mica/lib/python3.11/site-packages/openmm/lib/plugins/libOpenMMCUDA*'))
+    list(_glob.glob('/opt/mica/lib/python3.11/site-packages/OpenMM.libs/lib/plugins/libOpenMMCUDA*'))
+    + list(_glob.glob('/opt/mica/lib/python3.11/site-packages/OpenMM.libs/lib/libOpenMMCUDA*'))
+    + list(_glob.glob('/opt/mica/lib/python3.11/site-packages/openmm/lib/plugins/libOpenMMCUDA*'))
     + list(_glob.glob('/opt/mica/lib/python3.11/site-packages/openmm/lib/libOpenMMCUDA*'))
     + list(_glob.glob('/opt/mica/lib/plugins/libOpenMMCUDA*'))
     + list(_glob.glob('/opt/mica/lib/libOpenMMCUDA*'))
+    + list(_glob.glob('/opt/conda/lib/python3.11/site-packages/OpenMM.libs/lib/plugins/libOpenMMCUDA*'))
     + list(_glob.glob('/opt/conda/lib/python3.11/site-packages/openmm/lib/plugins/libOpenMMCUDA*'))
     + list(_glob.glob('/opt/conda/lib/python3.11/site-packages/openmm/lib/libOpenMMCUDA*'))
 )
@@ -270,7 +277,7 @@ verified.append({
     'module': 'openmm-cuda-12',
     'symbol': 'Platform::CUDA',
     'defined_in': _plugin_search[0],
-    'note': 'INSTRUCCION 74b CUDA plugin .so present (CUDA 12.8 runtime stack + openmm==8.3.1 from PyPI under /opt/mica; runtime registration happens on first cuInit() at the worker host with real GPU). The Salad startup probe (entrypoint.sh) will additionally preflight an actual Context on a tiny PME system before letting main_gcs.py run -- incompatible drivers fail the probe and Salad reassigns.',
+    'note': 'INSTRUCCION 74d CUDA plugin .so present (CUDA 12.8 runtime stack + openmm==8.3.1 from PyPI under /opt/mica; runtime registration happens on first cuInit() at the worker host with real GPU). Plugin location: OpenMM.libs/lib/plugins/ (data_files in the openmm-cuda-12 wheel). The Salad startup probe (entrypoint.sh) will additionally preflight an actual Context on a tiny PME system before letting main_gcs.py run -- incompatible drivers fail the probe and Salad reassigns.',
 })
 
 # INSTRUCCION 30 (2026-07-21): mdtraj is now REQUIRED for the martinize2
