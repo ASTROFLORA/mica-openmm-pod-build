@@ -1655,11 +1655,12 @@ def _run_cg_martini_from_pdb_job(
         # fallback path triggers, we MUST divide lipid_count by
         # beads_per_lipid (=12 for POPC). This log line is the ground
         # truth for the next dispatch.
-        _log_event(
-            f"cg_gap011_insane_diagnostic: insane_counts={insane_counts} "
-            f"insane_gro_size={Path(insane_gro_ref).stat().st_size} "
-            f"insane_top_ref={insane_top_ref}",
-            level="info",
+        import logging as _cg_gap011_logging
+        _cg_gap011_log = _cg_gap011_logging.getLogger(__name__)
+        _cg_gap011_log.warning(
+            "cg_gap011_insane_diagnostic: insane_counts=%s "
+            "insane_gro_size=%s insane_top_ref=%s",
+            insane_counts, Path(insane_gro_ref).stat().st_size, insane_top_ref,
         )
         if insane_top_ref and Path(insane_top_ref).is_file():
             try:
@@ -1674,14 +1675,12 @@ def _run_cg_martini_from_pdb_job(
                         break
                     if in_mol and line.strip():
                         mol_lines.append(line.strip())
-                _log_event(
-                    f"cg_gap011_insane_top_molecules: {mol_lines}",
-                    level="info",
+                _cg_gap011_log.warning(
+                    "cg_gap011_insane_top_molecules: %s", mol_lines,
                 )
             except Exception as e_topread:
-                _log_event(
-                    f"cg_gap011_insane_top_read_failed: {e_topread}",
-                    level="warning",
+                _cg_gap011_log.warning(
+                    "cg_gap011_insane_top_read_failed: %s", e_topread,
                 )
 
     # ── Phase 3: build_cg_system_bundle ─────────────────────────────
@@ -1764,7 +1763,14 @@ def _run_cg_martini_from_pdb_job(
     # INSTRUCCION 56 GAP-CG-011 diagnostic: log nAtoms in topology vs conf
     n_top_atoms = system.getNumParticles()
     n_conf_atoms = conf.getNumParticles() if hasattr(conf, "getNumParticles") else len(conf.getPositions())
-    _log_event(f"cg_gap011_diagnostic: system.nAtoms={n_top_atoms} conf.nAtoms={n_conf_atoms} local_gro={local_gro} local_top={local_top}", level="info")
+    import logging as _setpos_logging
+    _setpos_log = _setpos_logging.getLogger(__name__)
+    _setpos_log.warning(
+        "cg_gap011_diagnostic: system.nAtoms=%d conf.nAtoms=%d delta=%d "
+        "local_gro=%s local_top=%s",
+        n_top_atoms, n_conf_atoms, n_top_atoms - n_conf_atoms,
+        local_gro, local_top,
+    )
     try:
         simulation.context.setPositions(conf.getPositions())
     except Exception as _e:
@@ -1778,7 +1784,9 @@ def _run_cg_martini_from_pdb_job(
             "gro_size_bytes": local_gro.stat().st_size if local_gro.exists() else None,
             "top_size_bytes": local_top.stat().st_size if local_top.exists() else None,
         }
-        _log_event(f"cg_gap011_setPositions_failed: {payload_meta}", level="error")
+        _setpos_log.error(
+            "cg_gap011_setPositions_failed: %s", payload_meta,
+        )
         raise
     simulation.context.computeVirtualSites()
 
