@@ -1797,6 +1797,38 @@ def _run_cg_martini_from_pdb_job(
             "solvated_gro_ref": str(local_gro),
             "solvated_gro_size_bytes": int(local_gro.stat().st_size) if local_gro.exists() else None,
         }
+        # GAP-CG-009 RESIDUAL (2026-07-22): count NaN/Inf in solvated.gro
+        # right before MartiniTopFile + Simulation. If the bundle
+        # sanitizer missed any NaN, this surfaces them.
+        try:
+            import math as _diag_math
+            nan_count = 0
+            inf_count = 0
+            if local_gro.exists():
+                _gro_lines = local_gro.read_text(encoding="utf-8", errors="replace").splitlines()
+                try:
+                    _n_total = int(_gro_lines[1].strip())
+                except (ValueError, IndexError):
+                    _n_total = 0
+                for _i in range(2, 2 + _n_total):
+                    if _i >= len(_gro_lines):
+                        break
+                    _ln = _gro_lines[_i]
+                    if len(_ln) < 44:
+                        continue
+                    for _col in (20, 28, 36):
+                        try:
+                            _v = float(_ln[_col:_col+8])
+                        except ValueError:
+                            continue
+                        if _diag_math.isnan(_v):
+                            nan_count += 1
+                        elif _diag_math.isinf(_v):
+                            inf_count += 1
+            sys_top_diag["solvated_gro_nan_count"] = nan_count
+            sys_top_diag["solvated_gro_inf_count"] = inf_count
+        except Exception as _diag_e:
+            sys_top_diag["nan_diag_failed"] = str(_diag_e)
         _upload_text(
             client, bucket,
             _cg_gap011_json.dumps(sys_top_diag, indent=2),
