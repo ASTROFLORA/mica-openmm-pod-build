@@ -33,30 +33,28 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && mkdssp --version
 
-# Layer 1: Conda stack — CUDA toolkit 12.x + OpenMM (auto-detects CUDA plugin).
+# Layer 1: Conda stack — CUDA 12.x meta-pkg + OpenMM.
 # GAP-CG-010 (2026-07-21): mamba pulling `openmm` directly grabbed
 # `cuda-version 13.3`, whose PTX requires a driver >= 580 that the
 # Salad RTX_5090 host does NOT ship. Result: CUDA_ERROR_UNSUPPORTED_PTX_VERSION
 # (222) on the first `Simulation(...)` call.
 #
 # Fix pattern (adapted from .github/skills/openmm_remote_md_orchestrator.md
-# which uses cudatoolkit=11.8 for vast/RunPod hosts): install the
-# cudatoolkit conda package BEFORE openmm so that the resolver pins
-# to a CUDA major version whose PTX is compatible with our target driver.
+# which uses cudatoolkit=11.8 for vast/RunPod hosts): pin the CUDA
+# major version BEFORE openmm so the resolver picks a compatible
+# OpenMM build with PTX for sm_50..sm_120 (RTX 5090 Blackwell) and
+# driver requirement >= 535 (covers all NVIDIA hosts from 2024+).
 #
-# cudatoolkit=12.6 ships PTX for sm_50..sm_120 (covers every NVIDIA
-# GPU since 2017 incl. Blackwell RTX 5090) and requires driver >= 535
-# (a driver shipped across all consumer+datacenter NVIDIA hosts from
-# 2024 onwards). This is the widest compatibility window for our
-# target fleet.
-#
-# We install the explicit `cudatoolkit-dev` package (not just cuda-version)
-# because the dev package includes the headers and link libraries that
-# OpenMM's CMake build (if conda ever recompiles it) needs.
+# conda-forge packages it as `cuda-version=12.6` (meta-package that
+# pulls cuda-cudart, cuda-nvrtc, etc. all at the same major version).
+# v18 (with no pin) got cuda-version=13.3 transitively -- too new.
 RUN mamba install -c conda-forge -y \
     python=3.11 \
     nodejs=22 \
-    'cudatoolkit=12.6' \
+    'cuda-version=12.6' \
+    'cuda-cudart=12.6' \
+    'cuda-nvrtc=12.6' \
+    'cuda-runtime=12.6' \
     'cudnn=9.5' \
     openmm \
     pdbfixer \
