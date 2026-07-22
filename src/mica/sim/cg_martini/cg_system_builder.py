@@ -226,10 +226,39 @@ def _gro_residue_counts(gro_path: Path) -> dict[str, int]:
 
 def _infer_lipid_molecule_name(lipid_composition: str) -> str:
     """Extract the first lipid name from an INSANE lipid_composition
-    string like 'POPC:1' -> 'POPC', 'POPE:7 POPG:3' -> 'POPE'.
+    string like 'POPC:1' -> 'POPC', 'POPE:7 POPG:3' -> 'POPE',
+    '-l POPC:1 -l POPE:1' -> 'POPC'.
     """
-    first = lipid_composition.split()[0] if lipid_composition else ""
-    return first.split(":")[0].strip()
+    if not lipid_composition:
+        return ""
+    for tok in lipid_composition.split():
+        # Skip INSANE flag tokens like '-l', '-sol', '-salt'.
+        if tok.startswith("-"):
+            continue
+        return tok.split(":")[0].strip()
+    return ""
+
+
+# GAP-CG-011 (2026-07-21): lookup table mapping Martini 3 lipid molecule
+# names to their bead count. Used to convert bead-counts from INSANE._parse_gro
+# into molecule-counts for the [ molecules ] section of system.top.
+# POPC=12, POPE=12, DOPC=12, DOPE=12, POPG=12, DOPG=12, DOPS=12, DOPA=12,
+# CHOL=8 (cholesterol), DPPC=12, DLPC=10 (approx).
+_BEADS_PER_LIPID: dict[str, int] = {
+    "POPC": 12, "POPE": 12, "DOPC": 12, "DOPE": 12,
+    "POPG": 12, "DOPG": 12, "DOPS": 12, "DOPA": 12,
+    "DPPC": 12, "DLPC": 10, "CHOL": 8,
+}
+
+
+def _beads_per_lipid(lipid_composition: str) -> int:
+    """Return the number of beads per molecule for the first lipid in
+    the composition string. Defaults to 12 (Martini 3 phospholipid
+    standard) for unknown names — better to under-count than to lose
+    alignment with the .gro by an order of magnitude.
+    """
+    name = _infer_lipid_molecule_name(lipid_composition)
+    return _BEADS_PER_LIPID.get(name.upper(), 12)
 
 
 def _solvent_molecule_name(solvent: str) -> str:
@@ -422,12 +451,21 @@ def _build_membrane_system(
 
     # If INSANE didn't write enough [ molecules ] info, derive from
     # the counts INSANE itself reported.
+    # GAP-CG-011 fix (2026-07-21): insane_counts["lipid_count"] /
+    # [protein/water/nacl]_count are in BEADS, not molecules. Convert
+    # to molecules via beads_per_X lookup before populating system.top
+    # [ molecules ], otherwise MartiniTopFile expands each lipid as
+    # 12 beads and the system.nAtoms exceeds conf.nAtoms by ~12x.
     if not insane_mol_counts and request.insane_counts:
+        beads_per_lipid = _beads_per_lipid(request.lipid_composition)
         insane_mol_counts = {
+            # Protein beads == 1 molecule (CG protein is one chain)
             "Protein": int(request.insane_counts.get("protein_beads", 0)),
+            # Lipid beads /= beads_per_lipid (POPC=12, POPE=12, CHOL=8, ...)
             _infer_lipid_molecule_name(request.lipid_composition): int(
                 request.insane_counts.get("lipid_count", 0)
-            ),
+            ) // max(beads_per_lipid, 1),
+            # Water / ions are 1 bead each -> counts == molecules
             _solvent_molecule_name(request.solvent): int(
                 request.insane_counts.get("water_count", 0)
             ),
@@ -437,7 +475,8 @@ def _build_membrane_system(
         payload.warnings.append(
             "insane_molecule_counts_inferred_from_insane_counts: "
             "INSANE did not emit a [ molecules ] section, deriving "
-            "molecule names from lipid_composition + solvent + insane counts"
+            "molecule names from lipid_composition + solvent + insane counts. "
+            f"beads_per_lipid={beads_per_lipid} applied to lipid_count."
         )
 
     # Compute final molecule counts
@@ -700,6 +739,18 @@ def _emit_system_top(
     lifted from the underlying build (INSANE for membrane, computed
     here for soluble).
     """
+    # GAP-CG-011 diagnostic (2026-07-21): log the molecule counts being
+    # emitted to system.top, so the next dispatch's failure_traceback
+    # includes them. The dispatch also logs nAtoms of the system after
+    # MartiniTopFile expansion -- the two should match.
+    import logging
+    logging.getLogger("mica.cg_martini").info(
+        "cg_system_builder._emit_system_top: lipid_itp=%s protein_count=%d "
+        "lipid_count=%d water_count=%d na_count=%d cl_count=%d "
+        "molecule_itp_refs=%s",
+        lipid_itp_name, protein_count, lipid_count, water_count,
+        na_count, cl_count, [str(itp) for itp in molecule_itp_refs],
+    )
     includes: list[str] = [
         "martini_v3.0.0.itp",
         "martini_v3.0.0_solvents_v1.itp",

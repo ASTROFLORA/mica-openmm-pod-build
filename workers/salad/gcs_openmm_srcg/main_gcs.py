@@ -1649,6 +1649,41 @@ def _run_cg_martini_from_pdb_job(
                 f"Receipt status={insane_receipt.status}, errors={insane_ve}"
             )
 
+        # GAP-CG-011 diagnostic (2026-07-21): surface INSANE counts + top
+        # contents to the worker history. _parse_gro returns BEAD counts;
+        # the consolidated system.top needs MOLECULE counts. If the
+        # fallback path triggers, we MUST divide lipid_count by
+        # beads_per_lipid (=12 for POPC). This log line is the ground
+        # truth for the next dispatch.
+        _log_event(
+            f"cg_gap011_insane_diagnostic: insane_counts={insane_counts} "
+            f"insane_gro_size={Path(insane_gro_ref).stat().st_size} "
+            f"insane_top_ref={insane_top_ref}",
+            level="info",
+        )
+        if insane_top_ref and Path(insane_top_ref).is_file():
+            try:
+                top_text = Path(insane_top_ref).read_text(encoding="utf-8", errors="replace")
+                in_mol = False
+                mol_lines = []
+                for line in top_text.splitlines():
+                    if line.strip() == "[ molecules ]":
+                        in_mol = True
+                        continue
+                    if in_mol and line.strip().startswith("["):
+                        break
+                    if in_mol and line.strip():
+                        mol_lines.append(line.strip())
+                _log_event(
+                    f"cg_gap011_insane_top_molecules: {mol_lines}",
+                    level="info",
+                )
+            except Exception as e_topread:
+                _log_event(
+                    f"cg_gap011_insane_top_read_failed: {e_topread}",
+                    level="warning",
+                )
+
     # ── Phase 3: build_cg_system_bundle ─────────────────────────────
     bundle_out = cg_build_dir / "bundle"
     bundle_out.mkdir(parents=True, exist_ok=True)
@@ -1726,7 +1761,25 @@ def _run_cg_martini_from_pdb_job(
         raise RuntimeError("No OpenMM platform available for cg_martini_from_pdb job")
 
     simulation = Simulation(top.topology, system, integrator, platform_obj)
-    simulation.context.setPositions(conf.getPositions())
+    # INSTRUCCION 56 GAP-CG-011 diagnostic: log nAtoms in topology vs conf
+    n_top_atoms = system.getNumParticles()
+    n_conf_atoms = conf.getNumParticles() if hasattr(conf, "getNumParticles") else len(conf.getPositions())
+    _log_event(f"cg_gap011_diagnostic: system.nAtoms={n_top_atoms} conf.nAtoms={n_conf_atoms} local_gro={local_gro} local_top={local_top}", level="info")
+    try:
+        simulation.context.setPositions(conf.getPositions())
+    except Exception as _e:
+        # GAP-CG-011: report top.nAtoms vs conf.nAtoms in the failure receipt
+        payload_meta = {
+            "system_nAtoms": n_top_atoms,
+            "conf_nAtoms": n_conf_atoms,
+            "delta": n_top_atoms - n_conf_atoms,
+            "local_gro": str(local_gro),
+            "local_top": str(local_top),
+            "gro_size_bytes": local_gro.stat().st_size if local_gro.exists() else None,
+            "top_size_bytes": local_top.stat().st_size if local_top.exists() else None,
+        }
+        _log_event(f"cg_gap011_setPositions_failed: {payload_meta}", level="error")
+        raise
     simulation.context.computeVirtualSites()
 
     state0 = simulation.context.getState(getEnergy=True)
