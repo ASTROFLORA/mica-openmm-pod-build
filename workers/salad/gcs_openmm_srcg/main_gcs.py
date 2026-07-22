@@ -1908,13 +1908,24 @@ def _run_cg_martini_from_pdb_job(
     # minimization starting point is infinite or NaN" even though
     # solvated.gro has no NaN/Inf coords (verified via
     # cg_gap011_system_top.json). The cause is infinite LJ forces
-    # from atomic overlap (r < sigma/2). Set a small velocity
-    # BEFORE the minimizer so the system has thermal momentum to
-    # smear out the worst clashes before the steepest-descent
-    # minimizer takes over.
+    # from atomic overlap (r < sigma/2). The robust fix: swap in a
+    # soft-core-friendly LangevinIntegrator with a tiny timestep,
+    # set thermal velocities, then run a SHORT step burst to let
+    # the random forces physically separate the overlapping beads
+    # before the steepest-descent minimizer takes over.
+    warmup_integrator = LangevinIntegrator(
+        cg_runtime_params["temperature_K"] * _unit.kelvin,
+        100.0 / _unit.picosecond,  # HIGH friction so we dampen clashes fast
+        0.001 * _unit.picoseconds,  # tiny dt so the integrator doesn't diverge
+    )
+    simulation.context.setIntegrator(warmup_integrator)
     simulation.context.setVelocitiesToTemperature(
         cg_runtime_params["temperature_K"] * _unit.kelvin
     )
+    # Bounded: 100 steps * 0.001 ps = 0.1 ps of smear time. Enough to
+    # break r<sigma/2 overlaps (LJ repulsion kicks in fast under
+    # high friction), small enough that the warm-up stays clean.
+    simulation.step(100)
 
     state0 = simulation.context.getState(getEnergy=True)
     energy_initial_kjmol = float(
