@@ -1921,13 +1921,14 @@ def _run_cg_martini_from_pdb_job(
         state0.getPotentialEnergy().value_in_unit(_unit.kilojoule_per_mole)
     )
 
-    # GAP-CG-009 RESIDUAL follow-up: tolerance=100 kJ/mol is loose
-    # enough to allow the minimizer to break clashes before the
-    # trajectory converges. maxIterations=10 keeps the warm-up
+    # GAP-CG-009 RESIDUAL follow-up: tolerance is a FORCE not energy
+    # (OpenMM API requires kJ/(mol*nm), not kJ/mol). Use a loose
+    # tolerance=100 kJ/(mol*nm) so the minimizer can break the worst
+    # clashes without diverging. maxIterations=10 keeps the warm-up
     # bounded so prod.dcd / prod.log stay clean for the dashboard.
     simulation.minimizeEnergy(
         maxIterations=10,
-        tolerance=100.0 * _unit.kilojoule_per_mole,
+        tolerance=100.0 * _unit.kilojoule_per_mole / _unit.nanometer,
     )
 
     # -- THROWAWAY EQUILIBRATION (delete once MDEngine.run_graph() handles CG multi-fase) ---
