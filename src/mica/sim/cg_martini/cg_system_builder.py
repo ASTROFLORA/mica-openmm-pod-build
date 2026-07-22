@@ -177,6 +177,18 @@ def _read_molecules_section(top_path: Path) -> dict[str, int]:
     Returns a dict of molecule_name -> count. Used to lift the
     counts INSANE wrote into its header-only membrane.top, so the
     consolidated system.top can re-emit them.
+
+    GAP-CG-011 follow-up (2026-07-21): GROMACS allows the same
+    molecule type to appear in multiple lines of [ molecules ]. For
+    example, INSANE emits POPC twice (once per leaflet):
+
+        POPC           452
+        POPC           436
+
+    The previous implementation did `counts[name] = int(count)` which
+    silently OVERWROTE the first POPC 452 with the second POPC 436,
+    dropping 452 mols = 5424 beads from the topology. Fix: sum
+    duplicates so the result mirrors what GROMACS itself would do.
     """
     counts: dict[str, int] = {}
     text = top_path.read_text(encoding="utf-8", errors="replace")
@@ -192,7 +204,7 @@ def _read_molecules_section(top_path: Path) -> dict[str, int]:
             parts = s.split()
             if len(parts) >= 2:
                 try:
-                    counts[parts[0]] = int(parts[1])
+                    counts[parts[0]] = counts.get(parts[0], 0) + int(parts[1])
                 except ValueError:
                     pass
     return counts
