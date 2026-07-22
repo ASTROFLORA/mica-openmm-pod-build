@@ -215,6 +215,10 @@ def _gro_atom_count(gro_path: Path) -> int:
     with open(gro_path) as f:
         f.readline()  # title
         n = f.readline().strip()
+    try:
+        return int(n)
+    except ValueError:
+        return 0
 
 
 def _sanitize_nan_in_gro(gro_path: Path) -> int:
