@@ -1662,11 +1662,15 @@ def _run_cg_martini_from_pdb_job(
             "insane_gro_size=%s insane_top_ref=%s",
             insane_counts, Path(insane_gro_ref).stat().st_size, insane_top_ref,
         )
-        if insane_top_ref and Path(insane_top_ref).is_file():
-            try:
+        # GAP-CG-011: persist the INSANE counts + parsed [ molecules ]
+        # section to GCS as a standalone JSON blob so the next dispatch's
+        # failure_traceback can be cross-referenced with the truth.
+        try:
+            import json as _cg_gap011_json
+            insane_top_molecules: list[str] = []
+            if insane_top_ref and Path(insane_top_ref).is_file():
                 top_text = Path(insane_top_ref).read_text(encoding="utf-8", errors="replace")
                 in_mol = False
-                mol_lines = []
                 for line in top_text.splitlines():
                     if line.strip() == "[ molecules ]":
                         in_mol = True
@@ -1674,14 +1678,23 @@ def _run_cg_martini_from_pdb_job(
                     if in_mol and line.strip().startswith("["):
                         break
                     if in_mol and line.strip():
-                        mol_lines.append(line.strip())
-                _cg_gap011_log.warning(
-                    "cg_gap011_insane_top_molecules: %s", mol_lines,
-                )
-            except Exception as e_topread:
-                _cg_gap011_log.warning(
-                    "cg_gap011_insane_top_read_failed: %s", e_topread,
-                )
+                        insane_top_molecules.append(line.strip())
+            insane_diag = {
+                "schema_version": "cg_gap011_insane_v1",
+                "insane_counts": insane_counts,
+                "insane_gro_ref": insane_gro_ref,
+                "insane_top_ref": insane_top_ref,
+                "insane_gro_size_bytes": int(Path(insane_gro_ref).stat().st_size) if Path(insane_gro_ref).exists() else None,
+                "insane_top_size_bytes": int(Path(insane_top_ref).stat().st_size) if insane_top_ref and Path(insane_top_ref).exists() else None,
+                "insane_top_molecules_section": insane_top_molecules,
+            }
+            _upload_text(
+                client, bucket,
+                _cg_gap011_json.dumps(insane_diag, indent=2),
+                f"{output_prefix}/cg_gap011_insane_counts.json",
+            )
+        except Exception as _insane_diag_e:
+            _cg_gap011_log.warning("cg_gap011_insane_diag_upload_failed: %s", _insane_diag_e)
 
     # ── Phase 3: build_cg_system_bundle ─────────────────────────────
     bundle_out = cg_build_dir / "bundle"
@@ -1759,6 +1772,42 @@ def _run_cg_martini_from_pdb_job(
     if platform_obj is None:
         raise RuntimeError("No OpenMM platform available for cg_martini_from_pdb job")
 
+    # GAP-CG-011: dump the final [ molecules ] section of system.top right
+    # before Simulation() so we have ground truth on what MartiniTopFile
+    # is being asked to expand.
+    try:
+        import json as _cg_gap011_json
+        sys_top_mol_section: list[str] = []
+        if local_top.exists():
+            sys_top_text = local_top.read_text(encoding="utf-8", errors="replace")
+            in_mol = False
+            for line in sys_top_text.splitlines():
+                if line.strip() == "[ molecules ]":
+                    in_mol = True
+                    continue
+                if in_mol and line.strip().startswith("["):
+                    break
+                if in_mol and line.strip():
+                    sys_top_mol_section.append(line.strip())
+        sys_top_diag = {
+            "schema_version": "cg_gap011_system_top_v1",
+            "system_top_ref": str(local_top),
+            "system_top_size_bytes": int(local_top.stat().st_size) if local_top.exists() else None,
+            "system_top_molecules_section": sys_top_mol_section,
+            "solvated_gro_ref": str(local_gro),
+            "solvated_gro_size_bytes": int(local_gro.stat().st_size) if local_gro.exists() else None,
+        }
+        _upload_text(
+            client, bucket,
+            _cg_gap011_json.dumps(sys_top_diag, indent=2),
+            f"{output_prefix}/cg_gap011_system_top.json",
+        )
+    except Exception as _sys_top_diag_e:
+        import logging as _st_log
+        _st_log.getLogger(__name__).warning(
+            "cg_gap011_system_top_diag_upload_failed: %s", _sys_top_diag_e,
+        )
+
     simulation = Simulation(top.topology, system, integrator, platform_obj)
     # INSTRUCCION 56 GAP-CG-011 diagnostic: log nAtoms in topology vs conf
     n_top_atoms = system.getNumParticles()
@@ -1787,6 +1836,36 @@ def _run_cg_martini_from_pdb_job(
         _setpos_log.error(
             "cg_gap011_setPositions_failed: %s", payload_meta,
         )
+        # GAP-CG-011: also persist a JSON diagnostic to GCS so the next
+        # dispatch's failure_traceback can be cross-referenced with the
+        # actual nAtoms delta. We don't have access to the `history` dict
+        # here (it's built at function-end on success), so we upload a
+        # standalone diagnostic blob instead.
+        try:
+            import json as _cg_gap011_json
+            diag_blob_name = f"{output_prefix}/cg_gap011_natoms_delta.json"
+            diag_payload = {
+                "schema_version": "cg_gap011_natoms_v1",
+                "diagnostic_kind": "setPositions_nAtoms_mismatch",
+                "system_nAtoms": int(n_top_atoms),
+                "conf_nAtoms": int(n_conf_atoms),
+                "delta": int(n_top_atoms - n_conf_atoms),
+                "local_gro": str(local_gro),
+                "local_top": str(local_top),
+                "gro_size_bytes": int(local_gro.stat().st_size) if local_gro.exists() else None,
+                "top_size_bytes": int(local_top.stat().st_size) if local_top.exists() else None,
+                "insane_counts": globals().get("insane_counts", {}),
+                "insane_top_ref": globals().get("insane_top_ref", ""),
+                "insane_gro_ref": globals().get("insane_gro_ref", ""),
+                "failed_at": datetime.now(timezone.utc).isoformat(),
+            }
+            _upload_text(
+                client, bucket,
+                _cg_gap011_json.dumps(diag_payload, indent=2),
+                diag_blob_name,
+            )
+        except Exception as _diag_e:
+            _setpos_log.error("cg_gap011_diag_upload_failed: %s", _diag_e)
         raise
     simulation.context.computeVirtualSites()
 
