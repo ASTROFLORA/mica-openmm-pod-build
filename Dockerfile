@@ -64,8 +64,19 @@ RUN mamba install -c conda-forge -y \
     vermouth \
     && mamba clean -afy
 
-# Layer 2: pip-only deps (martini_openmm is unpinned — pip picks latest compatible
-# with the OpenMM conda-forge build).
+# CRITICAL (INSTRUCCION 49, 2026-07-21): remove the openmm package
+# transitively pulled in via vermouth/other deps. mamba would otherwise
+# install openmm 8.5.x (cuda-13 PTX, GAP-CG-010 culprit) on top of the
+# OpenMM-CUDA-12 wheel we install below, leaving the CUDA plugin in a
+# mismatched state.
+RUN pip uninstall -y openmm || true
+
+# Layer 2: pip-only deps. CRITICAL: openmm is NOT in mamba above because
+# the conda-forge openmm 8.5.x ships with a CUDA plugin bundled for cuda-13
+# which the RTX_5090 host driver does NOT support (GAP-CG-010).
+# We install OpenMM-CUDA-12==8.4.0b0 (the LAST 8.4 wheel that published a
+# cuda-12 extra) -- it bundles the CUDA plugin compiled for CUDA 12.x PTX
+# (driver >= 525), which is compatible with the Salad RTX_5090 fleet.
 RUN pip install --no-cache-dir \
     "OpenMM-CUDA-12==8.4.0b0" \
     "fastapi>=0.110.0" \
