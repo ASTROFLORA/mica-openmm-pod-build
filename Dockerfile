@@ -51,7 +51,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN mamba install -c conda-forge -y \
     python=3.11 \
     nodejs=22 \
-    'cuda-version=12.6' \
+    'cuda-version=12.9' \
     'openmm>=8.5.0' \
     pdbfixer \
     numpy \
