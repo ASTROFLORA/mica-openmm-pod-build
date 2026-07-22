@@ -33,10 +33,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && mkdssp --version
 
-# Layer 1: Conda stack — OpenMM + cheminformatics + vermouth (Marrink-lab fork).
+# Layer 1: Conda stack — CUDA toolkit pinned to 12.x BEFORE OpenMM so the
+# bundled CUDA plugin's PTX is compatible with older NVIDIA drivers.
+# GAP-CG-010 (2026-07-21): mamba pulling `openmm` directly grabbed
+# `cuda-version 13.3`, whose PTX requires a driver >= 580 that the
+# Salad RTX_5090 host does NOT ship. Result: CUDA_ERROR_UNSUPPORTED_PTX_VERSION
+# (222) on the first `Simulation(...)` call.
+#
+# Pin: cudatoolkit 12.6 (compatible with driver >= 535, very widely
+# available; also matches cuDNN 9.x and the conda-forge openmm-cuda126
+# build which targets sm_50..sm_120 inclusive of RTX 5090 Blackwell).
+#
+# The `cuda-version` metapackage auto-pulls the matching cudatoolkit.
 RUN mamba install -c conda-forge -y \
     python=3.11 \
     nodejs=22 \
+    'cuda-version=12.6' \
     openmm \
     pdbfixer \
     numpy \
@@ -172,6 +184,33 @@ verified.append({
     'defined_in': getattr(vermouth, '__file__', '?'),
 })
 
+# INSTRUCCION 36 (2026-07-21): GPU-only policy -- CUDA platform MUST load.
+# GAP-CG-010 root cause was cuda-version=13.3 PTX too new for the host
+# driver (CUDA_ERROR_UNSUPPORTED_PTX_VERSION 222). We pin cuda-version=12.6
+# in Layer 1, and now hard-assert at build time that the CUDA platform is
+# available AND its plugin loaded -- NOT just importable. If this fails,
+# the build fails and the broken image never ships. Zero CPU fallback.
+import openmm  # noqa: E402
+from openmm import Platform as _Platform  # noqa: E402
+_platforms = [_Platform.getPlatform(i).getName() for i in range(_Platform.getNumPlatforms())]
+if "CUDA" not in _platforms:
+    raise ImportError(
+        f"OpenMM CUDA platform not registered at build time. "
+        f"Available platforms: {_platforms}. "
+        f"This means cuda-version is pinned wrong (driver/PTX mismatch). "
+        f"NO CPU FALLBACK WILL BE TOLERATED."
+    )
+# Probe plugin load via PlatformData (creates the actual kernel module).
+# We can NOT instantiate a Context here (no System), but getPlatformByName
+# already loads the plugin shared library.
+_cuda_platform = _Platform.getPlatformByName("CUDA")
+verified.append({
+    'module': 'openmm',
+    'symbol': 'Platform::CUDA',
+    'defined_in': getattr(_cuda_platform, '__module__', '?'),
+    'note': f'hard-required; available platforms: {_platforms}',
+})
+
 # INSTRUCCION 30 (2026-07-21): mdtraj is now REQUIRED for the martinize2
 # PDB-to-GRO path -- the hand-rolled parser choked on partial CRYST1 records.
 # We hard-require it in the smoke gate (not warn-only) because the legacy
@@ -260,9 +299,9 @@ receipt = {
     'validation_mode': os.environ.get('MICA_SMOKE_RECEIPT_MODE', 'container_smoke_v2'),
     'verified_count': len(verified),
     'verified_targets': verified,
-    'gap_closed': ['GAP-CG-002', 'GAP-CG-004', 'GAP-R3-CG-MARTINI', 'GAP-CG-009'],
+    'gap_closed': ['GAP-CG-002', 'GAP-CG-004', 'GAP-R3-CG-MARTINI', 'GAP-CG-009', 'GAP-CG-010'],
     'validation_status': 'PASSED',
-    'note': 'ASTROFLORA public mirror adds CG/Martini 3 smoke over md_preview baseline. INSTRUCCION 30: mdtraj now hard-required for martinize2 PDB-to-GRO (closes GAP-CG-009: silent _pdb_to_gro empty-output when CRYST1 missing).',
+    'note': 'ASTROFLORA public mirror adds CG/Martini 3 smoke over md_preview baseline. INSTRUCCION 30: mdtraj now hard-required for martinize2 PDB-to-GRO (closes GAP-CG-009: silent _pdb_to_gro empty-output when CRYST1 missing). INSTRUCCION 36: cuda-version pinned to 12.6 + smoke-gate hard-requires OpenMM CUDA platform registered (no CPU fallback -- closes GAP-CG-010: CUDA_ERROR_UNSUPPORTED_PTX_VERSION 222 from cuda-13.3 PTX too new for RTX_5090 host driver).',
 }
 with open('/tmp/container_smoke_v2.json', 'w') as f:
     json.dump(receipt, f, indent=2)
