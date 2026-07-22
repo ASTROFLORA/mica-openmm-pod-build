@@ -168,7 +168,7 @@ RUN ls -la /app/src/mica/md_preview/__init__.py \
 ARG SMOKE_RECEIPT_MODE=container_smoke_v2
 ENV MICA_SMOKE_RECEIPT_MODE=${SMOKE_RECEIPT_MODE}
 ENV PYTHONDONTWRITEBYTECODE=1
-RUN /opt/conda/bin/python - <<'PYEOF'
+RUN /opt/mica/bin/python - <<'PYEOF'
 import sys, json, os, shutil
 sys.path.insert(0, '/app/src')
 verified = []
