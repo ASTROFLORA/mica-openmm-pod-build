@@ -64,10 +64,18 @@ RUN /opt/conda/bin/mamba create -y -p /opt/mica -c conda-forge \
 ENV PATH=/opt/mica/bin:/opt/conda/bin:$PATH
 
 # Layer 2: PyPI CUDA 12 stack pinned at 12.8 (the first CUDA release
-# with sm_120 / RTX 5090 Blackwell support). OpenMM 8.5.2 is the latest
-# 8.x release with a CUDA-12 Linux wheel. The matching openmm-cuda-12
-# wheel ships the libOpenMMCUDA.so plugin that contains the cuFFT,
-# NVRTC and runtime bindings OpenMM loads at first cuInit().
+# with sm_120 / RTX 5090 Blackwell support). OpenMM 8.3.1 is the latest
+# 8.x release with a manylinux_2_28 wheel compatible with the Debian 11
+# base (glibc 2.31). The matching openmm-cuda-12 wheel ships the
+# libOpenMMCUDA.so plugin that contains the cuFFT, NVRTC and runtime
+# bindings OpenMM loads at first cuInit().
+#
+# INSTRUCCION 74b (consultant-correction, 2026-07-22): the consultant
+# originally proposed openmm==8.5.2 but that version only has
+# manylinux_2_34 wheels (glibc >= 2.34) and was hidden from the pip
+# resolver on the Debian 11 base. 8.3.1 is the latest stable OpenMM
+# with manylinux_2_27/2_28 wheels -- compatible with both the host
+# glibc and OpenMM's own NVRTC pipeline.
 #
 # INSTRUCCION 74 (consultant): NVRTC is the actual runtime component
 # that compiles OpenMM kernels to PTX on the host. Pinning NVRTC at
@@ -81,8 +89,8 @@ RUN python -m pip install --no-cache-dir \
     "nvidia-cuda-nvrtc-cu12==12.8.*" \
     "nvidia-cuda-nvcc-cu12==12.8.*" \
     "nvidia-cuda-cupti-cu12==12.8.*" \
-    "openmm==8.5.2" \
-    "openmm-cuda-12==8.5.2" \
+    "openmm==8.3.1" \
+    "openmm-cuda-12==8.3.1" \
     && python -m pip cache purge
 
 # INSTRUCCION 74 (consultant): pdbfixer on conda would try to
@@ -235,9 +243,9 @@ verified.append({
     'defined_in': getattr(vermouth, '__file__', '?'),
 })
 
-# INSTRUCCION 74 (2026-07-22): GPU-only policy -- CUDA plugin .so MUST
-# be present in the image. With the INSTRUCCION 74 stack, the openmm
-# install is via pip (PyPI `openmm==8.5.2` + `openmm-cuda-12==8.5.2`
+# INSTRUCCION 74b (2026-07-22): GPU-only policy -- CUDA plugin .so MUST
+# be present in the image. With the INSTRUCCION 74b stack, the openmm
+# install is via pip (PyPI `openmm==8.3.1` + `openmm-cuda-12==8.3.1`
 # wheels) under /opt/mica. The plugin ships as `libOpenMMCUDA.so`
 # inside the openmm-cuda-12 wheel's data/ folder, NOT in /opt/conda/.
 # We search BOTH /opt/mica and /opt/conda locations to be safe.
@@ -255,14 +263,14 @@ _plugin_search = (
 if not _plugin_search:
     raise ImportError(
         "libOpenMMCUDA.so not found in the image. The pip wheels "
-        "(openmm-cuda-12==8.5.2) were not installed correctly into "
+        "(openmm-cuda-12==8.3.1) were not installed correctly into "
         "/opt/mica. NO CPU FALLBACK WILL BE TOLERATED."
     )
 verified.append({
     'module': 'openmm-cuda-12',
     'symbol': 'Platform::CUDA',
     'defined_in': _plugin_search[0],
-    'note': 'INSTRUCCION 74 CUDA plugin .so present (CUDA 12.8 runtime stack from PyPI under /opt/mica; runtime registration happens on first cuInit() at the worker host with real GPU). The Salad startup probe (entrypoint.sh) will additionally preflight an actual Context on a tiny PME system before letting main_gcs.py run -- incompatible drivers fail the probe and Salad reassigns.',
+    'note': 'INSTRUCCION 74b CUDA plugin .so present (CUDA 12.8 runtime stack + openmm==8.3.1 from PyPI under /opt/mica; runtime registration happens on first cuInit() at the worker host with real GPU). The Salad startup probe (entrypoint.sh) will additionally preflight an actual Context on a tiny PME system before letting main_gcs.py run -- incompatible drivers fail the probe and Salad reassigns.',
 })
 
 # INSTRUCCION 30 (2026-07-21): mdtraj is now REQUIRED for the martinize2
@@ -355,7 +363,7 @@ receipt = {
     'verified_targets': verified,
     'gap_closed': ['GAP-CG-002', 'GAP-CG-004', 'GAP-R3-CG-MARTINI', 'GAP-CG-009', 'GAP-CG-010', 'GAP-CG-011'],
     'validation_status': 'PASSED',
-    'note': 'ASTROFLORA public mirror adds CG/Martini 3 smoke over md_preview baseline. INSTRUCCION 30: mdtraj hard-required for martinize2 PDB-to-GRO (closes GAP-CG-009). INSTRUCCION 74: single image, isolated /opt/mica env (mamba create -p), PyPI OpenMM 8.5.2 + openmm-cuda-12 8.5.2 + nvidia-cuda-*-cu12 12.8 stack (CUDA 12.8 is first release with sm_120/Blackwell native compute support; OpenMM 8.5.2 uses NVRTC runtime compilation so no precompiled SASS is needed). No CUDA_FORCE_PTX_JIT -- OpenMM already does JIT for unsupported arch. Salad startup probe preflights an actual Context on a tiny PME system before main_gcs.py runs; incompatible nodes fail the probe and Salad reallocates.',
+    'note': 'ASTROFLORA public mirror adds CG/Martini 3 smoke over md_preview baseline. INSTRUCCION 30: mdtraj hard-required for martinize2 PDB-to-GRO (closes GAP-CG-009). INSTRUCCION 74b: single image, isolated /opt/mica env (mamba create -p), PyPI OpenMM 8.3.1 + openmm-cuda-12 8.3.1 + nvidia-cuda-*-cu12 12.8 stack (CUDA 12.8 is first release with sm_120/Blackwell native compute support; OpenMM uses NVRTC runtime compilation so no precompiled SASS is needed). 8.3.1 chosen over consultant-proposed 8.5.2 because the latter only ships manylinux_2_34 wheels (glibc >=2.34) and was hidden from pip on the Debian 11 base; 8.3.1 ships manylinux_2_28 wheels compatible with glibc 2.31. No CUDA_FORCE_PTX_JIT -- OpenMM already does JIT for unsupported arch. Salad startup probe preflights an actual Context on a tiny PME system before main_gcs.py runs; incompatible nodes fail the probe and Salad reallocates.',
 }
 with open('/tmp/container_smoke_v2.json', 'w') as f:
     json.dump(receipt, f, indent=2)
