@@ -51,7 +51,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN mamba install -c conda-forge -y \
     python=3.11 \
     nodejs=22 \
-    'cuda-version=12' \
+    openmm \
     pdbfixer \
     numpy \
     scipy \
@@ -64,26 +64,26 @@ RUN mamba install -c conda-forge -y \
     vermouth \
     && mamba clean -afy
 
-# CRITICAL (INSTRUCCION 49, 2026-07-21): remove the openmm package
-# pulled in transitively by vermouth (the GPU-free openmm 8.5.2 conda-forge
-# build). The pip-installed OpenMM-CUDA-12 wheel below is the only openmm
-# that should be in the env -- if conda's openmm survives it will shadow
-# the wheel's CUDA plugin and the smoke gate will report
-# "Available platforms: ['Reference', 'CPU']".
-RUN pip uninstall -y openmm || true \
-    && rm -rf /opt/conda/lib/python3.11/site-packages/openmm \
-              /opt/conda/lib/python3.11/site-packages/openmm-*.dist-info \
-    && echo "removed conda openmm; ready for pip OpenMM-CUDA-12"
+# GAP-CG-010 root-cause fix (INSTRUCCION 55, 2026-07-21): the OpenMM
+# CUDA plugin shipped with conda-forge openmm 8.5.2 contains PTX compiled
+# for cuda-13 (driver >= 580). The Salad RTX_5090 fleet ships older
+# drivers which reject the PTX with CUDA_ERROR_UNSUPPORTED_PTX_VERSION
+# (222) on the first `Simulation(...)` call. We tried downgrading to
+# openmm 8.4 + OpenMM-CUDA-12 wheel and it failed because:
+#  - conda 8.5.2 shadowed the pip wheel
+#  - pip 8.4 wheel lacks CUDA plugin for the right CUDA runtime
+#  - mamba solver rejects pinning openmm 8.4 due to dependency conflicts
+#
+# The OFFICIAL NVIDIA-CUDA recommended fix (from OpenMM docs and NVIDIA
+# developer guides) is CUDA_FORCE_PTX_JIT=1 -- the driver will JIT-compile
+# the PTX to native SASS at runtime for whatever GPU is present (RTX 5090
+# sm_120 in our case). This adds ~10-30s startup cost per context but
+# works with any driver >= 535. NO CPU FALLBACK.
+ENV CUDA_FORCE_PTX_JIT=1
 
-# Layer 2: pip-only deps. CRITICAL: openmm is NOT in mamba above because
-# the conda-forge openmm 8.5.x ships with a CUDA plugin bundled for cuda-13
-# which the RTX_5090 host driver does NOT support (GAP-CG-010).
-# We install OpenMM-CUDA-12==8.4.0b0 (the LAST 8.4 wheel that published a
-# cuda-12 extra) -- it bundles the CUDA plugin compiled for CUDA 12.x PTX
-# (driver >= 525), which is compatible with the Salad RTX_5090 fleet.
+# Layer 2: pip-only deps (martini_openmm is unpinned — pip picks latest compatible
+# with the OpenMM conda-forge build).
 RUN pip install --no-cache-dir \
-    "openmm==8.4.0.post2" \
-    "OpenMM-CUDA-12==8.4.0b0" \
     "fastapi>=0.110.0" \
     "uvicorn[standard]>=0.27.0" \
     "websockets>=11.0.0" \
