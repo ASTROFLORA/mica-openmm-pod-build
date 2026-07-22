@@ -33,23 +33,26 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && mkdssp --version
 
-# Layer 1: Conda stack — CUDA toolkit pinned to 12.x BEFORE OpenMM so the
-# bundled CUDA plugin's PTX is compatible with older NVIDIA drivers.
+# Layer 1: Conda stack — CUDA toolkit pinned to 12.x + OpenMM CUDA plugin
+# bundled via openmm-cuda126 meta-package.
 # GAP-CG-010 (2026-07-21): mamba pulling `openmm` directly grabbed
 # `cuda-version 13.3`, whose PTX requires a driver >= 580 that the
 # Salad RTX_5090 host does NOT ship. Result: CUDA_ERROR_UNSUPPORTED_PTX_VERSION
 # (222) on the first `Simulation(...)` call.
 #
-# Pin: cudatoolkit 12.6 (compatible with driver >= 535, very widely
-# available; also matches cuDNN 9.x and the conda-forge openmm-cuda126
-# build which targets sm_50..sm_120 inclusive of RTX 5090 Blackwell).
+# Pin: openmm-cuda126 which transitively pulls openmm + cuda-version=12.6
+# + the bundled CUDA plugin .so whose PTX targets compute capability
+# sm_50..sm_120 (covers RTX 5090 Blackwell). Driver requirement: >= 535,
+# which is shipped in 2024+ on every NVIDIA GPU host.
 #
-# The `cuda-version` metapackage auto-pulls the matching cudatoolkit.
+# We install via the meta-package (not plain `openmm`) because the
+# plain `openmm` build on conda-forge is CPU-only -- the CUDA plugin
+# lives in a separate libopenmmcudapme.so that only ships in
+# `openmm-cuda126` / `openmm-cuda118` etc.
 RUN mamba install -c conda-forge -y \
     python=3.11 \
     nodejs=22 \
-    'cuda-version=12.6' \
-    openmm \
+    openmm-cuda126 \
     pdbfixer \
     numpy \
     scipy \
