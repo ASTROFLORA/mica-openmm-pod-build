@@ -1480,7 +1480,7 @@ def _run_cg_martini_from_pdb_job(
 
     geometry_class = os.getenv("MICA_CG_GEOMETRY_CLASS", "flat_bilayer").strip() or "flat_bilayer"
     lipid_composition = os.getenv("MICA_CG_LIPID_COMPOSITION", "POPC:1").strip() or "POPC:1"
-    solvent = os.getenv("MICA_CG_SOLVENT", "PW").strip() or "PW"
+    solvent = os.getenv("MICA_CG_SOLVENT", "W").strip() or "W"
     salt_mM = int(os.getenv("MICA_CG_SALT_MM", "150").strip() or "150")
     membrane_enabled = os.getenv("MICA_CG_MEMBRANE_ENABLED", "1").strip().lower() not in (
         "", "0", "false", "no"
