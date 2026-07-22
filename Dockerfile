@@ -52,7 +52,9 @@ RUN mamba install -c conda-forge -y \
     python=3.11 \
     nodejs=22 \
     'cuda-version=12' \
-    'openmm>=8.5.0' \
+    'cuda-cudart=12' \
+    'cuda-nvrtc=12' \
+    'cuda-driver=12' \
     pdbfixer \
     numpy \
     scipy \
@@ -68,6 +70,7 @@ RUN mamba install -c conda-forge -y \
 # Layer 2: pip-only deps (martini_openmm is unpinned — pip picks latest compatible
 # with the OpenMM conda-forge build).
 RUN pip install --no-cache-dir \
+    "openmm[cuda12]==8.5.2" \
     "fastapi>=0.110.0" \
     "uvicorn[standard]>=0.27.0" \
     "websockets>=11.0.0" \
