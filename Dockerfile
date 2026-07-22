@@ -28,10 +28,22 @@ LABEL mica.gap="GAP-CG-002 + GAP-CG-004 + GAP-R3 closed"
 ARG MICA_COMMIT=81a817c23e3579dbd40f4979ded43a969f7875ad
 
 # System packages: build tools + runtime libs + DSSP (mkdssp binary).
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl ca-certificates build-essential libxrender1 libxext6 git dssp \
-    && rm -rf /var/lib/apt/lists/* \
-    && mkdssp --version
+# INSTRUCCION 74e (2026-07-22): apt-get retry loop. The Ubuntu archive
+# (archive.ubuntu.com / security.ubuntu.com) is intermittently unreachable
+# from GH Actions runners (verified on builds #29941568205, #29941791934,
+# #29942204304). apt-get update -> apt-get install -> apt-get install chain
+# retries on a 5s sleep; the `|| true` between retries lets partial progress
+# (some packages installed) survive.
+RUN for attempt in 1 2 3 4 5; do \
+        echo "=== apt attempt $attempt/5 ===" && \
+        apt-get update && \
+        apt-get install -y --no-install-recommends \
+            curl ca-certificates build-essential libxrender1 libxext6 git dssp && \
+        rm -rf /var/lib/apt/lists/* && \
+        mkdssp --version && \
+        echo "=== apt attempt $attempt succeeded ===" && break \
+    || (echo "=== apt attempt $attempt failed, sleeping 5s ===" && sleep 5); \
+    done
 
 # Layer 1: Isolated scientific runtime env at /opt/mica.
 # INSTRUCCION 74 (2026-07-22, consultant review): the base miniforge
