@@ -47,7 +47,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # `OpenMM-CUDA-12==8.1.1.12` which contains SASS binaries compiled
 # for sm_50..sm_120 (RTX 5090 Blackwell) WITHOUT cuda-13 PTX.
 # No CPU fallback -- the SASS is what runs on the RTX 5090.
-RUN mamba install -c conda-forge -y --no-deps \
+# INSTRUCCION 73b (2026-07-22): use `conda install` instead of
+# `mamba` because `mamba install --no-deps` REMOVES mamba itself
+# from the env (mamba is a runtime dependency we need for the
+# smoke gate's subsequent mamba clean step). conda install
+# behaves the same on deps but keeps itself installed.
+RUN conda install -c conda-forge -y --no-deps \
     python=3.11 \
     nodejs=22 \
     pdbfixer \
@@ -60,7 +65,7 @@ RUN mamba install -c conda-forge -y --no-deps \
     pandas \
     biopython \
     vermouth \
-    && mamba clean -afy
+    && conda clean -afy
 
 # GAP-CG-010 FINAL FIX (INSTRUCCION 73, 2026-07-22): PyPI openmm[cuda12]
 # wheel ships CUDA-12 SASS precompiled for sm_120 (RTX 5090 Blackwell).
