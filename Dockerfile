@@ -70,7 +70,10 @@ RUN mamba install -c conda-forge -y \
 # that should be in the env -- if conda's openmm survives it will shadow
 # the wheel's CUDA plugin and the smoke gate will report
 # "Available platforms: ['Reference', 'CPU']".
-RUN pip uninstall -y openmm || true
+RUN pip uninstall -y openmm || true \
+    && rm -rf /opt/conda/lib/python3.11/site-packages/openmm \
+              /opt/conda/lib/python3.11/site-packages/openmm-*.dist-info \
+    && echo "removed conda openmm; ready for pip OpenMM-CUDA-12"
 
 # Layer 2: pip-only deps. CRITICAL: openmm is NOT in mamba above because
 # the conda-forge openmm 8.5.x ships with a CUDA plugin bundled for cuda-13
@@ -79,7 +82,7 @@ RUN pip uninstall -y openmm || true
 # cuda-12 extra) -- it bundles the CUDA plugin compiled for CUDA 12.x PTX
 # (driver >= 525), which is compatible with the Salad RTX_5090 fleet.
 RUN pip install --no-cache-dir \
-    "OpenMM-CUDA-12==8.5.2" \
+    "OpenMM-CUDA-12==8.4.0b0" \
     "fastapi>=0.110.0" \
     "uvicorn[standard]>=0.27.0" \
     "websockets>=11.0.0" \
