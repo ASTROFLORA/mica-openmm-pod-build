@@ -512,6 +512,10 @@ def _build_membrane_system(
         na_count=na_count,
         cl_count=cl_count,
         title=f"{request.source_target_id} Martini3 {request.geometry_class}",
+        # GAP-CG-011: pass insane_molecule_counts verbatim so the
+        # emitter preserves INSANE's real molecule names (PW, NA+,
+        # CL-) and multiple POPC lines (one per leaflet).
+        insane_molecule_counts=insane_mol_counts if insane_mol_counts else None,
     )
 
     # Final validation
@@ -730,6 +734,7 @@ def _emit_system_top(
     na_count: int,
     cl_count: int,
     title: str,
+    insane_molecule_counts: dict[str, int] | None = None,
 ) -> None:
     """Emit the consolidated system.top with all #include + [ molecules ].
 
@@ -738,6 +743,28 @@ def _emit_system_top(
     Protein + lipid (if membrane) + W + NA + CL with the counts
     lifted from the underlying build (INSANE for membrane, computed
     here for soluble).
+
+    GAP-CG-011 breakthrough (2026-07-21): when INSANE emits a real
+    [ molecules ] section in membrane.top, it uses molecule names that
+    differ from the hardcoded W/NA/CL aliases:
+
+        INSANE membrane.top     -> _emit_system_top hardcoded
+        -------------------     ------------------------------
+        PW            34626  -> W    {water_count=103878}
+        NA+            379   -> NA   {na_count=379}
+        CL-            383   -> CL   {cl_count=383}
+        POPC  452            -> POPC {lipid_count=452}  (single line)
+        POPC  436            -> (lost! 2nd leaflet dropped)
+
+    The previous implementation discarded all that and re-emitted the
+    counts using hardcoded aliases, which made MartiniTopFile expand a
+    topology with a different number of beads than the .gro. Fix: when
+    ``insane_molecule_counts`` is non-empty, emit THOSE entries
+    verbatim (preserving names like PW/NA+/CL- and multiple POPC lines),
+    prepended with the per-chain molecule declarations from
+    ``molecule_itp_refs``. The lipid_count / water_count / na_count /
+    cl_count params become unused when ``insane_molecule_counts`` is
+    provided -- we keep them for the soluble case (no membrane).
     """
     # GAP-CG-011 diagnostic (2026-07-21): log the molecule counts being
     # emitted to system.top, so the next dispatch's failure_traceback
@@ -747,16 +774,31 @@ def _emit_system_top(
     logging.getLogger("mica.cg_martini").info(
         "cg_system_builder._emit_system_top: lipid_itp=%s protein_count=%d "
         "lipid_count=%d water_count=%d na_count=%d cl_count=%d "
-        "molecule_itp_refs=%s",
+        "insane_molecule_counts=%s molecule_itp_refs=%s",
         lipid_itp_name, protein_count, lipid_count, water_count,
-        na_count, cl_count, [str(itp) for itp in molecule_itp_refs],
+        na_count, cl_count, insane_molecule_counts,
+        [str(itp) for itp in molecule_itp_refs],
     )
     includes: list[str] = [
         "martini_v3.0.0.itp",
         "martini_v3.0.0_solvents_v1.itp",
         "martini_v3.0.0_ions_v1.itp",
     ]
-    if lipid_itp_name and lipid_count > 0:
+    # GAP-CG-011: when INSANE emitted its own [ molecules ] section, we
+    # always need the lipids .itp too (INSANE includes POPC as 12-bead
+    # moleculetypes inside martini_v3.0.0_phospholipids_v1.itp).
+    # Detect presence of any lipid entry in insane_molecule_counts to
+    # gate the include on (rather than relying on lipid_count > 0 which
+    # might be 0 when counts come from a dict with multiple POPC lines).
+    has_lipid = False
+    if insane_molecule_counts:
+        for nm in insane_molecule_counts:
+            if nm.upper() in ("POPC", "POPE", "DOPC", "DOPE", "POPG",
+                              "DOPG", "DOPS", "DOPA", "DPPC", "DLPC",
+                              "CHOL", "POP", "DOP"):
+                has_lipid = True
+                break
+    if (lipid_itp_name and lipid_count > 0) or has_lipid:
         # The phospholipids .itp is a single file in marrink-lab v3.0.0.
         includes.append("martini_v3.0.0_phospholipids_v1.itp")
     # Per-molecule .itp from martinize2
@@ -772,20 +814,37 @@ def _emit_system_top(
         f.write("\n[ system ]\n")
         f.write(f"{title}\n\n")
         f.write("[ molecules ]\n")
-        # Per-chain molecule declarations
-        for i, itp in enumerate(molecule_itp_refs):
-            mol_name = Path(itp).stem  # molecule_0, molecule_1, etc.
-            f.write(f"{mol_name}    1\n")
-        # Lipid (if membrane)
-        if lipid_itp_name and lipid_count > 0:
-            f.write(f"{lipid_itp_name}    {lipid_count}\n")
-        # Solvent + ions
-        if water_count > 0:
-            f.write(f"W    {water_count}\n")
-        if na_count > 0:
-            f.write(f"NA    {na_count}\n")
-        if cl_count > 0:
-            f.write(f"CL    {cl_count}\n")
+        # GAP-CG-011: when INSANE emitted a parseable [ molecules ]
+        # section, preserve its molecule names and counts verbatim.
+        # This handles PW (not W), NA+/CL- (not NA/CL), and multiple
+        # POPC lines (one per leaflet). The martinize2 protein itps
+        # are PREPENDED before INSANE's entries so the protein comes
+        # first in the topology.
+        if insane_molecule_counts:
+            for itp in molecule_itp_refs:
+                mol_name = Path(itp).stem  # molecule_0, molecule_1, ...
+                f.write(f"{mol_name}    1\n")
+            for mol_name, count in insane_molecule_counts.items():
+                # Skip the synthetic 'Protein' line from INSANE; we
+                # already emitted per-chain molecule_X declarations
+                # above (one per martinize2 .itp).
+                if mol_name.upper() in ("PROTEIN", "NAME"):
+                    continue
+                f.write(f"{mol_name}    {int(count)}\n")
+        else:
+            # Legacy path (soluble / no membrane): use the
+            # hardcoded per-component counts.
+            for itp in molecule_itp_refs:
+                mol_name = Path(itp).stem
+                f.write(f"{mol_name}    1\n")
+            if lipid_itp_name and lipid_count > 0:
+                f.write(f"{lipid_itp_name}    {lipid_count}\n")
+            if water_count > 0:
+                f.write(f"W    {water_count}\n")
+            if na_count > 0:
+                f.write(f"NA    {na_count}\n")
+            if cl_count > 0:
+                f.write(f"CL    {cl_count}\n")
 
 
 def _validate_openmm_load(topology_path: Path, coordinate_path: Path) -> dict[str, Any]:
