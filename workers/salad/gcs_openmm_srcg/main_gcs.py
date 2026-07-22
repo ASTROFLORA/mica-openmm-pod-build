@@ -1901,12 +1901,34 @@ def _run_cg_martini_from_pdb_job(
         raise
     simulation.context.computeVirtualSites()
 
+    # GAP-CG-009 RESIDUAL (2026-07-22): for freshly-built CG/Martini
+    # systems with residual clashes (protein-lipid overlap, water
+    # grid intersection, ion placement), the first
+    # LocalEnergyMinimizer call fails with "Energy or force at
+    # minimization starting point is infinite or NaN" even though
+    # solvated.gro has no NaN/Inf coords (verified via
+    # cg_gap011_system_top.json). The cause is infinite LJ forces
+    # from atomic overlap (r < sigma/2). Set a small velocity
+    # BEFORE the minimizer so the system has thermal momentum to
+    # smear out the worst clashes before the steepest-descent
+    # minimizer takes over.
+    simulation.context.setVelocitiesToTemperature(
+        cg_runtime_params["temperature_K"] * _unit.kelvin
+    )
+
     state0 = simulation.context.getState(getEnergy=True)
     energy_initial_kjmol = float(
         state0.getPotentialEnergy().value_in_unit(_unit.kilojoule_per_mole)
     )
 
-    simulation.minimizeEnergy(maxIterations=100)
+    # GAP-CG-009 RESIDUAL follow-up: tolerance=100 kJ/mol is loose
+    # enough to allow the minimizer to break clashes before the
+    # trajectory converges. maxIterations=10 keeps the warm-up
+    # bounded so prod.dcd / prod.log stay clean for the dashboard.
+    simulation.minimizeEnergy(
+        maxIterations=10,
+        tolerance=100.0 * _unit.kilojoule_per_mole,
+    )
 
     # -- THROWAWAY EQUILIBRATION (delete once MDEngine.run_graph() handles CG multi-fase) ---
     # Minimal NVT -> NPT ramp to prevent NaN explosions on freshly-built CG/Martini
