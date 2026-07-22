@@ -33,26 +33,32 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && mkdssp --version
 
-# Layer 1: Conda stack — CUDA toolkit pinned to 12.x + OpenMM CUDA plugin
-# bundled via openmm-cuda126 meta-package.
+# Layer 1: Conda stack — CUDA toolkit 12.x + OpenMM (auto-detects CUDA plugin).
 # GAP-CG-010 (2026-07-21): mamba pulling `openmm` directly grabbed
 # `cuda-version 13.3`, whose PTX requires a driver >= 580 that the
 # Salad RTX_5090 host does NOT ship. Result: CUDA_ERROR_UNSUPPORTED_PTX_VERSION
 # (222) on the first `Simulation(...)` call.
 #
-# Pin: openmm-cuda126 which transitively pulls openmm + cuda-version=12.6
-# + the bundled CUDA plugin .so whose PTX targets compute capability
-# sm_50..sm_120 (covers RTX 5090 Blackwell). Driver requirement: >= 535,
-# which is shipped in 2024+ on every NVIDIA GPU host.
+# Fix pattern (adapted from .github/skills/openmm_remote_md_orchestrator.md
+# which uses cudatoolkit=11.8 for vast/RunPod hosts): install the
+# cudatoolkit conda package BEFORE openmm so that the resolver pins
+# to a CUDA major version whose PTX is compatible with our target driver.
 #
-# We install via the meta-package (not plain `openmm`) because the
-# plain `openmm` build on conda-forge is CPU-only -- the CUDA plugin
-# lives in a separate libopenmmcudapme.so that only ships in
-# `openmm-cuda126` / `openmm-cuda118` etc.
+# cudatoolkit=12.6 ships PTX for sm_50..sm_120 (covers every NVIDIA
+# GPU since 2017 incl. Blackwell RTX 5090) and requires driver >= 535
+# (a driver shipped across all consumer+datacenter NVIDIA hosts from
+# 2024 onwards). This is the widest compatibility window for our
+# target fleet.
+#
+# We install the explicit `cudatoolkit-dev` package (not just cuda-version)
+# because the dev package includes the headers and link libraries that
+# OpenMM's CMake build (if conda ever recompiles it) needs.
 RUN mamba install -c conda-forge -y \
     python=3.11 \
     nodejs=22 \
-    openmm-cuda126 \
+    'cudatoolkit=12.6' \
+    'cudnn=9.5' \
+    openmm \
     pdbfixer \
     numpy \
     scipy \
