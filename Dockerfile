@@ -33,25 +33,23 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && mkdssp --version
 
-# Layer 1: Conda stack — CUDA 12.x meta-pkg + OpenMM.
-# GAP-CG-010 (2026-07-21): mamba pulling `openmm` directly grabbed
-# `cuda-version 13.3`, whose PTX requires a driver >= 580 that the
-# Salad RTX_5090 host does NOT ship. Result: CUDA_ERROR_UNSUPPORTED_PTX_VERSION
-# (222) on the first `Simulation(...)` call.
+# Layer 1: Conda stack -- ONLY the support libs (NOT openmm). We
+# explicitly avoid conda-forge for openmm because:
+#  - v18 with no pin pulled cuda-version=13.3 transitively (driver
+#    >= 580 required, Salad hosts are older)
+#  - v36..v54 tried cuda-version pins and pip wheels under conda
+#    shadow, all failed (the openmm-feedstock issue #127 documents
+#    this dependency-injection bug)
+#  - conda's libcufft injection breaks PTX isolation on cloud GPUs
 #
-# Fix pattern (adapted from .github/skills/openmm_remote_md_orchestrator.md
-# which uses cudatoolkit=11.8 for vast/RunPod hosts): pin the CUDA
-# major version BEFORE openmm so the resolver picks a compatible
-# OpenMM build with PTX for sm_50..sm_120 (RTX 5090 Blackwell) and
-# driver requirement >= 535 (covers all NVIDIA hosts from 2024+).
-#
-# conda-forge packages it as `cuda-version=12.6` (meta-package that
-# pulls cuda-cudart, cuda-nvrtc, etc. all at the same major version).
-# v18 (with no pin) got cuda-version=13.3 transitively -- too new.
-RUN mamba install -c conda-forge -y \
+# INSTRUCCION 73 (2026-07-22): instead use PyPI's precompiled wheels
+# via the `openmm[cuda12]==8.1.1` meta-package. This pulls
+# `OpenMM-CUDA-12==8.1.1.12` which contains SASS binaries compiled
+# for sm_50..sm_120 (RTX 5090 Blackwell) WITHOUT cuda-13 PTX.
+# No CPU fallback -- the SASS is what runs on the RTX 5090.
+RUN mamba install -c conda-forge -y --no-deps \
     python=3.11 \
     nodejs=22 \
-    openmm \
     pdbfixer \
     numpy \
     scipy \
@@ -64,25 +62,28 @@ RUN mamba install -c conda-forge -y \
     vermouth \
     && mamba clean -afy
 
-# GAP-CG-010 root-cause fix (INSTRUCCION 55, 2026-07-21): the OpenMM
-# CUDA plugin shipped with conda-forge openmm 8.5.2 contains PTX compiled
-# for cuda-13 (driver >= 580). The Salad RTX_5090 fleet ships older
-# drivers which reject the PTX with CUDA_ERROR_UNSUPPORTED_PTX_VERSION
-# (222) on the first `Simulation(...)` call. We tried downgrading to
-# openmm 8.4 + OpenMM-CUDA-12 wheel and it failed because:
-#  - conda 8.5.2 shadowed the pip wheel
-#  - pip 8.4 wheel lacks CUDA plugin for the right CUDA runtime
-#  - mamba solver rejects pinning openmm 8.4 due to dependency conflicts
-#
-# The OFFICIAL NVIDIA-CUDA recommended fix (from OpenMM docs and NVIDIA
-# developer guides) is CUDA_FORCE_PTX_JIT=1 -- the driver will JIT-compile
-# the PTX to native SASS at runtime for whatever GPU is present (RTX 5090
-# sm_120 in our case). This adds ~10-30s startup cost per context but
-# works with any driver >= 535. NO CPU FALLBACK.
+# GAP-CG-010 FINAL FIX (INSTRUCCION 73, 2026-07-22): PyPI openmm[cuda12]
+# wheel ships CUDA-12 SASS precompiled for sm_120 (RTX 5090 Blackwell).
+# This bypasses the cuda-13 PTX issue AND the conda libcufft injection.
+# We pin 8.1.1 because martini_openmm@216e62b26c4ee6cea7ed21e20ec84fffe97a101c
+# supports the 8.0+ API and 8.1.1 is the last release that published
+# `openmm[cuda12]` extras before they were split into separate packages.
+RUN pip install --no-cache-dir --upgrade --force-reinstall \
+    "openmm[cuda12]==8.1.1" \
+    "numpy<2" \
+    "scipy<2" \
+    && pip cache purge
+
+# Belt-and-suspenders: CUDA_FORCE_PTX_JIT=1 stays as fallback for
+# any leftover PTX paths in the wheel. NO CPU FALLBACK -- the
+# wheel's precompiled SASS is what runs on the RTX 5090.
 ENV CUDA_FORCE_PTX_JIT=1
 
-# Layer 2: pip-only deps (martini_openmm is unpinned — pip picks latest compatible
-# with the OpenMM conda-forge build).
+# Layer 2: pip-only deps. martini_openmm is unpinned — pip picks
+# latest compatible with our pinned openmm==8.1.1 (set in Layer 1).
+# INSTRUCCION 73 (2026-07-22): no openmm in pip list here, conda is
+# now NO openmm and the only openmm install comes from the pinned
+# PyPI wheel in Layer 1.
 RUN pip install --no-cache-dir \
     "fastapi>=0.110.0" \
     "uvicorn[standard]>=0.27.0" \
@@ -203,31 +204,32 @@ verified.append({
     'defined_in': getattr(vermouth, '__file__', '?'),
 })
 
-# INSTRUCCION 36 (2026-07-21): GPU-only policy -- CUDA plugin .so MUST
-# be present in the image. The CUDA Platform REGISTRATION happens at
-# runtime via cuInit() on a real GPU -- the smoke gate CANNOT verify
-# platform registration in build time because the container has no
-# NVIDIA GPU. Instead we verify that the CUDA plugin shared library
-# (libOpenMMCUDA.so) was installed by pip into the conda env's lib/
-# directory. The runtime check happens in main_gcs.py:1728 via the
-# CUDA_ERROR_UNSUPPORTED_PTX_VERSION handling and CUDA_FORCE_PTX_JIT=1
-# (INSTRUCCION 55).
+# INSTRUCCION 73 (2026-07-22): GPU-only policy -- CUDA plugin .so MUST
+# be present in the image. With INSTRUCCION 73 the openmm install is
+# via pip (PyPI openmm[cuda12]==8.1.1 wheel), so the plugin ships as
+# `libOpenMMCUDA.so` inside the wheel's data/ folder, NOT in
+# /opt/conda/lib/. We search the standard pip wheel locations AND
+# the conda locations to be safe.
 import openmm  # noqa: E402
 from pathlib import Path as _Path  # noqa: E402
 import glob as _glob  # noqa: E402
-_plugin_search = list(_glob.glob('/opt/conda/lib/libOpenMMCUDA*')) + \
-                 list(_glob.glob('/opt/conda/lib/plugins/libOpenMMCUDA*')) + \
-                 list(_glob.glob('/opt/conda/lib/python3.11/site-packages/openmm/lib/plugins/libOpenMMCUDA*'))
+_plugin_search = (
+    list(_glob.glob('/opt/conda/lib/python3.11/site-packages/openmm/lib/plugins/libOpenMMCUDA*'))
+    + list(_glob.glob('/opt/conda/lib/python3.11/site-packages/openmm/lib/libOpenMMCUDA*'))
+    + list(_glob.glob('/opt/conda/lib/plugins/libOpenMMCUDA*'))
+    + list(_glob.glob('/opt/conda/lib/libOpenMMCUDA*'))
+)
 if not _plugin_search:
     raise ImportError(
         "libOpenMMCUDA.so not found in the image. The CUDA plugin wheel "
-        "was not installed. NO CPU FALLBACK WILL BE TOLERATED."
+        "(openmm[cuda12]==8.1.1) was not installed correctly. NO CPU "
+        "FALLBACK WILL BE TOLERATED."
     )
 verified.append({
     'module': 'openmm',
     'symbol': 'Platform::CUDA',
     'defined_in': _plugin_search[0],
-    'note': 'CUDA plugin .so present (runtime registration happens on first cuInit() at the worker host with real GPU); GAP-CG-010 fix uses CUDA_FORCE_PTX_JIT=1 to JIT-compile cuda-13 PTX to native SASS for the RTX 5090 host driver.',
+    'note': 'CUDA plugin .so present (runtime registration happens on first cuInit() at the worker host with real GPU); GAP-CG-010 fix via pip wheel openmm[cuda12]==8.1.1 with precompiled SASS for sm_120 (RTX 5090 Blackwell).',
 })
 
 # INSTRUCCION 30 (2026-07-21): mdtraj is now REQUIRED for the martinize2
