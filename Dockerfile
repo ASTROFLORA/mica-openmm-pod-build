@@ -82,7 +82,7 @@ RUN pip uninstall -y openmm || true \
 # cuda-12 extra) -- it bundles the CUDA plugin compiled for CUDA 12.x PTX
 # (driver >= 525), which is compatible with the Salad RTX_5090 fleet.
 RUN pip install --no-cache-dir \
-    "openmm==8.4.0" \
+    "openmm==8.4.0b0" \
     "OpenMM-CUDA-12==8.4.0b0" \
     "fastapi>=0.110.0" \
     "uvicorn[standard]>=0.27.0" \
